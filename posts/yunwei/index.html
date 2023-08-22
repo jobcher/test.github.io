@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="/css/style.css">
+    <title>运维知识图谱</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="/">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">运维知识图谱</h2>
+            
+        </header>
+        <article class="article">
+            <h1 id="运维图谱">运维图谱</h1>
+<p><img src="/images/yunwei.jpg" alt="技术图谱"></p>
+<h2 id="云原生平台基础">云原生平台基础</h2>
+<ol>
+<li><code>Docker、Docker Compose</code>：容器化技术</li>
+<li><code>Kubernetes</code>：大规模容器编排</li>
+<li><code>Helm</code>：云原生应用商店</li>
+<li><code>Rancher</code>： 易用的容器管理平台</li>
+<li><code>KubeSphere</code>：一站式容器云平台</li>
+<li><code>OpenTracing</code>：云原生链路追踪标准</li>
+<li><code>Jaeger</code>：云原生链路追踪实现产品</li>
+<li><code>Istio</code>：ServiceMesh下的服务流量治理</li>
+<li><code>Jenkins</code>、<code>JenkinsX</code>、<code>Jenkins-BlueOcean</code>：老牌的CI/CD平台</li>
+<li><code>Gtilab/hub-CICD</code>：Gitlab/hub自带的CICD</li>
+<li><code>Argo</code>：kubernetes声明式持续集成</li>
+<li><code>Nexus</code>：Maven私库</li>
+<li><code>Harbor</code>：Docker私库</li>
+<li><code>Prometheus</code>+<code>Granfana</code>：监控与可视化平台</li>
+<li><code>ElasticSearch</code>+<code>Fluentd</code>+<code>Kibana</code>：日志与可视化方案</li>
+<li><code>Serverless</code>：无服务器上云方案（不用去管服务器，不是不需要服务器）</li>
+<li><code>SpringCloud Kubernetes</code>：微服务上云方案</li>
+</ol>
+<p>熟练掌握docker和k8s技术
+devops掌握jenkins和gitlab</p>
+<h2 id="应用12要素">应用12要素</h2>
+<p>在现代，软件通常作为服务交付：称为<code>Web 应用程序</code>或<code>软件即服务</code>。十二因素应用程序是一种构建软件即服务应用程序的方法，它：</p>
+<ul>
+<li>使用<code>声明格式</code>进行设置自动化，以最大限度地减少新开发人员加入项目的时间和成本；</li>
+<li>与底层操作系统有一个<code>干净的合同</code>，在执行环境之间提供最大的<code>可移植性</code>；</li>
+<li>适合<code>部署</code>在现代<code>云平台</code>上，无需服务器和系统管理；</li>
+<li><code>最大限度地减少</code>开发和生产之间的差异，实现<code>持续部署</code>以获得最大的敏捷性；</li>
+<li>并且可以在不对工具、架构或开发实践进行重大更改的情况下进行<code>扩展</code>。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">英文</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">基准代码</td>
+<td style="text-align:left">codebase</td>
+<td style="text-align:left">一份基准代码，多份部署</td>
+</tr>
+<tr>
+<td style="text-align:left">依赖</td>
+<td style="text-align:left">Dependencies</td>
+<td style="text-align:left">显示声明依赖关系</td>
+</tr>
+<tr>
+<td style="text-align:left">配置</td>
+<td style="text-align:left">config</td>
+<td style="text-align:left">在环境中存储配置</td>
+</tr>
+<tr>
+<td style="text-align:left">后端服务</td>
+<td style="text-align:left">backing services</td>
+<td style="text-align:left">把后端服务当做附加资源</td>
+</tr>
+<tr>
+<td style="text-align:left">构建，发布，运行</td>
+<td style="text-align:left">build，release，run</td>
+<td style="text-align:left">严格分离构建和运行</td>
+</tr>
+<tr>
+<td style="text-align:left">进程</td>
+<td style="text-align:left">Processes</td>
+<td style="text-align:left">以一个或多个无状态进程运行应用</td>
+</tr>
+<tr>
+<td style="text-align:left">端口绑定</td>
+<td style="text-align:left">port binding</td>
+<td style="text-align:left">通过端口绑定来提供服务</td>
+</tr>
+<tr>
+<td style="text-align:left">并发</td>
+<td style="text-align:left">concurrency</td>
+<td style="text-align:left">通过进程模型进行扩展</td>
+</tr>
+<tr>
+<td style="text-align:left">易处理</td>
+<td style="text-align:left">disposability</td>
+<td style="text-align:left">快速启动和优雅终止可最大化健壮性</td>
+</tr>
+<tr>
+<td style="text-align:left">开发环境和线上环境等价</td>
+<td style="text-align:left">Dev/prod parity</td>
+<td style="text-align:left">尽可能保持开发、预发布、线上环境</td>
+</tr>
+<tr>
+<td style="text-align:left">日志</td>
+<td style="text-align:left">log</td>
+<td style="text-align:left">把日志当做事件流</td>
+</tr>
+<tr>
+<td style="text-align:left">管理进程</td>
+<td style="text-align:left">admin processes</td>
+<td style="text-align:left">后台管理任务当做一次性进程处理</td>
+</tr>
+</tbody>
+</table>
+
+            <br />
+            <div>
+                
+                <a href="https://test.jobcher.com/posts/donation/" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/posts/about/" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="/posts/about">关于我们</a></li>
+            
+            <li><a href="/posts">博文合集</a></li>
+            
+            <li><a href="/">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

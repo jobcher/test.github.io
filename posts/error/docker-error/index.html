@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="/css/style.css">
+    <title>docker 问题处理</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="/">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">docker 问题处理</h2>
+            
+        </header>
+        <article class="article">
+            <h3 id="docker-无法启动">docker 无法启动</h3>
+<p>打开服务器输入<code>docker ps</code>,输出错误<br>
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?</p>
+<p>怀疑是不是<code>docker.services</code> 部署没成功，<code>systemctl start docker</code> 启动 docker，结果服务器还是报错</p>
+<p>Job for docker.service failed because the control process exited with error code.<br>
+See &ldquo;systemctl status docker.service&rdquo; and &ldquo;journalctl -xe&rdquo; for details.</p>
+<p><code>systemctl status docker.service</code> 输出日志：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>● docker.service - Docker Application Container Engine
+</span></span><span style="display:flex;"><span>     Loaded: loaded <span style="color:#f92672">(</span>/lib/systemd/system/docker.service; enabled; vendor preset: enabled<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>     Active: failed <span style="color:#f92672">(</span>Result: exit-code<span style="color:#f92672">)</span> since Thu 2022-08-04 11:43:05 CST; 2min 57s ago
+</span></span><span style="display:flex;"><span>TriggeredBy: ● docker.socket
+</span></span><span style="display:flex;"><span>       Docs: https://docs.docker.com
+</span></span><span style="display:flex;"><span>    Process: <span style="color:#ae81ff">30432</span> ExecStart<span style="color:#f92672">=</span>/usr/bin/dockerd -H fd:// --containerd<span style="color:#f92672">=</span>/run/containerd/containerd.sock <span style="color:#f92672">(</span>code<span style="color:#f92672">=</span>exited, status<span style="color:#f92672">=</span>1/FAILURE<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>   Main PID: <span style="color:#ae81ff">30432</span> <span style="color:#f92672">(</span>code<span style="color:#f92672">=</span>exited, status<span style="color:#f92672">=</span>1/FAILURE<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Aug <span style="color:#ae81ff">04</span> 11:43:05 master01 systemd<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>: docker.service: Scheduled restart job, restart counter is at 3.
+</span></span><span style="display:flex;"><span>Aug <span style="color:#ae81ff">04</span> 11:43:05 master01 systemd<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>: Stopped Docker Application Container Engine.
+</span></span><span style="display:flex;"><span>Aug <span style="color:#ae81ff">04</span> 11:43:05 master01 systemd<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>: docker.service: Start request repeated too quickly.
+</span></span><span style="display:flex;"><span>Aug <span style="color:#ae81ff">04</span> 11:43:05 master01 systemd<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>: docker.service: Failed with result <span style="color:#e6db74">&#39;exit-code&#39;</span>.
+</span></span><span style="display:flex;"><span>Aug <span style="color:#ae81ff">04</span> 11:43:05 master01 systemd<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>: Failed to start Docker Application Container Engine.
+</span></span></code></pre></div><p><code>journalctl -xe</code> 输出日志：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>Aug <span style="color:#ae81ff">04</span> 11:46:49 master01 systemd<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>: Starting Docker Socket <span style="color:#66d9ef">for</span> the API.
+</span></span><span style="display:flex;"><span>-- Subject: A start job <span style="color:#66d9ef">for</span> unit docker.socket has begun execution
+</span></span><span style="display:flex;"><span>-- Defined-By: systemd
+</span></span><span style="display:flex;"><span>-- Support: http://www.ubuntu.com/support
+</span></span><span style="display:flex;"><span>--
+</span></span><span style="display:flex;"><span>-- A start job <span style="color:#66d9ef">for</span> unit docker.socket has begun execution.
+</span></span><span style="display:flex;"><span>--
+</span></span><span style="display:flex;"><span>-- The job identifier is 58900.
+</span></span><span style="display:flex;"><span>Aug <span style="color:#ae81ff">04</span> 11:46:49 master01 systemd<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>: Listening on Docker Socket <span style="color:#66d9ef">for</span> the API.
+</span></span><span style="display:flex;"><span>-- Subject: A start job <span style="color:#66d9ef">for</span> unit docker.socket has finished successfully
+</span></span><span style="display:flex;"><span>-- Defined-By: systemd
+</span></span><span style="display:flex;"><span>-- Support: http://www.ubuntu.com/support
+</span></span><span style="display:flex;"><span>--
+</span></span><span style="display:flex;"><span>-- A start job <span style="color:#66d9ef">for</span> unit docker.socket has finished successfully.
+</span></span><span style="display:flex;"><span>--
+</span></span><span style="display:flex;"><span>-- The job identifier is 58900.
+</span></span><span style="display:flex;"><span>Aug <span style="color:#ae81ff">04</span> 11:46:49 master01 systemd<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>: Starting Docker Application Container Engine...
+</span></span><span style="display:flex;"><span>-- Subject: A start job <span style="color:#66d9ef">for</span> unit docker.service has begun execution
+</span></span><span style="display:flex;"><span>-- Defined-By: systemd
+</span></span><span style="display:flex;"><span>-- Support: http://www.ubuntu.com/support
+</span></span><span style="display:flex;"><span>--
+</span></span><span style="display:flex;"><span>-- A start job <span style="color:#66d9ef">for</span> unit docker.service has begun execution.
+</span></span><span style="display:flex;"><span>--
+</span></span><span style="display:flex;"><span>-- The job identifier is 58830.
+</span></span><span style="display:flex;"><span>Aug <span style="color:#ae81ff">04</span> 11:46:49 master01 dockerd<span style="color:#f92672">[</span>30544<span style="color:#f92672">]</span>: unable to configure the Docker daemon with file /etc/docker/daemon.json: EOF
+</span></span><span style="display:flex;"><span>Aug <span style="color:#ae81ff">04</span> 11:46:49 master01 systemd<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>: docker.service: Main process exited, code<span style="color:#f92672">=</span>exited, status<span style="color:#f92672">=</span>1/FAILURE
+</span></span><span style="display:flex;"><span>-- Subject: Unit process exited
+</span></span><span style="display:flex;"><span>-- Defined-By: systemd
+</span></span><span style="display:flex;"><span>-- Support: http://www.ubuntu.com/support
+</span></span><span style="display:flex;"><span>--
+</span></span><span style="display:flex;"><span>-- An ExecStart<span style="color:#f92672">=</span> process belonging to unit docker.service has exited.
+</span></span><span style="display:flex;"><span>--
+</span></span><span style="display:flex;"><span>-- The process<span style="color:#e6db74">&#39; exit code is &#39;</span>exited<span style="color:#e6db74">&#39; and its exit status is 1.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Aug 04 11:46:49 master01 systemd[1]: docker.service: Failed with result &#39;</span>exit-code<span style="color:#e6db74">&#39;.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">-- Subject: Unit failed
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">-- Defined-By: systemd
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">-- Support: http://www.ubuntu.com/support
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">--
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">-- The unit docker.service has entered the &#39;</span>failed<span style="color:#e6db74">&#39; state with result &#39;</span>exit-code<span style="color:#960050;background-color:#1e0010">&#39;</span>.
+</span></span><span style="display:flex;"><span>Aug <span style="color:#ae81ff">04</span> 11:46:49 master01 systemd<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>: Failed to start Docker Application Container Engine.
+</span></span><span style="display:flex;"><span>-- Subject: A start job <span style="color:#66d9ef">for</span> unit docker.service has failed
+</span></span><span style="display:flex;"><span>-- Defined-By: systemd
+</span></span><span style="display:flex;"><span>-- Support: http://www.ubuntu.com/support
+</span></span><span style="display:flex;"><span>--
+</span></span><span style="display:flex;"><span>-- A start job <span style="color:#66d9ef">for</span> unit docker.service has finished with a failure.
+</span></span><span style="display:flex;"><span>--
+</span></span><span style="display:flex;"><span>-- The job identifier is <span style="color:#ae81ff">58830</span> and the job result is failed.
+</span></span><span style="display:flex;"><span>Aug <span style="color:#ae81ff">04</span> 11:46:49 master01 sudo<span style="color:#f92672">[</span>30535<span style="color:#f92672">]</span>: pam_unix<span style="color:#f92672">(</span>sudo:session<span style="color:#f92672">)</span>: session closed <span style="color:#66d9ef">for</span> user root
+</span></span></code></pre></div><p>我运行了:</p>
+<blockquote>
+<p>sudo dockerd &ndash;debug</p>
+</blockquote>
+<p>输出日志：<br>
+unable to configure the Docker daemon with file /etc/docker/daemon.json: EOF</p>
+<ul>
+<li>解决方法：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#如果 /etc/docker/daemon.json 为空</span>
+</span></span><span style="display:flex;"><span>vim /etc/docker/daemon.json
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 添加</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#保存退出</span>
+</span></span><span style="display:flex;"><span>:wq
+</span></span></code></pre></div><p>重启 docker</p>
+<blockquote>
+<p>systemctl restart docker</p>
+</blockquote>
+
+            <br />
+            <div>
+                
+                <a href="https://test.jobcher.com/posts/base/systemd/" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/posts/kubernetes/k8s10/" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="/posts/about">关于我们</a></li>
+            
+            <li><a href="/posts">博文合集</a></li>
+            
+            <li><a href="/">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

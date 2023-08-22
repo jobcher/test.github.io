@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="/css/style.css">
+    <title>contained 安装及使用</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="/">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">contained 安装及使用</h2>
+            
+        </header>
+        <article class="article">
+            <h1 id="contained-安装及使用">contained 安装及使用</h1>
+<p><img src="/images/containerd-horizontal-color.png" alt="contained"><br>
+containerd 是一个行业标准的容器运行时，强调简单性、健壮性和可移植性。它可作为 Linux 和 Windows 的守护进程使用，可以管理其主机系统的完整容器生命周期：图像传输和存储、容器执行和监督、低级存储和网络附件等。<br>
+<code>containerd</code> is a member of <code>CNCF</code> with <code>graduated</code> status.</p>
+<ol>
+<li>早在 2016 年 3 月，<code>Docker 1.11</code>的<code>Docker Engine</code>里就包含了<code>containerd</code>，而现在则是把<code>containerd</code>从<code>Docker Engine</code>里彻底剥离出来，作为一个独立的开源项目独立发展，目标是提供一个更加开放、稳定的容器运行基础设施。和原先包含在 Docker Engine 里<code>containerd</code>相比，独立的<code>containerd</code>将具有更多的功能，可以涵盖整个容器运行时管理的所有需求。</li>
+<li><code>containerd</code>并不是直接面向最终用户的，而是主要用于集成到更上层的系统里，比如<code>Swarm</code>, <code>Kubernetes</code>, <code>Mesos</code>等容器编排系统。</li>
+<li><code>containerd</code>以<code>Daemon</code>的形式运行在系统上，通过暴露底层的<code>gRPC API</code>，上层系统可以通过这些<code>API</code>管理机器上的容器。</li>
+<li>每个<code>containerd</code>只负责<code>一台机器</code>，Pull 镜像，对容器的操作（启动、停止等），网络，存储都是由 containerd 完成。具体运行容器由<code>runC</code>负责，实际上只要是符合<code>OCI规范</code>的容器都可以支持。</li>
+<li>对于容器编排服务来说，运行时只需要使用<code>containerd+runC</code>，更加轻量，容易管理。 5.独立之后<code>containerd</code>的特性演进可以和<code>Docker Engine</code>分开，专注容器运行时管理，可以更稳定。</li>
+</ol>
+<h2 id="安装">安装</h2>
+<p>centos</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>yum install -y containerd.io
+</span></span></code></pre></div><p>ubuntu</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>apt install -y containerd.io
+</span></span></code></pre></div><p>设置开机自启</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>systemctl enable containerd
+</span></span><span style="display:flex;"><span>systemctl start containerd
+</span></span><span style="display:flex;"><span>systemctl status containerd
+</span></span></code></pre></div><p>验证</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ctr version
+</span></span></code></pre></div><h2 id="ctr-命令">ctr 命令</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">命令</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">plugins, plugin</td>
+<td style="text-align:left">提供有关容器插件的信息</td>
+</tr>
+<tr>
+<td style="text-align:left">version</td>
+<td style="text-align:left">打印客户端和服务器版本</td>
+</tr>
+<tr>
+<td style="text-align:left">containers, c, container</td>
+<td style="text-align:left">管理容器</td>
+</tr>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">管理内容</td>
+</tr>
+<tr>
+<td style="text-align:left">events, event</td>
+<td style="text-align:left">显示容器事件</td>
+</tr>
+<tr>
+<td style="text-align:left">images, image, i</td>
+<td style="text-align:left">管理图像</td>
+</tr>
+<tr>
+<td style="text-align:left">leases</td>
+<td style="text-align:left">管理租约</td>
+</tr>
+<tr>
+<td style="text-align:left">namespaces, namespace, ns</td>
+<td style="text-align:left">管理租命名空间</td>
+</tr>
+<tr>
+<td style="text-align:left">pprof</td>
+<td style="text-align:left">为 containerd 提供 golang pprof 输出</td>
+</tr>
+<tr>
+<td style="text-align:left">run</td>
+<td style="text-align:left">运行一个容器</td>
+</tr>
+<tr>
+<td style="text-align:left">snapshots, snapshot</td>
+<td style="text-align:left">管理快照</td>
+</tr>
+<tr>
+<td style="text-align:left">tasks, t, task</td>
+<td style="text-align:left">管理任务</td>
+</tr>
+<tr>
+<td style="text-align:left">install</td>
+<td style="text-align:left">安装一个新包</td>
+</tr>
+<tr>
+<td style="text-align:left">oci</td>
+<td style="text-align:left">OCI 工具</td>
+</tr>
+<tr>
+<td style="text-align:left">shim</td>
+<td style="text-align:left">直接与 shim 交互</td>
+</tr>
+<tr>
+<td style="text-align:left">help, h</td>
+<td style="text-align:left">显示命令列表或一个命令的帮助</td>
+</tr>
+</tbody>
+</table>
+
+            <br />
+            <div>
+                
+                <a href="https://test.jobcher.com/posts/diary/rocketmq3/" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/posts/web3.0/planet/" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="/posts/about">关于我们</a></li>
+            
+            <li><a href="/posts">博文合集</a></li>
+            
+            <li><a href="/">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

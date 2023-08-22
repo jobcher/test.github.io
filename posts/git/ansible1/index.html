@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="/css/style.css">
+    <title>ansible 命令</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="/">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">ansible 命令</h2>
+            
+        </header>
+        <article class="article">
+            <h1 id="ansible-命令">ansible 命令</h1>
+<ul>
+<li><code>Inventory</code>：Ansible 管理的主机信息，包括 IP 地址、SSH 端口、账号、密码等</li>
+<li><code>Modules</code>：任务均有模块完成，也可以自定义模块，例如经常用的脚本。</li>
+<li><code>Plugins</code>：使用插件增加 Ansible 核心功能，自身提供了很多插件，也可以自定义插件。例如 connection 插件，用于连接目标主机。</li>
+<li><code>Playbooks</code>：“剧本”，模块化定义一系列任务，供外部统一调用。Ansible 核心功能。</li>
+</ul>
+<h2 id="编辑主机清单">编辑主机清单</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#f92672">[</span>webservers<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>192.168.0.20 ansible_ssh_user<span style="color:#f92672">=</span>root ansible_ssh_pass<span style="color:#f92672">=</span>’200271200’
+</span></span><span style="display:flex;"><span>192.168.0.21 ansible_ssh_user<span style="color:#f92672">=</span>root ansible_ssh_pass<span style="color:#f92672">=</span>’200271200’
+</span></span><span style="display:flex;"><span>192.168.0.22 ansible_ssh_user<span style="color:#f92672">=</span>root ansible_ssh_pass<span style="color:#f92672">=</span>’200271200’
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dbservers<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>10.12.0.100
+</span></span><span style="display:flex;"><span>10.12.0.101
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#34;s/#host_key_checking = .*/host_key_checking = False/g&#34;</span> /etc/ansible/ansible.cfg
+</span></span></code></pre></div><h2 id="命令行">命令行</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ansible all -m ping
+</span></span><span style="display:flex;"><span>ansible all -m shell -a <span style="color:#e6db74">&#34;ls /root&#34;</span> -u root -k
+</span></span></code></pre></div><h2 id="常用模块">常用模块</h2>
+<p>在目标主机执行 shell 命令。</p>
+<ol>
+<li>shell</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">将命令结果输出到指定文件</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">shell</span>: <span style="color:#ae81ff">somescript.sh &gt;&gt; somelog.txt</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">切换目录执行命令</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">shell</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">cmd</span>: <span style="color:#ae81ff">ls -l | grep log</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">chdir</span>: <span style="color:#ae81ff">somedir/</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">编写脚本</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">shell</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    if [ 0 -eq 0 ]; then
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">       echo yes &gt; /tmp/result
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    else
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">       echo no &gt; /tmp/result
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    fi</span>    
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">args</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">executable</span>: <span style="color:#ae81ff">/bin/bash</span>
+</span></span></code></pre></div><ol start="2">
+<li>copy
+将文件复制到远程主机。</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">拷贝文件</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">copy</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">src</span>: <span style="color:#ae81ff">/srv/myfiles/foo.conf</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">dest</span>: <span style="color:#ae81ff">/etc/foo.conf</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">owner</span>: <span style="color:#ae81ff">foo</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">group</span>: <span style="color:#ae81ff">foo</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">mode</span>: <span style="color:#ae81ff">u=rw,g=r,o=r</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># mode: u+rw,g-wx,o-rwx</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># mode: &#39;0644&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">backup</span>: <span style="color:#66d9ef">yes</span>
+</span></span></code></pre></div><ol start="3">
+<li>file
+管理文件和文件属性。</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">创建目录</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">file</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">path</span>: <span style="color:#ae81ff">/etc/some_directory</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">state</span>: <span style="color:#ae81ff">directory</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">mode</span>: <span style="color:#e6db74">&#34;0755&#34;</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">删除文件</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">file</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">path</span>: <span style="color:#ae81ff">/etc/foo.txt</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">state</span>: <span style="color:#ae81ff">absent</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">递归删除目录</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">file</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">path</span>: <span style="color:#ae81ff">/etc/foo</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">state</span>: <span style="color:#ae81ff">absent</span>
+</span></span></code></pre></div><ul>
+<li>present，latest：表示安装</li>
+<li>absent：表示卸载</li>
+</ul>
+<ol start="4">
+<li>yum
+软件包管理。</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">安装最新版apache</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">yum</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">httpd</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">state</span>: <span style="color:#ae81ff">latest</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">安装列表中所有包</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">yum</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">nginx</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">postgresql</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">postgresql-server</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">state</span>: <span style="color:#ae81ff">present</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">卸载apache包</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">yum</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">httpd</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">state</span>: <span style="color:#ae81ff">absent</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">更新所有包</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">yum</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;*&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">state</span>: <span style="color:#ae81ff">latest</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">安装nginx来自远程repo</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">yum</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0.el6.ngx.noarch.rpm</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># name: /usr/local/src/nginx-release-centos-6-0.el6.ngx.noarch.rpm</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">state</span>: <span style="color:#ae81ff">present</span>
+</span></span></code></pre></div><ol start="5">
+<li>service/systemd
+管理服务</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">服务管理</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">service</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">httpd</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">state</span>: <span style="color:#ae81ff">started</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#state: stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#state: restarted</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#state: reloaded</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">设置开机启动</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">service</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">httpd</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">yes</span>
+</span></span></code></pre></div><ol start="6">
+<li>unarchive
+解压</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">解压</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">unarchive</span>: <span style="color:#ae81ff">src=test.tar.gz</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">dest=/tmp</span>
+</span></span></code></pre></div><ol start="7">
+<li>debug
+执行过程中打印语句。</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>- <span style="color:#f92672">debug</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">msg</span>: <span style="color:#ae81ff">System {{ inventory_hostname }} has uuid {{ ansible_product_uuid }}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">显示主机已知的所有变量</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">debug</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">var</span>: <span style="color:#ae81ff">hostvars[inventory_hostname]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">verbosity</span>: <span style="color:#ae81ff">4</span>
+</span></span></code></pre></div>
+            <br />
+            <div>
+                
+                <a href="https://test.jobcher.com/posts/diary/20220416/" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/posts/diary/ant/" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="/posts/about">关于我们</a></li>
+            
+            <li><a href="/posts">博文合集</a></li>
+            
+            <li><a href="/">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

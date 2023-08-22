@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="/css/style.css">
+    <title>ansible 安装和部署</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="/">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">ansible 安装和部署</h2>
+            
+        </header>
+        <article class="article">
+            <h1 id="ansible-安装和部署">ansible 安装和部署</h1>
+<p>Ansible 默认通过 SSH 协议管理机器.</p>
+<h2 id="安装-ansible">安装 ansible</h2>
+<ol>
+<li>下载安装</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># ubuntu 安装</span>
+</span></span><span style="display:flex;"><span>apt-get install software-properties-common
+</span></span><span style="display:flex;"><span>apt-add-repository ppa:ansible/ansible
+</span></span><span style="display:flex;"><span>apt-get update
+</span></span><span style="display:flex;"><span>apt-get install ansible
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># centos 安装</span>
+</span></span><span style="display:flex;"><span>yum install ansible
+</span></span></code></pre></div><ol start="2">
+<li>检查文件</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#检查</span>
+</span></span><span style="display:flex;"><span>ansible --version
+</span></span></code></pre></div><h2 id="ansible-配置">ansible 配置</h2>
+<ol>
+<li>添加主机</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>vim /etc/ansible/hosts
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#添加你需要添加的被控主机地址和IP</span>
+</span></span></code></pre></div><ol start="2">
+<li>配置 SSH key 授权访问</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># 控制主机生成ssh 密钥对（一路回车）</span>
+</span></span><span style="display:flex;"><span>ssh-keygen -t rsa
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 复制公钥IP到被控主机</span>
+</span></span><span style="display:flex;"><span>ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.0.2
+</span></span><span style="display:flex;"><span>ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.0.3
+</span></span><span style="display:flex;"><span>ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.0.4
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ssh-copy-id命令会自动将id_rsa.pub文件的内容追加到远程主机root用户下.ssh/authorized_keys文件中。</span>
+</span></span></code></pre></div><ol start="3">
+<li>更改 ansible 配置</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>vim /etc/ansible/ansible.cfg
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#禁用每次执行ansbile命令检查ssh key host</span>
+</span></span><span style="display:flex;"><span>host_key_checking <span style="color:#f92672">=</span> False
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 开启日志记录</span>
+</span></span><span style="display:flex;"><span>log_path <span style="color:#f92672">=</span> /var/log/ansible.log
+</span></span></code></pre></div><ol start="4">
+<li>测试</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># 控制主机</span>
+</span></span><span style="display:flex;"><span>ansible all -m ping
+</span></span></code></pre></div><h2 id="inventory">Inventory</h2>
+<ol>
+<li>配置组别</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">vim /etc/ansible/hosts</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 添加组别</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">[pve]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">192.168.0.2</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">192.168.0.3</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">192.168.0.4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#测试</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ansible pve -m ping</span>
+</span></span></code></pre></div><ol start="2">
+<li>Inventory 参数
+把你的 inventory 文件 和 变量 放入 git repo 中,以便跟踪他们的更新,这是一种非常推荐的方式.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ansible_ssh_host</td>
+<td style="text-align:left">将要连接的远程主机名.与你想要设定的主机的别名不同的话,可通过此变量设置.</td>
+</tr>
+<tr>
+<td style="text-align:left">ansible_ssh_port</td>
+<td style="text-align:left">ssh 端口号.如果不是默认的端口号,通过此变量设置.</td>
+</tr>
+<tr>
+<td style="text-align:left">ansible_ssh_user</td>
+<td style="text-align:left">默认的 ssh 用户名</td>
+</tr>
+<tr>
+<td style="text-align:left">ansible_ssh_pass</td>
+<td style="text-align:left">ssh 密码(这种方式并不安全,我们强烈建议使用 &ndash;ask-pass 或 SSH 密钥)</td>
+</tr>
+<tr>
+<td style="text-align:left">ansible_sudo_pass</td>
+<td style="text-align:left">sudo 密码(这种方式并不安全,我们强烈建议使用 &ndash;ask-sudo-pass)</td>
+</tr>
+<tr>
+<td style="text-align:left">ansible_sudo_exe (new in version 1.8)</td>
+<td style="text-align:left">sudo 命令路径(适用于 1.8 及以上版本)</td>
+</tr>
+<tr>
+<td style="text-align:left">ansible_connection</td>
+<td style="text-align:left">与主机的连接类型.比如:local, ssh 或者 paramiko. Ansible 1.2 以前默认使用 paramiko.1.2 以后默认使用 &lsquo;smart&rsquo;,&lsquo;smart&rsquo; 方式会根据是否支持 ControlPersist, 来判断&rsquo;ssh&rsquo; 方式是否可行.</td>
+</tr>
+<tr>
+<td style="text-align:left">ansible_ssh_private_key_file</td>
+<td style="text-align:left">ssh 使用的私钥文件.适用于有多个密钥,而你不想使用 SSH 代理的情况.</td>
+</tr>
+<tr>
+<td style="text-align:left">ansible_shell_type</td>
+<td style="text-align:left">目标系统的 shell 类型.默认情况下,命令的执行使用 &lsquo;sh&rsquo; 语法,可设置为 &lsquo;csh&rsquo; 或 &lsquo;fish&rsquo;.</td>
+</tr>
+<tr>
+<td style="text-align:left">ansible_python_interpreter</td>
+<td style="text-align:left">目标主机的 python 路径.适用于的情况: 系统中有多个 Python, 或者命令路径不是&quot;/usr/bin/python&quot;,比如 *BSD, 或者 /usr/bin/python</td>
+</tr>
+</tbody>
+</table>
+<h2 id="roles">Roles</h2>
+<p>Roles 是基于已知文件结构自动加载某些变量文件，任务和处理程序的方法。按角色对内容进行分组，适合构建复杂的部署环境
+Roles 目录结构：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">site.yml</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">webservers.yml</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">fooservers.yml</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">roles/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">common/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">tasks/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">handlers/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">files/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">templates/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">vars/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">defaults/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">meta/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">webservers/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">tasks/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">defaults/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">meta/</span>
+</span></span></code></pre></div><ul>
+<li>tasks 包含角色要执行的任务的主要列表</li>
+<li>handlers 包含处理程序，此角色甚至在此角色之外的任何地方都可以使用这些处理程序</li>
+<li>defaults 角色的默认变量</li>
+<li>vars 角色的其他变量</li>
+<li>files 包含可以通过此角色部署的文件</li>
+<li>templates 包含可以通过此角色部署的模版</li>
+<li>meta 为此角色定义一些元数据</li>
+</ul>
+
+            <br />
+            <div>
+                
+                <a href="https://test.jobcher.com/posts/kubernetes/keepalived/" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/posts/base/yaml/" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="/posts/about">关于我们</a></li>
+            
+            <li><a href="/posts">博文合集</a></li>
+            
+            <li><a href="/">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>
