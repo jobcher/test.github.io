@@ -45,7 +45,8 @@
             
         </header>
         <article class="article">
-            <h1 id="编写-kubernetes-资源描述文件">编写 kubernetes 资源描述文件</h1>
+                <div class="single-content">
+                    <h1 id="编写-kubernetes-资源描述文件">编写 kubernetes 资源描述文件</h1>
 <h3 id="1-部署一个应用">1. 部署一个应用</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span> <span style="color:#75715e">#与k8s集群版本有关，使用 kubectl api-versions 即可查看当前集群支持的版本</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span> <span style="color:#75715e">#该配置的类型，我们使用的是 Deployment</span>
@@ -93,8 +94,9 @@
 <p>修改 deployment.yaml 中的 imageName 属性等</p>
 <p>完成后运行 <code>kubectl apply -f xxx.yaml</code></p>
 
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/kubernetes/k8s9/" class="prev">前一页</a>
                 

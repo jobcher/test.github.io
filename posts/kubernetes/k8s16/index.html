@@ -47,7 +47,8 @@
             
         </header>
         <article class="article">
-            <h2 id="背景">背景</h2>
+                <div class="single-content">
+                    <h2 id="背景">背景</h2>
 <p>使用 <code>kubeadm</code> 安装 <code>kubernetes</code> 集群非常方便，但是也有一个比较烦人的问题就是默认的证书有效期只有<code>一年</code>时间，所以需要考虑<code>证书升级</code>的问题</p>
 <h2 id="检查证书">检查证书</h2>
 <p>由 kubeadm 生成的客户端证书默认只有一年有效期，我们可以通过 check-expiration 命令来检查证书是否过期：</p>
@@ -96,8 +97,9 @@
 </span></span></code></pre></div><h2 id="总结">总结</h2>
 <p>可以看到现在的有效期是一年过后的，证明已经更新成功了。</p>
 
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/work/gradle-apk/" class="prev">前一页</a>
                 

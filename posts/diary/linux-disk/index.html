@@ -45,7 +45,8 @@
             
         </header>
         <article class="article">
-            <h1 id="linux-服务器-删除空间却未释放">linux 服务器 删除空间却未释放</h1>
+                <div class="single-content">
+                    <h1 id="linux-服务器-删除空间却未释放">linux 服务器 删除空间却未释放</h1>
 <p>在<code>Linux</code>或者<code>Unix</code>系统中，通过<code>rm</code>或者文件管理器删除文件将会从文件系统的目录结构上<code>解除链接(unlink)</code>，然而如果文件是被打开的<code>（有一个进程正在使用）</code>，那么进程将仍然可以读取该文件，<code>磁盘空间也一直被占用</code>，这样就会导致我们明明删除了文件，但是磁盘空间却未被释放</p>
 <h2 id="获取占用列表状态">获取占用列表状态</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>lsof | grep deleted
@@ -62,8 +63,9 @@
 <h2 id="lsof-命令">lsof 命令</h2>
 <p><code>lsof</code>全名<code>list opened files</code>，也就是列举系统中已经被打开的文件。我们都知道，linux 环境中，任何事物都是文件，设备是文件，目录是文件，甚至<code>sockets</code>也是文件。</p>
 
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/kubernetes/k8s10/" class="prev">前一页</a>
                 

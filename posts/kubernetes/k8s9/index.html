@@ -45,7 +45,8 @@
             
         </header>
         <article class="article">
-            <h1 id="kubernetes-从123x-升级到-124x">kubernetes 从<code>1.23.x</code> 升级到 <code>1.24.x</code></h1>
+                <div class="single-content">
+                    <h1 id="kubernetes-从123x-升级到-124x">kubernetes 从<code>1.23.x</code> 升级到 <code>1.24.x</code></h1>
 <p>k8s 在<code>1.24.x</code>之后的版本放弃了和 docker 的兼容，使用 containerd 作为底层的容器，直接参照官方文档的资料进行更新就会报错。因为你没有安装 containerd，所以要安装 containerd 并配置才能正确的升级 k8s<br>
 我用的是<code>CentOS7.9</code>的版本，因此以下操作都是在<code>CentOS</code>下操作。</p>
 <h2 id="master-节点操作">Master 节点操作</h2>
@@ -95,8 +96,9 @@ systemctl status kubelet</p>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 确认维护完成之后，恢复正常</span>
 </span></span><span style="display:flex;"><span>kubectl uncordon &lt;nodename&gt;
 </span></span></code></pre></div>
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/monitoring/logstash/" class="prev">前一页</a>
                 

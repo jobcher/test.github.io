@@ -47,7 +47,8 @@
             
         </header>
         <article class="article">
-            <h2 id="基础配置">基础配置</h2>
+                <div class="single-content">
+                    <h2 id="基础配置">基础配置</h2>
 <p>三台环境为centos7.9，以下配置需要在每台机器上执行</p>
 <h3 id="配置hosts解析">配置hosts解析</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat &gt;&gt; /etc/hosts <span style="color:#e6db74">&lt;&lt;EOF
@@ -155,8 +156,9 @@
 </span></span></code></pre></div><p>查看安装状态，发现有一个警告，这是因为在之前的all.yml配置没有开启允许自动调整pool中的pg数 <code>pg_autoscale_mode: False</code> ，手动设置下即可</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ceph osd pool set &lt;pool-name&gt; pg_autoscale_mode on
 </span></span></code></pre></div>
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/github/github_trending_2023-07-18/" class="prev">前一页</a>
                 

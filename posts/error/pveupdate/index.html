@@ -45,7 +45,8 @@
             
         </header>
         <article class="article">
-            <h1 id="proxmox-ve-升级-apt-get-update-报错">ProXmoX VE 升级 apt-get update 报错</h1>
+                <div class="single-content">
+                    <h1 id="proxmox-ve-升级-apt-get-update-报错">ProXmoX VE 升级 apt-get update 报错</h1>
 <h2 id="解决方法">解决方法</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>vim /etc/apt/sources.list.d/pve-enterprise.list
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#注释掉</span>
@@ -58,8 +59,9 @@
 </span></span></code></pre></div><h2 id="结尾">结尾</h2>
 <p>升级完成后，可以执行<code>pveversion -v</code>查看下最新的软件版本。然后执行<code>reboot</code>重启物理服务器</p>
 
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/database/navicatforgetpassword/" class="prev">前一页</a>
                 

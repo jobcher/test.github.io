@@ -47,7 +47,8 @@
             
         </header>
         <article class="article">
-            <h2 id="vue3--vite--nginx项目部署后404问题">Vue3 + vite + nginx项目部署后404问题</h2>
+                <div class="single-content">
+                    <h2 id="vue3--vite--nginx项目部署后404问题">Vue3 + vite + nginx项目部署后404问题</h2>
 <p><code>vue3 + vite + nginx</code><br>
 在服务器上部署后打开首页都没问题，打开其他路径全部 404。<br>
 <code>nginx</code> 报错日志：<code>No such file or directory</code></p>
@@ -70,8 +71,9 @@
 <p>其实上述改动就是告诉 nignx 找不到文件的时候就访问 <code>index.html</code> 就可以了。</p>
 <p>究其原因其实就是是 vue3 的 router 使用了<code>history</code>模式，该模式与之前<code>hash</code>模式的具体区别可以自行百度一下，不在此赘述。</p>
 
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/github/github_trending_2023-08-10/" class="prev">前一页</a>
                 

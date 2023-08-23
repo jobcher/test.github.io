@@ -45,7 +45,8 @@
             
         </header>
         <article class="article">
-            <h1 id="k8s-本地联调神器-kt-connect">k8s 本地联调神器 kt-connect</h1>
+                <div class="single-content">
+                    <h1 id="k8s-本地联调神器-kt-connect">k8s 本地联调神器 kt-connect</h1>
 <p><a href="https://www.bboy.app/2022/04/11/k8s%E6%9C%AC%E5%9C%B0%E8%81%94%E8%B0%83%E7%A5%9E%E5%99%A8kt-connect/">转载自 Bboysoul&rsquo;sBlog</a><br>
 k8s 集群内部的服务网络怎么和我们本地网络打通。kt-connect 就是用来解决这个问题的</p>
 <h2 id="使用方法">使用方法</h2>
@@ -57,8 +58,9 @@ k8s 集群内部的服务网络怎么和我们本地网络打通。kt-connect �
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo ktctl --kubeconfig ~/.kube/local connect
 </span></span></code></pre></div><p>执行完成之后，这个集群的所有<code>svc</code>都可以直接在本地解析，当然直接 ping pod 的 ip 也是可以的</p>
 
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/diary/ant/" class="prev">前一页</a>
                 

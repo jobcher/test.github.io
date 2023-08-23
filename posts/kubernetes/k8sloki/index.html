@@ -45,7 +45,8 @@
             
         </header>
         <article class="article">
-            <h1 id="k8s-部署-loki-日志">k8s 部署 loki 日志</h1>
+                <div class="single-content">
+                    <h1 id="k8s-部署-loki-日志">k8s 部署 loki 日志</h1>
 <h2 id="helm-拉取-loki">helm 拉取 loki</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#加源</span>
 </span></span><span style="display:flex;"><span>helm repo add grafana https://grafana.github.io/helm-charts
@@ -58,8 +59,9 @@
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 部署（如果要修改默认配置必须要修改一下yaml）</span>
 </span></span><span style="display:flex;"><span>k3s kubectl apply -f loki.yaml
 </span></span></code></pre></div>
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/kubernetes/helm/" class="prev">前一页</a>
                 

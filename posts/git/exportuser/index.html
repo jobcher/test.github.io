@@ -45,7 +45,8 @@
             
         </header>
         <article class="article">
-            <h1 id="gitlab-批量导出用户">Gitlab 批量导出用户</h1>
+                <div class="single-content">
+                    <h1 id="gitlab-批量导出用户">Gitlab 批量导出用户</h1>
 <p>登陆 Gitlab 服务器进行数据库登陆、数据查询及信息导出操作。</p>
 <h2 id="操作步骤">操作步骤</h2>
 <ol>
@@ -86,8 +87,9 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;select name,username,email,state from users;&#39;</span> |psql -h /var/opt/gitlab/postgresql -d gitlabhq_production &gt; userinfo.txt
 </span></span></code></pre></div><p>存储在/var/opt/gitlab/postgresql/userinfo.txt</p>
 
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/diary/pve1/" class="prev">前一页</a>
                 

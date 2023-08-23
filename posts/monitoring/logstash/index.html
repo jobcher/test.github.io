@@ -45,7 +45,8 @@
             
         </header>
         <article class="article">
-            <h1 id="logstash-多管道部署">logstash 多管道部署</h1>
+                <div class="single-content">
+                    <h1 id="logstash-多管道部署">logstash 多管道部署</h1>
 <p>找到 logstash 目录位置，一般来说在 <code>/etc/logstash</code> 路径下,修改 <code>logstash.yml</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e">#增加 日志记录</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">path.logs</span>: <span style="color:#ae81ff">/var/log/logstash</span>
@@ -78,8 +79,9 @@
 </span></span></code></pre></div><h2 id="启动-logstash-文件">启动 logstash 文件</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>/usr/share/logstash/bin/logstash &amp;
 </span></span></code></pre></div>
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/diary/linux-disk/" class="prev">前一页</a>
                 

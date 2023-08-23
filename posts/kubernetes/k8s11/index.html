@@ -45,7 +45,8 @@
             
         </header>
         <article class="article">
-            <h1 id="k8s-部署插件">k8s 部署插件</h1>
+                <div class="single-content">
+                    <h1 id="k8s-部署插件">k8s 部署插件</h1>
 <p><code>Kubernetes</code> 是高度可配置且可扩展的。因此，大多数情况下， 你不需要派生自己的 Kubernetes 副本或者向项目代码提交补丁，本文会介绍几种常用的 k8s 插件，如果大家喜欢的话，希望大家点赞支持。</p>
 <h2 id="1-flannel-网络插件">1. Flannel 网络插件</h2>
 <p><code>Flannel</code>是由 go 语言开发，是一种基于 Overlay 网络的<code>跨主机容器网络解决方案</code>，也就是将<code>TCP数据包</code>封装在另一种网络包里面进行<code>路由转发和通信</code>，Flannel 是 CoreOS 开发，专门用于 docker 多主机互联的一个工具，简单来说，它的功能是<code>让集群中的不同节点主机创建的容器都具有全局唯一的虚拟IP地址</code><br>
@@ -118,8 +119,9 @@
 </span></span></code></pre></div><p>获取 token</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl describe secrets -n kube-system <span style="color:#66d9ef">$(</span>kubectl -n kube-system get secret | grep dashboard-admin | awk <span style="color:#e6db74">&#39;{print $1}&#39;</span><span style="color:#66d9ef">)</span>
 </span></span></code></pre></div>
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/kubernetes/k8s12/" class="prev">前一页</a>
                 

@@ -45,7 +45,8 @@
             
         </header>
         <article class="article">
-            <h1 id="golang-go-build-编译不同系统下的可执行文件">Golang go build 编译不同系统下的可执行文件</h1>
+                <div class="single-content">
+                    <h1 id="golang-go-build-编译不同系统下的可执行文件">Golang go build 编译不同系统下的可执行文件</h1>
 <h2 id="mac-系统编译">Mac 系统编译</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>CGO_ENABLED<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> GOOS<span style="color:#f92672">=</span>linux GOARCH<span style="color:#f92672">=</span>amd64 go build test.go
 </span></span><span style="display:flex;"><span>CGO_ENABLED<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> GOOS<span style="color:#f92672">=</span>windows GOARCH<span style="color:#f92672">=</span>amd64 go build test.go
@@ -60,8 +61,9 @@
 <li><code>GOARCH</code>：目标可执行程序操作系统构架，包括 <code>386，amd64，arm</code></li>
 </ul>
 
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/kubernetes/k8s6/" class="prev">前一页</a>
                 

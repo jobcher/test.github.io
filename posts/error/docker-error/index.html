@@ -45,7 +45,8 @@
             
         </header>
         <article class="article">
-            <h3 id="docker-无法启动">docker 无法启动</h3>
+                <div class="single-content">
+                    <h3 id="docker-无法启动">docker 无法启动</h3>
 <p>打开服务器输入<code>docker ps</code>,输出错误<br>
 Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?</p>
 <p>怀疑是不是<code>docker.services</code> 部署没成功，<code>systemctl start docker</code> 启动 docker，结果服务器还是报错</p>
@@ -135,8 +136,9 @@ unable to configure the Docker daemon with file /etc/docker/daemon.json: EOF</p>
 <p>systemctl restart docker</p>
 </blockquote>
 
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/base/systemd/" class="prev">前一页</a>
                 

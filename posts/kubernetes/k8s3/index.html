@@ -45,7 +45,8 @@
             
         </header>
         <article class="article">
-            <h1 id="kubernetes-面试题汇总">kubernetes 面试题汇总</h1>
+                <div class="single-content">
+                    <h1 id="kubernetes-面试题汇总">kubernetes 面试题汇总</h1>
 <h2 id="1-k8s-是什么请说出你的了解">1、 k8s 是什么？请说出你的了解？</h2>
 <p>答：Kubenetes 是一个针对容器应用，进行自动部署，弹性伸缩和管理的开源系统。主要功能是生产环境中的容器编排。<br>
 K8S 是 Google 公司推出的，它来源于由 Google 公司内部使用了 15 年的 Borg 系统，集结了 Borg 的精华。</p>
@@ -299,8 +300,9 @@ Unknown：表示无法读取 Pod 状态，通常是 kube-controller-manager 无�
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#PS：这里的回收策略指的是在PV被删除后，在这个PV下所存储的源文件是否删除）。</span>
 </span></span></code></pre></div><p>若需使用 PV，那么还有一个重要的概念：PVC，PVC 是向 PV 申请应用所需的容量大小，K8s 集群中可能会有多个 PV，PVC 和 PV 若要关联，其定义的访问模式必须一致。定义的 storageClassName 也必须一致，若群集中存在相同的（名字、访问模式都一致）两个 PV，那么 PVC 会选择向它所需容量接近的 PV 去申请，或者随机申请。</p>
 
+                </div>
             <br />
-            <div>
+        <div>
                 
                 <a href="https://test.jobcher.com/posts/git/git/" class="prev">前一页</a>
                 
