@@ -246,7 +246,13 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">resHdrNew</span>,
 </span></span><span style="display:flex;"><span>    })
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><h2 id="另外一种方法">另外一种方法</h2>
+<p>在你有科学上网的前提下使用代理方式来连接github</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config --global https.proxy http://127.0.0.1:1080
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#取消设置</span>
+</span></span><span style="display:flex;"><span>git config --global --unset https.proxy
+</span></span></code></pre></div><p>http://127.0.0.1:1080 是你的代理服务地址</p>
+
                 </div>
             <br />
         <div>
