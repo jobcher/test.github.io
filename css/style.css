@@ -71,6 +71,18 @@ body {
     overflow: auto;
 }
 
+.highlight {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #272822;
+    border: 1px solid #ddd;
+    overflow: auto;
+    font-size: 0.9em;
+    position: relative;
+    white-space: pre-wrap;
+}
+
 .pre code {
     display: block;
     padding: 1em;
@@ -82,8 +94,10 @@ body {
     white-space: pre-wrap;
   }
   
-  .btn-copy {
-    float: right;
+.btn-copy {
+    position: absolute;
+    top: 0;
+    right: 0;
     border: 0;
     border-radius: 4px;
     padding: 1px;
