@@ -66,6 +66,10 @@ body {
     }
 }
 
+.btn-copy {
+    float: right;
+}
+
 .single-content {
     overflow: auto;
   }
@@ -335,3 +339,4 @@ img {
     max-width: 100%;
     height: auto;
 }
+
