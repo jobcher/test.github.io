@@ -1,431 +1,432 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on </title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on </description>
+    <title>Tags on 打工人日志</title>
+    <link>https://test.jobcher.com/tags/</link>
+    <description>Recent content in Tags on 打工人日志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 21 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://test.jobcher.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>github</title>
-      <link>/tags/github/</link>
+      <link>https://test.jobcher.com/tags/github/</link>
       <pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/github/</guid>
+      <guid>https://test.jobcher.com/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>daliy</title>
-      <link>/tags/daliy/</link>
+      <link>https://test.jobcher.com/tags/daliy/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/daliy/</guid>
+      <guid>https://test.jobcher.com/tags/daliy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>error</title>
-      <link>/tags/error/</link>
+      <link>https://test.jobcher.com/tags/error/</link>
       <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/error/</guid>
+      <guid>https://test.jobcher.com/tags/error/</guid>
       <description></description>
     </item>
     
     <item>
       <title>日常生活</title>
-      <link>/tags/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/</link>
+      <link>https://test.jobcher.com/tags/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/</guid>
+      <guid>https://test.jobcher.com/tags/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IOS 开发</title>
-      <link>/tags/ios-%E5%BC%80%E5%8F%91/</link>
+      <link>https://test.jobcher.com/tags/ios-%E5%BC%80%E5%8F%91/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ios-%E5%BC%80%E5%8F%91/</guid>
+      <guid>https://test.jobcher.com/tags/ios-%E5%BC%80%E5%8F%91/</guid>
       <description></description>
     </item>
     
     <item>
       <title>k8s</title>
-      <link>/tags/k8s/</link>
+      <link>https://test.jobcher.com/tags/k8s/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/k8s/</guid>
+      <guid>https://test.jobcher.com/tags/k8s/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ChatGPT</title>
-      <link>/tags/chatgpt/</link>
+      <link>https://test.jobcher.com/tags/chatgpt/</link>
       <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/chatgpt/</guid>
+      <guid>https://test.jobcher.com/tags/chatgpt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>midjourney</title>
-      <link>/tags/midjourney/</link>
+      <link>https://test.jobcher.com/tags/midjourney/</link>
       <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/midjourney/</guid>
+      <guid>https://test.jobcher.com/tags/midjourney/</guid>
       <description></description>
     </item>
     
     <item>
       <title>skywalking</title>
-      <link>/tags/skywalking/</link>
+      <link>https://test.jobcher.com/tags/skywalking/</link>
       <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/skywalking/</guid>
+      <guid>https://test.jobcher.com/tags/skywalking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>运维</title>
-      <link>/tags/%E8%BF%90%E7%BB%B4/</link>
+      <link>https://test.jobcher.com/tags/%E8%BF%90%E7%BB%B4/</link>
       <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E8%BF%90%E7%BB%B4/</guid>
+      <guid>https://test.jobcher.com/tags/%E8%BF%90%E7%BB%B4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>/tags/linux/</link>
+      <link>https://test.jobcher.com/tags/linux/</link>
       <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/linux/</guid>
+      <guid>https://test.jobcher.com/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nginx</title>
-      <link>/tags/nginx/</link>
+      <link>https://test.jobcher.com/tags/nginx/</link>
       <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/nginx/</guid>
+      <guid>https://test.jobcher.com/tags/nginx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>work</title>
-      <link>/tags/work/</link>
+      <link>https://test.jobcher.com/tags/work/</link>
       <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/work/</guid>
+      <guid>https://test.jobcher.com/tags/work/</guid>
       <description></description>
     </item>
     
     <item>
       <title>周报</title>
-      <link>/tags/%E5%91%A8%E6%8A%A5/</link>
+      <link>https://test.jobcher.com/tags/%E5%91%A8%E6%8A%A5/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E5%91%A8%E6%8A%A5/</guid>
+      <guid>https://test.jobcher.com/tags/%E5%91%A8%E6%8A%A5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>oracle</title>
-      <link>/tags/oracle/</link>
+      <link>https://test.jobcher.com/tags/oracle/</link>
       <pubDate>Tue, 15 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/oracle/</guid>
+      <guid>https://test.jobcher.com/tags/oracle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>brew</title>
-      <link>/tags/brew/</link>
+      <link>https://test.jobcher.com/tags/brew/</link>
       <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/brew/</guid>
+      <guid>https://test.jobcher.com/tags/brew/</guid>
       <description></description>
     </item>
     
     <item>
       <title>logstash</title>
-      <link>/tags/logstash/</link>
+      <link>https://test.jobcher.com/tags/logstash/</link>
       <pubDate>Mon, 31 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/logstash/</guid>
+      <guid>https://test.jobcher.com/tags/logstash/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IPFS</title>
-      <link>/tags/ipfs/</link>
+      <link>https://test.jobcher.com/tags/ipfs/</link>
       <pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ipfs/</guid>
+      <guid>https://test.jobcher.com/tags/ipfs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web3.0</title>
-      <link>/tags/web3.0/</link>
+      <link>https://test.jobcher.com/tags/web3.0/</link>
       <pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/web3.0/</guid>
+      <guid>https://test.jobcher.com/tags/web3.0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nps</title>
-      <link>/tags/nps/</link>
+      <link>https://test.jobcher.com/tags/nps/</link>
       <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/nps/</guid>
+      <guid>https://test.jobcher.com/tags/nps/</guid>
       <description></description>
     </item>
     
     <item>
       <title>内网穿透</title>
-      <link>/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+      <link>https://test.jobcher.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
       <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+      <guid>https://test.jobcher.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
       <description></description>
     </item>
     
     <item>
       <title>美食</title>
-      <link>/tags/%E7%BE%8E%E9%A3%9F/</link>
+      <link>https://test.jobcher.com/tags/%E7%BE%8E%E9%A3%9F/</link>
       <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E7%BE%8E%E9%A3%9F/</guid>
+      <guid>https://test.jobcher.com/tags/%E7%BE%8E%E9%A3%9F/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>/tags/golang/</link>
+      <link>https://test.jobcher.com/tags/golang/</link>
       <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/golang/</guid>
+      <guid>https://test.jobcher.com/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>/tags/docker/</link>
+      <link>https://test.jobcher.com/tags/docker/</link>
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/docker/</guid>
+      <guid>https://test.jobcher.com/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RocketMQ</title>
-      <link>/tags/rocketmq/</link>
+      <link>https://test.jobcher.com/tags/rocketmq/</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/rocketmq/</guid>
+      <guid>https://test.jobcher.com/tags/rocketmq/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Planet</title>
-      <link>/tags/planet/</link>
+      <link>https://test.jobcher.com/tags/planet/</link>
       <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/planet/</guid>
+      <guid>https://test.jobcher.com/tags/planet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mysql</title>
-      <link>/tags/mysql/</link>
+      <link>https://test.jobcher.com/tags/mysql/</link>
       <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/mysql/</guid>
+      <guid>https://test.jobcher.com/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gitlab</title>
-      <link>/tags/gitlab/</link>
+      <link>https://test.jobcher.com/tags/gitlab/</link>
       <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/gitlab/</guid>
+      <guid>https://test.jobcher.com/tags/gitlab/</guid>
       <description></description>
     </item>
     
     <item>
       <title>prometheus</title>
-      <link>/tags/prometheus/</link>
+      <link>https://test.jobcher.com/tags/prometheus/</link>
       <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/prometheus/</guid>
+      <guid>https://test.jobcher.com/tags/prometheus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>java</title>
-      <link>/tags/java/</link>
+      <link>https://test.jobcher.com/tags/java/</link>
       <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/java/</guid>
+      <guid>https://test.jobcher.com/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ansible</title>
-      <link>/tags/ansible/</link>
+      <link>https://test.jobcher.com/tags/ansible/</link>
       <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ansible/</guid>
+      <guid>https://test.jobcher.com/tags/ansible/</guid>
       <description></description>
     </item>
     
     <item>
       <title>javascript</title>
-      <link>/tags/javascript/</link>
+      <link>https://test.jobcher.com/tags/javascript/</link>
       <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/javascript/</guid>
+      <guid>https://test.jobcher.com/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>外快</title>
-      <link>/tags/%E5%A4%96%E5%BF%AB/</link>
+      <link>https://test.jobcher.com/tags/%E5%A4%96%E5%BF%AB/</link>
       <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E5%A4%96%E5%BF%AB/</guid>
+      <guid>https://test.jobcher.com/tags/%E5%A4%96%E5%BF%AB/</guid>
       <description></description>
     </item>
     
     <item>
       <title>网心云</title>
-      <link>/tags/%E7%BD%91%E5%BF%83%E4%BA%91/</link>
+      <link>https://test.jobcher.com/tags/%E7%BD%91%E5%BF%83%E4%BA%91/</link>
       <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E7%BD%91%E5%BF%83%E4%BA%91/</guid>
+      <guid>https://test.jobcher.com/tags/%E7%BD%91%E5%BF%83%E4%BA%91/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pve</title>
-      <link>/tags/pve/</link>
+      <link>https://test.jobcher.com/tags/pve/</link>
       <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/pve/</guid>
+      <guid>https://test.jobcher.com/tags/pve/</guid>
       <description></description>
     </item>
     
     <item>
       <title>扩容磁盘</title>
-      <link>/tags/%E6%89%A9%E5%AE%B9%E7%A3%81%E7%9B%98/</link>
+      <link>https://test.jobcher.com/tags/%E6%89%A9%E5%AE%B9%E7%A3%81%E7%9B%98/</link>
       <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E6%89%A9%E5%AE%B9%E7%A3%81%E7%9B%98/</guid>
+      <guid>https://test.jobcher.com/tags/%E6%89%A9%E5%AE%B9%E7%A3%81%E7%9B%98/</guid>
       <description></description>
     </item>
     
     <item>
       <title>自动化</title>
-      <link>/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+      <link>https://test.jobcher.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
       <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</guid>
+      <guid>https://test.jobcher.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</guid>
       <description></description>
     </item>
     
     <item>
       <title>minIO</title>
-      <link>/tags/minio/</link>
+      <link>https://test.jobcher.com/tags/minio/</link>
       <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/minio/</guid>
+      <guid>https://test.jobcher.com/tags/minio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>k3s</title>
-      <link>/tags/k3s/</link>
+      <link>https://test.jobcher.com/tags/k3s/</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/k3s/</guid>
+      <guid>https://test.jobcher.com/tags/k3s/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Terraform</title>
-      <link>/tags/terraform/</link>
+      <link>https://test.jobcher.com/tags/terraform/</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/terraform/</guid>
+      <guid>https://test.jobcher.com/tags/terraform/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rsync</title>
-      <link>/tags/rsync/</link>
+      <link>https://test.jobcher.com/tags/rsync/</link>
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/rsync/</guid>
+      <guid>https://test.jobcher.com/tags/rsync/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DockerCompose</title>
-      <link>/tags/dockercompose/</link>
+      <link>https://test.jobcher.com/tags/dockercompose/</link>
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/dockercompose/</guid>
+      <guid>https://test.jobcher.com/tags/dockercompose/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dockerfile</title>
-      <link>/tags/dockerfile/</link>
+      <link>https://test.jobcher.com/tags/dockerfile/</link>
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/dockerfile/</guid>
+      <guid>https://test.jobcher.com/tags/dockerfile/</guid>
       <description></description>
     </item>
     
     <item>
       <title>树莓派</title>
-      <link>/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</link>
+      <link>https://test.jobcher.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</guid>
+      <guid>https://test.jobcher.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>/tags/markdown/</link>
+      <link>https://test.jobcher.com/tags/markdown/</link>
       <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/markdown/</guid>
+      <guid>https://test.jobcher.com/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>打赏</title>
-      <link>/tags/%E6%89%93%E8%B5%8F/</link>
+      <link>https://test.jobcher.com/tags/%E6%89%93%E8%B5%8F/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E6%89%93%E8%B5%8F/</guid>
+      <guid>https://test.jobcher.com/tags/%E6%89%93%E8%B5%8F/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TCP/IP</title>
-      <link>/tags/tcp/ip/</link>
+      <link>https://test.jobcher.com/tags/tcp/ip/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/tcp/ip/</guid>
+      <guid>https://test.jobcher.com/tags/tcp/ip/</guid>
       <description></description>
     </item>
     

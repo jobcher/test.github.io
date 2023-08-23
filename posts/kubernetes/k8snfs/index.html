@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="/css/style.css">
+    <title>Kubernetes 创建nfs存储类</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="/">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">Kubernetes 创建nfs存储类</h2>
+            
+        </header>
+        <article class="article">
+            <h1 id="kubernetes-创建-nfs-存储类">Kubernetes 创建 nfs 存储类</h1>
+<p>首先你需要在别的终端上创建 nfs 服务并能提供 nfs 访问<br>
+Kubernetes 不包含内部 NFS 驱动。你需要使用外部驱动为 NFS 创建 StorageClass。<br>
+<a href="https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner">https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner</a><br>
+安装 nfs 驱动</p>
+<h2 id="安装-nfs-驱动">安装 nfs 驱动</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#安装nfs客户端</span>
+</span></span><span style="display:flex;"><span>apt-get install nfs-common
+</span></span><span style="display:flex;"><span>git clone https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner.git
+</span></span><span style="display:flex;"><span>cd nfs-subdir-external-provisioner/deploy
+</span></span><span style="display:flex;"><span>k3s kubectl create -f rbac.yaml
+</span></span><span style="display:flex;"><span>vim deployment.yaml
+</span></span></code></pre></div><ol>
+<li>编辑 deployment.yaml</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">nfs-client-provisioner</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">app</span>: <span style="color:#ae81ff">nfs-client-provisioner</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># replace with namespace where provisioner is deployed</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">namespace</span>: <span style="color:#ae81ff">default</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">replicas</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">strategy</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">Recreate</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">app</span>: <span style="color:#ae81ff">nfs-client-provisioner</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">app</span>: <span style="color:#ae81ff">nfs-client-provisioner</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">serviceAccountName</span>: <span style="color:#ae81ff">nfs-client-provisioner</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">nfs-client-provisioner</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">image</span>: <span style="color:#ae81ff">k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">volumeMounts</span>:
+</span></span><span style="display:flex;"><span>            - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">nfs-client-root</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">mountPath</span>: <span style="color:#ae81ff">/persistentvolumes</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">env</span>:
+</span></span><span style="display:flex;"><span>            - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">PROVISIONER_NAME</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">value</span>: <span style="color:#ae81ff">k8s-sigs.io/nfs-subdir-external-provisioner</span>
+</span></span><span style="display:flex;"><span>            - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">NFS_SERVER</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">value</span>: <span style="color:#ae81ff">192.168.99.235</span>
+</span></span><span style="display:flex;"><span>            - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">NFS_PATH</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">value</span>: <span style="color:#ae81ff">/volume2/nfs-k8s</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">nfs-client-root</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">nfs</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">server</span>: <span style="color:#ae81ff">192.168.99.235</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">path</span>: <span style="color:#ae81ff">/volume2/nfs-k8s</span>
+</span></span></code></pre></div><ol start="2">
+<li>定义存储类</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>k3s kubectl create -f deployment.yaml
+</span></span><span style="display:flex;"><span>k3s kubectl create -f class.yaml
+</span></span></code></pre></div><h2 id="测试存储是否正常">测试存储是否正常</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>k3s kubectl create -f test-claim.yaml -f test-pod.yaml
+</span></span><span style="display:flex;"><span>k3s kubectl delete -f test-claim.yaml -f test-pod.yaml
+</span></span></code></pre></div><h2 id="创建有状态-podsmysql">创建有状态 pods（mysql）</h2>
+<p>创建 mysql-deployment.yaml</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Service</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mysql</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">port</span>: <span style="color:#ae81ff">3306</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">targetPort</span>: <span style="color:#ae81ff">3306</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">app</span>: <span style="color:#ae81ff">mysql</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">clusterIP</span>: <span style="color:#ae81ff">None</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">type</span>: <span style="color:#ae81ff">LoadBalancer</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mysql</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">app</span>: <span style="color:#ae81ff">mysql</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">strategy</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">Recreate</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">app</span>: <span style="color:#ae81ff">mysql</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">image</span>: <span style="color:#ae81ff">mysql:5.7</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mysql</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">env</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Use secret in real usage</span>
+</span></span><span style="display:flex;"><span>            - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">MYSQL_ROOT_PASSWORD</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">value</span>: <span style="color:#ae81ff">password</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>            - <span style="color:#f92672">containerPort</span>: <span style="color:#ae81ff">3306</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mysql</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">volumeMounts</span>:
+</span></span><span style="display:flex;"><span>            - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mysql-persistent-storage</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">mountPath</span>: <span style="color:#ae81ff">/var/lib/mysql</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mysql-persistent-storage</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">persistentVolumeClaim</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">claimName</span>: <span style="color:#ae81ff">mysql-pv-claim</span>
+</span></span></code></pre></div><p>创建 mysql-pv.yaml</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">PersistentVolume</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mysql-pv-volume</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">storageClassName</span>: <span style="color:#ae81ff">managed-nfs-storage</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">capacity</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">storage</span>: <span style="color:#ae81ff">20Gi</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">accessModes</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">ReadWriteOnce</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">nfs</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">server</span>: <span style="color:#ae81ff">192.168.99.235</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">path</span>: <span style="color:#e6db74">&#34;/volume2/nfs-k8s&#34;</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">PersistentVolumeClaim</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mysql-pv-claim</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">storageClassName</span>: <span style="color:#ae81ff">managed-nfs-storage</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">accessModes</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">ReadWriteMany</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">resources</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">requests</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">storage</span>: <span style="color:#ae81ff">20Gi</span>
+</span></span></code></pre></div><h2 id="部署-mysql">部署 mysql</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">k3s kubectl apply -f mysql-pv.yaml</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">k3s kubectl apply -f mysql-deployment.yaml</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">k3s kubectl describe deployment mysql</span>
+</span></span></code></pre></div>
+            <br />
+            <div>
+                
+                <a href="https://test.jobcher.com/posts/base/shell/" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/posts/web/nginx01/" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="/posts/about">关于我们</a></li>
+            
+            <li><a href="/posts">博文合集</a></li>
+            
+            <li><a href="/">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

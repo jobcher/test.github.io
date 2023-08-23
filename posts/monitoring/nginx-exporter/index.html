@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="/css/style.css">
+    <title>nginx exporter 安装配置</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="/">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">nginx exporter 安装配置</h2>
+            
+        </header>
+        <article class="article">
+            <h1 id="nginx-exporter-安装配置">nginx exporter 安装配置</h1>
+<ol>
+<li>二进制安装</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>wget https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v0.10.0/nginx-prometheus-exporter_0.10.0_linux_amd64.tar.gz
+</span></span><span style="display:flex;"><span>tar -zxvf nginx-prometheus-exporter_0.10.0_linux_amd64.tar.gz -C ./nginx-exporter
+</span></span></code></pre></div><ol start="2">
+<li>在 nginx 上配置</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>./configure <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>… <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--with-http_stub_status_module
+</span></span><span style="display:flex;"><span>make
+</span></span><span style="display:flex;"><span>sudo make install
+</span></span></code></pre></div><p>在 nginx.config 上配置</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-conf" data-lang="conf"><span style="display:flex;"><span>server {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 新增
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    location <span style="color:#960050;background-color:#1e0010">/</span>nginx_status {
+</span></span><span style="display:flex;"><span>        stub_status <span style="color:#66d9ef">on</span>;
+</span></span><span style="display:flex;"><span>        access_log <span style="color:#66d9ef">off</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>重启 nginx 服务</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nginx -t
+</span></span><span style="display:flex;"><span>nginx -s reload
+</span></span></code></pre></div><ol start="3">
+<li>启动 nginx exporter</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nginx-prometheus-exporter -nginx.scrape-uri http://&lt;nginx&gt;:8080/nginx_status
+</span></span></code></pre></div><ol start="4">
+<li>配置 prometheus
+添加 prometheus.yml</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>- <span style="color:#f92672">job_name</span>: <span style="color:#e6db74">&#34;nginx-exporter&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">file_sd_configs</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">files</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#e6db74">&#34;./file_sd/nginx-exporter.yaml&#34;</span>
+</span></span></code></pre></div><p>在 ./file_sd/新建 nginx-exporter.yaml</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>- <span style="color:#f92672">targets</span>: [<span style="color:#e6db74">&#34;&lt;IP&gt;:9113&#34;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">instance</span>: <span style="color:#ae81ff">&lt;nginx名称&gt;</span>
+</span></span></code></pre></div>
+            <br />
+            <div>
+                
+                <a href="https://test.jobcher.com/posts/kubernetes/k8s7/" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/posts/go/go3/" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="/posts/about">关于我们</a></li>
+            
+            <li><a href="/posts">博文合集</a></li>
+            
+            <li><a href="/">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

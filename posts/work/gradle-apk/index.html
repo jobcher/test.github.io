@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="/css/style.css">
+    <title>Jenkins 编译Android apk 流水线</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="/">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">Jenkins 编译Android apk 流水线</h2>
+            
+                <img src="/images/logo-jenkins.png" alt="Jenkins 编译Android apk 流水线" class="featured-image">
+            
+        </header>
+        <article class="article">
+            <h2 id="背景">背景</h2>
+<p>Jenkins 编译 Android apk，上传 apk 包，生成下载二维码，并推送钉钉</p>
+<h2 id="安装-android-环境">安装 Android 环境</h2>
+<h3 id="安装-jdk">安装 JDK</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># 这里使用的是openjdk 1.8.0版本，有需要的话需要到java官网上进行下载对应的JDK版本。</span>
+</span></span><span style="display:flex;"><span>$ yum install java -y
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 其他版本JDK的安装方式</span>
+</span></span><span style="display:flex;"><span>$ mv jdk1.8.0_161 /usr/local/
+</span></span><span style="display:flex;"><span>$ ln -s /usr/local/jdk1.8.0_161 /usr/local/jdk
+</span></span><span style="display:flex;"><span>$ vim /etc/profile     <span style="color:#75715e">#配置JDK的环境变量</span>
+</span></span><span style="display:flex;"><span>export JAVA_HOME<span style="color:#f92672">=</span>/usr/local/jdk
+</span></span><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span>$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
+</span></span><span style="display:flex;"><span>export CLASSPATH<span style="color:#f92672">=</span>.$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$JAVA_HOME/lib/tools.jar
+</span></span><span style="display:flex;"><span>$ source /etc/profile    <span style="color:#75715e">#重新加载系统环境变量</span>
+</span></span><span style="display:flex;"><span>$ java -version    <span style="color:#75715e">#查看java版本</span>
+</span></span></code></pre></div><h3 id="android-sdk-安装">Android SDK 安装</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># 下载sdk工具包</span>
+</span></span><span style="display:flex;"><span>$ wget https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 创建sdk工具文件夹和解压工具包</span>
+</span></span><span style="display:flex;"><span>$ mkdir  -p /opt/android/sdk
+</span></span><span style="display:flex;"><span>$ unzip sdk-tools-linux-3859397.zip -d /opt/android/sdk
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用sdkmanager工具配置构建工具和平台版本</span>
+</span></span><span style="display:flex;"><span>$ cd /opt/android/sdk/tools/bin/
+</span></span><span style="display:flex;"><span>$ ./sdkmanager <span style="color:#e6db74">&#34;build-tools;29.0.6&#34;</span> <span style="color:#e6db74">&#34;platforms;android-29&#34;</span> <span style="color:#e6db74">&#34;platform-tools&#34;</span>
+</span></span><span style="display:flex;"><span>$ ./sdkmanager --list    <span style="color:#75715e">#可以查看有哪些版本，自行选择对应的版本</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 增加系统环境变量</span>
+</span></span><span style="display:flex;"><span>$ vim /etc/profile
+</span></span><span style="display:flex;"><span>export ANDROID_HOME<span style="color:#f92672">=</span>/opt/android/sdk
+</span></span><span style="display:flex;"><span>PATH<span style="color:#f92672">=</span>$PATH:$ANDROID_HOME:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$ANDROID_HOME/tools/bin
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ adb version
+</span></span><span style="display:flex;"><span>Android Debug Bridge version 1.0.41
+</span></span><span style="display:flex;"><span>Version 29.0.6-6198805
+</span></span><span style="display:flex;"><span>Installed as /opt/android/sdk/platform-tools/adb
+</span></span></code></pre></div><h3 id="安装-gradle">安装 gradle</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ wget https://downloads.gradle-dn.com/distributions/gradle-6.3-all.zip
+</span></span><span style="display:flex;"><span>$ mkdir /opt/gradle
+</span></span><span style="display:flex;"><span>$ unzip gradle-6.3-all.zip -d /opt/gradle/
+</span></span><span style="display:flex;"><span>$ vim /etc/profile
+</span></span><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span>$PATH:/opt/gradle/gradle-6.3/bin
+</span></span><span style="display:flex;"><span>$ source /etc/profile
+</span></span><span style="display:flex;"><span>$ gradle -v
+</span></span><span style="display:flex;"><span>------------------------------------------------------------
+</span></span><span style="display:flex;"><span>Gradle 6.3
+</span></span><span style="display:flex;"><span>------------------------------------------------------------
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Build time:   2020-03-24 19:52:07 UTC
+</span></span><span style="display:flex;"><span>Revision:     bacd40b727b0130eeac8855ae3f9fd9a0b207c60
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Kotlin:       1.3.70
+</span></span><span style="display:flex;"><span>Groovy:       2.5.10
+</span></span><span style="display:flex;"><span>Ant:          Apache Ant<span style="color:#f92672">(</span>TM<span style="color:#f92672">)</span> version 1.10.7 compiled on September <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2019</span>
+</span></span><span style="display:flex;"><span>JVM:          1.8.0_201 <span style="color:#f92672">(</span>Oracle Corporation 25.201-b09<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>OS:           Linux 3.10.0-693.el7.x86_64 amd64
+</span></span></code></pre></div><h2 id="jenkins-流水线配置">jenkins 流水线配置</h2>
+<h3 id="gradle-jdksh-打包脚本">gradle-jdk.sh 打包脚本</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>source /etc/profile
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># /home/编译目录</span>
+</span></span><span style="display:flex;"><span>cd /home/编译目录 <span style="color:#f92672">&amp;&amp;</span> gradle clean
+</span></span><span style="display:flex;"><span>cd /home/编译目录 <span style="color:#f92672">&amp;&amp;</span> gradle assembleRelease
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 打包编译完成，在项目的app/build/outputs/apk中可以找到debug版本或者是release版本。</span>
+</span></span></code></pre></div><h3 id="jenkinsfile-脚本">JenkinsFile 脚本</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">pipeline</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//使用标签 &#39;master&#39; 的节点
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#960050;background-color:#1e0010">agent</span> <span style="color:#960050;background-color:#1e0010">{label</span> <span style="color:#960050;background-color:#1e0010">&#39;master&#39;</span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//环境变量
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#960050;background-color:#1e0010">environment</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//成功运行特征
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#960050;background-color:#1e0010">JEN_FEATURE</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//日志路径
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#960050;background-color:#1e0010">JEN_LOG</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">stages</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">stage</span> <span style="color:#960050;background-color:#1e0010">(&#39;编译打包&#39;){</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">steps</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">sh</span> <span style="color:#960050;background-color:#1e0010">&#39;cd</span> <span style="color:#960050;background-color:#1e0010">/home/编译目录</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#960050;background-color:#1e0010">sudo</span> <span style="color:#960050;background-color:#1e0010">git</span> <span style="color:#960050;background-color:#1e0010">pull&#39;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">sh</span> <span style="color:#960050;background-color:#1e0010">&#39;sh</span> <span style="color:#960050;background-color:#1e0010">gradle-apk.sh&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">stage</span> <span style="color:#960050;background-color:#1e0010">(&#39;上传&#39;)</span>{
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">steps</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">sh</span> <span style="color:#960050;background-color:#1e0010">&#39;sshpass</span> <span style="color:#960050;background-color:#1e0010">-p</span> <span style="color:#f92672">&#34;password&#34;</span> <span style="color:#960050;background-color:#1e0010">scp</span> <span style="color:#960050;background-color:#1e0010">/home/编译目录/app/build/outputs/apk/release/app-release.apk</span> <span style="color:#960050;background-color:#1e0010">user@www.nginx.com</span>:<span style="color:#960050;background-color:#1e0010">/home/上传目录/app-release.apk&#39;</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">stage</span> <span style="color:#960050;background-color:#1e0010">(&#39;生成qr&#39;)</span>{
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">steps</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">echo</span> <span style="color:#f92672">&#34;生成test qr&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">sh</span> <span style="color:#e6db74">&#34;pwd &amp;&amp; myqr &#39;https://www.nginx.com/app-release.apk&#39; -n qrcode-`date +&#39;%Y-%m-%d-%H%M%S&#39;`.png -d /home/code/image&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">sh</span> <span style="color:#e6db74">&#34;cd /home/code/image &amp;&amp; git add .&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">sh</span> <span style="color:#e6db74">&#34;cd /home/code/image &amp;&amp; git commit -m &#39;new images&#39;&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">sh</span> <span style="color:#e6db74">&#34;cd /home/code/image &amp;&amp; git push origin main&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">echo</span> <span style="color:#e6db74">&#34;结束 end&#34;</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">post</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">success</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">script</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">env.DATETIME</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#960050;background-color:#1e0010">sh(script:</span><span style="color:#f92672">&#34;date&#34;</span>, <span style="color:#960050;background-color:#1e0010">returnStdout:</span> <span style="color:#960050;background-color:#1e0010">true).trim()</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">env.QRCODE</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#960050;background-color:#1e0010">sh(script:</span><span style="color:#f92672">&#34;ls -lhst /home/code/image | awk &#39;NR==2&#39; | awk &#39;{print \$10}&#39;&#34;</span>,<span style="color:#960050;background-color:#1e0010">returnStdout:</span> <span style="color:#960050;background-color:#1e0010">true).trim()</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">def</span> <span style="color:#960050;background-color:#1e0010">job_name</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#f92672">&#34;# ${JOB_NAME} 流水线 执行成功&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">def</span> <span style="color:#960050;background-color:#1e0010">jenkinsid</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#e6db74">&#34;&#34;&#34;构建:  第 ${BUILD_ID} 次执行&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">def</span> <span style="color:#960050;background-color:#1e0010">JEN_production</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#e6db74">&#34;&gt; 部署节点： jenkins&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">def</span> <span style="color:#960050;background-color:#1e0010">build_url</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#e6db74">&#34;&gt; 部署详情： [详情](${BUILD_URL})&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">def</span> <span style="color:#960050;background-color:#1e0010">jen_date</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#e6db74">&#34;&gt; 执行时间： ${env.DATETIME}&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">def</span> <span style="color:#960050;background-color:#1e0010">jen_qrcode</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#e6db74">&#34;![qr](https://gitlab.com/jobcher/image/-/raw/main/${env.QRCODE})&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">dingtalk</span> <span style="color:#960050;background-color:#1e0010">(</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#960050;background-color:#1e0010">robot</span>: <span style="color:#960050;background-color:#1e0010">&#39;e</span><span style="color:#ae81ff">3999649</span><span style="color:#960050;background-color:#1e0010">-d</span><span style="color:#ae81ff">3</span><span style="color:#960050;background-color:#1e0010">f-钉钉key</span><span style="color:#ae81ff">-4</span><span style="color:#960050;background-color:#1e0010">c</span><span style="color:#ae81ff">57333</span><span style="color:#960050;background-color:#1e0010">a</span><span style="color:#ae81ff">327</span><span style="color:#960050;background-color:#1e0010">b&#39;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#960050;background-color:#1e0010">type:</span> <span style="color:#960050;background-color:#1e0010">&#39;MARKDOWN&#39;,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#960050;background-color:#1e0010">title:</span> <span style="color:#960050;background-color:#1e0010">job_name,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#960050;background-color:#1e0010">text:</span> <span style="color:#960050;background-color:#1e0010">[</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">job_name,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">jenkinsid,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">&#39;&#39;,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">&#39;---&#39;,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">jen_qrcode,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">JEN_production,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">&#39;&#39;,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">build_url,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">&#39;&#39;,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">jen_date</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#960050;background-color:#1e0010">at:</span> <span style="color:#960050;background-color:#1e0010">[</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">&#39;手机号&#39;</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">)</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">failure</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">script</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">env.DATETIME</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#960050;background-color:#1e0010">sh(script:</span><span style="color:#f92672">&#34;date&#34;</span>, <span style="color:#960050;background-color:#1e0010">returnStdout:</span> <span style="color:#960050;background-color:#1e0010">true).trim()</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">def</span> <span style="color:#960050;background-color:#1e0010">job_name</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#f92672">&#34;# ${JOB_NAME} 流水线 执行失败&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">def</span> <span style="color:#960050;background-color:#1e0010">jenkinsid</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#e6db74">&#34;&#34;&#34;构建:  第 ${BUILD_ID} 次执行&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">def</span> <span style="color:#960050;background-color:#1e0010">JEN_production</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#e6db74">&#34;&gt; 部署节点： jenkins&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">def</span> <span style="color:#960050;background-color:#1e0010">build_url</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#e6db74">&#34;&gt; 部署详情： [详情](${BUILD_URL})&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">def</span> <span style="color:#960050;background-color:#1e0010">jen_date</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#e6db74">&#34;&gt; 执行时间： ${env.DATETIME}&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">dingtalk</span> <span style="color:#960050;background-color:#1e0010">(</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#960050;background-color:#1e0010">robot</span>: <span style="color:#960050;background-color:#1e0010">&#39;e</span><span style="color:#ae81ff">3999649</span><span style="color:#960050;background-color:#1e0010">-d</span><span style="color:#ae81ff">3</span><span style="color:#960050;background-color:#1e0010">f-钉钉key</span><span style="color:#ae81ff">-4</span><span style="color:#960050;background-color:#1e0010">c</span><span style="color:#ae81ff">57333</span><span style="color:#960050;background-color:#1e0010">a</span><span style="color:#ae81ff">327</span><span style="color:#960050;background-color:#1e0010">b&#39;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#960050;background-color:#1e0010">type:</span> <span style="color:#960050;background-color:#1e0010">&#39;MARKDOWN&#39;,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#960050;background-color:#1e0010">title:</span> <span style="color:#960050;background-color:#1e0010">job_name,</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#960050;background-color:#1e0010">text:</span> <span style="color:#960050;background-color:#1e0010">[</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">job_name,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">jenkinsid,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">&#39;&#39;,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">&#39;---&#39;,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">JEN_production,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">&#39;&#39;,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">build_url,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">&#39;&#39;,</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">jen_date</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">],</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#960050;background-color:#1e0010">at:</span> <span style="color:#960050;background-color:#1e0010">[</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">&#39;手机号&#39;</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#960050;background-color:#1e0010">]</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">)</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span></code></pre></div>
+            <br />
+            <div>
+                
+                <a href="https://test.jobcher.com/posts/work/chrome/" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/posts/kubernetes/k8s16/" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="/posts/about">关于我们</a></li>
+            
+            <li><a href="/posts">博文合集</a></li>
+            
+            <li><a href="/">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

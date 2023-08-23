@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="/css/style.css">
+    <title>Harbor 搭建</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="/">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">Harbor 搭建</h2>
+            
+        </header>
+        <article class="article">
+            <h1 id="harbor-搭建">Harbor 搭建</h1>
+<p>Harbor 是一个开源可信的云原生注册表项目，用于存储、签名和扫描内容。用于存储 docker image</p>
+<h2 id="要求">要求</h2>
+<ol>
+<li>Linux 主机</li>
+<li>docker 17.06.0-ce 以上</li>
+<li>docker-compose 1.18.0 以上</li>
+</ol>
+<p><a href="https://www.jobcher.com/docker/">链接跳转：docker 安装</a></p>
+<h2 id="安装">安装</h2>
+<ol>
+<li>下载程序</li>
+</ol>
+<p>在线安装包</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>wget https://github.com/goharbor/harbor/releases/download/v1.10.10/harbor-online-installer-v1.10.10.tgz
+</span></span></code></pre></div><p>离线安装包</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>wget https://github.com/goharbor/harbor/releases/download/v1.10.10/harbor-offline-installer-v1.10.10.tgz
+</span></span></code></pre></div><ol start="2">
+<li>安装</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mkdir -p /data
+</span></span><span style="display:flex;"><span>cd /data
+</span></span><span style="display:flex;"><span>tar -zxvf harbor-offline-installer-v1.10.10.tgz
+</span></span><span style="display:flex;"><span>cd /harbor
+</span></span><span style="display:flex;"><span>./install.sh
+</span></span></code></pre></div><p>接下来只要安静的等待安装就可以了</p>
+<h2 id="配置">配置</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Configuration file of Harbor</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The IP address or hostname to access admin UI and registry service.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># DO NOT use localhost or 127.0.0.1, because Harbor needs to be accessed by external clients.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">hostname</span>: <span style="color:#ae81ff">&lt;域名&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># http related config</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">http</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># port for http, default is 80. If https enabled, this port will redirect to https port</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">port</span>: <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># https related config</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">https</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># https port for harbor, default is 443</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">port</span>: <span style="color:#ae81ff">443</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># SSL证书</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">certificate</span>: <span style="color:#ae81ff">/hub/ssl/bundle.pem</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">private_key</span>: <span style="color:#ae81ff">/hub/ssl/key</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Uncomment external_url if you want to enable external proxy</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># And when it enabled the hostname will no longer used</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># external_url: https://reg.mydomain.com:8433</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The initial password of Harbor admin</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># It only works in first time to install harbor</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Remember Change the admin password from UI after launching Harbor.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">harbor_admin_password</span>: <span style="color:#ae81ff">&lt;密码&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Harbor DB configuration</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">database</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># The password for the root user of Harbor DB. Change this before any production use.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">password</span>: <span style="color:#ae81ff">&lt;密码&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># The maximum number of connections in the idle connection pool. If it &lt;=0, no idle connections are retained.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">max_idle_conns</span>: <span style="color:#ae81ff">50</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># The maximum number of open connections to the database. If it &lt;= 0, then there is no limit on the number of open connections.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Note: the default number of connections is 100 for postgres.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">max_open_conns</span>: <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The default data volume</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">data_volume</span>: <span style="color:#ae81ff">/data</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Harbor Storage settings by default is using /data dir on local filesystem</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Uncomment storage_service setting If you want to using external storage</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># storage_service:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   # ca_bundle is the path to the custom root ca certificate, which will be injected into the truststore</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   # of registry&#39;s and chart repository&#39;s containers.  This is usually needed when the user hosts a internal storage with self signed certificate.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   ca_bundle:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   # storage backend, default is filesystem, options include filesystem, azure, gcs, s3, swift and oss</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   # for more info about this configuration please refer https://docs.docker.com/registry/configuration/</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   filesystem:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     maxthreads: 100</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   # set disable to true when you want to disable registry redirect</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   redirect:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     disabled: false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Clair configuration</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">clair</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># The interval of clair updaters, the unit is hour, set to 0 to disable the updaters.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">updaters_interval</span>: <span style="color:#ae81ff">12</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">jobservice</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Maximum number of job workers in job service</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">max_job_workers</span>: <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">notification</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Maximum retry count for webhook job</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">webhook_job_max_retry</span>: <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">chart</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Change the value of absolute_url to enabled can enable absolute url in chart</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">absolute_url</span>: <span style="color:#ae81ff">disabled</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Log configurations</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">log</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># options are debug, info, warning, error, fatal</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">level</span>: <span style="color:#ae81ff">info</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># configs for logs in local storage</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">local</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Log files are rotated log_rotate_count times before being removed. If count is 0, old versions are removed rather than rotated.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">rotate_count</span>: <span style="color:#ae81ff">50</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Log files are rotated only if they grow bigger than log_rotate_size bytes. If size is followed by k, the size is assumed to be in kilobytes.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># If the M is used, the size is in megabytes, and if G is used, the size is in gigabytes. So size 100, size 100k, size 100M and size 100G</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># are all valid.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">rotate_size</span>: <span style="color:#ae81ff">200M</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># The directory on your host that store log</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">location</span>: <span style="color:#ae81ff">/var/log/harbor</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Uncomment following lines to enable external syslog endpoint.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># external_endpoint:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#   # protocol used to transmit log to external endpoint, options is tcp or udp</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#   protocol: tcp</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#   # The host of external endpoint</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#   host: localhost</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#   # Port of external endpoint</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#   port: 5140</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#This attribute is for migrator to detect the version of the .cfg file, DO NOT MODIFY!</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">_version</span>: <span style="color:#ae81ff">1.10.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Uncomment external_database if using external database.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># external_database:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   harbor:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     host: harbor_db_host</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     port: harbor_db_port</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     db_name: harbor_db_name</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     username: harbor_db_username</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     password: harbor_db_password</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     ssl_mode: disable</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     max_idle_conns: 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     max_open_conns: 0</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   clair:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     host: clair_db_host</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     port: clair_db_port</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     db_name: clair_db_name</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     username: clair_db_username</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     password: clair_db_password</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     ssl_mode: disable</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   notary_signer:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     host: notary_signer_db_host</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     port: notary_signer_db_port</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     db_name: notary_signer_db_name</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     username: notary_signer_db_username</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     password: notary_signer_db_password</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     ssl_mode: disable</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   notary_server:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     host: notary_server_db_host</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     port: notary_server_db_port</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     db_name: notary_server_db_name</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     username: notary_server_db_username</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     password: notary_server_db_password</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     ssl_mode: disable</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Uncomment external_redis if using external Redis server</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># external_redis:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   host: redis</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   port: 6379</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   password:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   # db_index 0 is for core, it&#39;s unchangeable</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   registry_db_index: 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   jobservice_db_index: 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   chartmuseum_db_index: 3</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   clair_db_index: 4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Uncomment uaa for trusting the certificate of uaa instance that is hosted via self-signed cert.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># uaa:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   ca_file: /path/to/ca</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Global proxy</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Config http proxy for components, e.g. http://my.proxy.com:3128</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Components doesn&#39;t need to connect to each others via http proxy.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Remove component from `components` array if want disable proxy</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># for it. If you want use proxy for replication, MUST enable proxy</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># for core and jobservice, and set `http_proxy` and `https_proxy`.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Add domain to the `no_proxy` field, when you want disable proxy</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># for some special registry.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">proxy</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">http_proxy</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">https_proxy</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># no_proxy endpoints will appended to 127.0.0.1,localhost,.local,.internal,log,db,redis,nginx,core,portal,postgresql,jobservice,registry,registryctl,clair,chartmuseum,notary-server</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">no_proxy</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">components</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">core</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">jobservice</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">clair</span>
+</span></span></code></pre></div><h2 id="harbor-配置和使用">harbor 配置和使用</h2>
+<p>在你需要上传的服务器上执行</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker login &lt;harbor域名&gt;
+</span></span></code></pre></div><p>输入用户名和密码，出现以下提示说明登录成功</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>Login Succeeded
+</span></span></code></pre></div><h2 id="推送到harbor">推送到harbor</h2>
+<p>标记本地镜像, 将其归入某一仓库,这里使用<code>test</code>仓库</p>
+<blockquote>
+<p>docker tag &lt;域名&gt;/&lt;仓库&gt;/&lt;镜像名&gt;:&lt;版本号&gt;</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker tag 127.0.0.1/test/nginx:v1
+</span></span></code></pre></div><p>将本地镜像推送到镜像仓库(需先登录镜像仓库)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker push 127.0.0.1/test/nginx:v1
+</span></span></code></pre></div>
+            <br />
+            <div>
+                
+                <a href="https://test.jobcher.com/posts/git/exportuser/" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/posts/monitoring/prometheus1/" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="/posts/about">关于我们</a></li>
+            
+            <li><a href="/posts">博文合集</a></li>
+            
+            <li><a href="/">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

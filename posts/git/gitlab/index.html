@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="/css/style.css">
+    <title>git技巧</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="/">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">git技巧</h2>
+            
+        </header>
+        <article class="article">
+            <h1 id="git-技巧">git 技巧</h1>
+<p>Git 是一个 “分布式版本管理工具”，简单的理解版本管理工具：大家在写东西的时候都用过 “回撤” 这个功能，但是回撤只能回撤几步，假如想要找回我三天之前的修改，光用 “回撤” 是找不回来的。而 “版本管理工具” 能记录每次的修改，只要提交到版本仓库，你就可以找到之前任何时刻的状态（文本状态）。</p>
+<p>下面的内容就是列举了常用的 Git 命令和一些小技巧，可以通过 &ldquo;页面内查找&rdquo; 的方式进行快速查询：<code>Ctrl/Command+f</code>。</p>
+<h2 id="开卷必读">开卷必读</h2>
+<p><em>如果之前未使用过 Git，可以学习 <a href="https://rogerdudler.github.io/git-guide/index.zh.html">Git 小白教程</a>入门</em></p>
+<ol>
+<li><strong>一定要先测试命令的效果后</strong>，再用于工作环境中，以防造成不能弥补的后果！<strong>到时候别拿着砍刀来找我</strong></li>
+<li>所有的命令都在<code>git version 2.7.4 (Apple Git-66)</code>下测试通过</li>
+<li>统一概念：
+<ul>
+<li>工作区：改动（增删文件和内容）</li>
+<li>暂存区：输入命令：<code>git add 改动的文件名</code>，此次改动就放到了 ‘暂存区’</li>
+<li>本地仓库(简称：本地)：输入命令：<code>git commit 此次修改的描述</code>，此次改动就放到了 ’本地仓库’，每个 commit，我叫它为一个 ‘版本’。</li>
+<li>远程仓库(简称：远程)：输入命令：<code>git push 远程仓库</code>，此次改动就放到了 ‘远程仓库’（GitHub 等)</li>
+<li>commit-id：输出命令：<code>git log</code>，最上面那行 <code>commit xxxxxx</code>，后面的字符串就是 commit-id</li>
+</ul>
+</li>
+<li>如果喜欢这个项目，欢迎 Star、提交 Pr、<a href="https://github.com/521xueweihan/git-tips/issues">反馈问题</a>😊</li>
+</ol>
+<h2 id="目录">目录</h2>
+<ul>
+<li><a href="#%E8%84%91%E5%9B%BE">脑图</a></li>
+<li><a href="#%E5%B1%95%E7%A4%BA%E5%B8%AE%E5%8A%A9%E4%BF%A1%E6%81%AF">展示帮助信息</a></li>
+<li><a href="#%E5%9B%9E%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E7%8A%B6%E6%80%81">回到远程仓库的状态</a></li>
+<li><a href="#%E9%87%8D%E8%AE%BE%E7%AC%AC%E4%B8%80%E4%B8%AA-commit">重设第一个 commit</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E5%86%B2%E7%AA%81%E6%96%87%E4%BB%B6%E5%88%97%E8%A1%A8">查看冲突文件列表</a></li>
+<li><a href="#%E5%B1%95%E7%A4%BA%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%92%8C%E6%9A%82%E5%AD%98%E5%8C%BA%E7%9A%84%E4%B8%8D%E5%90%8C">展示工作区和暂存区的不同</a></li>
+<li><a href="#%E5%B1%95%E7%A4%BA%E6%9A%82%E5%AD%98%E5%8C%BA%E5%92%8C%E6%9C%80%E8%BF%91%E7%89%88%E6%9C%AC%E7%9A%84%E4%B8%8D%E5%90%8C">展示暂存区和最近版本的不同</a></li>
+<li><a href="#%E5%B1%95%E7%A4%BA%E6%9A%82%E5%AD%98%E5%8C%BA%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%92%8C%E6%9C%80%E8%BF%91%E7%89%88%E6%9C%AC%E7%9A%84%E4%B8%8D%E5%90%8C">展示暂存区、工作区和最近版本的不同</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%88%87%E6%8D%A2%E5%88%B0%E4%B8%8A%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF">快速切换到上一个分支</a></li>
+<li><a href="#%E5%88%A0%E9%99%A4%E5%B7%B2%E7%BB%8F%E5%90%88%E5%B9%B6%E5%88%B0-master-%E7%9A%84%E5%88%86%E6%94%AF">删除已经合并到 master 的分支</a></li>
+<li><a href="#%E5%B1%95%E7%A4%BA%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E5%85%B3%E8%81%94%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E6%83%85%E5%86%B5">展示本地分支关联远程仓库的情况</a></li>
+<li><a href="#%E5%85%B3%E8%81%94%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF">关联远程分支</a></li>
+<li><a href="#%E5%88%97%E5%87%BA%E6%89%80%E6%9C%89%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF">列出所有远程分支</a></li>
+<li><a href="#%E5%88%97%E5%87%BA%E6%9C%AC%E5%9C%B0%E5%92%8C%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF">列出本地和远程分支</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E5%92%8C%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB">查看远程分支和本地分支的对应关系</a></li>
+<li><a href="#%E8%BF%9C%E7%A8%8B%E5%88%A0%E9%99%A4%E4%BA%86%E5%88%86%E6%94%AF%E6%9C%AC%E5%9C%B0%E4%B9%9F%E6%83%B3%E5%88%A0%E9%99%A4">远程删除了分支本地也想删除</a></li>
+<li><a href="#%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%88%87%E6%8D%A2%E5%88%B0%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF">创建并切换到本地分支</a></li>
+<li><a href="#%E4%BB%8E%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E4%B8%AD%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%88%87%E6%8D%A2%E5%88%B0%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF">从远程分支中创建并切换到本地分支</a></li>
+<li><a href="#%E5%88%A0%E9%99%A4%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF">删除本地分支</a></li>
+<li><a href="#%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF">删除远程分支</a></li>
+<li><a href="#%E9%87%8D%E5%91%BD%E5%90%8D%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF">重命名本地分支</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E6%A0%87%E7%AD%BE">查看标签</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E6%A0%87%E7%AD%BE%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF">查看标签详细信息</a></li>
+<li><a href="#%E6%9C%AC%E5%9C%B0%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE">本地创建标签</a></li>
+<li><a href="#%E6%8E%A8%E9%80%81%E6%A0%87%E7%AD%BE%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93">推送标签到远程仓库</a></li>
+<li><a href="#%E5%88%A0%E9%99%A4%E6%9C%AC%E5%9C%B0%E6%A0%87%E7%AD%BE">删除本地标签</a></li>
+<li><a href="#%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E6%A0%87%E7%AD%BE">删除远程标签</a></li>
+<li><a href="#%E5%88%87%E5%9B%9E%E5%88%B0%E6%9F%90%E4%B8%AA%E6%A0%87%E7%AD%BE">切回到某个标签</a></li>
+<li><a href="#%E6%94%BE%E5%BC%83%E5%B7%A5%E4%BD%9C%E5%8C%BA%E7%9A%84%E4%BF%AE%E6%94%B9">放弃工作区的修改</a></li>
+<li><a href="#%E6%81%A2%E5%A4%8D%E5%88%A0%E9%99%A4%E7%9A%84%E6%96%87%E4%BB%B6">恢复删除的文件</a></li>
+<li><a href="#%E4%BB%A5%E6%96%B0%E5%A2%9E%E4%B8%80%E4%B8%AA-commit-%E7%9A%84%E6%96%B9%E5%BC%8F%E8%BF%98%E5%8E%9F%E6%9F%90%E4%B8%80%E4%B8%AA-commit-%E7%9A%84%E4%BF%AE%E6%94%B9">以新增一个 commit 的方式还原某一个 commit 的修改</a></li>
+<li><a href="#%E5%9B%9E%E5%88%B0%E6%9F%90%E4%B8%AA-commit-%E7%9A%84%E7%8A%B6%E6%80%81%E5%B9%B6%E5%88%A0%E9%99%A4%E5%90%8E%E9%9D%A2%E7%9A%84-commit">回到某个 commit 的状态，并删除后面的 commit</a></li>
+<li><a href="#%E4%BF%AE%E6%94%B9%E4%B8%8A%E4%B8%80%E4%B8%AA-commit-%E7%9A%84%E6%8F%8F%E8%BF%B0">修改上一个 commit 的描述</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B-commit-%E5%8E%86%E5%8F%B2">查看 commit 历史</a></li>
+<li><a href="#%E6%98%BE%E7%A4%BA%E6%9C%AC%E5%9C%B0%E6%9B%B4%E6%96%B0%E8%BF%87-head-%E7%9A%84-git-%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95">显示本地更新过 HEAD 的 git 命令记录</a></li>
+<li><a href="#%E4%BF%AE%E6%94%B9%E4%BD%9C%E8%80%85%E5%90%8D">修改作者名</a></li>
+<li><a href="#%E4%BF%AE%E6%94%B9%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84-url">修改远程仓库的 url</a></li>
+<li><a href="#%E5%A2%9E%E5%8A%A0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93">增加远程仓库</a></li>
+<li><a href="#%E5%88%97%E5%87%BA%E6%89%80%E6%9C%89%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93">列出所有远程仓库</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E4%B8%A4%E4%B8%AA%E6%98%9F%E6%9C%9F%E5%86%85%E7%9A%84%E6%94%B9%E5%8A%A8">查看两个星期内的改动</a></li>
+<li><a href="#%E6%8A%8A-A-%E5%88%86%E6%94%AF%E7%9A%84%E6%9F%90%E4%B8%80%E4%B8%AA-commit%E6%94%BE%E5%88%B0-B-%E5%88%86%E6%94%AF%E4%B8%8A">把 A 分支的某一个 commit，放到 B 分支上</a></li>
+<li><a href="#%E7%BB%99-git-%E5%91%BD%E4%BB%A4%E8%B5%B7%E5%88%AB%E5%90%8D">给 git 命令起别名</a></li>
+<li><a href="#%E5%AD%98%E5%82%A8%E5%BD%93%E5%89%8D%E7%9A%84%E4%BF%AE%E6%94%B9%E4%BD%86%E4%B8%8D%E7%94%A8%E6%8F%90%E4%BA%A4-commit">存储当前的修改，但不用提交 commit</a></li>
+<li><a href="#%E4%BF%9D%E5%AD%98%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81%E5%8C%85%E6%8B%AC-untracked-%E7%9A%84%E6%96%87%E4%BB%B6">保存当前状态，包括 untracked 的文件</a></li>
+<li><a href="#%E5%B1%95%E7%A4%BA%E6%89%80%E6%9C%89-stashes">展示所有 stashes</a></li>
+<li><a href="#%E5%9B%9E%E5%88%B0%E6%9F%90%E4%B8%AA-stash-%E7%9A%84%E7%8A%B6%E6%80%81">回到某个 stash 的状态</a></li>
+<li><a href="#%E5%9B%9E%E5%88%B0%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA-stash-%E7%9A%84%E7%8A%B6%E6%80%81%E5%B9%B6%E5%88%A0%E9%99%A4%E8%BF%99%E4%B8%AA-stash">回到最后一个 stash 的状态，并删除这个 stash</a></li>
+<li><a href="#%E5%88%A0%E9%99%A4%E6%89%80%E6%9C%89%E7%9A%84-stash">删除所有的 stash</a></li>
+<li><a href="#%E4%BB%8E-stash-%E4%B8%AD%E6%8B%BF%E5%87%BA%E6%9F%90%E4%B8%AA%E6%96%87%E4%BB%B6%E7%9A%84%E4%BF%AE%E6%94%B9">从 stash 中拿出某个文件的修改</a></li>
+<li><a href="#%E5%B1%95%E7%A4%BA%E6%89%80%E6%9C%89-tracked-%E7%9A%84%E6%96%87%E4%BB%B6">展示所有 tracked 的文件</a></li>
+<li><a href="#%E5%B1%95%E7%A4%BA%E6%89%80%E6%9C%89-untracked-%E7%9A%84%E6%96%87%E4%BB%B6">展示所有 untracked 的文件</a></li>
+<li><a href="#%E5%B1%95%E7%A4%BA%E6%89%80%E6%9C%89%E5%BF%BD%E7%95%A5%E7%9A%84%E6%96%87%E4%BB%B6">展示所有忽略的文件</a></li>
+<li><a href="#%E5%BC%BA%E5%88%B6%E5%88%A0%E9%99%A4-untracked-%E7%9A%84%E6%96%87%E4%BB%B6">强制删除 untracked 的文件</a></li>
+<li><a href="#%E5%BC%BA%E5%88%B6%E5%88%A0%E9%99%A4-untracked-%E7%9A%84%E7%9B%AE%E5%BD%95">强制删除 untracked 的目录</a></li>
+<li><a href="#%E5%B1%95%E7%A4%BA%E7%AE%80%E5%8C%96%E7%9A%84-commit-%E5%8E%86%E5%8F%B2">展示简化的 commit 历史</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E6%9F%90%E6%AE%B5%E4%BB%A3%E7%A0%81%E6%98%AF%E8%B0%81%E5%86%99%E7%9A%84">查看某段代码是谁写的</a></li>
+<li><a href="#%E6%8A%8A%E6%9F%90%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF%E5%AF%BC%E5%87%BA%E6%88%90%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6">把某一个分支导出成一个文件</a></li>
+<li><a href="#%E4%BB%8E%E5%8C%85%E4%B8%AD%E5%AF%BC%E5%85%A5%E5%88%86%E6%94%AF">从包中导入分支</a></li>
+<li><a href="#%E6%89%A7%E8%A1%8C-rebase-%E4%B9%8B%E5%89%8D%E8%87%AA%E5%8A%A8-stash">执行 rebase 之前自动 stash</a></li>
+<li><a href="#%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E6%A0%B9%E6%8D%AE-ID-%E6%8B%89%E4%B8%8B%E6%9F%90%E4%B8%80%E7%8A%B6%E6%80%81-%E5%88%B0%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF">从远程仓库根据 ID，拉下某一状态，到本地分支</a></li>
+<li><a href="#%E8%AF%A6%E7%BB%86%E5%B1%95%E7%A4%BA%E4%B8%80%E8%A1%8C%E4%B8%AD%E7%9A%84%E4%BF%AE%E6%94%B9">详细展示一行中的修改</a></li>
+<li><a href="#%E6%B8%85%E9%99%A4-gitignore-%E6%96%87%E4%BB%B6%E4%B8%AD%E8%AE%B0%E5%BD%95%E7%9A%84%E6%96%87%E4%BB%B6">清除 <code>.gitignore</code> 文件中记录的文件</a></li>
+<li><a href="#%E5%B1%95%E7%A4%BA%E6%89%80%E6%9C%89-alias-%E5%92%8C-configs">展示所有 alias 和 configs</a></li>
+<li><a href="#%E5%B1%95%E7%A4%BA%E5%BF%BD%E7%95%A5%E7%9A%84%E6%96%87%E4%BB%B6">展示忽略的文件</a></li>
+<li><a href="#commit-%E5%8E%86%E5%8F%B2%E4%B8%AD%E6%98%BE%E7%A4%BA-Branch1-%E6%9C%89%E7%9A%84%E4%BD%86%E6%98%AF-Branch2-%E6%B2%A1%E6%9C%89-commit">commit 历史中显示 Branch1 有的，但是 Branch2 没有 commit</a></li>
+<li><a href="#%E5%9C%A8-commit-log-%E4%B8%AD%E6%98%BE%E7%A4%BA-GPG-%E7%AD%BE%E5%90%8D">在 commit log 中显示 GPG 签名</a></li>
+<li><a href="#%E5%88%A0%E9%99%A4%E5%85%A8%E5%B1%80%E8%AE%BE%E7%BD%AE">删除全局设置</a></li>
+<li><a href="#%E6%96%B0%E5%BB%BA%E5%B9%B6%E5%88%87%E6%8D%A2%E5%88%B0%E6%96%B0%E5%88%86%E6%94%AF%E4%B8%8A%E5%90%8C%E6%97%B6%E8%BF%99%E4%B8%AA%E5%88%86%E6%94%AF%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95-commit">新建并切换到新分支上，同时这个分支没有任何 commit</a></li>
+<li><a href="#%E5%B1%95%E7%A4%BA%E4%BB%BB%E6%84%8F%E5%88%86%E6%94%AF%E6%9F%90%E4%B8%80%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9">展示任意分支某一文件的内容</a></li>
+<li><a href="#clone-%E4%B8%8B%E6%9D%A5%E6%8C%87%E5%AE%9A%E7%9A%84%E5%8D%95%E4%B8%80%E5%88%86%E6%94%AF">clone 下来指定的单一分支</a></li>
+<li><a href="#clone-%E6%9C%80%E6%96%B0%E4%B8%80%E6%AC%A1%E6%8F%90%E4%BA%A4">clone 最新一次提交</a></li>
+<li><a href="#%E5%BF%BD%E7%95%A5%E6%9F%90%E4%B8%AA%E6%96%87%E4%BB%B6%E7%9A%84%E6%94%B9%E5%8A%A8">忽略某个文件的改动</a></li>
+<li><a href="#%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E7%9A%84%E6%9D%83%E9%99%90%E5%8F%98%E5%8C%96">忽略文件的权限变化</a></li>
+<li><a href="#%E4%BB%A5%E6%9C%80%E5%90%8E%E6%8F%90%E4%BA%A4%E7%9A%84%E9%A1%BA%E5%BA%8F%E5%88%97%E5%87%BA%E6%89%80%E6%9C%89-Git-%E5%88%86%E6%94%AF">以最后提交的顺序列出所有 Git 分支</a></li>
+<li><a href="#%E5%9C%A8-commit-log-%E4%B8%AD%E6%9F%A5%E6%89%BE%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9">在 commit log 中查找相关内容</a></li>
+<li><a href="#%E6%8A%8A%E6%9A%82%E5%AD%98%E5%8C%BA%E7%9A%84%E6%8C%87%E5%AE%9A-file-%E6%94%BE%E5%88%B0%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%B8%AD">把暂存区的指定 file 放到工作区中</a></li>
+<li><a href="#%E5%BC%BA%E5%88%B6%E6%8E%A8%E9%80%81">强制推送</a></li>
+<li><a href="#git-%E9%85%8D%E7%BD%AE-http-%E5%92%8C-socks-%E4%BB%A3%E7%90%86">git 配置 http 和 socks 代理</a></li>
+<li><a href="#git-%E9%85%8D%E7%BD%AE-ssh-%E4%BB%A3%E7%90%86">git 配置 ssh 代理</a></li>
+<li><a href="#%E4%BC%98%E9%9B%85%E7%9A%84Commit%E4%BF%A1%E6%81%AF">优雅的 Commit 信息</a></li>
+<li><a href="#commit%E5%B7%A5%E5%85%B7">commit 工具</a></li>
+<li><a href="#%E5%A3%B0%E6%98%8E">声明</a></li>
+</ul>
+<h2 id="展示帮助信息">展示帮助信息</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git help -g
+</span></span></code></pre></div><p>The command output as below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-v" data-lang="v"><span style="display:flex;"><span><span style="color:#a6e22e">The</span> common <span style="color:#a6e22e">Git</span> guides are:
+</span></span><span style="display:flex;"><span>   attributes          <span style="color:#a6e22e">Defining</span> attributes per path
+</span></span><span style="display:flex;"><span>   cli                 <span style="color:#a6e22e">Git</span> command<span style="color:#f92672">-</span>line <span style="color:#66d9ef">interface</span> and conventions
+</span></span><span style="display:flex;"><span>   core<span style="color:#f92672">-</span>tutorial       <span style="color:#a6e22e">A</span> <span style="color:#a6e22e">Git</span> core tutorial <span style="color:#66d9ef">for</span> developers
+</span></span><span style="display:flex;"><span>   cvs<span style="color:#f92672">-</span>migration       <span style="color:#a6e22e">Git</span> <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">CVS</span> users
+</span></span><span style="display:flex;"><span>   diffcore            <span style="color:#a6e22e">Tweaking</span> diff output
+</span></span><span style="display:flex;"><span>   everyday            <span style="color:#a6e22e">A</span> useful minimum set of commands <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">Everyday</span> <span style="color:#a6e22e">Git</span>
+</span></span><span style="display:flex;"><span>   glossary            <span style="color:#a6e22e">A</span> <span style="color:#a6e22e">Git</span> <span style="color:#a6e22e">Glossary</span>
+</span></span><span style="display:flex;"><span>   hooks               <span style="color:#a6e22e">Hooks</span> used by <span style="color:#a6e22e">Git</span>
+</span></span><span style="display:flex;"><span>   ignore              <span style="color:#a6e22e">Specifies</span> intentionally untracked files to ignore
+</span></span><span style="display:flex;"><span>   modules             <span style="color:#a6e22e">Defining</span> submodule properties
+</span></span><span style="display:flex;"><span>   namespaces          <span style="color:#a6e22e">Git</span> namespaces
+</span></span><span style="display:flex;"><span>   repository<span style="color:#f92672">-</span>layout    <span style="color:#a6e22e">Git</span> <span style="color:#a6e22e">Repository</span> <span style="color:#a6e22e">Layout</span>
+</span></span><span style="display:flex;"><span>   revisions           <span style="color:#a6e22e">Specifying</span> revisions and ranges <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">Git</span>
+</span></span><span style="display:flex;"><span>   tutorial            <span style="color:#a6e22e">A</span> tutorial introduction to <span style="color:#a6e22e">Git</span>
+</span></span><span style="display:flex;"><span>   tutorial<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>          <span style="color:#a6e22e">A</span> tutorial introduction to <span style="color:#a6e22e">Git</span>: part two
+</span></span><span style="display:flex;"><span>   workflows           <span style="color:#a6e22e">An</span> overview of recommended workflows with <span style="color:#a6e22e">Git</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;git help -a&#39;</span> and <span style="color:#e6db74">&#39;git help -g&#39;</span> list available subcommands and some concept guides. <span style="color:#a6e22e">See</span> <span style="color:#e6db74">&#39;git help &lt;command&gt;&#39;</span> <span style="color:#66d9ef">or</span> <span style="color:#e6db74">&#39;git help &lt;concept&gt;&#39;</span> to read about a specific subcommand <span style="color:#66d9ef">or</span> concept.
+</span></span></code></pre></div><h2 id="回到远程仓库的状态">回到远程仓库的状态</h2>
+<p>抛弃本地所有的修改，回到远程仓库的状态。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git fetch --all <span style="color:#f92672">&amp;&amp;</span> git reset --hard origin/master
+</span></span></code></pre></div><h2 id="重设第一个-commit">重设第一个 commit</h2>
+<p>也就是把所有的改动都重新放回工作区，并<strong>清空所有的 commit</strong>，这样就可以重新提交第一个 commit 了</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git update-ref -d HEAD
+</span></span></code></pre></div><h2 id="查看冲突文件列表">查看冲突文件列表</h2>
+<p>展示工作区的冲突文件列表</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git diff --name-only --diff-filter<span style="color:#f92672">=</span>U
+</span></span></code></pre></div><h2 id="展示工作区和暂存区的不同">展示工作区和暂存区的不同</h2>
+<p>输出<strong>工作区</strong>和<strong>暂存区</strong>的 different (不同)。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git diff
+</span></span></code></pre></div><p>还可以展示本地仓库中任意两个 commit 之间的文件变动：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git diff &lt;commit-id&gt; &lt;commit-id&gt;
+</span></span></code></pre></div><h2 id="展示暂存区和最近版本的不同">展示暂存区和最近版本的不同</h2>
+<p>输出<strong>暂存区</strong>和本地最近的版本 (commit) 的 different (不同)。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git diff --cached
+</span></span></code></pre></div><h2 id="展示暂存区工作区和最近版本的不同">展示暂存区、工作区和最近版本的不同</h2>
+<p>输出<strong>工作区</strong>、<strong>暂存区</strong> 和本地最近的版本 (commit) 的 different (不同)。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git diff HEAD
+</span></span></code></pre></div><h2 id="快速切换到上一个分支">快速切换到上一个分支</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout -
+</span></span></code></pre></div><h2 id="删除已经合并到-master-的分支">删除已经合并到 master 的分支</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch --merged master | grep -v <span style="color:#e6db74">&#39;^\*\|  master&#39;</span> | xargs -n <span style="color:#ae81ff">1</span> git branch -d
+</span></span></code></pre></div><h2 id="展示本地分支关联远程仓库的情况">展示本地分支关联远程仓库的情况</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch -vv
+</span></span></code></pre></div><h2 id="关联远程分支">关联远程分支</h2>
+<p>关联之后，<code>git branch -vv</code> 就可以展示关联的远程分支名了，同时推送到远程仓库直接：<code>git push</code>，不需要指定远程仓库了。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch -u origin/mybranch
+</span></span></code></pre></div><p>或者在 push 时加上 <code>-u</code> 参数</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin/mybranch -u
+</span></span></code></pre></div><h2 id="列出所有远程分支">列出所有远程分支</h2>
+<p>-r 参数相当于：remote</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch -r
+</span></span></code></pre></div><h2 id="列出本地和远程分支">列出本地和远程分支</h2>
+<p>-a 参数相当于：all</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch -a
+</span></span></code></pre></div><h2 id="查看远程分支和本地分支的对应关系">查看远程分支和本地分支的对应关系</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote show origin
+</span></span></code></pre></div><h2 id="远程删除了分支本地也想删除">远程删除了分支本地也想删除</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote prune origin
+</span></span></code></pre></div><h2 id="创建并切换到本地分支">创建并切换到本地分支</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout -b &lt;branch-name&gt;
+</span></span></code></pre></div><h2 id="从远程分支中创建并切换到本地分支">从远程分支中创建并切换到本地分支</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout -b &lt;branch-name&gt; origin/&lt;branch-name&gt;
+</span></span></code></pre></div><h2 id="删除本地分支">删除本地分支</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch -d &lt;local-branchname&gt;
+</span></span></code></pre></div><h2 id="删除远程分支">删除远程分支</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin --delete &lt;remote-branchname&gt;
+</span></span></code></pre></div><p>或者</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin :&lt;remote-branchname&gt;
+</span></span></code></pre></div><h2 id="重命名本地分支">重命名本地分支</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch -m &lt;new-branch-name&gt;
+</span></span></code></pre></div><h2 id="查看标签">查看标签</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git tag
+</span></span></code></pre></div><p>展示当前分支的最近的 tag</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git describe --tags --abbrev<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><h2 id="查看标签详细信息">查看标签详细信息</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git tag -ln
+</span></span></code></pre></div><h2 id="本地创建标签">本地创建标签</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git tag &lt;version-number&gt;
+</span></span></code></pre></div><p>默认 tag 是打在最近的一次 commit 上，如果需要指定 commit 打 tag：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ git tag -a &lt;version-number&gt; -m <span style="color:#e6db74">&#34;v1.0 发布(描述)&#34;</span> &lt;commit-id&gt;
+</span></span></code></pre></div><h2 id="推送标签到远程仓库">推送标签到远程仓库</h2>
+<p>首先要保证本地创建好了标签才可以推送标签到远程仓库：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin &lt;local-version-number&gt;
+</span></span></code></pre></div><p>一次性推送所有标签，同步到远程仓库：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin --tags
+</span></span></code></pre></div><h2 id="删除本地标签">删除本地标签</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git tag -d &lt;tag-name&gt;
+</span></span></code></pre></div><h2 id="删除远程标签">删除远程标签</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin --delete tag &lt;tagname&gt;
+</span></span></code></pre></div><h2 id="切回到某个标签">切回到某个标签</h2>
+<p>一般上线之前都会打 tag，就是为了防止上线后出现问题，方便快速回退到上一版本。下面的命令是回到某一标签下的状态：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout -b branch_name tag_name
+</span></span></code></pre></div><h2 id="放弃工作区的修改">放弃工作区的修改</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout &lt;file-name&gt;
+</span></span></code></pre></div><p>放弃所有修改：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout .
+</span></span></code></pre></div><h2 id="恢复删除的文件">恢复删除的文件</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git rev-list -n <span style="color:#ae81ff">1</span> HEAD -- &lt;file_path&gt; <span style="color:#75715e">#得到 deleting_commit</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git checkout &lt;deleting_commit&gt;^ -- &lt;file_path&gt; <span style="color:#75715e">#回到删除文件 deleting_commit 之前的状态</span>
+</span></span></code></pre></div><h2 id="以新增一个-commit-的方式还原某一个-commit-的修改">以新增一个 commit 的方式还原某一个 commit 的修改</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git revert &lt;commit-id&gt;
+</span></span></code></pre></div><h2 id="回到某个-commit-的状态并删除后面的-commit">回到某个 commit 的状态，并删除后面的 commit</h2>
+<p>和 revert 的区别：reset 命令会抹去某个 commit id 之后的所有 commit</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git reset &lt;commit-id&gt;  <span style="color:#75715e">#默认就是-mixed参数。</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git reset --mixed HEAD^  <span style="color:#75715e">#回退至上个版本，它将重置HEAD到另外一个commit,并且重置暂存区以便和HEAD相匹配，但是也到此为止。工作区不会被更改。</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git reset --soft HEAD~3  <span style="color:#75715e">#回退至三个版本之前，只回退了commit的信息，暂存区和工作区与回退之前保持一致。如果还要提交，直接commit即可  </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git reset --hard &lt;commit-id&gt;  <span style="color:#75715e">#彻底回退到指定commit-id的状态，暂存区和工作区也会变为指定commit-id版本的内容</span>
+</span></span></code></pre></div><h2 id="修改上一个-commit-的描述">修改上一个 commit 的描述</h2>
+<p>如果暂存区有改动，同时也会将暂存区的改动提交到上一个 commit</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git commit --amend
+</span></span></code></pre></div><h2 id="查看-commit-历史">查看 commit 历史</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log
+</span></span></code></pre></div><h2 id="查看某段代码是谁写的">查看某段代码是谁写的</h2>
+<p>blame 的意思为‘责怪’，你懂的。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git blame &lt;file-name&gt;
+</span></span></code></pre></div><h2 id="显示本地更新过-head-的-git-命令记录">显示本地更新过 HEAD 的 git 命令记录</h2>
+<p>每次更新了 HEAD 的 git 命令比如 commit、amend、cherry-pick、reset、revert 等都会被记录下来（不限分支），就像 shell 的 history 一样。
+这样你可以 reset 到任何一次更新了 HEAD 的操作之后，而不仅仅是回到当前分支下的某个 commit 之后的状态。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git reflog
+</span></span></code></pre></div><h2 id="修改作者名">修改作者名</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git commit --amend --author<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Author Name &lt;email@address.com&gt;&#39;</span>
+</span></span></code></pre></div><h2 id="修改远程仓库的-url">修改远程仓库的 url</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote set-url origin &lt;URL&gt;
+</span></span></code></pre></div><h2 id="增加远程仓库">增加远程仓库</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote add origin &lt;remote-url&gt;
+</span></span></code></pre></div><h2 id="列出所有远程仓库">列出所有远程仓库</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote
+</span></span></code></pre></div><h2 id="查看两个星期内的改动">查看两个星期内的改动</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git whatchanged --since<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;2 weeks ago&#39;</span>
+</span></span></code></pre></div><h2 id="把-a-分支的某一个-commit放到-b-分支上">把 A 分支的某一个 commit，放到 B 分支上</h2>
+<p>这个过程需要 <code>cherry-pick</code> 命令，<a href="http://sg552.iteye.com/blog/1300713#bc2367928">参考</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout &lt;branch-name&gt; <span style="color:#f92672">&amp;&amp;</span> git cherry-pick &lt;commit-id&gt;
+</span></span></code></pre></div><h2 id="给-git-命令起别名">给 git 命令起别名</h2>
+<p>简化命令</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config --global alias.&lt;handle&gt; &lt;command&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>比如：git status 改成 git st，这样可以简化命令
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git config --global alias.st status
+</span></span></code></pre></div><h2 id="存储当前的修改但不用提交-commit">存储当前的修改，但不用提交 commit</h2>
+<p>详解可以参考<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137602359178794d966923e5c4134bc8bf98dfb03aea3000">廖雪峰老师的 git 教程</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git stash
+</span></span></code></pre></div><h2 id="保存当前状态包括-untracked-的文件">保存当前状态，包括 untracked 的文件</h2>
+<p>untracked 文件：新建的文件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git stash -u
+</span></span></code></pre></div><h2 id="展示所有-stashes">展示所有 stashes</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git stash list
+</span></span></code></pre></div><h2 id="回到某个-stash-的状态">回到某个 stash 的状态</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git stash apply &lt;stash@<span style="color:#f92672">{</span>n<span style="color:#f92672">}</span>&gt;
+</span></span></code></pre></div><h2 id="回到最后一个-stash-的状态并删除这个-stash">回到最后一个 stash 的状态，并删除这个 stash</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git stash pop
+</span></span></code></pre></div><h2 id="删除所有的-stash">删除所有的 stash</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git stash clear
+</span></span></code></pre></div><h2 id="从-stash-中拿出某个文件的修改">从 stash 中拿出某个文件的修改</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout &lt;stash@<span style="color:#f92672">{</span>n<span style="color:#f92672">}</span>&gt; -- &lt;file-path&gt;
+</span></span></code></pre></div><h2 id="展示所有-tracked-的文件">展示所有 tracked 的文件</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git ls-files -t
+</span></span></code></pre></div><h2 id="展示所有-untracked-的文件">展示所有 untracked 的文件</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git ls-files --others
+</span></span></code></pre></div><h2 id="展示所有忽略的文件">展示所有忽略的文件</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git ls-files --others -i --exclude-standard
+</span></span></code></pre></div><h2 id="强制删除-untracked-的文件">强制删除 untracked 的文件</h2>
+<p>可以用来删除新建的文件。如果不指定文件文件名，则清空所有工作的 untracked 文件。<code>clean</code> 命令，<strong>注意两点</strong>：</p>
+<ol>
+<li>clean 后，删除的文件无法找回</li>
+<li>不会影响 tracked 的文件的改动，只会删除 untracked 的文件</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clean &lt;file-name&gt; -f
+</span></span></code></pre></div><h2 id="强制删除-untracked-的目录">强制删除 untracked 的目录</h2>
+<p>可以用来删除新建的目录，<strong>注意</strong>:这个命令也可以用来删除 untracked 的文件。详情见上一条</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clean &lt;directory-name&gt; -df
+</span></span></code></pre></div><h2 id="展示简化的-commit-历史">展示简化的 commit 历史</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log --pretty<span style="color:#f92672">=</span>oneline --graph --decorate --all
+</span></span></code></pre></div><h2 id="把某一个分支导出成一个文件">把某一个分支导出成一个文件</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git bundle create &lt;file&gt; &lt;branch-name&gt;
+</span></span></code></pre></div><h2 id="从包中导入分支">从包中导入分支</h2>
+<p>新建一个分支，分支内容就是上面 <code>git bundle create</code> 命令导出的内容</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone repo.bundle &lt;repo-dir&gt; -b &lt;branch-name&gt;
+</span></span></code></pre></div><h2 id="执行-rebase-之前自动-stash">执行 rebase 之前自动 stash</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git rebase --autostash
+</span></span></code></pre></div><h2 id="从远程仓库根据-id拉下某一状态到本地分支">从远程仓库根据 ID，拉下某一状态，到本地分支</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git fetch origin pull/&lt;id&gt;/head:&lt;branch-name&gt;
+</span></span></code></pre></div><h2 id="详细展示一行中的修改">详细展示一行中的修改</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git diff --word-diff
+</span></span></code></pre></div><h2 id="清除-gitignore-文件中记录的文件">清除 gitignore 文件中记录的文件</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clean -X -f
+</span></span></code></pre></div><h2 id="展示所有-alias-和-configs">展示所有 alias 和 configs</h2>
+<p><strong>注意：</strong> config 分为：当前目录（local）和全局（golbal）的 config，默认为当前目录的 config</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config --local --list <span style="color:#f92672">(</span>当前目录<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>git config --global --list <span style="color:#f92672">(</span>全局<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h2 id="展示忽略的文件">展示忽略的文件</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git status --ignored
+</span></span></code></pre></div><h2 id="commit-历史中显示-branch1-有的但是-branch2-没有-commit">commit 历史中显示 Branch1 有的，但是 Branch2 没有 commit</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log Branch1 ^Branch2
+</span></span></code></pre></div><h2 id="在-commit-log-中显示-gpg-签名">在 commit log 中显示 GPG 签名</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log --show-signature
+</span></span></code></pre></div><h2 id="删除全局设置">删除全局设置</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config --global --unset &lt;entry-name&gt;
+</span></span></code></pre></div><h2 id="新建并切换到新分支上同时这个分支没有任何-commit">新建并切换到新分支上，同时这个分支没有任何 commit</h2>
+<p>相当于保存修改，但是重写 commit 历史</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout --orphan &lt;branch-name&gt;
+</span></span></code></pre></div><h2 id="展示任意分支某一文件的内容">展示任意分支某一文件的内容</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git show &lt;branch-name&gt;:&lt;file-name&gt;
+</span></span></code></pre></div><h2 id="clone-下来指定的单一分支">clone 下来指定的单一分支</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone -b &lt;branch-name&gt; --single-branch https://github.com/user/repo.git
+</span></span></code></pre></div><h2 id="clone-最新一次提交">clone 最新一次提交</h2>
+<p>只会 clone 最近一次提交，将减少 clone 时间</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone --depth<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> https://github.com/user/repo.git
+</span></span></code></pre></div><h2 id="忽略某个文件的改动">忽略某个文件的改动</h2>
+<p>关闭 track 指定文件的改动，也就是 Git 将不会在记录这个文件的改动</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git update-index --assume-unchanged path/to/file
+</span></span></code></pre></div><p>恢复 track 指定文件的改动</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git update-index --no-assume-unchanged path/to/file
+</span></span></code></pre></div><h2 id="忽略文件的权限变化">忽略文件的权限变化</h2>
+<p>不再将文件的权限变化视作改动</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config core.fileMode false
+</span></span></code></pre></div><h2 id="以最后提交的顺序列出所有-git-分支">以最后提交的顺序列出所有 Git 分支</h2>
+<p>最新的放在最上面</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git <span style="color:#66d9ef">for</span>-each-ref --sort<span style="color:#f92672">=</span>-committerdate --format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;%(refname:short)&#39;</span> refs/heads/
+</span></span></code></pre></div><h2 id="在-commit-log-中查找相关内容">在 commit log 中查找相关内容</h2>
+<p>通过 grep 查找，given-text：所需要查找的字段</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log --all --grep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&lt;given-text&gt;&#39;</span>
+</span></span></code></pre></div><h2 id="把暂存区的指定-file-放到工作区中">把暂存区的指定 file 放到工作区中</h2>
+<p>不添加参数，默认是 <code>-mixed</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git reset &lt;file-name&gt;
+</span></span></code></pre></div><h2 id="强制推送">强制推送</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push -f &lt;remote-name&gt; &lt;branch-name&gt;
+</span></span></code></pre></div><h2 id="git-配置-http-和-socks-代理">git 配置 http 和 socks 代理</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config --global https.proxy <span style="color:#e6db74">&#39;http://127.0.0.1:8001&#39;</span>   <span style="color:#75715e"># 适用于 privoxy 将 socks 协议转为 http 协议的 http 端口</span>
+</span></span><span style="display:flex;"><span>git config --global http.proxy <span style="color:#e6db74">&#39;http://127.0.0.1:8001&#39;</span>
+</span></span><span style="display:flex;"><span>git config --global socks.proxy <span style="color:#e6db74">&#34;127.0.0.1:1080&#34;</span>
+</span></span></code></pre></div><h2 id="git-配置-ssh-代理">git 配置 ssh 代理</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cat ~/.ssh/config
+</span></span><span style="display:flex;"><span>Host gitlab.com
+</span></span><span style="display:flex;"><span>ProxyCommand nc -X <span style="color:#ae81ff">5</span> -x 127.0.0.1:1080 %h %p    <span style="color:#75715e"># 直接使用 shadowsocks 提供的 socks5 代理端口</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Host github.com
+</span></span><span style="display:flex;"><span>ProxyCommand nc -X <span style="color:#ae81ff">5</span> -x 127.0.0.1:1080 %h %p
+</span></span></code></pre></div><h2 id="脑图">脑图</h2>
+<p><img src="./assets/git.png" alt=""></p>
+<h2 id="优雅的-commit-信息">优雅的 Commit 信息</h2>
+<p>使用<a href="https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines">Angular 团队提交规范</a></p>
+<p>主要有以下组成</p>
+<ul>
+<li>标题行: 必填, 描述主要修改类型和内容</li>
+<li>主题内容: 描述为什么修改, 做了什么样的修改, 以及开发的思路等等</li>
+<li>页脚注释: 放 Breaking Changes 或 Closed Issues</li>
+</ul>
+<p>常用的修改项</p>
+<ul>
+<li>type: commit 的类型</li>
+<li>feat: 新特性</li>
+<li>fix: 修改问题</li>
+<li>refactor: 代码重构</li>
+<li>docs: 文档修改</li>
+<li>style: 代码格式修改, 注意不是 css 修改</li>
+<li>test: 测试用例修改</li>
+<li>chore: 其他修改, 比如构建流程, 依赖管理.</li>
+<li>scope: commit 影响的范围, 比如: route, component, utils, build&hellip;</li>
+<li>subject: commit 的概述</li>
+<li>body: commit 具体修改内容, 可以分为多行</li>
+<li>footer: 一些备注, 通常是 BREAKING CHANGE 或修复的 bug 的链接.</li>
+</ul>
+<h2 id="commit-工具">commit 工具</h2>
+<p>可以使用<a href="https://github.com/commitizen/cz-cli">cz-cli</a>工具代替 <code>git commit</code></p>
+<p>全局安装</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>npm install -g commitizen cz-conventional-changelog
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;{ &#34;path&#34;: &#34;cz-conventional-changelog&#34; }&#39;</span> &gt; ~/.czrc
+</span></span></code></pre></div><p>全局安装后使用 <code>git cz</code> 代替 <code>git commit</code>就可以了,如下图</p>
+<p><img src="./assets/gitcz.png" alt=""></p>
+<p><strong><a href="#%E7%9B%AE%E5%BD%95">⬆ 返回顶部</a></strong></p>
+
+            <br />
+            <div>
+                
+                <a href="https://test.jobcher.com/posts/diary/qyyemail163/" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/posts/docker/dockerimage/" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="/posts/about">关于我们</a></li>
+            
+            <li><a href="/posts">博文合集</a></li>
+            
+            <li><a href="/">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

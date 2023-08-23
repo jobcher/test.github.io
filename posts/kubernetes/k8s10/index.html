@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="/css/style.css">
+    <title>kubernetes 存储</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="/">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">kubernetes 存储</h2>
+            
+        </header>
+        <article class="article">
+            <h1 id="kubernetes-存储">kubernetes 存储</h1>
+<p>k8s 支持多种途径的多种类型的存储。例如 iSCSI,SMB,NFS，以及对象存储。都是不同类型的部署在云上或者自建数据中心的外部存储系统。k8s 上的所有存储都被称作<code>卷</code></p>
+<h2 id="csi-容器存储接口">CSI 容器存储接口</h2>
+<p>CSI 是 k8s 存储体系中一部分，是一个开源项目，定义了一套基于标准的接口，从而使容器能够以一种统一的方式被不同的容器编排的工具使用。可以将插件称为<code>provisioner</code></p>
+<h2 id="持久化">持久化</h2>
+<ul>
+<li>持久化卷 （pv）</li>
+<li>持久化卷申请 （pvc）</li>
+<li>存储类 （sv）</li>
+</ul>
+<p>PV 代表 k8s 的存储，pvc 代表的是许可证，赋予 pod 访问 pv 的权限。cs 使分配过程是动态的。</p>
+<h2 id="使用-iscsi-操作存储">使用 iSCSI 操作存储</h2>
+<p><code>iscsi</code> 卷能将 iSCSI (基于 IP 的 SCSI) 卷挂载到你的 Pod 中。 不像 emptyDir 那样会在删除 Pod 的同时也会被删除，iscsi 卷的内容在删除 Pod 时会被保留，卷只是被卸载。 这意味着 iscsi 卷可以被预先填充数据，并且这些数据可以在 Pod 之间共享。<br>
+<code>iSCSI</code> 的一个特点是它可以同时被多个用户以只读方式挂载。 这意味着你可以用数据集预先填充卷，然后根据需要在尽可能多的 Pod 上使用它。 不幸的是，iSCSI 卷只能由单个使用者以读写模式挂载。不允许同时写入。</p>
+<h3 id="创建-iscsi-pvyaml-iscsi-pvcyaml">创建 iscsi-pv.yaml iscsi-pvc.yaml</h3>
+<p>iscsi-pv.yaml</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">PersistentVolume</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">iscsi-pv</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">capacity</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">storage</span>: <span style="color:#ae81ff">500Gi</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">accessModes</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">ReadWriteOnce</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">iscsi</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">targetPortal</span>: <span style="color:#ae81ff">10.12.12</span><span style="color:#ae81ff">.xxx:3260</span> <span style="color:#75715e"># 修改</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">iqn</span>: <span style="color:#ae81ff">iqn.2000-01.com.synology:xxx.Target-1.21xxxxx344</span> <span style="color:#75715e"># 修改</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">lun</span>: <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>iscsi-pvc.yaml</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">PersistentVolume</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">iscsi-pv</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">capacity</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">storage</span>: <span style="color:#ae81ff">500Gi</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">accessModes</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">ReadWriteOnce</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">iscsi</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">targetPortal</span>: <span style="color:#ae81ff">10.12.12</span><span style="color:#ae81ff">.xxx:3260</span> <span style="color:#75715e"># 修改</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">iqn</span>: <span style="color:#ae81ff">iqn.2000-01.com.synology:xxx.Target-1.21xxxxx344</span> <span style="color:#75715e"># 修改</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">lun</span>: <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><h2 id="hostpath">hostPath</h2>
+<p><code>hostPath</code> 卷能将主机节点文件系统上的文件或目录挂载到你的 <code>Pod</code> 中。 虽然这不是大多数 <code>Pod</code> 需要的，但是它为一些应用程序提供了强大的逃生舱。</p>
+<ul>
+<li>运行一个需要访问 Docker 内部机制的容器；可使用 <code>hostPath</code> 挂载 <code>/var/lib/docker</code> 路径。</li>
+<li>在容器中运行 <code>cAdvisor</code> 时，以 <code>hostPath</code> 方式挂载 <code>/sys</code>。</li>
+<li>允许 <code>Pod</code> 指定给定的 <code>hostPath</code> 在运行 <code>Pod</code> 之前是否应该存在，是否应该创建以及应该以什么方式存在。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Pod</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">test-pd</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">image</span>: <span style="color:#ae81ff">registry.k8s.io/test-webserver</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">name</span>: <span style="color:#ae81ff">test-container</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">volumeMounts</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">mountPath</span>: <span style="color:#ae81ff">/test-pd</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">name</span>: <span style="color:#ae81ff">test-volume</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">test-volume</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">hostPath</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 宿主上目录位置</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">path</span>: <span style="color:#ae81ff">/data</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 此字段为可选</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">type</span>: <span style="color:#ae81ff">Directory</span>
+</span></span></code></pre></div><blockquote>
+<p>注意： <code>FileOrCreate</code> 模式不会负责创建文件的父目录。 如果欲挂载的文件的父目录不存在，Pod 启动会失败。 为了确保这种模式能够工作，可以尝试把文件和它对应的目录分开挂载，如 <code>FileOrCreate</code> 配置 所示。</p>
+</blockquote>
+<h3 id="hostpath-fileorcreate-配置示例">hostPath FileOrCreate 配置示例</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Pod</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">test-webserver</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">test-webserver</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">image</span>: <span style="color:#ae81ff">registry.k8s.io/test-webserver:latest</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">volumeMounts</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">mountPath</span>: <span style="color:#ae81ff">/var/local/aaa</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mydir</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">mountPath</span>: <span style="color:#ae81ff">/var/local/aaa/1.txt</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">name</span>: <span style="color:#ae81ff">myfile</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mydir</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">hostPath</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 确保文件所在目录成功创建。</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">path</span>: <span style="color:#ae81ff">/var/local/aaa</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">type</span>: <span style="color:#ae81ff">DirectoryOrCreate</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">myfile</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">hostPath</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">path</span>: <span style="color:#ae81ff">/var/local/aaa/1.txt</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">type</span>: <span style="color:#ae81ff">FileOrCreate</span>
+</span></span></code></pre></div>
+            <br />
+            <div>
+                
+                <a href="https://test.jobcher.com/posts/error/docker-error/" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/posts/diary/linux-disk/" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="/posts/about">关于我们</a></li>
+            
+            <li><a href="/posts">博文合集</a></li>
+            
+            <li><a href="/">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

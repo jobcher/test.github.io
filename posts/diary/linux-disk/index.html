@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="/css/style.css">
+    <title>linux服务器 删除空间却未释放</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="/">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">linux服务器 删除空间却未释放</h2>
+            
+        </header>
+        <article class="article">
+            <h1 id="linux-服务器-删除空间却未释放">linux 服务器 删除空间却未释放</h1>
+<p>在<code>Linux</code>或者<code>Unix</code>系统中，通过<code>rm</code>或者文件管理器删除文件将会从文件系统的目录结构上<code>解除链接(unlink)</code>，然而如果文件是被打开的<code>（有一个进程正在使用）</code>，那么进程将仍然可以读取该文件，<code>磁盘空间也一直被占用</code>，这样就会导致我们明明删除了文件，但是磁盘空间却未被释放</p>
+<h2 id="获取占用列表状态">获取占用列表状态</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>lsof | grep deleted
+</span></span></code></pre></div><p>可以看到哪些文件还被使用，未被释放空间。</p>
+<h2 id="释放磁盘空间">释放磁盘空间</h2>
+<ol>
+<li>一种方法是 kill 掉相应的进程，或者停掉使用这个文件的应用，让 os 自动回收磁盘空间，当 linux 打开一个文件的时候,Linux 内核会为每一个进程在<code>/proc/</code>, <code>/proc/nnnn/fd/</code>目录（nnnn 为 pid）建立一个以其 pid 为名的目录用来保存进程的相关信息，而其子目录 fd 保存的是该进程打开的所有文件的 fd（fd：file descriptor）；<br>
+<code>kill</code>进程是通过截断 proc 文件系统中的文件可以强制要求系统回收分配给正在使用的的文件，这是一项高级技术，仅当管理员确定不会对运行中的进程造成影响时使用。</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kill -9 <span style="color:#ae81ff">12345</span> <span style="color:#75715e"># PID</span>
+</span></span></code></pre></div><ol start="2">
+<li>重启服务</li>
+</ol>
+<h2 id="lsof-命令">lsof 命令</h2>
+<p><code>lsof</code>全名<code>list opened files</code>，也就是列举系统中已经被打开的文件。我们都知道，linux 环境中，任何事物都是文件，设备是文件，目录是文件，甚至<code>sockets</code>也是文件。</p>
+
+            <br />
+            <div>
+                
+                <a href="https://test.jobcher.com/posts/kubernetes/k8s10/" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/posts/monitoring/logstash/" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="/posts/about">关于我们</a></li>
+            
+            <li><a href="/posts">博文合集</a></li>
+            
+            <li><a href="/">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

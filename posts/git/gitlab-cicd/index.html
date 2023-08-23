@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="/css/style.css">
+    <title>gitlab CI/CD 的使用</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="/">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="/posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">gitlab CI/CD 的使用</h2>
+            
+        </header>
+        <article class="article">
+            <h1 id="gitlab-cicd-的使用">gitlab CI/CD 的使用</h1>
+<p>我将使用 gitlab 的流水线自动实现 hugo blog 文章的自动发布。</p>
+<h2 id="一基础知识">一、基础知识</h2>
+<h2 id="二安装过程">二、安装过程</h2>
+<h3 id="1安装-gitlab-runner">1.安装 gitlab runner</h3>
+<p>首先需要安装 gitlab runner 进入服务器 A<br>
+安装方法：</p>
+<ol>
+<li>
+<p>容器部署</p>
+</li>
+<li>
+<p>手动二进制文件部署</p>
+</li>
+<li>
+<p>通过 rpm/deb 包部署</p>
+</li>
+<li>
+<p>docker 方式安装</p>
+</li>
+</ol>
+<p>安装文档：https://docs.gitlab.com/runne&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    docker run -dit <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --name gitlab-runner <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --restart always <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -v /srv/gitlab-runner/config:/etc/gitlab-runner <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -v /var/run/docker.sock:/var/run/docker.sock <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    gitlab/gitlab-runner
+</span></span></code></pre></div><p>1.1 设置信息</p>
+<pre><code>docker exec -it gitlab-runner gitlab-runner register
+</code></pre>
+<ol start="2">
+<li>非 docker 方式安装</li>
+</ol>
+<p>2.1 安装 GitLab Runner</p>
+<p>安装环境：Linux</p>
+<p>其他环境参考：https://docs.gitlab.com/runne&hellip;</p>
+<p>下载</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    curl -L --output /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
+</span></span></code></pre></div><p>添加权限</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    chmod +x /usr/local/bin/gitlab-runner
+</span></span></code></pre></div><p>新建 gitlab-runner 用户</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    sudo useradd --comment <span style="color:#e6db74">&#39;GitLab Runner&#39;</span> --create-home gitlab-runner --shell /bin/bash
+</span></span></code></pre></div><p>安装</p>
+<p>安装时需要指定我们上面新建的用户</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    gitlab-runner install --user<span style="color:#f92672">=</span>gitlab-runner --working-directory<span style="color:#f92672">=</span>/home/gitlab-runner
+</span></span></code></pre></div><p>启动</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    gitlab-runner start
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Download the binary for your system</span>
+</span></span><span style="display:flex;"><span>sudo curl -L --output /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Give it permissions to execute</span>
+</span></span><span style="display:flex;"><span>sudo chmod +x /usr/local/bin/gitlab-runner
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a GitLab CI user</span>
+</span></span><span style="display:flex;"><span>sudo useradd --comment <span style="color:#e6db74">&#39;GitLab Runner&#39;</span> --create-home gitlab-runner --shell /bin/bash
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Install and run as service</span>
+</span></span><span style="display:flex;"><span>sudo gitlab-runner install --user<span style="color:#f92672">=</span>gitlab-runner --working-directory<span style="color:#f92672">=</span>/home/gitlab-runner
+</span></span><span style="display:flex;"><span>sudo gitlab-runner start
+</span></span></code></pre></div><h3 id="2配置-docker-shell-链接">2.配置 docker shell 链接</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    ssh-keygen -t rsa
+</span></span><span style="display:flex;"><span>    cd .ssh/
+</span></span><span style="display:flex;"><span>    cat id_rsa.pub &gt;&gt;authorized_keys
+</span></span><span style="display:flex;"><span>    docker cp id_rsa gitlab-runner:/root
+</span></span><span style="display:flex;"><span>    docker exec -it gitlab-runner /bin/bash
+</span></span><span style="display:flex;"><span>    chmod <span style="color:#ae81ff">600</span> /root/id_rsa
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    vim /etc/systemd/system/gitlab-runner.service
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;--syslog&#34;</span> <span style="color:#e6db74">&#34;--user&#34;</span> <span style="color:#e6db74">&#34;root&#34;</span> <span style="color:#75715e">#修改为root</span>
+</span></span><span style="display:flex;"><span>    wq保存退出
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    systemctl daemon-reload
+</span></span><span style="display:flex;"><span>    systemctl restart gitlab-runner
+</span></span></code></pre></div><h3 id="3配置gitlab-ciyml-文件">3.配置.gitlab-ci.yml 文件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    vim .gitlab-ci.yml
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    stages:
+</span></span><span style="display:flex;"><span>    - build
+</span></span><span style="display:flex;"><span>    - test
+</span></span><span style="display:flex;"><span>    - deploy
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    build-job:
+</span></span><span style="display:flex;"><span>    stage: build
+</span></span><span style="display:flex;"><span>    script:
+</span></span><span style="display:flex;"><span>        - echo <span style="color:#e6db74">&#34;上传代码&#34;</span>
+</span></span><span style="display:flex;"><span>        - echo <span style="color:#e6db74">&#34;上传完成.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    unit-test-job:
+</span></span><span style="display:flex;"><span>    stage: test
+</span></span><span style="display:flex;"><span>    script:
+</span></span><span style="display:flex;"><span>        - echo
+</span></span><span style="display:flex;"><span>        - sleep <span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>        - echo <span style="color:#e6db74">&#34;Code coverage is 90%&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    lint-test-job:
+</span></span><span style="display:flex;"><span>    stage: test
+</span></span><span style="display:flex;"><span>    script:
+</span></span><span style="display:flex;"><span>        - echo <span style="color:#e6db74">&#34;Linting code... This will take about 10 seconds.&#34;</span>
+</span></span><span style="display:flex;"><span>        - sleep <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>        - echo <span style="color:#e6db74">&#34;No lint issues found.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    deploy-job:
+</span></span><span style="display:flex;"><span>    stage: deploy
+</span></span><span style="display:flex;"><span>    script:
+</span></span><span style="display:flex;"><span>        - echo <span style="color:#e6db74">&#34;Deploying application...&#34;</span>
+</span></span><span style="display:flex;"><span>        - echo <span style="color:#e6db74">&#34;Application successfully deployed.&#34;</span>
+</span></span></code></pre></div>
+            <br />
+            <div>
+                
+                <a href="https://test.jobcher.com/posts/mac/brew/" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/posts/git/markdown/" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="/posts/about">关于我们</a></li>
+            
+            <li><a href="/posts">博文合集</a></li>
+            
+            <li><a href="/">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

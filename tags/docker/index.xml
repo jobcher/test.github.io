@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>docker on </title>
-    <link>/tags/docker/</link>
-    <description>Recent content in docker on </description>
+    <title>docker on 打工人日志</title>
+    <link>https://test.jobcher.com/tags/docker/</link>
+    <description>Recent content in docker on 打工人日志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://test.jobcher.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>清理Docker容器日志</title>
-      <link>/posts/docker/cleandocker/</link>
+      <link>https://test.jobcher.com/posts/docker/cleandocker/</link>
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>/posts/docker/cleandocker/</guid>
+      <guid>https://test.jobcher.com/posts/docker/cleandocker/</guid>
       <description>清理 Docker 容器日志 如果 docker 容器正在运行，那么使用rm -rf方式删除日志后，通过df -h会发现磁盘空间并没有释放。原因是在 Linux 或者 Unix 系统中，通过rm -rf或者文件管理器删除文件，将会从文件系统的目录结构上解除链接（unlink）。如果文件是被打开的（有一个进程正在使用），那么进程将仍然可以读取该文件，磁盘空间也一直被占用。正确姿势是cat /dev/null &amp;gt; *-json.log，当然你也可以通过rm -rf删除后重启 docker。
 日志清理脚本 clean_docker_log.sh #!/bin/sh echo &amp;#34;======== start clean docker containers logs ========&amp;#34; logs=$(find /var/lib/docker/containers/ -name *-json.log) for log in $logs do echo &amp;#34;clean logs : $log&amp;#34; cat /dev/null &amp;gt; $log done echo &amp;#34;======== end clean docker containers logs ========&amp;#34; chmod +x clean_docker_log.sh &amp;amp;&amp;amp; ./clean_docker_log.sh
 设置 Docker 容器日志大小 设置一个容器服务的日志大小上限
@@ -21,10 +22,10 @@ nginx: image: nginx:1.12.1 restart: always logging: driver: “json-file” opti
     
     <item>
       <title>contained 安装及使用</title>
-      <link>/posts/docker/contained/</link>
+      <link>https://test.jobcher.com/posts/docker/contained/</link>
       <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>/posts/docker/contained/</guid>
+      <guid>https://test.jobcher.com/posts/docker/contained/</guid>
       <description>contained 安装及使用 containerd 是一个行业标准的容器运行时，强调简单性、健壮性和可移植性。它可作为 Linux 和 Windows 的守护进程使用，可以管理其主机系统的完整容器生命周期：图像传输和存储、容器执行和监督、低级存储和网络附件等。
 containerd is a member of CNCF with graduated status.
 早在 2016 年 3 月，Docker 1.11的Docker Engine里就包含了containerd，而现在则是把containerd从Docker Engine里彻底剥离出来，作为一个独立的开源项目独立发展，目标是提供一个更加开放、稳定的容器运行基础设施。和原先包含在 Docker Engine 里containerd相比，独立的containerd将具有更多的功能，可以涵盖整个容器运行时管理的所有需求。 containerd并不是直接面向最终用户的，而是主要用于集成到更上层的系统里，比如Swarm, Kubernetes, Mesos等容器编排系统。 containerd以Daemon的形式运行在系统上，通过暴露底层的gRPC API，上层系统可以通过这些API管理机器上的容器。 每个containerd只负责一台机器，Pull 镜像，对容器的操作（启动、停止等），网络，存储都是由 containerd 完成。具体运行容器由runC负责，实际上只要是符合OCI规范的容器都可以支持。 对于容器编排服务来说，运行时只需要使用containerd+runC，更加轻量，容易管理。 5.独立之后containerd的特性演进可以和Docker Engine分开，专注容器运行时管理，可以更稳定。 安装 centos
@@ -36,10 +37,10 @@ ctr version ctr 命令 命令 作用 plugins, plugin 提供有关容器插件的
     
     <item>
       <title>docker 命令(2)</title>
-      <link>/posts/docker/docker02/</link>
+      <link>https://test.jobcher.com/posts/docker/docker02/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/posts/docker/docker02/</guid>
+      <guid>https://test.jobcher.com/posts/docker/docker02/</guid>
       <description>docker 命令(2) docker ps 命令 docker ps 能查看所有运行中的容器
 docker ps -a 能查看所有的容器
 docker rm -f $(docker ps -aq) 强制删除所有容器
@@ -51,10 +52,10 @@ docker run和docker create有什么区别 docker create命令能够基于镜像�
     
     <item>
       <title>清理Docker的container，image与volume</title>
-      <link>/posts/docker/docker-clean/</link>
+      <link>https://test.jobcher.com/posts/docker/docker-clean/</link>
       <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/posts/docker/docker-clean/</guid>
+      <guid>https://test.jobcher.com/posts/docker/docker-clean/</guid>
       <description>清理 Docker 的 container，image 与 volume Docker 的镜像（image）、容器（container）、数据卷（volume）， 都是由 daemon 托管的。 因此，在需要清理时，也需要使用其自带的手段。
 清理技巧 清理所有停止运行的容器：
 docker container prune # or docker rm $(docker ps -aq) 清理所有悬挂（&amp;lt;none&amp;gt;）镜像：
@@ -67,10 +68,10 @@ Name shorthand Default Description –force,-f false Force the removal of a runn
     
     <item>
       <title>docker 命令</title>
-      <link>/posts/docker/docker/</link>
+      <link>https://test.jobcher.com/posts/docker/docker/</link>
       <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/docker/docker/</guid>
+      <guid>https://test.jobcher.com/posts/docker/docker/</guid>
       <description>安装 docker 通过 docker 脚本安装
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun curl -sSL https://get.daocloud.io/docker | sh docker-compose 安装 #下载安装 sudo curl -L &amp;#34;https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-$(uname -s)-$(uname -m)&amp;#34; -o /usr/local/bin/docker-compose #可执行权限 sudo chmod +x /usr/local/bin/docker-compose #创建软链： sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose #测试是否安装成功 docker-compose --version docker 命令 常用 docker 命令
 #查看容器 docker ps #查看镜像 docker images #停止当前所有容器 docker stop $(docker ps -aq) #删除当前停止的所有容器 docker rm $(docker ps -aq) #删除镜像 docker rmi nginx </description>
@@ -78,38 +79,38 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun curl -sSL htt
     
     <item>
       <title>docker 安装kong 网关</title>
-      <link>/posts/docker/docker-kong/</link>
+      <link>https://test.jobcher.com/posts/docker/docker-kong/</link>
       <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/docker/docker-kong/</guid>
+      <guid>https://test.jobcher.com/posts/docker/docker-kong/</guid>
       <description>docker 安装 kong 网关 建立数据库 创建网络 docker network create kong-net 建立数据库 docker run -d --name kong-database \ --network=kong-net \ -p 5432:5432 \ -e &amp;#34;POSTGRES_USER=kong&amp;#34; \ -e &amp;#34;POSTGRES_DB=kong&amp;#34; \ -e &amp;#34;POSTGRES_PASSWORD=kong123&amp;#34; \ postgres:9.6 创建 kong 数据 docker run --rm --network=kong-net \ -e &amp;#34;KONG_DATABASE=postgres&amp;#34; \ -e &amp;#34;KONG_PG_HOST=kong-database&amp;#34; \ -e &amp;#34;KONG_PG_PASSWORD=kong123&amp;#34; \ -e &amp;#34;KONG_PASSWORD=kong123&amp;#34; \ kong:latest kong migrations bootstrap 创建 kong 创建 kong gateway docker run -d --name kong \ --network=kong-net \ -e &amp;#34;KONG_DATABASE=postgres&amp;#34; \ -e &amp;#34;KONG_PG_HOST=kong-database&amp;#34; \ -e &amp;#34;KONG_PG_USER=kong&amp;#34; \ -e &amp;#34;KONG_PG_PASSWORD=kong123&amp;#34; \ -e &amp;#34;KONG_CASSANDRA_CONTACT_POINTS=kong-database&amp;#34; \ -e &amp;#34;KONG_PROXY_ACCESS_LOG=/dev/stdout&amp;#34; \ -e &amp;#34;KONG_ADMIN_ACCESS_LOG=/dev/stdout&amp;#34; \ -e &amp;#34;KONG_PROXY_ERROR_LOG=/dev/stderr&amp;#34; \ -e &amp;#34;KONG_ADMIN_ERROR_LOG=/dev/stderr&amp;#34; \ -e &amp;#34;KONG_ADMIN_LISTEN=0.</description>
     </item>
     
     <item>
       <title>搭建docker registry 镜像仓库</title>
-      <link>/posts/docker/docker-registry/</link>
+      <link>https://test.jobcher.com/posts/docker/docker-registry/</link>
       <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/docker/docker-registry/</guid>
+      <guid>https://test.jobcher.com/posts/docker/docker-registry/</guid>
       <description>搭建 docker registry 镜像仓库 获取镜像 docker pull registry:2.7.1 docker pull hyper/docker-registry-web 容器运行 mkdir -p /opt/data/registry docker run -d -p 5000:5000 -v /opt/data/registry:/var/lib/registry --name registry registry:2.7.1 docker run -d -p 8080:8080 --name registry-web --link registry \ -e REGISTRY_URL=http://192.168.99.146:5000/v2 \ -e REGISTRY_TRUST_ANY_SSL=true \ -e REGISTRY_BASIC_AUTH=&amp;#34;GjhYGDGi2HhkJB&amp;#34; \ -e REGISTRY_NAME=192.168.99.146:5000 \ hyper/docker-registry-web 上传容器 vim /etc/docker/daemon.json { &amp;#34;insecure-registries&amp;#34;: [&amp;#34;192.168.99.146:5000&amp;#34;] } docker tag sjtfreaks/hogo-nginx:v1.1 192.168.99.146:5000/sjtfreaks/hogo-nginx:v1.1 docker push 192.168.99.146:5000/sjtfreaks/hogo-nginx:v1.1 </description>
     </item>
     
     <item>
       <title>docker image镜像上传</title>
-      <link>/posts/docker/dockerimage/</link>
+      <link>https://test.jobcher.com/posts/docker/dockerimage/</link>
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/docker/dockerimage/</guid>
+      <guid>https://test.jobcher.com/posts/docker/dockerimage/</guid>
       <description>docker image 镜像上传 登入 docker hub，在https://hub.docker.com上注册你的账号。
 docker login username：#输入你的用户名 password：#输入你的密码 上传镜像 docker tag nginx:hugo sjtfreaks/hogo-nginx:v1 docker push sjtfreaks/hogo-nginx:v1 </description>
     </item>
     
     <item>
       <title>docker进阶使用</title>
-      <link>/posts/docker/docker01/</link>
+      <link>https://test.jobcher.com/posts/docker/docker01/</link>
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/docker/docker01/</guid>
+      <guid>https://test.jobcher.com/posts/docker/docker01/</guid>
       <description>docker 进阶使用 dockerfile 和 docker compose 的配置
 Dockerfile 使用 Dockerfile 是一个用来构建镜像的文本文件，文本内容包含了一条条构建镜像所需的指令和说明。
 例子：
