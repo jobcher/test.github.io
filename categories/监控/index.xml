@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>监控 on 打工人日志</title>
-    <link>https://test.jobcher.com/categories/%E7%9B%91%E6%8E%A7/</link>
-    <description>Recent content in 监控 on 打工人日志</description>
+    <title>监控 on </title>
+    <link>/categories/%E7%9B%91%E6%8E%A7/</link>
+    <description>Recent content in 监控 on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://test.jobcher.com/categories/%E7%9B%91%E6%8E%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/%E7%9B%91%E6%8E%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>skywalking python agent 安装和配置</title>
-      <link>https://test.jobcher.com/posts/monitoring/skywalking-python/</link>
+      <link>/posts/monitoring/skywalking-python/</link>
       <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/posts/monitoring/skywalking-python/</guid>
+      <guid>/posts/monitoring/skywalking-python/</guid>
       <description>背景 skywalking 是一个APM监控，在java和微服务领域非常流行。但是在python领域，skywalking的使用率并不高。本文将介绍如何安装和配置skywalking python agent。
 SkyWalking Python 代理实现了一个命令行界面，可用于在部署期间将代理附加到出色的应用程序，而无需更改任何应用程序代码，就像 SkyWalking Java 代理一样。
 安装skywalking python agent pip install apache-skywalking 运行 sw-python 以查看它是否可用，您需要按环境变量传递配置。
@@ -21,10 +20,10 @@ SkyWalking Python 代理实现了一个命令行界面，可用于在部署期�
     
     <item>
       <title>Logstash 自动重载配置文件</title>
-      <link>https://test.jobcher.com/posts/monitoring/logstash1/</link>
+      <link>/posts/monitoring/logstash1/</link>
       <pubDate>Mon, 31 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/posts/monitoring/logstash1/</guid>
+      <guid>/posts/monitoring/logstash1/</guid>
       <description>工作原理 检测到配置文件变化 通过停止所有输入停止当前pipline 用新的配置创建一个新的管道 检查配置文件语法是否正确 检查所有的输入和输出是否可以初始化 检查成功使用新的 pipeline 替换当前的pipeline 检查失败,使用旧的继续工作. 在重载过程中,jvm 没有重启. Logstash 自动重新加载配置 为了可以自动检测配置文件的变动和自动重新加载配置文件,需要在启动的时候使用以下命令:
 ./bin/lagstash -f configfile.conf --config.reload.automatic 启动 Logstash 的时候使用--config.reload.automatic或-r选项来开启自动重载配置。
 修改检测间隔时间 默认检测配置文件的间隔时间是3秒,可以通过以下命令改变
@@ -37,10 +36,10 @@ syslog作为输入源,当重载配置文件时,会崩溃.
     
     <item>
       <title>windows-exporter 监控</title>
-      <link>https://test.jobcher.com/posts/monitoring/windows-exporter/</link>
+      <link>/posts/monitoring/windows-exporter/</link>
       <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/posts/monitoring/windows-exporter/</guid>
+      <guid>/posts/monitoring/windows-exporter/</guid>
       <description>windows-exporter 监控安装 windows_exporter 下载安装 启动 下载 msi 版本，输入一下命令启动
 msiexec /i C:\Users\Administrator\Downloads\windows_exporter.msi ENABLED_COLLECTORS=&amp;#34;ad,iis,logon,memory,process,tcp,scheduled_task&amp;#34; TEXTFILE_DIR=&amp;#34;C:\custom_metrics\&amp;#34; 卸载
 msiexec /uninstall C:\Users\Administrator\Downloads\windows_exporter.msi 添加 prometheus 监控 prometheus.yaml
@@ -50,10 +49,10 @@ msiexec /uninstall C:\Users\Administrator\Downloads\windows_exporter.msi 添加 
     
     <item>
       <title>skywalking APM 监控</title>
-      <link>https://test.jobcher.com/posts/monitoring/skywalking/</link>
+      <link>/posts/monitoring/skywalking/</link>
       <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/posts/monitoring/skywalking/</guid>
+      <guid>/posts/monitoring/skywalking/</guid>
       <description>skywalking 基于 OpenTracing 规范，专门为微服务架构以及云原生服务。
 APM 监控 一个基于微服务架构的电商系统
 APM (Application Performance Management) 即应用性能管理，属于 IT 运维管理（ITOM)范畴.
@@ -68,10 +67,10 @@ Metric是可以聚合的，例如为电商系统中每个 HTTP 接口添加一�
     
     <item>
       <title>logstash 多管道部署</title>
-      <link>https://test.jobcher.com/posts/monitoring/logstash/</link>
+      <link>/posts/monitoring/logstash/</link>
       <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/posts/monitoring/logstash/</guid>
+      <guid>/posts/monitoring/logstash/</guid>
       <description>logstash 多管道部署 找到 logstash 目录位置，一般来说在 /etc/logstash 路径下,修改 logstash.yml
 #增加 日志记录 path.logs: /var/log/logstash 增加管道 增加 conf.d目录下 test.conf
 input { beats { host =&amp;gt; &amp;#34;0.0.0.0&amp;#34; port =&amp;gt; 23000 # 修改端口IP } } filter { mutate{ add_field =&amp;gt; { &amp;#34;cluster&amp;#34; =&amp;gt; &amp;#34;test&amp;#34; # 修改标签 &amp;#34;job&amp;#34; =&amp;gt; &amp;#34;logstash&amp;#34; } } } output { file { path =&amp;gt; &amp;#34;/data/路径名称&amp;#34; # 路径名称 gzip =&amp;gt; false #匹配以空格开头的行 } } 修改 pipelines.yml
@@ -80,10 +79,10 @@ input { beats { host =&amp;gt; &amp;#34;0.0.0.0&amp;#34; port =&amp;gt; 23000 # 
     
     <item>
       <title>nginx exporter 安装配置</title>
-      <link>https://test.jobcher.com/posts/monitoring/nginx-exporter/</link>
+      <link>/posts/monitoring/nginx-exporter/</link>
       <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/posts/monitoring/nginx-exporter/</guid>
+      <guid>/posts/monitoring/nginx-exporter/</guid>
       <description>nginx exporter 安装配置 二进制安装 wget https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v0.10.0/nginx-prometheus-exporter_0.10.0_linux_amd64.tar.gz tar -zxvf nginx-prometheus-exporter_0.10.0_linux_amd64.tar.gz -C ./nginx-exporter 在 nginx 上配置 ./configure \ … \ --with-http_stub_status_module make sudo make install 在 nginx.config 上配置
 server { # 新增 location /nginx_status { stub_status on; access_log off; } } 重启 nginx 服务
 nginx -t nginx -s reload 启动 nginx exporter nginx-prometheus-exporter -nginx.scrape-uri http://&amp;lt;nginx&amp;gt;:8080/nginx_status 配置 prometheus 添加 prometheus.yml - job_name: &amp;#34;nginx-exporter&amp;#34; file_sd_configs: - files: - &amp;#34;./file_sd/nginx-exporter.yaml&amp;#34; 在 ./file_sd/新建 nginx-exporter.yaml
@@ -92,10 +91,10 @@ nginx -t nginx -s reload 启动 nginx exporter nginx-prometheus-exporter -nginx.
     
     <item>
       <title>prometheus grafana alertmanager 安装配置</title>
-      <link>https://test.jobcher.com/posts/monitoring/prometheus1/</link>
+      <link>/posts/monitoring/prometheus1/</link>
       <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/posts/monitoring/prometheus1/</guid>
+      <guid>/posts/monitoring/prometheus1/</guid>
       <description>prometheus+grafana+alertmanager 安装配置 服务器监控告警系统搭建，通过 exporter 获取节点信息到 prometheus。prometheus 配置规则，使 garfana 和 alertmanager 能够接受到数据，分别展示数据和发送告警
 参数 VM :192.168.99.78
 端口 服务 9100 node_exporter 3000 grafana 9090 prometheus 9115 blackbox_exporter 安装 grafa 安装 docker 安装 docker run -d -p 3000:3000 \ --name=grafana \ -v grafana-storage:/var/lib/grafana \ grafana/grafana:8.3.3 prometheus 安装 下载 wget https://github.com/prometheus/prometheus/releases/download/v2.32.1/prometheus-2.32.1.linux-amd64.tar.gz tar -zxvf prometheus-2.32.1.linux-amd64.tar.gz cd prometheus-2.32.1.linux-amd64 mkdir -p file_sd mkdir -p rules 运行 prometheus killall prometheus nohup ./prometheus --config.file=prometheus.yml &amp;amp; # 查看运行状况 tail -f nohup.out node_exporter 安装 docker-compose 安装 version: &amp;#34;3&amp;#34; services: node-exporter: image: prom/node-exporter:v1.</description>
@@ -103,10 +102,10 @@ nginx -t nginx -s reload 启动 nginx exporter nginx-prometheus-exporter -nginx.
     
     <item>
       <title>prometheus 配置</title>
-      <link>https://test.jobcher.com/posts/monitoring/prometheus/</link>
+      <link>/posts/monitoring/prometheus/</link>
       <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/posts/monitoring/prometheus/</guid>
+      <guid>/posts/monitoring/prometheus/</guid>
       <description>prometheus 配置 Prometheus 是由 SoundCloud 开源监控告警解决方案
 组件 Prometheus Server， 主要用于抓取数据和存储时序数据，另外还提供查询和 Alert Rule 配置管理。 client libraries，用于对接 Prometheus Server, 可以查询和上报数据。 push gateway ，用于批量，短期的监控数据的汇总节点，主要用于业务数据汇报等。 各种汇报数据的 exporters ，例如汇报机器数据的 node_exporter, 汇报 MongoDB 信息的 MongoDB exporter 等等。 用于告警通知管理的 alertmanager 。 运行逻辑 Prometheus server 定期从静态配置的 targets 或者服务发现的 targets 拉取数据。 当新拉取的数据大于配置内存缓存区的时候，Prometheus 会将数据持久化到磁盘（如果使用 remote storage 将持久化到云端）。 Prometheus 可以配置 rules，然后定时查询数据，当条件触发的时候，会将 alert 推送到配置的 Alertmanager。 Alertmanager 收到警告的时候，可以根据配置，聚合，去重，降噪，最后发送警告。 可以使用 API， Prometheus Console 或者 Grafana 查询和聚合数据。 安装 prometheus 使用预编译的二进制文件安装 wget https://github.com/prometheus/prometheus/releases/download/v2.32.1/prometheus-2.32.1.linux-amd64.tar.gz tar -zxvf prometheus-2.32.1.linux-amd64.tar.gz cd prometheus-2.</description>
     </item>

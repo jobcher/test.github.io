@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pve on 打工人日志</title>
-    <link>https://test.jobcher.com/tags/pve/</link>
-    <description>Recent content in pve on 打工人日志</description>
+    <title>pve on </title>
+    <link>/tags/pve/</link>
+    <description>Recent content in pve on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://test.jobcher.com/tags/pve/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/pve/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proxmox VE 在线扩容磁盘分区</title>
-      <link>https://test.jobcher.com/posts/diary/pve1/</link>
+      <link>/posts/diary/pve1/</link>
       <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/posts/diary/pve1/</guid>
+      <guid>/posts/diary/pve1/</guid>
       <description>Proxmox VE 在线扩容磁盘分区 添加磁盘大小 在 VM 上做扩容操作 安装 growpart yum install -y epel-release yum install -y cloud-utils 查看系统盘 路径 fdisk -l df -h 扩容设备并重启 growpart /dev/sda 2 #2代表是第二块系统分区，不是sda2,中间有空格 reboot 重启执行命令 xfs_growfs /dev/sda2 #(xfs 文件系统) resize2fs /dev/sda2 #(ext4 文件系统) 更新完成 df -h </description>
     </item>
     
