@@ -66,13 +66,38 @@ body {
     }
 }
 
-.btn-copy {
-    float: right;
-}
 
 .single-content {
     overflow: auto;
+}
+
+.pre code {
+    display: block;
+    padding: 1em;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    overflow: auto;
+    font-size: 0.9em;
+    position: relative;
+    white-space: pre-wrap;
   }
+  
+  .btn-copy {
+    float: right;
+    border: 0;
+    border-radius: 4px;
+    padding: 1px;
+    font-size: 0.7em;
+    line-height: 1.8;
+    color: #fff;
+    background-color: #777;
+    min-width: 55px;
+    text-align: center;
+  }
+
+.btn-copy:hover {
+    background-color: #a1a1a1;
+}
 
 .home {
     max-width: 100%;

@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         textArea.select();
         document.execCommand('copy');
         document.body.removeChild(textArea);
+        btn.textContent = '复制成功';
+        setTimeout(function() {
+            btn.textContent = '复制';
+            }
+        , 800);
       });
       block.parentNode.insertBefore(btn, block); // 将按钮插入到代码块前面
     });
