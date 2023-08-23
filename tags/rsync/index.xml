@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rsync on 打工人日志</title>
-    <link>https://test.jobcher.com/tags/rsync/</link>
+    <link>https://www.jobcher.com/tags/rsync/</link>
     <description>Recent content in rsync on 打工人日志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://test.jobcher.com/tags/rsync/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jobcher.com/tags/rsync/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rsync 文件同步</title>
-      <link>https://test.jobcher.com/posts/diary/rsync/</link>
+      <link>https://www.jobcher.com/posts/diary/rsync/</link>
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/posts/diary/rsync/</guid>
+      <guid>https://www.jobcher.com/posts/diary/rsync/</guid>
       <description>rsync 文件同步 rsync 是一个常用的 Linux 应用程序，用于文件同步
 安装 # Debian or Ubuntu $ sudo apt-get install rsync # Red Hat $ sudo yum install rsync # Arch Linux $ sudo pacman -S rsync 基本用法 使用 rsync 命令时，可以作为 cp 和 mv 命令的替代方法，将源目录同步到目标目录。
 -r 表示递归，即包含子目录。注意，-r 是必须的，否则 rsync 运行不会成功。source 目录表示源目录，destination 表示目标目录。
