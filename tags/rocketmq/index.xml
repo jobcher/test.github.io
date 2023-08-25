@@ -5,7 +5,7 @@
     <link>https://www.jobcher.com/tags/rocketmq.html</link>
     <description>Recent content in RocketMQ on 打工人日志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-CN</language>
     <lastBuildDate>Mon, 29 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jobcher.com/tags/rocketmq/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RocketMQ k8s部署 4主4从集群</title>
