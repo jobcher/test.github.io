@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>人工智能 on 打工人日志</title>
-    <link>https://test.jobcher.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.html</link>
+    <link>https://www.jobcher.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.html</link>
     <description>Recent content in 人工智能 on 打工人日志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://test.jobcher.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jobcher.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>探索midjourney(二)：midjourney prompt初体验</title>
-      <link>https://test.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%BA%8Cmidjourney-prompt%E5%88%9D%E4%BD%93%E9%AA%8C.html</link>
+      <link>https://www.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%BA%8Cmidjourney-prompt%E5%88%9D%E4%BD%93%E9%AA%8C.html</link>
       <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%BA%8Cmidjourney-prompt%E5%88%9D%E4%BD%93%E9%AA%8C.html</guid>
+      <guid>https://www.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%BA%8Cmidjourney-prompt%E5%88%9D%E4%BD%93%E9%AA%8C.html</guid>
       <description>紧接上文，我们继续探索midjourney prompt，这次我们来看看midjourney prompt的基础用法。
 midjourney 参数使用 参数是添加到提示中的选项，用于更改图像的生成方式。参数可以更改图像的长宽比、在中途模型版本之间切换、更改使用的 Upscaler 等等。参数始终添加到提示的末尾。您可以向每个提示添加多个参数
 许多 Apple 设备会自动将双连字符 (&amp;ndash;) 更改为长破折号 (—)。midjourney接受两者！
@@ -21,10 +21,10 @@ midjourney 参数使用 参数是添加到提示中的选项，用于更改图�
     
     <item>
       <title>探索midjourney(一)：人工智能生成图像软件的惊人之旅</title>
-      <link>https://test.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%B8%80%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%83%8A%E4%BA%BA%E4%B9%8B%E6%97%85.html</link>
+      <link>https://www.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%B8%80%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%83%8A%E4%BA%BA%E4%B9%8B%E6%97%85.html</link>
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%B8%80%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%83%8A%E4%BA%BA%E4%B9%8B%E6%97%85.html</guid>
+      <guid>https://www.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%B8%80%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%83%8A%E4%BA%BA%E4%B9%8B%E6%97%85.html</guid>
       <description>人工智能（AI）的快速发展为我们带来了许多令人兴奋的技术创新。其中一项令人瞩目的成果是人工智能生成图像软件，它通过机器学习和深度学习算法，能够创造出惊人逼真的图像。在本文中，我将分享我的旅程，探索这项令人着迷的技术，并展示它的潜力与魅力。这个系列我会长期更新下去
 midjourney是什么？ midjourney是一个人工智能生成图像软件，它可以生成惊人逼真的图像。它的工作原理是：它通过机器学习和深度学习算法，学习了大量的图像数据，然后通过这些数据，生成惊人逼真的图像。
 midjourney的使用 midjourney的使用非常简单，你只需要在这里注册并订阅输入你想要生成的图像的描述，然后点击生成按钮，midjourney就会生成一个惊人逼真的图像。
@@ -35,10 +35,10 @@ midjourney的demo 下面是我使用midjourney生成的一些惊人逼真的图�
     
     <item>
       <title>NVIDIA GPU 的 docker 安装和部署</title>
-      <link>https://test.jobcher.com/nvidia-gpu-%E7%9A%84-docker-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</link>
+      <link>https://www.jobcher.com/nvidia-gpu-%E7%9A%84-docker-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/nvidia-gpu-%E7%9A%84-docker-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</guid>
+      <guid>https://www.jobcher.com/nvidia-gpu-%E7%9A%84-docker-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</guid>
       <description>背景 在人工智能领域，GPU 是必不可少的。在本文中，我们将介绍如何在服务器上安装和部署 NVIDIA GPU 的 docker
 安装 确保你的系统已经安装了NVIDIA驱动和Docker引擎。确保驱动版本与Docker引擎兼容。你还需要安装nvidia-docker2软件包，它是NVIDIA Docker的一个插件。可以在https://github.com/NVIDIA/nvidia-docker上找到安装说明
 1.1 卸载旧版本的nvidia-docker(如果已安装) sudo apt-get remove nvidia-docker 1.2 添加nvidia-docker2仓库
@@ -49,10 +49,10 @@ sudo systemctl restart docker 通过以下命令测试是否安装成功 docker 
     
     <item>
       <title>调教Chat GPT生成Midjourney提示词</title>
-      <link>https://test.jobcher.com/%E8%B0%83%E6%95%99chat-gpt%E7%94%9F%E6%88%90midjourney%E6%8F%90%E7%A4%BA%E8%AF%8D.html</link>
+      <link>https://www.jobcher.com/%E8%B0%83%E6%95%99chat-gpt%E7%94%9F%E6%88%90midjourney%E6%8F%90%E7%A4%BA%E8%AF%8D.html</link>
       <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/%E8%B0%83%E6%95%99chat-gpt%E7%94%9F%E6%88%90midjourney%E6%8F%90%E7%A4%BA%E8%AF%8D.html</guid>
+      <guid>https://www.jobcher.com/%E8%B0%83%E6%95%99chat-gpt%E7%94%9F%E6%88%90midjourney%E6%8F%90%E7%A4%BA%E8%AF%8D.html</guid>
       <description>实现功能 Priming GPT4 for Midjourney V5 将每一步直接输入给chatgpt即可，记住要一步步输入
 第一步： Hello ，Today we are gonna create Images with a Diffusion model. I am gonna feed you some information about it. okey?
 第二步： This is how Midjourney work: Midjourney is another AI-powered tool that generates images from user prompts. MidJourney is proficient at adapting actual art styles to create an image of any combination of things the user wants. It excels at creating environments, especially fantasy and sci-fi scenes, with dramatic lighting that looks like rendered concept art from a video game.</description>
@@ -60,10 +60,10 @@ sudo systemctl restart docker 通过以下命令测试是否安装成功 docker 
     
     <item>
       <title>🧠ChatGPT 中文使用指南</title>
-      <link>https://test.jobcher.com/chatgpt-%E4%B8%AD%E6%96%87%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html</link>
+      <link>https://www.jobcher.com/chatgpt-%E4%B8%AD%E6%96%87%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html</link>
       <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/chatgpt-%E4%B8%AD%E6%96%87%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html</guid>
+      <guid>https://www.jobcher.com/chatgpt-%E4%B8%AD%E6%96%87%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html</guid>
       <description>🧠ChatGPT 中文使用指南 ChatGPT是由OpenAI训练的一款大型语言模型，能够生成类人文本。
 国内中文版 它能够生成类似于人类写作的文本。您只需要给出提示或提出问题，它就可以生成你想要的东西。
 在此页面中，您将找到可与 ChatGPT 一起使用的各种提示。
@@ -75,10 +75,10 @@ sudo systemctl restart docker 通过以下命令测试是否安装成功 docker 
     
     <item>
       <title>ChatGPT Plus开通教程攻略</title>
-      <link>https://test.jobcher.com/chatgpt-plus%E5%BC%80%E9%80%9A%E6%95%99%E7%A8%8B%E6%94%BB%E7%95%A5.html</link>
+      <link>https://www.jobcher.com/chatgpt-plus%E5%BC%80%E9%80%9A%E6%95%99%E7%A8%8B%E6%94%BB%E7%95%A5.html</link>
       <pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://test.jobcher.com/chatgpt-plus%E5%BC%80%E9%80%9A%E6%95%99%E7%A8%8B%E6%94%BB%E7%95%A5.html</guid>
+      <guid>https://www.jobcher.com/chatgpt-plus%E5%BC%80%E9%80%9A%E6%95%99%E7%A8%8B%E6%94%BB%E7%95%A5.html</guid>
       <description>ChatGPT Plus开通教程攻略 鉴于免费的ChatGPT账号经常无响应或者响应慢，一些已经顺利注册到ChatGPT的推特用户私信我，问我怎么开通ChatGPT Plus，于是我收集了各大佬们的各种开通ChatGPT Plus的方法，挑一个比较简单的测试了一下，目前顺利开通了ChatGPT Plus，20美金一个月，想要体验的同学可以跟着试试，目前国内大部分的master或者visa信用卡都无法通过验证的，我也是使用网友推荐的Depay信用卡成功开通ChatGPT Plus的。
 而且这卡还可以绑定美区的Apple ID作为付款方式，虽然美区Apple ID可以使用支付宝或者购买礼品卡进行充值，况且我已经绑定了Paypal，这卡还可以绑定国内微信支付宝进行消费，挺不错的。ChatGPT Plus开通攻略
 1、硬性条件 如果你具有两个条件，那么可以试试这个方法，能够顺利开通到ChatGPT Plus。
