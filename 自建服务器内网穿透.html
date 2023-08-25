@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="./css/style.css">
+
+<script src="./js/style.js"></script>
+
+
+
+    <title>自建服务器内网穿透 - 打工人日志</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" id="logo" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="./">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="./posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="./posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">自建服务器内网穿透</h2>
+            
+        </header>
+        <article class="article">
+                <div class="single-content">
+                    <h1 id="内网穿透">内网穿透</h1>
+<p>文章中使用的内网穿透前提是必须具有公网 IP 的云服务器，不符合条件的同学可以跳过了。</p>
+<h2 id="nps-内网穿透">nps 内网穿透</h2>
+<p>nps 是一款轻量级、高性能、功能强大的内网穿透代理服务器。</p>
+<h3 id="在公网服务器上安装-nps-sever-端">在公网服务器上安装 nps sever 端</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    wget https://github.com/ehang-io/nps/releases/download/v0.26.10/linux_amd64_server.tar.gz
+</span></span><span style="display:flex;"><span>    tar -zxvf linux_amd64_server.tar.gz
+</span></span><span style="display:flex;"><span>    sudo ./nps install
+</span></span><span style="display:flex;"><span>    sudo nps start
+</span></span></code></pre></div><h3 id="在控制端安装-npc-client-端">在控制端安装 npc client 端</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    wget https://github.com/ehang-io/nps/releases/download/v0.26.10/linux_amd64_client.tar.gz
+</span></span><span style="display:flex;"><span>    tar -zxvf linux_amd64_client.tar.gz
+</span></span><span style="display:flex;"><span>    sudo ./npc -server<span style="color:#f92672">=</span>ip:port -vkey<span style="color:#f92672">=</span>web界面中显示的密钥
+</span></span><span style="display:flex;"><span>    sudo npc start
+</span></span></code></pre></div><p>npc 安装完成可以进入 web 页面穿透端口和域名<br>
+http://localhost:8080</p>
+<h2 id="frps-内网穿透">frps 内网穿透</h2>
+<p>frps 相对于 nps 的劣势是有断流的风险<br>
+frps 相对于 nps 的优势是对于高流量的媒体服务能够提供更可靠的支持</p>
+<h3 id="安装-frps">安装 frps</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    wget https://code.aliyun.com/MvsCode/frps-onekey/raw/master/install-frps.sh -O ./install-frps.sh
+</span></span><span style="display:flex;"><span>    chmod <span style="color:#ae81ff">700</span> ./install-frps.sh
+</span></span><span style="display:flex;"><span>    ./install-frps.sh install
+</span></span></code></pre></div><p>卸载 frps 服务</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    ./install-frps.sh uninstall
+</span></span></code></pre></div><p>更新 frps 服务</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    ./install-frps.sh update
+</span></span></code></pre></div><p>Server management（服务管理器）</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>    Usage: /etc/init.d/frps <span style="color:#f92672">{</span>start|stop|restart|status|config|version<span style="color:#f92672">}</span>
+</span></span></code></pre></div>
+                </div>
+            <br />
+        <div>
+                
+                <a href="https://test.jobcher.com/tcp/ip%E8%AF%A6%E8%A7%A3.html" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BAk3s.html" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="./posts/about">关于我们</a></li>
+            
+            <li><a href="./posts">博文合集</a></li>
+            
+            <li><a href="./">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

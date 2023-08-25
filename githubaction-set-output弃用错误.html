@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="./css/style.css">
+
+<script src="./js/style.js"></script>
+
+
+
+    <title>githubAction set-output弃用错误 - 打工人日志</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" id="logo" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="./">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="./posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="./posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">githubAction set-output弃用错误</h2>
+            
+        </header>
+        <article class="article">
+                <div class="single-content">
+                    <h1 id="githubaction-set-output-弃用错误">githubAction set-output 弃用错误</h1>
+<p>The <code>set-output</code> command is deprecated and will be disabled soon. Please upgrade to using Environment Files. For more information see: <a href="https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/">https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/</a></p>
+<h2 id="原因">原因</h2>
+<p>如果您有一个使用 设置输出的<code>GitHub Actionsecho ::set-output key=value</code>工作流程，您已经开始看到无用的弃用警告。这是修复它的方法。查看官方链接基本上得不到什么帮助！</p>
+<h2 id="修复方法">修复方法</h2>
+<ol>
+<li>更新其它人的 action 方法</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>将 @actions/core 提升到 1.10.0
+</span></span></code></pre></div><ol start="2">
+<li>修改自己的 aciton 方法</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>run: echo <span style="color:#e6db74">&#34;::set-output name=KEY::VALUE&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 改为</span>
+</span></span><span style="display:flex;"><span>run: echo <span style="color:#e6db74">&#34;KEY=VALUE&#34;</span> &gt;&gt;$GITHUB_OUTPUT
+</span></span></code></pre></div><blockquote>
+<p>建议：使用自己的方法</p>
+</blockquote>
+<h2 id="总结">总结</h2>
+<p>平台经营者非常肆意妄为的修改自己的代码内容弃用功能，无限的权力滋生傲慢……我相信大部分开发这并没有注意到这个告警，知道流水线服务报错之后才会注意到，希望微软可以对能更加包容不同的开发者，尊重开发者社区。</p>
+
+                </div>
+            <br />
+        <div>
+                
+                <a href="https://test.jobcher.com/nexus3-%E4%BD%BF%E7%94%A8%E5%92%8C%E9%83%A8%E7%BD%B2.html" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/%E6%89%93%E5%BC%80web-3.0%E7%9A%84%E5%A4%A7%E9%97%A8ipfs%E4%BD%BF%E7%94%A8.html" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="./posts/about">关于我们</a></li>
+            
+            <li><a href="./posts">博文合集</a></li>
+            
+            <li><a href="./">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="./css/style.css">
+
+<script src="./js/style.js"></script>
+
+
+
+    <title>安装配置 Terraform - 打工人日志</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" id="logo" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="./">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="./posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="./posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">安装配置 Terraform</h2>
+            
+        </header>
+        <article class="article">
+                <div class="single-content">
+                    <h1 id="安装配置-terraform">安装配置 Terraform</h1>
+<h2 id="安装">安装</h2>
+<ol>
+<li>macOS 苹果系统安装</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#安装</span>
+</span></span><span style="display:flex;"><span>brew tap hashicorp/tap
+</span></span><span style="display:flex;"><span>brew install hashicorp/tap/terraform
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 更新</span>
+</span></span><span style="display:flex;"><span>brew update
+</span></span><span style="display:flex;"><span>brew upgrade hashicorp/tap/terraform
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#验证安装</span>
+</span></span><span style="display:flex;"><span>terraform -help
+</span></span></code></pre></div><ol start="2">
+<li>windows 系统安装</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#安装</span>
+</span></span><span style="display:flex;"><span>choco install terraform
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#直接到这个url里下载64位系统</span>
+</span></span><span style="display:flex;"><span>https://www.terraform.io/downloads
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#验证安装</span>
+</span></span><span style="display:flex;"><span>terraform -help
+</span></span></code></pre></div><ol start="3">
+<li>Linux 安装</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+</span></span><span style="display:flex;"><span>sudo apt-add-repository <span style="color:#e6db74">&#34;deb [arch=amd64] https://apt.releases.hashicorp.com </span><span style="color:#66d9ef">$(</span>lsb_release -cs<span style="color:#66d9ef">)</span><span style="color:#e6db74"> main&#34;</span>
+</span></span><span style="display:flex;"><span>sudo apt-get update <span style="color:#f92672">&amp;&amp;</span> sudo apt-get install terraform
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#验证安装</span>
+</span></span><span style="display:flex;"><span>terraform -help
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>wget -O- https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo | sudo tee /etc/yum.repos.d/hashicorp.repo
+</span></span><span style="display:flex;"><span>sudo yum install terraform -y
+</span></span></code></pre></div><h2 id="terrafrom-控制-proxmox-虚拟机">terrafrom 控制 proxmox 虚拟机</h2>
+<p>来源：https://github.com/Telmate/terraform-provider-proxmox</p>
+<h3 id="首先你要有一台-pve-主机">首先你要有一台 pve 主机</h3>
+<p>安装过程本篇文章就不想了，主要是要写一下关于他的配置<br>
+<a href="https://pve.proxmox.com/pve-docs/">https://pve.proxmox.com/pve-docs/</a></p>
+<ol>
+<li>下载</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>wget https://github.com/Telmate/terraform-provider-proxmox/releases/download/v2.9.3/terraform-provider-proxmox_2.9.3_linux_amd64.zip
+</span></span><span style="display:flex;"><span>unzip terraform-provider-proxmox_2.9.3_linux_amd64.zip
+</span></span></code></pre></div><h3 id="编写-terrafrom-程序">编写 terrafrom 程序</h3>
+<ol>
+<li>虚拟机 main.tf</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>terraform <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  required_version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&gt;= 0.14&#34;</span>
+</span></span><span style="display:flex;"><span>  required_providers <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    proxmox <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      source  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;telmate/proxmox&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>provider <span style="color:#e6db74">&#34;proxmox&#34;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 配置选项</span>
+</span></span><span style="display:flex;"><span>    pm_tls_insecure <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span>    pm_api_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://localhost:8006/api2/json&#34;</span>
+</span></span><span style="display:flex;"><span>    pm_user <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;root@pam&#34;</span>
+</span></span><span style="display:flex;"><span>    pm_password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;passwd&#34;</span>
+</span></span><span style="display:flex;"><span>    pm_otp <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 创建VM</span>
+</span></span><span style="display:flex;"><span>resource <span style="color:#e6db74">&#34;proxmox_vm_qemu&#34;</span> <span style="color:#e6db74">&#34;cloudinit-test&#34;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;terraform-test-vm&#34;</span>
+</span></span><span style="display:flex;"><span>    desc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;A test for using terraform and cloudinit&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#节点名称必须与集群内的名称相同</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#这可能不包括 FQDN</span>
+</span></span><span style="display:flex;"><span>    target_node <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pve&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#新虚拟机的目标资源池</span>
+</span></span><span style="display:flex;"><span>    pool <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pool0&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#从中克隆这个虚拟机的模板名称</span>
+</span></span><span style="display:flex;"><span>    clone <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;node0&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#为这个虚拟机激活 QEMU 代理</span>
+</span></span><span style="display:flex;"><span>    agent <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    os_type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;cloud-init&#34;</span>
+</span></span><span style="display:flex;"><span>    cores <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    sockets <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    vcpus <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    cpu <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;host&#34;</span>
+</span></span><span style="display:flex;"><span>    memory <span style="color:#f92672">=</span> <span style="color:#ae81ff">2048</span>
+</span></span><span style="display:flex;"><span>    scsihw <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lsi&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#设置磁盘</span>
+</span></span><span style="display:flex;"><span>    disk <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        size <span style="color:#f92672">=</span> <span style="color:#ae81ff">32</span>
+</span></span><span style="display:flex;"><span>        type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;virtio&#34;</span>
+</span></span><span style="display:flex;"><span>        storage <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;local-lvm&#34;</span>
+</span></span><span style="display:flex;"><span>        storage_type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lvmthin&#34;</span>
+</span></span><span style="display:flex;"><span>        iothread <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        ssd <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        discard <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;on&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#设置网络接口并分配一个 vlan 标签：256</span>
+</span></span><span style="display:flex;"><span>    network <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        model <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;virtio&#34;</span>
+</span></span><span style="display:flex;"><span>        bridge <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;vmbr0&#34;</span>
+</span></span><span style="display:flex;"><span>        tag <span style="color:#f92672">=</span> <span style="color:#ae81ff">256</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ol start="2">
+<li>运行 terrafrom</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># 初始化</span>
+</span></span><span style="display:flex;"><span>terraform init
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 查看产生的变更</span>
+</span></span><span style="display:flex;"><span>terraform plan
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 运行</span>
+</span></span><span style="display:flex;"><span>terraform apply
+</span></span></code></pre></div><h2 id="配置">配置</h2>
+<p>配置这个 terraform 我们这个需要持续更新，首先我们先配置 Azure 吧</p>
+<h3 id="azure-配置">Azure 配置</h3>
+<ol>
+<li>安装 azurecli</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># linux</span>
+</span></span><span style="display:flex;"><span>curl -L https://aka.ms/InstallAzureCli | bash
+</span></span><span style="display:flex;"><span>apt install azure-cli
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># macOS</span>
+</span></span><span style="display:flex;"><span>brew update <span style="color:#f92672">&amp;&amp;</span> brew install azure-cli
+</span></span></code></pre></div><ol start="2">
+<li>登录 azure</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># 中国区azure</span>
+</span></span><span style="display:flex;"><span>az cloud set --name AzureCloud
+</span></span><span style="display:flex;"><span>az login -u &lt;账户&gt; -p &lt;密码&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#海外azure</span>
+</span></span><span style="display:flex;"><span>az cloud set --name AzureChinaCloud
+</span></span><span style="display:flex;"><span>az login -u &lt;账户&gt; -p &lt;密码&gt;
+</span></span></code></pre></div><ol start="3">
+<li>创建 terrafrom 代码
+创建 main.tf</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tf" data-lang="tf"><span style="display:flex;"><span><span style="color:#75715e"># 正在使用的 Azure 提供程序源和版本
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">terraform</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">required_version</span> = <span style="color:#e6db74">&#34;&gt;=0.12&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">required_providers</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">azurerm</span> = {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">source</span> = <span style="color:#e6db74">&#34;hashicorp/azurerm&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">version</span> = <span style="color:#e6db74">&#34;~&gt;2.0&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}<span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"># 配置 Microsoft Azure 提供程序
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">provider</span> <span style="color:#e6db74">&#34;azurerm&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">features</span> {}
+</span></span><span style="display:flex;"><span>}<span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"># 资源组前缀
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">resource</span> <span style="color:#e6db74">&#34;random_pet&#34;</span> <span style="color:#e6db74">&#34;rg-name&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">prefix</span>    = var.<span style="color:#a6e22e">resource_group_name_prefix</span>
+</span></span><span style="display:flex;"><span>}<span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"># 创建资源组
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">resource</span> <span style="color:#e6db74">&#34;azurerm_resource_group&#34;</span> <span style="color:#e6db74">&#34;rg&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span>      = <span style="color:#a6e22e">random_pet</span>.<span style="color:#a6e22e">rg</span><span style="color:#f92672">-</span><span style="color:#a6e22e">name</span>.<span style="color:#a6e22e">id</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">location</span>  = var.<span style="color:#a6e22e">resource_group_location</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>创建 variable.tf</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tf" data-lang="tf"><span style="display:flex;"><span><span style="color:#66d9ef">variable</span> <span style="color:#e6db74">&#34;resource_group_name_prefix&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">default</span>       = <span style="color:#e6db74">&#34;rg&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">description</span>   = <span style="color:#e6db74">&#34;Prefix of the resource group name that&#39;s combined with a random ID so name is unique in your Azure subscription.&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">variable</span> <span style="color:#e6db74">&#34;resource_group_location&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">default</span> = <span style="color:#e6db74">&#34;eastus&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">description</span>   = <span style="color:#e6db74">&#34;Location of the resource group.&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+                </div>
+            <br />
+        <div>
+                
+                <a href="https://test.jobcher.com/k3s-%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC.html" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/%E5%AD%9C%E7%84%B6%E6%9D%8F%E9%B2%8D%E8%8F%87-%E7%B4%A0%E9%A3%9F.html" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="./posts/about">关于我们</a></li>
+            
+            <li><a href="./posts">博文合集</a></li>
+            
+            <li><a href="./">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>

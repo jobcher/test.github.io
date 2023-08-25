@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link media="all" rel="stylesheet" href="./css/style.css">
+
+<script src="./js/style.js"></script>
+
+
+
+    <title>Logstash 自动重载配置文件 - 打工人日志</title>
+</head>
+
+<body>
+    <div class="header-box">
+    <img src="https://test.jobcher.com/images/logo.webp" id="logo" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
+</div>
+<nav class="nav">
+    <ul>
+        
+            <li>
+                <a href="./">首页</a>
+                
+            </li>
+        
+            <li>
+                <a href="./posts">文章</a>
+                
+            </li>
+        
+            <li>
+                <a href="https://nav.jobcher.com/">导航</a>
+                
+            </li>
+        
+            <li>
+                <a href="./posts/about">关于</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+    <div id="post" class="post">
+        <header>
+            <h2 class="post-title">Logstash 自动重载配置文件</h2>
+            
+                <img src="./images/lostash.png" alt="Logstash 自动重载配置文件" class="featured-image">
+            
+        </header>
+        <article class="article">
+                <div class="single-content">
+                    <h2 id="工作原理">工作原理</h2>
+<ol>
+<li>检测到配置文件变化</li>
+<li>通过停止所有输入停止当前<code>pipline</code></li>
+<li>用新的配置创建一个新的管道</li>
+<li>检查配置文件语法是否正确</li>
+<li>检查所有的输入和输出是否可以初始化</li>
+<li>检查成功使用新的 pipeline 替换当前的<code>pipeline</code></li>
+<li>检查失败,使用旧的继续工作.</li>
+<li>在重载过程中,jvm 没有重启.</li>
+</ol>
+<h2 id="logstash-自动重新加载配置">Logstash 自动重新加载配置</h2>
+<p>为了可以<code>自动检测</code>配置文件的变动和自动重新加载配置文件,需要在启动的时候使用以下命令:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>./bin/lagstash -f configfile.conf --config.reload.automatic
+</span></span></code></pre></div><blockquote>
+<p>启动 Logstash 的时候使用<code>--config.reload.automatic</code>或<code>-r</code>选项来开启自动重载配置。</p>
+</blockquote>
+<h2 id="修改检测间隔时间">修改检测间隔时间</h2>
+<p>默认检测配置文件的间隔时间是<code>3秒</code>,可以通过以下命令改变</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>--config.reload.interval &lt;second&gt;
+</span></span></code></pre></div><p>如果 Logstash 已经运行并且没有开启自动重载，你可以强制 Logstash 重新载入配置文件并且重启管道通过发送一个 SIGHUP 信号。比如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kill -1 &lt;pid&gt;
+</span></span></code></pre></div><p>其中<!-- raw HTML omitted -->是正在运行的 Logstash 的进程号。</p>
+<h2 id="注意">注意！！！</h2>
+<blockquote>
+<p><code>stdin</code>输入插件不支持自动重启.<br>
+<code>syslog</code>作为输入源,当重载配置文件时,会崩溃.<br>
+<a href="https://github.com/logstash-plugins/logstash-input-syslog/issues/40">解决方法</a></p>
+</blockquote>
+
+                </div>
+            <br />
+        <div>
+                
+                <a href="https://test.jobcher.com/zlibary-%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" class="prev">前一页</a>
+                
+                
+                <a href="https://test.jobcher.com/macos-13-%E5%8D%87%E7%BA%A7-%E8%BD%AF%E4%BB%B6%E5%A4%B1%E6%95%88.html" class="next">后一页</a>
+                
+            </div>
+        </article>
+    </div>
+
+    <nav class="footer-nav">
+        <ul>
+            
+            <li><a href="./posts/about">关于我们</a></li>
+            
+            <li><a href="./posts">博文合集</a></li>
+            
+            <li><a href="./">网站首页</a></li>
+            
+        </ul>
+    </nav>
+    <footer class="footer">
+    <span style="color: aliceblue;">© 2019-2023 by jobcher</span>
+</footer>
+</body>
+
+</html>
