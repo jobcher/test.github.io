@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link media="all" rel="stylesheet" href="/css/style.css">
+<link media="all" rel="stylesheet" href="../../../css/style.css">
 
-<script src="/js/style.js"></script>
+<script src="../../../js/style.js"></script>
 
 
 
@@ -16,19 +16,19 @@
 
 <body>
     <div class="header-box">
-    <img src="https://www.jobcher.com/images/logo.webp" id="logo" alt="logo" class="logo">
-    <h1><a href="https://www.jobcher.com">打工人日志</a></h1>
+    <img src="https://test.jobcher.com/images/logo.webp" id="logo" alt="logo" class="logo">
+    <h1><a href="https://test.jobcher.com">打工人日志</a></h1>
 </div>
 <nav class="nav">
     <ul>
         
             <li>
-                <a href="/">首页</a>
+                <a href="../../../">首页</a>
                 
             </li>
         
             <li>
-                <a href="/posts">文章</a>
+                <a href="../../../posts">文章</a>
                 
             </li>
         
@@ -38,7 +38,7 @@
             </li>
         
             <li>
-                <a href="/posts/about">关于</a>
+                <a href="../../../posts/about">关于</a>
                 
             </li>
         
@@ -122,14 +122,14 @@
 <p>传输层，对报文进行分组(发送时)、组装(接收时)提供<br>
 当进程需要传输可靠的数据时应使用 TCP，当进程需要高效传输数据，可以忽略可靠性时应使用 UDP 协议。</p>
 <h2 id="4简述-tcp-三次握手的过程">4、简述 TCP 三次握手的过程。</h2>
-<p><img src="/images/tcp1.gif" alt="三次握手"></p>
+<p><img src="../../../images/tcp1.gif" alt="三次握手"></p>
 <ol>
 <li>第一次握手：Client 将标志位 SYN 置为 1，随机产生一个值 seq=J，并将该数据包发送给 Server，Client 进入 SYN_SENT 状态，等待 Server 确认。</li>
 <li>第二次握手：Server 收到数据包后由标志位 SYN=1 知道 Client 请求建立连接，Server 将标志位 SYN 和 ACK 都置为 1，ack=J+1，随机产生一个值 seq=K，并将该数据包发送给 Client 以确认连接请求，Server 进入 SYN_RCVD 状态。</li>
 <li>第三次握手：Client 收到确认后，检查 ack 是否为 J+1，ACK 是否为 1，如果正确则将标志位 ACK 置为 1，ack=K+1，并将该数据包发送给 Server，Server 检查 ack 是否为 K+1，ACK 是否为 1，如果正确则连接建立成功，Client 和 Server 进入 ESTABLISHED 状态，完成三次握手，随后 Client 与 Server 之间可以开始传输数据了。</li>
 </ol>
 <h2 id="5简述-tcp-包头的内容">5、简述 TCP 包头的内容。</h2>
-<p><img src="/images/tcp.png" alt="TCP报文段"></p>
+<p><img src="../../../images/tcp.png" alt="TCP报文段"></p>
 <ol>
 <li>
 <p>源端口和目的端口：各占 2 个字节，分别写入源端口和目的端口。IP 地址 + 端口号就可以确定一个进程地址</p>
@@ -188,7 +188,7 @@
 <p>不要将确认序号 Ack 与标志位中的 ACK 搞混了。<br>
 确认方 Ack=发起方 Req+1，两端配对。</p>
 <h2 id="6简述-tcp-四次挥手的过程">6、简述 TCP 四次挥手的过程。</h2>
-<p><img src="/images/tcp2.gif" alt="四次挥手"></p>
+<p><img src="../../../images/tcp2.gif" alt="四次挥手"></p>
 <ol>
 <li>第一次挥手：Client 发送一个 FIN，用来关闭 Client 到 Server 的数据传送，Client 进入 FIN_WAIT_1 状态。</li>
 <li>第二次挥手：Server 收到 FIN 后，发送一个 ACK 给 Client，确认序号为收到序号+1（与 SYN 相同，一个 FIN 占用一个序号），Server 进入 CLOSE_WAIT 状态。</li>
@@ -231,10 +231,10 @@
             <br />
         <div>
                 
-                <a href="https://www.jobcher.com/posts/web/nginx03/" class="prev">前一页</a>
+                <a href="https://test.jobcher.com/posts/web/nginx03/" class="prev">前一页</a>
                 
                 
-                <a href="https://www.jobcher.com/posts/docker/docker-kong/" class="next">后一页</a>
+                <a href="https://test.jobcher.com/posts/docker/docker-kong/" class="next">后一页</a>
                 
             </div>
         </article>
@@ -243,11 +243,11 @@
     <nav class="footer-nav">
         <ul>
             
-            <li><a href="/posts/about">关于我们</a></li>
+            <li><a href="../../../posts/about">关于我们</a></li>
             
-            <li><a href="/posts">博文合集</a></li>
+            <li><a href="../../../posts">博文合集</a></li>
             
-            <li><a href="/">网站首页</a></li>
+            <li><a href="../../../">网站首页</a></li>
             
         </ul>
     </nav>

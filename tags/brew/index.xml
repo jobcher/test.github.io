@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>brew on 打工人日志</title>
-    <link>https://www.jobcher.com/tags/brew/</link>
+    <link>https://test.jobcher.com/tags/brew/</link>
     <description>Recent content in brew on 打工人日志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jobcher.com/tags/brew/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://test.jobcher.com/tags/brew/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>zlibary 无法下载 解决方案</title>
-      <link>https://www.jobcher.com/posts/mac/zlibary/</link>
+      <link>https://test.jobcher.com/posts/mac/zlibary/</link>
       <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/posts/mac/zlibary/</guid>
+      <guid>https://test.jobcher.com/posts/mac/zlibary/</guid>
       <description>zlibary 无法下载 因为 zlib 最近被封，导致现在通过正常方法下载不了电子书，但是不要慌，我们可以通过暗网进行下载~
 安装 brave 浏览器 官网下载
 下载你需要的版本，这个下载浏览器很简单，我就不多说了
@@ -21,10 +21,10 @@
     
     <item>
       <title>macOS 13 升级 软件失效</title>
-      <link>https://www.jobcher.com/posts/mac/macos13/</link>
+      <link>https://test.jobcher.com/posts/mac/macos13/</link>
       <pubDate>Mon, 31 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/posts/mac/macos13/</guid>
+      <guid>https://test.jobcher.com/posts/mac/macos13/</guid>
       <description>关于 macOS 13 软件失效 Warning: You are using macOS 13.
 We do not provide support for this pre-release version.
 You will encounter build failures with some formulae.
@@ -35,10 +35,10 @@ Please create pull requests instead of asking for help on Homebrew&amp;rsquo;s G
     
     <item>
       <title>brew 安装配置</title>
-      <link>https://www.jobcher.com/posts/mac/brew/</link>
+      <link>https://test.jobcher.com/posts/mac/brew/</link>
       <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/posts/mac/brew/</guid>
+      <guid>https://test.jobcher.com/posts/mac/brew/</guid>
       <description>brew 安装配置 一.安装 1.在 ubuntu 上安装 brew /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34; 2.在 centos 上安装 brew /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34; 3.在 MacOS 上安装 brew /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34; 二、使用 1.安装 wget brew install wget Homebrew 会将软件包安装到独立目录，并将其文件软链接至 /usr/local
 $ cd /usr/local $ find Cellar Cellar/wget/1.16.1 Cellar/wget/1.16.1/bin/wget Cellar/wget/1.16.1/share/man/man1/wget.1 $ ls -l bin bin/wget -&amp;gt; ../Cellar/wget/1.16.1/bin/wget 2.创建你自己的 Homebrew 包 $ brew create https://foo.com/bar-1.0.tgz Created /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/bar.rb 3.撤销你的变更或与上游更新合并 $ brew edit wget # 使用 $EDITOR 编辑!</description>
     </item>
