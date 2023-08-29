@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 打工人日志</title>
-    <link>https://www.jobcher.com/posts.html</link>
+    <link>https://test.jobcher.com/posts.html</link>
     <description>Recent content in Posts on 打工人日志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jobcher.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://test.jobcher.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2023亚运会电竞门票民购买指南（报名&#43;抽签）</title>
-      <link>https://www.jobcher.com/2023%E4%BA%9A%E8%BF%90%E4%BC%9A%E7%94%B5%E7%AB%9E%E9%97%A8%E7%A5%A8%E6%B0%91%E8%B4%AD%E4%B9%B0%E6%8C%87%E5%8D%97%E6%8A%A5%E5%90%8D-%E6%8A%BD%E7%AD%BE.html</link>
+      <link>https://test.jobcher.com/2023%E4%BA%9A%E8%BF%90%E4%BC%9A%E7%94%B5%E7%AB%9E%E9%97%A8%E7%A5%A8%E6%B0%91%E8%B4%AD%E4%B9%B0%E6%8C%87%E5%8D%97%E6%8A%A5%E5%90%8D-%E6%8A%BD%E7%AD%BE.html</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/2023%E4%BA%9A%E8%BF%90%E4%BC%9A%E7%94%B5%E7%AB%9E%E9%97%A8%E7%A5%A8%E6%B0%91%E8%B4%AD%E4%B9%B0%E6%8C%87%E5%8D%97%E6%8A%A5%E5%90%8D-%E6%8A%BD%E7%AD%BE.html</guid>
+      <guid>https://test.jobcher.com/2023%E4%BA%9A%E8%BF%90%E4%BC%9A%E7%94%B5%E7%AB%9E%E9%97%A8%E7%A5%A8%E6%B0%91%E8%B4%AD%E4%B9%B0%E6%8C%87%E5%8D%97%E6%8A%A5%E5%90%8D-%E6%8A%BD%E7%AD%BE.html</guid>
       <description>2023亚运会电竞门票民购买指南（报名+抽签） 杭州亚运会电子竞技项目门票于8月14日陆续启动销售，门票实名登记。杭州亚运会电子竞技项目以报名抽签，中签支付的形式对公众销售
 杭州亚运会电子竞技项目以报名抽签，中签支付的形式对公众销售，包括梦三国2、DOTA2、王者荣耀亚运版本、FIFAOnline4、和平精英亚运版本、街霸V、英雄联盟7个小项全部可售场次。
 根据竞赛日程安排，上述7个项目将分4批次启动报名，每个批次的报名、抽签、支付时间不同，具体安排如下：
@@ -24,10 +24,10 @@
     
     <item>
       <title>Vue3 &#43; vite &#43; nginx项目部署后404问题</title>
-      <link>https://www.jobcher.com/vue3--vite--nginx%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%90%8E404%E9%97%AE%E9%A2%98.html</link>
+      <link>https://test.jobcher.com/vue3--vite--nginx%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%90%8E404%E9%97%AE%E9%A2%98.html</link>
       <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/vue3--vite--nginx%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%90%8E404%E9%97%AE%E9%A2%98.html</guid>
+      <guid>https://test.jobcher.com/vue3--vite--nginx%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%90%8E404%E9%97%AE%E9%A2%98.html</guid>
       <description>Vue3 + vite + nginx项目部署后404问题 vue3 + vite + nginx
 在服务器上部署后打开首页都没问题，打开其他路径全部 404。
 nginx 报错日志：No such file or directory
@@ -39,10 +39,10 @@ server { listen 80; server_name localhost; location / { root /dist; index index.
     
     <item>
       <title>大麦抢票辅助软件(福利 TFBOYS十年之约演唱会 2023 全机位 视频)</title>
-      <link>https://www.jobcher.com/%E5%A4%A7%E9%BA%A6%E6%8A%A2%E7%A5%A8%E8%BE%85%E5%8A%A9%E8%BD%AF%E4%BB%B6%E7%A6%8F%E5%88%A9-tfboys%E5%8D%81%E5%B9%B4%E4%B9%8B%E7%BA%A6%E6%BC%94%E5%94%B1%E4%BC%9A-2023-%E5%85%A8%E6%9C%BA%E4%BD%8D-%E8%A7%86%E9%A2%91.html</link>
+      <link>https://test.jobcher.com/%E5%A4%A7%E9%BA%A6%E6%8A%A2%E7%A5%A8%E8%BE%85%E5%8A%A9%E8%BD%AF%E4%BB%B6%E7%A6%8F%E5%88%A9-tfboys%E5%8D%81%E5%B9%B4%E4%B9%8B%E7%BA%A6%E6%BC%94%E5%94%B1%E4%BC%9A-2023-%E5%85%A8%E6%9C%BA%E4%BD%8D-%E8%A7%86%E9%A2%91.html</link>
       <pubDate>Tue, 08 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E5%A4%A7%E9%BA%A6%E6%8A%A2%E7%A5%A8%E8%BE%85%E5%8A%A9%E8%BD%AF%E4%BB%B6%E7%A6%8F%E5%88%A9-tfboys%E5%8D%81%E5%B9%B4%E4%B9%8B%E7%BA%A6%E6%BC%94%E5%94%B1%E4%BC%9A-2023-%E5%85%A8%E6%9C%BA%E4%BD%8D-%E8%A7%86%E9%A2%91.html</guid>
+      <guid>https://test.jobcher.com/%E5%A4%A7%E9%BA%A6%E6%8A%A2%E7%A5%A8%E8%BE%85%E5%8A%A9%E8%BD%AF%E4%BB%B6%E7%A6%8F%E5%88%A9-tfboys%E5%8D%81%E5%B9%B4%E4%B9%8B%E7%BA%A6%E6%BC%94%E5%94%B1%E4%BC%9A-2023-%E5%85%A8%E6%9C%BA%E4%BD%8D-%E8%A7%86%E9%A2%91.html</guid>
       <description>大麦抢票辅助软件(福利 TFBOYS十年之约演唱会 2023 全机位 视频) 只限android手机！IOS手机不支持！
 DaMaiHelper是一款大麦抢票辅助软件（只抢待开抢中的），软件原理是抓取页面ui控件id，通过模拟点击实现的大麦辅助抢票，软件需要开启相应的权限，如果页面渲染太慢，就会抓取失败导致点击超时无效，所以可以手动辅助点击，该软件只能起到辅助效果，帮忙快速点击，一定要提前选好场次、价格还有观影人，收藏到想看。
 项目地址
@@ -54,10 +54,10 @@ DaMaiHelper是一款大麦抢票辅助软件（只抢待开抢中的），软件
     
     <item>
       <title>黑群晖最新安装教程</title>
-      <link>https://www.jobcher.com/%E9%BB%91%E7%BE%A4%E6%99%96%E6%9C%80%E6%96%B0%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html</link>
+      <link>https://test.jobcher.com/%E9%BB%91%E7%BE%A4%E6%99%96%E6%9C%80%E6%96%B0%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E9%BB%91%E7%BE%A4%E6%99%96%E6%9C%80%E6%96%B0%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html</guid>
+      <guid>https://test.jobcher.com/%E9%BB%91%E7%BE%A4%E6%99%96%E6%9C%80%E6%96%B0%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html</guid>
       <description>黑群晖最新安装教程 我这里拿蜗牛星际举例讲解，如何安装群晖最新引导文件，如何正常使用黑群晖。
 准备 黑群晖设备一台 电源线 hdmi 或者其他视频线 有线鼠标 有线键盘 显示器 8g 以上U盘 一块1T以上硬盘 开始安装 1. 制作U盘启动器 下载 大白菜U盘制作器 https://www.dabaicai.com/
 1、打开大白菜超级U盘装机工具，点击主界面的【U盘启动】模块，然后选择【默认模式】。
@@ -90,10 +90,10 @@ Synology Assistant: https://cndl.synology.cn/download/Utility/Assistant/7.0.4-50
     
     <item>
       <title>CocoaPods 安装及碰到问题</title>
-      <link>https://www.jobcher.com/cocoapods-%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A2%B0%E5%88%B0%E9%97%AE%E9%A2%98.html</link>
+      <link>https://test.jobcher.com/cocoapods-%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A2%B0%E5%88%B0%E9%97%AE%E9%A2%98.html</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/cocoapods-%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A2%B0%E5%88%B0%E9%97%AE%E9%A2%98.html</guid>
+      <guid>https://test.jobcher.com/cocoapods-%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A2%B0%E5%88%B0%E9%97%AE%E9%A2%98.html</guid>
       <description>背景 CocoaPods 是OS X和IOS 下的第三类库管理工具，通过CocoaPods工具我们可以为项目添加被称为Pods的依赖库
 检查环境 ruby -v gem -v 出现异常问题 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin22/rbconfig.rb:21: warning: Insecure world writable dir /opt/homebrew/bin in PATH, mode 040777
 该警告信息表明在你的PATH环境变量中包含了一个“不安全可写”（Insecure world writable）的目录/opt/homebrew/bin。这可能会导致潜在的安全问题。
@@ -106,20 +106,20 @@ sudo gem install cocoapods 出现异常问题 ERROR: While executing gem &amp;he
     
     <item>
       <title>Ansible部署ceph集群</title>
-      <link>https://www.jobcher.com/ansible%E9%83%A8%E7%BD%B2ceph%E9%9B%86%E7%BE%A4.html</link>
+      <link>https://test.jobcher.com/ansible%E9%83%A8%E7%BD%B2ceph%E9%9B%86%E7%BE%A4.html</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/ansible%E9%83%A8%E7%BD%B2ceph%E9%9B%86%E7%BE%A4.html</guid>
+      <guid>https://test.jobcher.com/ansible%E9%83%A8%E7%BD%B2ceph%E9%9B%86%E7%BE%A4.html</guid>
       <description>基础配置 三台环境为centos7.9，以下配置需要在每台机器上执行
 配置hosts解析 cat &amp;gt;&amp;gt; /etc/hosts &amp;lt;&amp;lt;EOF 192.168.2.23 node1 192.168.2.24 node2 192.168.2.25 node3 EOF 关闭防火墙和selinux systemctl stop firewalld &amp;amp;&amp;amp; systemctl disable firewalld setenforce 0 &amp;amp;&amp;amp; sed -i &amp;#39;s/SELINUX=enforcing/SELINUX=disabled/g&amp;#39; /etc/selinux/config 分别在三个节点设置主机名 hostnamectl set-hostname node1 hostnamectl set-hostname node2 hostnamectl set-hostname node3 配置主机时间同步 systemctl restart chronyd.service &amp;amp;&amp;amp; systemctl enable chronyd.service 配置免密登录 ssh-keygen ssh-copy-id -i .ssh/id_rsa.pub node1 ssh-copy-id -i .ssh/id_rsa.pub node2 ssh-copy-id -i .ssh/id_rsa.pub node3 安装pip和ansible、git yum install python-pip ansible git -y 部署ceph集群 克隆存储库 这里我选择安装的是ceph nautilus版本</description>
     </item>
     
     <item>
       <title>最好的微信朋友圈集赞神器-福利推荐</title>
-      <link>https://www.jobcher.com/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%E9%9B%86%E8%B5%9E%E7%A5%9E%E5%99%A8-%E7%A6%8F%E5%88%A9%E6%8E%A8%E8%8D%90.html</link>
+      <link>https://test.jobcher.com/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%E9%9B%86%E8%B5%9E%E7%A5%9E%E5%99%A8-%E7%A6%8F%E5%88%A9%E6%8E%A8%E8%8D%90.html</link>
       <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%E9%9B%86%E8%B5%9E%E7%A5%9E%E5%99%A8-%E7%A6%8F%E5%88%A9%E6%8E%A8%E8%8D%90.html</guid>
+      <guid>https://test.jobcher.com/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%E9%9B%86%E8%B5%9E%E7%A5%9E%E5%99%A8-%E7%A6%8F%E5%88%A9%E6%8E%A8%E8%8D%90.html</guid>
       <description>最好的微信朋友圈集赞神器-集赞2.0 奶茶店活动，朋友圈集满50个赞，送一杯奶茶。 饭店新开张，朋友圈集满98个赞，全场7折优惠。 旅游景点拉人气，朋友圈集满60个赞，送门票。
 还在为这些恼人的朋友圈集赞发愁吗？ 还在为拿着其他地方生成的集赞图片，怕被发现而胆战心惊吗？ 翻遍通讯录，求着好友帮忙点赞。还是不够数？
 现在“集赞”发布，1比1还原微信，轻松设置点赞数，再也不用担心点赞数量，大大方方展示，不惧查验，轻松薅羊毛。 应付生活中各种需要转发点赞场景，体验效果绝非是那种仅仅生成一张点赞图片能比的。
@@ -129,10 +129,10 @@ sudo gem install cocoapods 出现异常问题 ERROR: While executing gem &amp;he
     
     <item>
       <title>探索midjourney(二)：midjourney prompt初体验</title>
-      <link>https://www.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%BA%8Cmidjourney-prompt%E5%88%9D%E4%BD%93%E9%AA%8C.html</link>
+      <link>https://test.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%BA%8Cmidjourney-prompt%E5%88%9D%E4%BD%93%E9%AA%8C.html</link>
       <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%BA%8Cmidjourney-prompt%E5%88%9D%E4%BD%93%E9%AA%8C.html</guid>
+      <guid>https://test.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%BA%8Cmidjourney-prompt%E5%88%9D%E4%BD%93%E9%AA%8C.html</guid>
       <description>紧接上文，我们继续探索midjourney prompt，这次我们来看看midjourney prompt的基础用法。
 midjourney 参数使用 参数是添加到提示中的选项，用于更改图像的生成方式。参数可以更改图像的长宽比、在中途模型版本之间切换、更改使用的 Upscaler 等等。参数始终添加到提示的末尾。您可以向每个提示添加多个参数
 许多 Apple 设备会自动将双连字符 (&amp;ndash;) 更改为长破折号 (—)。midjourney接受两者！
@@ -141,10 +141,10 @@ midjourney 参数使用 参数是添加到提示中的选项，用于更改图�
     
     <item>
       <title>探索midjourney(一)：人工智能生成图像软件的惊人之旅</title>
-      <link>https://www.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%B8%80%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%83%8A%E4%BA%BA%E4%B9%8B%E6%97%85.html</link>
+      <link>https://test.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%B8%80%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%83%8A%E4%BA%BA%E4%B9%8B%E6%97%85.html</link>
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%B8%80%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%83%8A%E4%BA%BA%E4%B9%8B%E6%97%85.html</guid>
+      <guid>https://test.jobcher.com/%E6%8E%A2%E7%B4%A2midjourney%E4%B8%80%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%83%8A%E4%BA%BA%E4%B9%8B%E6%97%85.html</guid>
       <description>人工智能（AI）的快速发展为我们带来了许多令人兴奋的技术创新。其中一项令人瞩目的成果是人工智能生成图像软件，它通过机器学习和深度学习算法，能够创造出惊人逼真的图像。在本文中，我将分享我的旅程，探索这项令人着迷的技术，并展示它的潜力与魅力。这个系列我会长期更新下去
 midjourney是什么？ midjourney是一个人工智能生成图像软件，它可以生成惊人逼真的图像。它的工作原理是：它通过机器学习和深度学习算法，学习了大量的图像数据，然后通过这些数据，生成惊人逼真的图像。
 midjourney的使用 midjourney的使用非常简单，你只需要在这里注册并订阅输入你想要生成的图像的描述，然后点击生成按钮，midjourney就会生成一个惊人逼真的图像。
@@ -155,10 +155,10 @@ midjourney的demo 下面是我使用midjourney生成的一些惊人逼真的图�
     
     <item>
       <title>推荐一下 容器云资源</title>
-      <link>https://www.jobcher.com/%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%8B-%E5%AE%B9%E5%99%A8%E4%BA%91%E8%B5%84%E6%BA%90.html</link>
+      <link>https://test.jobcher.com/%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%8B-%E5%AE%B9%E5%99%A8%E4%BA%91%E8%B5%84%E6%BA%90.html</link>
       <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%8B-%E5%AE%B9%E5%99%A8%E4%BA%91%E8%B5%84%E6%BA%90.html</guid>
+      <guid>https://test.jobcher.com/%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%8B-%E5%AE%B9%E5%99%A8%E4%BA%91%E8%B5%84%E6%BA%90.html</guid>
       <description>背景 很多同学在开发软件和测试软件的早期，都会遇到一个问题：如何快速的搭建一个测试环境。这个问题在开发软件的早期是非常棘手的，因为开发软件的早期，往往是没有任何的资源的。这个时候，我们就需要借助一些云资源来帮助我们快速的搭建一个测试环境。接下我会推荐一些云资源，希望能够帮助到大家。
 推荐 1.vercel vercel是一个提供托管服务的网站，它可以帮助我们快速的部署一个静态网站。它的优点是：免费、快速、简单。它的缺点是：只能部署静态网站。如果你的项目是一个静态网站，那么我强烈推荐你使用vercel。
 2。zeabur zeabur是一个帮助开发者一键部署自己的服务的平台，免费方案限制1个项目数量，1vCPU,内存512M，存储1GB 适合做文档和个人博客
@@ -168,10 +168,10 @@ midjourney的demo 下面是我使用midjourney生成的一些惊人逼真的图�
     
     <item>
       <title>NVIDIA GPU 的 docker 安装和部署</title>
-      <link>https://www.jobcher.com/nvidia-gpu-%E7%9A%84-docker-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</link>
+      <link>https://test.jobcher.com/nvidia-gpu-%E7%9A%84-docker-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/nvidia-gpu-%E7%9A%84-docker-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</guid>
+      <guid>https://test.jobcher.com/nvidia-gpu-%E7%9A%84-docker-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</guid>
       <description>背景 在人工智能领域，GPU 是必不可少的。在本文中，我们将介绍如何在服务器上安装和部署 NVIDIA GPU 的 docker
 安装 确保你的系统已经安装了NVIDIA驱动和Docker引擎。确保驱动版本与Docker引擎兼容。你还需要安装nvidia-docker2软件包，它是NVIDIA Docker的一个插件。可以在https://github.com/NVIDIA/nvidia-docker上找到安装说明
 1.1 卸载旧版本的nvidia-docker(如果已安装) sudo apt-get remove nvidia-docker 1.2 添加nvidia-docker2仓库
@@ -182,10 +182,10 @@ sudo systemctl restart docker 通过以下命令测试是否安装成功 docker 
     
     <item>
       <title>skywalking python agent 安装和配置</title>
-      <link>https://www.jobcher.com/skywalking-python-agent-%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE.html</link>
+      <link>https://test.jobcher.com/skywalking-python-agent-%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE.html</link>
       <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/skywalking-python-agent-%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE.html</guid>
+      <guid>https://test.jobcher.com/skywalking-python-agent-%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE.html</guid>
       <description>背景 skywalking 是一个APM监控，在java和微服务领域非常流行。但是在python领域，skywalking的使用率并不高。本文将介绍如何安装和配置skywalking python agent。
 SkyWalking Python 代理实现了一个命令行界面，可用于在部署期间将代理附加到出色的应用程序，而无需更改任何应用程序代码，就像 SkyWalking Java 代理一样。
 安装skywalking python agent pip install apache-skywalking 运行 sw-python 以查看它是否可用，您需要按环境变量传递配置。
@@ -194,10 +194,10 @@ SkyWalking Python 代理实现了一个命令行界面，可用于在部署期�
     
     <item>
       <title>调教Chat GPT生成Midjourney提示词</title>
-      <link>https://www.jobcher.com/%E8%B0%83%E6%95%99chat-gpt%E7%94%9F%E6%88%90midjourney%E6%8F%90%E7%A4%BA%E8%AF%8D.html</link>
+      <link>https://test.jobcher.com/%E8%B0%83%E6%95%99chat-gpt%E7%94%9F%E6%88%90midjourney%E6%8F%90%E7%A4%BA%E8%AF%8D.html</link>
       <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E8%B0%83%E6%95%99chat-gpt%E7%94%9F%E6%88%90midjourney%E6%8F%90%E7%A4%BA%E8%AF%8D.html</guid>
+      <guid>https://test.jobcher.com/%E8%B0%83%E6%95%99chat-gpt%E7%94%9F%E6%88%90midjourney%E6%8F%90%E7%A4%BA%E8%AF%8D.html</guid>
       <description>实现功能 Priming GPT4 for Midjourney V5 将每一步直接输入给chatgpt即可，记住要一步步输入
 第一步： Hello ，Today we are gonna create Images with a Diffusion model. I am gonna feed you some information about it. okey?
 第二步： This is how Midjourney work: Midjourney is another AI-powered tool that generates images from user prompts. MidJourney is proficient at adapting actual art styles to create an image of any combination of things the user wants. It excels at creating environments, especially fantasy and sci-fi scenes, with dramatic lighting that looks like rendered concept art from a video game.</description>
@@ -205,10 +205,10 @@ SkyWalking Python 代理实现了一个命令行界面，可用于在部署期�
     
     <item>
       <title>如何礼貌回绝不合理的需求</title>
-      <link>https://www.jobcher.com/%E5%A6%82%E4%BD%95%E7%A4%BC%E8%B2%8C%E5%9B%9E%E7%BB%9D%E4%B8%8D%E5%90%88%E7%90%86%E7%9A%84%E9%9C%80%E6%B1%82.html</link>
+      <link>https://test.jobcher.com/%E5%A6%82%E4%BD%95%E7%A4%BC%E8%B2%8C%E5%9B%9E%E7%BB%9D%E4%B8%8D%E5%90%88%E7%90%86%E7%9A%84%E9%9C%80%E6%B1%82.html</link>
       <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E5%A6%82%E4%BD%95%E7%A4%BC%E8%B2%8C%E5%9B%9E%E7%BB%9D%E4%B8%8D%E5%90%88%E7%90%86%E7%9A%84%E9%9C%80%E6%B1%82.html</guid>
+      <guid>https://test.jobcher.com/%E5%A6%82%E4%BD%95%E7%A4%BC%E8%B2%8C%E5%9B%9E%E7%BB%9D%E4%B8%8D%E5%90%88%E7%90%86%E7%9A%84%E9%9C%80%E6%B1%82.html</guid>
       <description>背景 最近在做一个项目，项目的需求是这样的： spring-cloud有一个服务A，服务A有一个接口，接口的功能是根据传入的参数，返回一个字符串。但是服务响应非常的慢，大概需要4秒左右。这个响应速度是不能忍受的！但是这个服务的开发强行说要上线。我们有几个选项：
 1.不上线，但是这个服务的开发无法按期交付 2.上线，但是这个服务的响应速度太慢了，运维背锅 3.劝说服务的开发，让他们优化接口的响应速度
 相信大家都会选择第3个选择，那我们站在运维的角度如何劝说服务的开发呢？ 劝说 故障级联（Cascading Failures）：连接超时的服务可能会导致其他服务出现故障级联效应。这是因为微服务系统中的服务通常会相互调用和依赖。当一个服务连接超时时，其他依赖该服务的服务可能无法及时获取所需的数据或执行必要的操作，从而导致它们自身出现故障。
@@ -220,10 +220,10 @@ SkyWalking Python 代理实现了一个命令行界面，可用于在部署期�
     
     <item>
       <title>在windows上安装appium</title>
-      <link>https://www.jobcher.com/%E5%9C%A8windows%E4%B8%8A%E5%AE%89%E8%A3%85appium.html</link>
+      <link>https://test.jobcher.com/%E5%9C%A8windows%E4%B8%8A%E5%AE%89%E8%A3%85appium.html</link>
       <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E5%9C%A8windows%E4%B8%8A%E5%AE%89%E8%A3%85appium.html</guid>
+      <guid>https://test.jobcher.com/%E5%9C%A8windows%E4%B8%8A%E5%AE%89%E8%A3%85appium.html</guid>
       <description>在windows上安装appium Appium 主要用于软件测试自动化领域，以帮助确定给定应用程序的功能是否按预期工作。与其他类型的软件测试相比，UI 自动化允许测试人员编写代码，在应用程序的实际 UI 中演练用户方案，尽可能模拟现实世界中发生的情况，同时实现自动化的各种好处，包括速度、规模和一致性。
 安装nodejs Appium是基于Node.js构建的,所以首先需要安装Node.js
 下载地址：https://nodejs.org/en/download/
@@ -241,10 +241,10 @@ from appium import webdriver import time desired_caps = {} desired_caps[&amp;#39
     
     <item>
       <title>nginx 配置和编译</title>
-      <link>https://www.jobcher.com/nginx-%E9%85%8D%E7%BD%AE%E5%92%8C%E7%BC%96%E8%AF%91.html</link>
+      <link>https://test.jobcher.com/nginx-%E9%85%8D%E7%BD%AE%E5%92%8C%E7%BC%96%E8%AF%91.html</link>
       <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/nginx-%E9%85%8D%E7%BD%AE%E5%92%8C%E7%BC%96%E8%AF%91.html</guid>
+      <guid>https://test.jobcher.com/nginx-%E9%85%8D%E7%BD%AE%E5%92%8C%E7%BC%96%E8%AF%91.html</guid>
       <description>nginx 自编译 nginx官网
 下载nginx-&amp;gt;Configure-&amp;gt;编译-&amp;gt;安装
 下载nginx wget https://nginx.org/download/nginx-1.24.0.tar.gz 解压目录
@@ -253,30 +253,30 @@ tar -zxvf nginx-1.24.0.tar.gz 编译最新的 nginx,并备份旧的二进制文�
     
     <item>
       <title>github 国内代理访问下载</title>
-      <link>https://www.jobcher.com/github-%E5%9B%BD%E5%86%85%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E4%B8%8B%E8%BD%BD.html</link>
+      <link>https://test.jobcher.com/github-%E5%9B%BD%E5%86%85%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E4%B8%8B%E8%BD%BD.html</link>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/github-%E5%9B%BD%E5%86%85%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E4%B8%8B%E8%BD%BD.html</guid>
+      <guid>https://test.jobcher.com/github-%E5%9B%BD%E5%86%85%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE%E4%B8%8B%E8%BD%BD.html</guid>
       <description>演示代理 前缀 https://github.jobcher.com/gh/ 下载仓库 git clone https://github.jobcher.com/gh/&amp;lt;你要下载的GitHub地址&amp;gt; #例子 git clone https://github.jobcher.com/gh/https://github.com/jobcher/blog.git 部署 复制js到cloudflare worker
 &amp;#39;use strict&amp;#39; /** * static files (404.html, sw.js, conf.js) */ const ASSET_URL = &amp;#39;https://jobcher.github.io/&amp;#39; // 前缀，如果自定义路由为example.com/gh/*，将PREFIX改为 &amp;#39;/gh/&amp;#39;，注意，少一个杠都会错！ const PREFIX = &amp;#39;/gh/&amp;#39; // 分支文件使用jsDelivr镜像的开关，0为关闭，默认关闭 const Config = { jsdelivr: 0 } const whiteList = [] // 白名单，路径里面有包含字符的才会通过，e.g. [&amp;#39;/username/&amp;#39;] /** @type {RequestInit} */ const PREFLIGHT_INIT = { status: 204, headers: new Headers({ &amp;#39;access-control-allow-origin&amp;#39;: &amp;#39;*&amp;#39;, &amp;#39;access-control-allow-methods&amp;#39;: &amp;#39;GET,POST,PUT,PATCH,TRACE,DELETE,HEAD,OPTIONS&amp;#39;, &amp;#39;access-control-max-age&amp;#39;: &amp;#39;1728000&amp;#39;, }), } const exp1 = /^(?</description>
     </item>
     
     <item>
       <title>使用scrapy-redis实现增量爬取</title>
-      <link>https://www.jobcher.com/%E4%BD%BF%E7%94%A8scrapy-redis%E5%AE%9E%E7%8E%B0%E5%A2%9E%E9%87%8F%E7%88%AC%E5%8F%96.html</link>
+      <link>https://test.jobcher.com/%E4%BD%BF%E7%94%A8scrapy-redis%E5%AE%9E%E7%8E%B0%E5%A2%9E%E9%87%8F%E7%88%AC%E5%8F%96.html</link>
       <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E4%BD%BF%E7%94%A8scrapy-redis%E5%AE%9E%E7%8E%B0%E5%A2%9E%E9%87%8F%E7%88%AC%E5%8F%96.html</guid>
+      <guid>https://test.jobcher.com/%E4%BD%BF%E7%94%A8scrapy-redis%E5%AE%9E%E7%8E%B0%E5%A2%9E%E9%87%8F%E7%88%AC%E5%8F%96.html</guid>
       <description>使用scrapy-redis实现增量爬取 Scrapy-Redis是Scrapy框架的一个插件，可以使用Redis实现Scrapy的分布式爬虫。它使用Redis作为分布式队列，可以轻松地将爬虫分布在多个机器上。同时，它还提供了一些功能，如去重、持久化、增量爬取等。
 要使用Scrapy-Redis实现增量爬取，可以采取以下步骤： 在Scrapy项目中安装Scrapy-Redis插件。可以使用pip安装：pip install scrapy-redis 在Scrapy的settings.py中添加如下配置： # 使用Redis调度器 SCHEDULER = &amp;#34;scrapy_redis.scheduler.Scheduler&amp;#34; # 使用Redis去重过滤器 DUPEFILTER_CLASS = &amp;#34;scrapy_redis.dupefilter.RFPDupeFilter&amp;#34; # 允许暂停、恢复爬取 SCHEDULER_PERSIST = True 将Spider的爬取链接放入Redis队列中。可以在Spider中重载start_requests()方法，从Redis队列中获取链接开始爬取。 import scrapy from scrapy_redis.spiders import RedisSpider class MySpider(RedisSpider): name = &amp;#39;myspider&amp;#39; redis_key = &amp;#39;myspider:start_urls&amp;#39; def parse(self, response): # 处理响应 pass 在Spider中实现增量爬取。可以通过重载Spider中的start_requests()方法或者使用SpiderMiddleware来实现增量爬取。这里提供一种通过修改Redis队列来实现增量爬取的方法。 import scrapy import redis from scrapy_redis.spiders import RedisSpider from scrapy.utils.project import get_project_settings class MySpider(RedisSpider): name = &amp;#39;myspider&amp;#39; redis_key = &amp;#39;myspider:start_urls&amp;#39; redis_conn = None def __init__(self, *args, **kwargs): super(MySpider, self).</description>
     </item>
     
     <item>
       <title>打工人周报（第八期）</title>
-      <link>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%85%AB%E6%9C%9F.html</link>
+      <link>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%85%AB%E6%9C%9F.html</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%85%AB%E6%9C%9F.html</guid>
+      <guid>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%85%AB%E6%9C%9F.html</guid>
       <description>打工人周报：记录每周值得分享的内容,周四发布,`第八期`欢迎关注。 资讯动态 1. OpenAI公布最新版本GPT-4 称其能在SAT考试中击败90%考生 3月14日，人工智能研究公司OpenAI公布了其大型语言模型的最新版本——GPT-4，并表示模型在许多专业测试中表现出“人类水平的性能”。
 据悉，OpenAI于2020年发布了GPT-3（生成型预训练变换模型3），并将其与GPT-3.5分别用于创建Dall-E和聊天机器人ChatGPT，这两款产品极大地吸引了公众的关注，并刺激其他科技公司更积极地追求人工智能（AI）。
 OpenAI周二表示，在内部评估中，GPT-4产生正确回应的可能性要比GPT-3.5高出40%。而且GPT-4是多模态的，同时支持文本和图像输入功能。OpenAI称，GPT-4在模拟律师资格考试的成绩在考生中排名前10%左右，在SAT阅读考试中排名前7%左右，在SAT数学考试中排名前11%左右。据合作方爆料，新版必应搜索引擎也将使用GPT-4。（财联社）
@@ -297,10 +297,10 @@ OpenAI周二表示，在内部评估中，GPT-4产生正确回应的可能性要
     
     <item>
       <title>打工人周报（第七期）</title>
-      <link>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%83%E6%9C%9F.html</link>
+      <link>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%83%E6%9C%9F.html</link>
       <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%83%E6%9C%9F.html</guid>
+      <guid>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%83%E6%9C%9F.html</guid>
       <description>打工人周报：记录每周值得分享的内容,周四发布,`第七期`欢迎关注。 资讯动态 1. 特斯拉因石子故障维修需花14万，特斯拉回应：电池价位占总价一半，都是明码标价 江西南昌董女士反映自己开特斯拉出门因碾压到路上小石子，石子弹射到车辆空气管致故障。行驶中发现行驶灯故障并出现无法加速情况。董女士将其送往维修中心。经过检测鉴定为电池故障需更换电池，费用大约需要14万元。高额的维修更换费用让董女士难以接受，目前该车辆正在走流程当中。据特斯拉官方回应称：电池价格占到车辆总价的一半，因为电池相对很重要，它的价格都是官方明码标价。（知未）
 2. 中文在线：国内首个科幻主题元宇宙RESTART将于本月进行首期功能模块上线 3月8日，中文在线在互动平台表示，公司目前已上线3款AIGC产品，分别为AI主播、AI绘画和AI文字创作功能。此外，根据公司自有IP打造的国内首个科幻主题元宇宙RESTART（重启宇宙）将于本月进行首期功能模块上线。同时，公司在国内和国外的不同应用产品上进行AIGC技术测试，推动业务合作。（界面新闻）
 3. 上海宜家回应禁止在仓库拍照：若影响其他客户体验将制止 近日，有网友发现在宜家大仓库区域不允许拍照。上海某门店客服称“一般的情况下，我们是让每个顾客满意，如果只是拿出手机随意拍两张是无所谓的。但是有的人，一些网店的人他们会拿着自己的箱子，服装来拍，影响到了其他客户的体验，在我们没法判断顾客进来是否会影响到他人的情况下，我们一般是不允许拍照的。”（新闻晨报）
@@ -321,10 +321,10 @@ OpenAI周二表示，在内部评估中，GPT-4产生正确回应的可能性要
     
     <item>
       <title>🧠ChatGPT 中文使用指南</title>
-      <link>https://www.jobcher.com/chatgpt-%E4%B8%AD%E6%96%87%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html</link>
+      <link>https://test.jobcher.com/chatgpt-%E4%B8%AD%E6%96%87%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html</link>
       <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/chatgpt-%E4%B8%AD%E6%96%87%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html</guid>
+      <guid>https://test.jobcher.com/chatgpt-%E4%B8%AD%E6%96%87%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html</guid>
       <description>🧠ChatGPT 中文使用指南 ChatGPT是由OpenAI训练的一款大型语言模型，能够生成类人文本。
 国内中文版 它能够生成类似于人类写作的文本。您只需要给出提示或提出问题，它就可以生成你想要的东西。
 在此页面中，您将找到可与 ChatGPT 一起使用的各种提示。
@@ -336,10 +336,10 @@ OpenAI周二表示，在内部评估中，GPT-4产生正确回应的可能性要
     
     <item>
       <title>打工人周报（第六期）</title>
-      <link>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%85%AD%E6%9C%9F.html</link>
+      <link>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%85%AD%E6%9C%9F.html</link>
       <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%85%AD%E6%9C%9F.html</guid>
+      <guid>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%85%AD%E6%9C%9F.html</guid>
       <description>打工人周报：记录每周值得分享的内容,周四发布,`第六期`欢迎关注。 资讯动态 1. 知乎推出“一起公考AI课”APP，再加码教育业务 近日，知乎上线了一款名为“一起公考AI课”的APP，是知乎教育旗下的职业教育品牌。据悉，该产品运用了AI教学技术，专门提供公务员考试课程内容。根据体验，“一起公考AI课”APP，当前主要提供“行测”的笔试内容，通过AI教学技术逐节解锁5大模块，覆盖192个知识点，部分课程服务需进行付费。（Tech星球）
 2. 苹果：今天起，iPhone等设备电池正式涨价 苹果官网显示，从3月1日起，苹果iPhone、iPad、Mac部分机型的换电池服务将正式涨价。其中，iPhone 14之前的所有iPhone机型保外电池服务费用将增加169元。所有MacBook Air机型的保外电池服务费用也将增加290元，而所有Macbook和MacBook Pro机型的保外电池服务费用将增加480元。此外，以下iPad机型的保外电池服务费用将增加149元。
 3. Snap推出ChatGPT驱动的聊天机器人 据报道，照片信息应用Snapchat的母公司Snap在表示，将推出一个由ChatGPT技术驱动的AI聊天机器人。当前，该公司正寻求进入热门的生成式AI领域。Snap表示，新的聊天机器人名为My AI，将提供给Snap的高级订阅Snapchat+的用户使用。Snap表示，在经过训练之后，My AI能够提供一种有趣和轻松的对话方式，并将能够提供创造性的想法，如为朋友的生日提供潜在的礼物，或为某个主题写一首诗。
@@ -373,10 +373,10 @@ Runway
     
     <item>
       <title>ChatGPT Plus开通教程攻略</title>
-      <link>https://www.jobcher.com/chatgpt-plus%E5%BC%80%E9%80%9A%E6%95%99%E7%A8%8B%E6%94%BB%E7%95%A5.html</link>
+      <link>https://test.jobcher.com/chatgpt-plus%E5%BC%80%E9%80%9A%E6%95%99%E7%A8%8B%E6%94%BB%E7%95%A5.html</link>
       <pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/chatgpt-plus%E5%BC%80%E9%80%9A%E6%95%99%E7%A8%8B%E6%94%BB%E7%95%A5.html</guid>
+      <guid>https://test.jobcher.com/chatgpt-plus%E5%BC%80%E9%80%9A%E6%95%99%E7%A8%8B%E6%94%BB%E7%95%A5.html</guid>
       <description>ChatGPT Plus开通教程攻略 鉴于免费的ChatGPT账号经常无响应或者响应慢，一些已经顺利注册到ChatGPT的推特用户私信我，问我怎么开通ChatGPT Plus，于是我收集了各大佬们的各种开通ChatGPT Plus的方法，挑一个比较简单的测试了一下，目前顺利开通了ChatGPT Plus，20美金一个月，想要体验的同学可以跟着试试，目前国内大部分的master或者visa信用卡都无法通过验证的，我也是使用网友推荐的Depay信用卡成功开通ChatGPT Plus的。
 而且这卡还可以绑定美区的Apple ID作为付款方式，虽然美区Apple ID可以使用支付宝或者购买礼品卡进行充值，况且我已经绑定了Paypal，这卡还可以绑定国内微信支付宝进行消费，挺不错的。ChatGPT Plus开通攻略
 1、硬性条件 如果你具有两个条件，那么可以试试这个方法，能够顺利开通到ChatGPT Plus。
@@ -405,10 +405,10 @@ iOS需要外区账号
     
     <item>
       <title>打工人周报（第五期）</title>
-      <link>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%BA%94%E6%9C%9F.html</link>
+      <link>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%BA%94%E6%9C%9F.html</link>
       <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%BA%94%E6%9C%9F.html</guid>
+      <guid>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%BA%94%E6%9C%9F.html</guid>
       <description>打工人周报：记录每周值得分享的内容,周四发布,`第五期`欢迎关注。 资讯动态 1. 星链拟推出“全球漫游”互联网服务 月收费超 1300 元 SpaceX 旗下星链（Starlink）卫星互联网服务部分用户收到的最新消息显示，该公司正在测试名为“全球漫游”的互联网服务，其可以让人们“在世界上的任何地方接入网络”。然而，使用这项服务的费用并不便宜，除了花费 599 美元购买基本的星链套件之外，用户每月还需支付 200 美元（约合 1373 元人民币）费用。
 2. 爱奇艺黄金 VIP 恢复 720P 和 1080P 投屏 不再限制登录设备种类 2 月 20 日，爱奇艺做出两项会员服务调整：为 2023 年 2 月 20 日仍处于订阅状态的爱奇艺黄金 VIP 会员，恢复 720P 和 1080P 清晰度的投屏服务，以及爱奇艺黄金、白金、星钻 VIP 会员可在 5 台设备上登录，不再限制登录设备种类。当播放设备数量达上限后，爱奇艺会提示用户选择希望使用的播放设备。如遇 IP 地址异常等安全风险导致账号锁定，用户可通过修改密码解除锁定。
 3. 消息称京东拟 3 月初上线百亿补贴频道 2 月 20 日消息，据媒体报道，京东计划在 3 月初上线百亿补贴频道，正式向拼多多开战。报道称，百亿补贴频道将在 3 月 1 日~3 月 3 日前台切量 100%正式上线；3 月 3 日晚 8 点正式开场。今年，京东大商超事业群将重点发力 pop，自年初实施“0 元开店”策略以来，已经邀请了一批商家入驻，并承诺给予入驻商家一定的流量倾斜。至于这次京东的补贴方案，无论是自营还是 pop，都将与拼多多的商品价格进行比较，如果价格高于拼多多，就会进行补贴，同时也会与拼多多拉平抽取费用。报道还称，拼多多方面已采取初步应对措施，比如，拼多多百亿补贴频道已将部分京东员工 IP 屏蔽。（深厂）</description>
@@ -416,10 +416,10 @@ iOS需要外区账号
     
     <item>
       <title>打工人周报（第四期）</title>
-      <link>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%9B%9B%E6%9C%9F.html</link>
+      <link>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%9B%9B%E6%9C%9F.html</link>
       <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%9B%9B%E6%9C%9F.html</guid>
+      <guid>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%9B%9B%E6%9C%9F.html</guid>
       <description>打工人周报：记录每周值得分享的内容,周四发布,`第四期`欢迎关注。 上周因为个人原因延了一期，之后会补上。 资讯动态 1. 宝马 i4 车主收到通知：车停在陡坡上无法升级 近日，宝马 i4 车主 Clare Eliza 近日收到通知：“路面太陡无法启动升级程序。请将车辆停到平坦区域再进行更新”。也就是说宝马 i4 车辆停在陡坡上就无法执行更新。宝马发言人表示：“宝马 i4 配备了俯仰、偏航、横向和纵向加速和减速等各种各样的传感器，汽车能够自行检测是否停在平坦路面上。这是一项安全预防措施，防止在糟糕的情况下导致车辆无法正常升级，避免滑坡等情况影响系统的升级”。（IT 之家）
 2. 科学家发现阻止新冠病毒感染的受体 悉尼大学的科学家在肺部发现一种蛋白质，可阻止 SARS-CoV-2 感染，在人体内形成天然保护屏障。被称为 LRRC15（leucine-rich repeat-containing protein 15） 的蛋白质能与 SARS-CoV-2 结合但不传播感染。英国牛津以及美国布朗和耶鲁大学的团队都各自独立在 LRRC15 蛋白质中发现了受体。
 SARS-CoV-2 病毒主要通过与 ACE2 受体结合感染人体细胞，而肺细胞具有高水平的 ACE2 受体，因此病毒主要通过感染肺部而造成严重问题。LRRC15 和 ACE2 一样都是 SARS-CoV-2 的受体，但不同之处是它不支持感染，通过粘住病毒使其无法移动，防止其它脆弱的细胞被感染。它会形成一道屏障，隔离病毒和最脆弱的肺细胞。（奇客 Solidot）
@@ -429,10 +429,10 @@ SARS-CoV-2 病毒主要通过与 ACE2 受体结合感染人体细胞，而肺细
     
     <item>
       <title>打工人周报（第三期）</title>
-      <link>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%89%E6%9C%9F.html</link>
+      <link>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%89%E6%9C%9F.html</link>
       <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%89%E6%9C%9F.html</guid>
+      <guid>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%89%E6%9C%9F.html</guid>
       <description>打工人周报：记录每周值得分享的内容,周四发布,`第三期`欢迎关注。 资讯动态 1. 优酷“首月 1 元”会员引争议：取消续费却被扣 24 元 1 月 30 日消息，近日优酷的“1 元会员”又引发争议。据上观新闻报道，优酷视频于 2022 年年末上线“首月 1 元”会员优惠充值活动，但多名用户反映，其在完成支付后才发现，支付宝相应页面中弹出的实则为“优酷月月省”活动界面，支付 1 元后默认签约 1 年，除首月外，每月将自动扣费 12 元。由于并无长期会员需求，不少用户选择了提前中止参与该活动，不料却立刻收到了扣费 24 元的提示：“未完成任务，扣回已享优惠。”
 2. ChatGPT 全球爆火后：百度宣布 3 月将推出类似 AI 服务 1 月 30 日，据报道，一位知情人士透露，百度公司正计划在今年 3 月推出与 OpenAI 的 ChatGPT 类似的人工智能聊天机器人服务，最初版本将嵌入其搜索服务中。这项工具将允许用户获得对话式的搜索结果，但名称尚未确定。百度的一位代表对该消息不予置评。
 3. 网易开放暴雪游戏退款申请通道 申请排队人数超 90 万 2 月 1 日，网易暴雪游戏客服团队面向暴雪游戏国服玩家，发布了《网之易关于暴雪游戏产品运营到期开放退款的说明》。网易暴雪游戏客服团队表示，从 2023 年 2 月 1 日 11 时起，针对玩家在“暴雪游戏产品”中已充值但未消耗的虚拟货币或未失效的游戏服务（下称“可退款商品”）开放退款申请通道。
@@ -441,20 +441,20 @@ SARS-CoV-2 病毒主要通过与 ACE2 受体结合感染人体细胞，而肺细
     
     <item>
       <title>打工人周报（第二期）</title>
-      <link>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%BA%8C%E6%9C%9F.html</link>
+      <link>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%BA%8C%E6%9C%9F.html</link>
       <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%BA%8C%E6%9C%9F.html</guid>
+      <guid>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%BA%8C%E6%9C%9F.html</guid>
       <description>打工人周报：记录每周值得分享的内容,周四发布,`第二期`欢迎关注。 [通知]因春节假期改为周一发布 资讯动态 1. 曝 iPad Pro 未来会砍掉实体按键：梦回 iPhone 7 时代 1 月 12 日消息，据 9to5Mac 报道，苹果今年下半年要发布的 iPhone 15 Pro 将会砍掉实体按键，未来 iPad Pro、Apple Watch 等也将会跟进，它们都将采用类似 iPhone 7、iPhone 8 时代的固态 Home 按键设计。据悉，iPad Pro 将会集成 Taptic Engine 固态按键控制器 IC，它被用来模拟按压物理按键的震动。知名分析师郭明錤表示，苹果之所以想砍掉实体按键，最主要原因是想提高设备耐用性，物理电源和音量按键很容易出故障，砍掉按键一方面提升耐用性，另一方面增强设备防水性。
 2. AMD 承认闹乌龙，官方表示尚未确认锐龙 7000 X3D 上市时间 根据 AMD 官网放出的参数页信息，AMD R9 7950X3D、R9 7900X3D、R7 7800X3D 将于 2 月 14 日上市，但有网友怀疑只是占位符，现在 AMD 官方也已经确认这一数字并非真实日期，不过官方并未给出任何进一步的细节。上周，AMD 在 CES 2023 上正式发布了采用 3D 缓存的锐龙 7000X3D 台式机处理器，最高 16 核 32 线程，L2+L3 缓存达到 144MB，共有三个型号。AMD 在 PPT 中声称，在流行的电子竞技游戏中，R7 7800X3D 的游戏性能提升可达 25%。</description>
     </item>
     
     <item>
       <title>打工人周报（第一期）</title>
-      <link>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%80%E6%9C%9F.html</link>
+      <link>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%80%E6%9C%9F.html</link>
       <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%80%E6%9C%9F.html</guid>
+      <guid>https://test.jobcher.com/%E6%89%93%E5%B7%A5%E4%BA%BA%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%80%E6%9C%9F.html</guid>
       <description>打工人周报：记录每周值得分享的内容,周四发布,`第一期`欢迎关注。 资讯动态 1. 苹果宣布送 iPhone 或 iPad 新用户 6 个月 iCloud+ 苹果公司宣布，近期购买并激活新 iPhone 或 iPad 的新订阅用户，可免费获取 6 个月 iCloud+服务。简而言之，就是今年 1 月之后购买激活 iPhone 或 iPad 的用户。
 停用 iCloud+ 服务三个月以上的原订阅用户也可享受这一优惠”，老用户停用一段时间也可以享受优惠。
 2. 苹果推出 Apple Business Connect 工具 据苹果官网消息, Apple 今日推出了 Apple Business Connect。这款免费工具让各种规模的企业都能认领相应地址的地点卡，并自主设计关键信息在 Apple 地图、信息、钱包、Siri 等各种 App 中向超过十亿 Apple 用户展示的方式。
@@ -465,10 +465,10 @@ Apple Business Connect 是一款全新的免费工具，让企业可以在地点
     
     <item>
       <title>逆境和成长-2022年终总结</title>
-      <link>https://www.jobcher.com/%E9%80%86%E5%A2%83%E5%92%8C%E6%88%90%E9%95%BF-2022%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html</link>
+      <link>https://test.jobcher.com/%E9%80%86%E5%A2%83%E5%92%8C%E6%88%90%E9%95%BF-2022%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html</link>
       <pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E9%80%86%E5%A2%83%E5%92%8C%E6%88%90%E9%95%BF-2022%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html</guid>
+      <guid>https://test.jobcher.com/%E9%80%86%E5%A2%83%E5%92%8C%E6%88%90%E9%95%BF-2022%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html</guid>
       <description> 转眼间来到了 2022 年的尾声，2022 年不仅仅对于世界来说，还是对于我个人来说都是意义非凡的一年。
 逆境和成长 2022 年初在中国大陆仍然实行着最为严格的清零政策并愈演愈烈，城市居民被限制人身自由，就连农村地区也被大量要求居家隔离，严重损害了中国经济和社会活力。中国失业人口再创新高，大量的毕业生找不到工作。在美国，最为严重的通货膨胀席卷全国，高昂的加息政策，损害了底层人民和工薪阶层。在中东，塔利班武装重新占领阿富汗，重新实行政教合一的暴力统治。在俄罗斯，爆发了乌克兰战争，将俄罗斯真正从苏联的阴影中脱离出来。在世界各地发生了太多的变化，2022 年注定是要被载入史册的一年。
 对于我个人来说，2022 年也是成长非常大的一年，我经历了自工作来最大的变化，我从一家工作了多年的企业毕业，再次进入了社会的试炼场中求职，接触了更多的人，碰到了更多的事，也有了更多的感悟。曾经的我会讲工作看的比一切都重要，通过勤奋和努力可以改变一切，但是，社会的规则并不是这样的。决定你的个人价值并不是这些外在的东西，决定你个人价值的是你自己对自己的看法。你认为自己有价值，你就是你能够做到有价值。你觉得自己不重要，别人自然觉得你不重要。
@@ -478,10 +478,10 @@ Apple Business Connect 是一款全新的免费工具，让企业可以在地点
     
     <item>
       <title>优雅的使用Conda管理python环境</title>
-      <link>https://www.jobcher.com/%E4%BC%98%E9%9B%85%E7%9A%84%E4%BD%BF%E7%94%A8conda%E7%AE%A1%E7%90%86python%E7%8E%AF%E5%A2%83.html</link>
+      <link>https://test.jobcher.com/%E4%BC%98%E9%9B%85%E7%9A%84%E4%BD%BF%E7%94%A8conda%E7%AE%A1%E7%90%86python%E7%8E%AF%E5%A2%83.html</link>
       <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E4%BC%98%E9%9B%85%E7%9A%84%E4%BD%BF%E7%94%A8conda%E7%AE%A1%E7%90%86python%E7%8E%AF%E5%A2%83.html</guid>
+      <guid>https://test.jobcher.com/%E4%BC%98%E9%9B%85%E7%9A%84%E4%BD%BF%E7%94%A8conda%E7%AE%A1%E7%90%86python%E7%8E%AF%E5%A2%83.html</guid>
       <description>背景 很多时候,避免不了同时使用 python2 和 python3 的环境,也避免不了不同的工作所需要不同版本的库文件,比如在想用 TensorFlow 较早版本的同时;还想运行 Pytorch 最新版；还想顺便学习 Nao 机器人编程,学习 Django 后台,这个时候,一款非常好用的包管理工具就显得十分重要了,这就是我写这篇博客的原因,这篇博客将会讲解：
 如何安装 conda; 如何更换 conda 的下载源; 如何使用 canda; 安装 conda 在安装时这两个选项需要点上：
 更换 conda 的下载源 Conda官方的下载源太慢了,而且经常会出现 HTTPERROR 之类的错误,如果想要用 Conda 愉快的创建不同工作环境,愉快的下载安装各种库,那么换下载源是必不可少的
@@ -494,30 +494,30 @@ conda create -n name python=3.</description>
     
     <item>
       <title>Chrome浏览器启动参数大全（命令行参数）</title>
-      <link>https://www.jobcher.com/chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E5%90%AF%E5%8A%A8%E5%8F%82%E6%95%B0%E5%A4%A7%E5%85%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0.html</link>
+      <link>https://test.jobcher.com/chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E5%90%AF%E5%8A%A8%E5%8F%82%E6%95%B0%E5%A4%A7%E5%85%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0.html</link>
       <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E5%90%AF%E5%8A%A8%E5%8F%82%E6%95%B0%E5%A4%A7%E5%85%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0.html</guid>
+      <guid>https://test.jobcher.com/chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E5%90%AF%E5%8A%A8%E5%8F%82%E6%95%B0%E5%A4%A7%E5%85%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0.html</guid>
       <description>背景 在开发 Web 项目当中，浏览器必不可少，而浏览器的启动参数可以帮我们实现很多功能。
 常用参数 序号 参数 说明 1 &amp;ndash;allow- ted-plugins 不停用过期的插件。 2 &amp;ndash;allow-running-insecure-content 默认情况下，https 页面不允许从 http 链接引用 javascript/css/plug-ins。添加这一参数会放行这些内容。 3 &amp;ndash;allow-scripting-gallery 允许拓展脚本在官方应用中心生效。默认情况下，出于安全因素考虑这些脚本都会被阻止。 4 &amp;ndash;disable-desktop-notifications 禁用桌面通知，在 Windows 中桌面通知默认是启用的。 5 &amp;ndash;disable-file-system 停用 FileSystem API。 6 &amp;ndash;disable-preconnect 停用 TCP/IP 预连接。 7 &amp;ndash;disable-remote-fonts 关闭远程字体支持。SVG 中字体不受此参数影响。 8 &amp;ndash;disable-web-security 不遵守同源策略。 9 &amp;ndash;disk-cache-dir 将缓存设置在给定的路径。 10 &amp;ndash;disk-cache-size 设置缓存大小上限，以字节为单位。 11 &amp;ndash;dns-prefetch-disable 停用 DNS 预读。 12 &amp;ndash;enable-print-preview 启用打印预览。 13 &amp;ndash;extensions-update-frequency 设定拓展自动更新频率，以秒为单位。 14 &amp;ndash;incognito 让浏览器直接以隐身模式启动。 15 &amp;ndash;keep-alive-for-test 最后一个标签关闭后仍保持浏览器进程。（某种意义上可以提高热启动速度，不过你最好得有充足的内存） 16 &amp;ndash;kiosk 启用 kiosk 模式。（一种类似于全屏的浏览模式） 17 &amp;ndash;lang 使用指定的语言。 18 &amp;ndash;no-displaying-insecure-content 默认情况下，https 页面允许从 http 链接引用图片/字体/框架。添加这一参数会阻止这些内容。 19 &amp;ndash;no-referrers 不发送 Http-Referer 头。 20 &amp;ndash;no-startup-window 启动时不建立窗口。 21 &amp;ndash;proxy-server 使用给定的代理服务器，这个参数只对 http 和 https 有效。 22 &amp;ndash;start-maximized 启动时最大化。 23 &amp;ndash;single-process 以单进程模式运行 Chromium。（启动时浏览器会给出不安全警告）。 24 &amp;ndash;user-agent 使用给定的 User-Agent 字符串。 25 &amp;ndash;process-per-tab 每个分页使用单独进程。 26 &amp;ndash;process-per-site 每个站点使用单独进程。 27 &amp;ndash;in-process-plugins 插件不启用单独进程。 28 &amp;ndash;disable-popup-blocking 禁用弹出拦截。 29 &amp;ndash;disable-javascript 禁用 JavaScript。 30 &amp;ndash;disable-java 禁用 Java。 31 &amp;ndash;disable-plugins 禁用插件。 32 –disable-images 禁用图像。 更多参数 由于水平有限，下表为网络翻译，了解跟多可根基参数，查找相关资料。</description>
     </item>
     
     <item>
       <title>Jenkins 编译Android apk 流水线</title>
-      <link>https://www.jobcher.com/jenkins-%E7%BC%96%E8%AF%91android-apk-%E6%B5%81%E6%B0%B4%E7%BA%BF.html</link>
+      <link>https://test.jobcher.com/jenkins-%E7%BC%96%E8%AF%91android-apk-%E6%B5%81%E6%B0%B4%E7%BA%BF.html</link>
       <pubDate>Fri, 25 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/jenkins-%E7%BC%96%E8%AF%91android-apk-%E6%B5%81%E6%B0%B4%E7%BA%BF.html</guid>
+      <guid>https://test.jobcher.com/jenkins-%E7%BC%96%E8%AF%91android-apk-%E6%B5%81%E6%B0%B4%E7%BA%BF.html</guid>
       <description>背景 Jenkins 编译 Android apk，上传 apk 包，生成下载二维码，并推送钉钉
 安装 Android 环境 安装 JDK # 这里使用的是openjdk 1.8.0版本，有需要的话需要到java官网上进行下载对应的JDK版本。 $ yum install java -y # 其他版本JDK的安装方式 $ mv jdk1.8.0_161 /usr/local/ $ ln -s /usr/local/jdk1.8.0_161 /usr/local/jdk $ vim /etc/profile #配置JDK的环境变量 export JAVA_HOME=/usr/local/jdk export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH export CLASSPATH=.$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$JAVA_HOME/lib/tools.jar $ source /etc/profile #重新加载系统环境变量 $ java -version #查看java版本 Android SDK 安装 # 下载sdk工具包 $ wget https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip # 创建sdk工具文件夹和解压工具包 $ mkdir -p /opt/android/sdk $ unzip sdk-tools-linux-3859397.zip -d /opt/android/sdk # 使用sdkmanager工具配置构建工具和平台版本 $ cd /opt/android/sdk/tools/bin/ $ .</description>
     </item>
     
     <item>
       <title>Kubernetes — 更新证书</title>
-      <link>https://www.jobcher.com/kubernetes-%E6%9B%B4%E6%96%B0%E8%AF%81%E4%B9%A6.html</link>
+      <link>https://test.jobcher.com/kubernetes-%E6%9B%B4%E6%96%B0%E8%AF%81%E4%B9%A6.html</link>
       <pubDate>Tue, 15 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-%E6%9B%B4%E6%96%B0%E8%AF%81%E4%B9%A6.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-%E6%9B%B4%E6%96%B0%E8%AF%81%E4%B9%A6.html</guid>
       <description>背景 使用 kubeadm 安装 kubernetes 集群非常方便，但是也有一个比较烦人的问题就是默认的证书有效期只有一年时间，所以需要考虑证书升级的问题
 检查证书 由 kubeadm 生成的客户端证书默认只有一年有效期，我们可以通过 check-expiration 命令来检查证书是否过期：
 kubeadm alpha certs check-expiration 该命令显示 /etc/kubernetes/pki 文件夹中的客户端证书以及 kubeadm 使用的 KUBECONFIG 文件中嵌入的客户端证书的到期时间/剩余时间。
@@ -530,10 +530,10 @@ kubeadm alpha certs check-expiration 该命令显示 /etc/kubernetes/pki 文件�
     
     <item>
       <title>Oracle Instant Client 安装配置实现远程连接oracle</title>
-      <link>https://www.jobcher.com/oracle-instant-client-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E7%8E%B0%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5oracle.html</link>
+      <link>https://test.jobcher.com/oracle-instant-client-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E7%8E%B0%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5oracle.html</link>
       <pubDate>Tue, 15 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/oracle-instant-client-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E7%8E%B0%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5oracle.html</guid>
+      <guid>https://test.jobcher.com/oracle-instant-client-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E7%8E%B0%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5oracle.html</guid>
       <description>背景 关于 Oracle 数据库一直是许多初学者比较头疼的地方，一方面受限于线上文档比较少，令一方面在企业中不得不接触和使用 Oracle 数据库，这篇文章是教大家如何通过配置 oracle client 来远程访问 Oracle 数据库。本文会通过 python3 和 cx_Oracle 来实现对 Oracle 的访问和增删改查
 下载 oracle 客户端 官方地址下载
 安装 下载并安装你的 oracle client，因为我连接的 11g oracle，所以下载 11.2 版本
@@ -542,20 +542,20 @@ kubeadm alpha certs check-expiration 该命令显示 /etc/kubernetes/pki 文件�
     
     <item>
       <title>shell功能脚本集合</title>
-      <link>https://www.jobcher.com/shell%E5%8A%9F%E8%83%BD%E8%84%9A%E6%9C%AC%E9%9B%86%E5%90%88.html</link>
+      <link>https://test.jobcher.com/shell%E5%8A%9F%E8%83%BD%E8%84%9A%E6%9C%AC%E9%9B%86%E5%90%88.html</link>
       <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/shell%E5%8A%9F%E8%83%BD%E8%84%9A%E6%9C%AC%E9%9B%86%E5%90%88.html</guid>
+      <guid>https://test.jobcher.com/shell%E5%8A%9F%E8%83%BD%E8%84%9A%E6%9C%AC%E9%9B%86%E5%90%88.html</guid>
       <description>28 合 1 多功能脚本 脚本说明: 多合一脚本，DD 系统，BBR，xray,TG 搭建等等·常用的各种脚本基本都有！ 系统支持: CentOS6+ / Debian6+ / Ubuntu14+ 支持安装 BBR，搭建 KCPtun，ssr 多用户版 安装 V2ary，Tg 专用代理（Go 版），安装 Goflyway 小鸡性能测试，回程线路测试，云监控 傻瓜式一键 DD 包 一键开启默认 bbr Netflix 解锁检测 xray 安装 宝塔面板，闲蛋面板，x-ui 面板，WARP 一键配置 脚本特点: 目前网上的各个一键脚本基本都是只有 安装/启动/重启 等基础功能，对于小白来说还是不够简单方便。常用的各种脚本基本都有！
 下载安装: bash &amp;lt;(curl -s -L https://git.io/JPj82) gfw_push 一键安装 脚本说明: 监测服务器 IP 是否被墙并推送至 Telegram 一键脚本 系统支持: CentOS6+ / Debian6+ / Ubuntu14+ 下载安装: bash &amp;lt;(curl -s -L git.io/JPjzm) 服务器测速 脚本说明: 服务器一键测速脚本 系统支持: CentOS7 / Debian7+ / Ubuntu14+ 下载安装: bash &amp;lt;(curl -s -L git.</description>
     </item>
     
     <item>
       <title>zlibary 无法下载 解决方案</title>
-      <link>https://www.jobcher.com/zlibary-%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</link>
+      <link>https://test.jobcher.com/zlibary-%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</link>
       <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/zlibary-%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</guid>
+      <guid>https://test.jobcher.com/zlibary-%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</guid>
       <description>zlibary 无法下载 因为 zlib 最近被封，导致现在通过正常方法下载不了电子书，但是不要慌，我们可以通过暗网进行下载~
 安装 brave 浏览器 官网下载
 下载你需要的版本，这个下载浏览器很简单，我就不多说了
@@ -564,10 +564,10 @@ kubeadm alpha certs check-expiration 该命令显示 /etc/kubernetes/pki 文件�
     
     <item>
       <title>Logstash 自动重载配置文件</title>
-      <link>https://www.jobcher.com/logstash-%E8%87%AA%E5%8A%A8%E9%87%8D%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html</link>
+      <link>https://test.jobcher.com/logstash-%E8%87%AA%E5%8A%A8%E9%87%8D%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html</link>
       <pubDate>Mon, 31 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/logstash-%E8%87%AA%E5%8A%A8%E9%87%8D%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html</guid>
+      <guid>https://test.jobcher.com/logstash-%E8%87%AA%E5%8A%A8%E9%87%8D%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html</guid>
       <description>工作原理 检测到配置文件变化 通过停止所有输入停止当前pipline 用新的配置创建一个新的管道 检查配置文件语法是否正确 检查所有的输入和输出是否可以初始化 检查成功使用新的 pipeline 替换当前的pipeline 检查失败,使用旧的继续工作. 在重载过程中,jvm 没有重启. Logstash 自动重新加载配置 为了可以自动检测配置文件的变动和自动重新加载配置文件,需要在启动的时候使用以下命令:
 ./bin/lagstash -f configfile.conf --config.reload.automatic 启动 Logstash 的时候使用--config.reload.automatic或-r选项来开启自动重载配置。
 修改检测间隔时间 默认检测配置文件的间隔时间是3秒,可以通过以下命令改变
@@ -580,10 +580,10 @@ syslog作为输入源,当重载配置文件时,会崩溃.
     
     <item>
       <title>macOS 13 升级 软件失效</title>
-      <link>https://www.jobcher.com/macos-13-%E5%8D%87%E7%BA%A7-%E8%BD%AF%E4%BB%B6%E5%A4%B1%E6%95%88.html</link>
+      <link>https://test.jobcher.com/macos-13-%E5%8D%87%E7%BA%A7-%E8%BD%AF%E4%BB%B6%E5%A4%B1%E6%95%88.html</link>
       <pubDate>Mon, 31 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/macos-13-%E5%8D%87%E7%BA%A7-%E8%BD%AF%E4%BB%B6%E5%A4%B1%E6%95%88.html</guid>
+      <guid>https://test.jobcher.com/macos-13-%E5%8D%87%E7%BA%A7-%E8%BD%AF%E4%BB%B6%E5%A4%B1%E6%95%88.html</guid>
       <description>关于 macOS 13 软件失效 Warning: You are using macOS 13.
 We do not provide support for this pre-release version.
 You will encounter build failures with some formulae.
@@ -594,10 +594,10 @@ Please create pull requests instead of asking for help on Homebrew&amp;rsquo;s G
     
     <item>
       <title>Nexus3 使用和部署</title>
-      <link>https://www.jobcher.com/nexus3-%E4%BD%BF%E7%94%A8%E5%92%8C%E9%83%A8%E7%BD%B2.html</link>
+      <link>https://test.jobcher.com/nexus3-%E4%BD%BF%E7%94%A8%E5%92%8C%E9%83%A8%E7%BD%B2.html</link>
       <pubDate>Mon, 31 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/nexus3-%E4%BD%BF%E7%94%A8%E5%92%8C%E9%83%A8%E7%BD%B2.html</guid>
+      <guid>https://test.jobcher.com/nexus3-%E4%BD%BF%E7%94%A8%E5%92%8C%E9%83%A8%E7%BD%B2.html</guid>
       <description>Nexus3 docker-compose 安装 创建外部存储
 mkdir -p /data/nexus chmod +777 -R /data/nexus 运行 docker-compose
 version: &amp;#39;3&amp;#39; services: nexus3: image: sonatype/nexus3:3.42.0 container_name: nexus3 ports: - 8081:8081 - 5000:5000 volumes: - /data/nexus:/nexus-data environment: - INSTALL4J_ADD_VM_PARAMS=-Xms1024m -Xmx1024m -XX:MaxDirectMemorySize=1024m -Djava.util.prefs.userRoot=/some-other-dir restart: always # 赋予外部root权限 privileged: true docker-compose up -d 运行 docker-compose</description>
@@ -605,10 +605,10 @@ version: &amp;#39;3&amp;#39; services: nexus3: image: sonatype/nexus3:3.42.0 con
     
     <item>
       <title>githubAction set-output弃用错误</title>
-      <link>https://www.jobcher.com/githubaction-set-output%E5%BC%83%E7%94%A8%E9%94%99%E8%AF%AF.html</link>
+      <link>https://test.jobcher.com/githubaction-set-output%E5%BC%83%E7%94%A8%E9%94%99%E8%AF%AF.html</link>
       <pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/githubaction-set-output%E5%BC%83%E7%94%A8%E9%94%99%E8%AF%AF.html</guid>
+      <guid>https://test.jobcher.com/githubaction-set-output%E5%BC%83%E7%94%A8%E9%94%99%E8%AF%AF.html</guid>
       <description>githubAction set-output 弃用错误 The set-output command is deprecated and will be disabled soon. Please upgrade to using Environment Files. For more information see: https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/
 原因 如果您有一个使用 设置输出的GitHub Actionsecho ::set-output key=value工作流程，您已经开始看到无用的弃用警告。这是修复它的方法。查看官方链接基本上得不到什么帮助！
 修复方法 更新其它人的 action 方法 将 @actions/core 提升到 1.10.0 修改自己的 aciton 方法 run: echo &amp;#34;::set-output name=KEY::VALUE&amp;#34; ## 改为 run: echo &amp;#34;KEY=VALUE&amp;#34; &amp;gt;&amp;gt;$GITHUB_OUTPUT 建议：使用自己的方法
@@ -617,10 +617,10 @@ version: &amp;#39;3&amp;#39; services: nexus3: image: sonatype/nexus3:3.42.0 con
     
     <item>
       <title>打开web 3.0的大门——IPFS使用</title>
-      <link>https://www.jobcher.com/%E6%89%93%E5%BC%80web-3.0%E7%9A%84%E5%A4%A7%E9%97%A8ipfs%E4%BD%BF%E7%94%A8.html</link>
+      <link>https://test.jobcher.com/%E6%89%93%E5%BC%80web-3.0%E7%9A%84%E5%A4%A7%E9%97%A8ipfs%E4%BD%BF%E7%94%A8.html</link>
       <pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%89%93%E5%BC%80web-3.0%E7%9A%84%E5%A4%A7%E9%97%A8ipfs%E4%BD%BF%E7%94%A8.html</guid>
+      <guid>https://test.jobcher.com/%E6%89%93%E5%BC%80web-3.0%E7%9A%84%E5%A4%A7%E9%97%A8ipfs%E4%BD%BF%E7%94%A8.html</guid>
       <description>背景 有很多朋友问我什么是 web3.0，web3.0 似乎离我们非常远。有人会说 web3.0 是未来下一代的技术很有前景！但是举出一个具体的例子，似乎又非常困难。使用 web3.0 是一件非常高科技的事情。本文就是通过各 IPFS 给各位初学者和对 web3.0 感兴趣的人使用介绍，看完本篇文章，你就能进入 web3.0 的世界了~
 IPFS 星际文件系统(InterPlanetary File System). IPFS 是一个分布式的 web, 点到点超媒体协议. 可以让我们的互联网速度更快, 更加安全, 并且更加开放. IPFS协议的目标是取代传统的互联网协议HTTP
 下载安装 本文不会对技术做更深入探讨，只在应用层面上介绍
@@ -639,10 +639,10 @@ Akasha，对标 facebook，微信等社交工具：akasha.world</description>
     
     <item>
       <title>Kubernetes — Rook云存储介绍和部署</title>
-      <link>https://www.jobcher.com/kubernetes-rook%E4%BA%91%E5%AD%98%E5%82%A8%E4%BB%8B%E7%BB%8D%E5%92%8C%E9%83%A8%E7%BD%B2.html</link>
+      <link>https://test.jobcher.com/kubernetes-rook%E4%BA%91%E5%AD%98%E5%82%A8%E4%BB%8B%E7%BB%8D%E5%92%8C%E9%83%A8%E7%BD%B2.html</link>
       <pubDate>Tue, 11 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-rook%E4%BA%91%E5%AD%98%E5%82%A8%E4%BB%8B%E7%BB%8D%E5%92%8C%E9%83%A8%E7%BD%B2.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-rook%E4%BA%91%E5%AD%98%E5%82%A8%E4%BB%8B%E7%BB%8D%E5%92%8C%E9%83%A8%E7%BD%B2.html</guid>
       <description>Rook 云存储介绍和部署 Rook 将分布式存储软件转变为自我管理，自我缩放和自我修复的存储服务。它通过自动化部署，引导、配置、供应、扩展、升级、迁移、灾难恢复、监控和资源管理来实现。 Rook 使用基础的云原生容器管理、调度和编排平台提供的功能来履行其职责。
 Rook 利用扩展点深入融入云原生环境，为调度、生命周期管理、资源管理、安全性、监控和用户体验提供无缝体验。
 部署 使用 helm 部署 helm init -i jimmysong/kubernetes-helm-tiller:v2.8.1 helm repo add rook-alpha https://charts.rook.io/alpha helm install rook-alpha/rook --name rook --namespace rook-system 直接使用 yaml 文件部署 kubectl apply -f rook-operator.yaml 不论使用那种方式部署的 rook operator，都会在 rook-agent 中看到 rook-agent 用户无法列出集群中某些资源的错误，可以通过为 rook-agent 的分配 cluster-admin 权限临时解决，详见 Issue 1472。
@@ -652,10 +652,10 @@ kind: ClusterRoleBinding apiVersion: rbac.authorization.k8s.io/v1beta1 metadata:
     
     <item>
       <title>Kubernetes — 基于K8S搭建Ceph分布式存储</title>
-      <link>https://www.jobcher.com/kubernetes-%E5%9F%BA%E4%BA%8Ek8s%E6%90%AD%E5%BB%BAceph%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8.html</link>
+      <link>https://test.jobcher.com/kubernetes-%E5%9F%BA%E4%BA%8Ek8s%E6%90%AD%E5%BB%BAceph%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8.html</link>
       <pubDate>Tue, 11 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-%E5%9F%BA%E4%BA%8Ek8s%E6%90%AD%E5%BB%BAceph%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-%E5%9F%BA%E4%BA%8Ek8s%E6%90%AD%E5%BB%BAceph%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8.html</guid>
       <description>基于 K8S 搭建 Ceph 分布式存储 前提 正常运行的多节点 K8S 集群，可以是两个节点也可以是更多。 每一个节点需要一个没有被分区的硬盘，最好大小一致不然会浪费。 没错其实就是一个要求，必须有集群才能进行容器管理，必须有硬盘才能做存储这些都是基础。 添加硬盘 主机 IP 磁盘 master01 10.12.12.51 SATA 20G master02 10.12.12.52 SATA 20G master03 10.12.12.53 SATA 20G worker01 10.12.12.54 SATA 20G worker02 10.12.12.55 SATA 20G 在 5 个节点都加 20g 存储
 重启 k8s 节点 kubectl cordon &amp;lt;节点&amp;gt; kubectl drain &amp;lt;节点&amp;gt; --ignore-daemonsets --delete-emptydir-data # 虚拟机重启后 kubectl uncordon &amp;lt;节点&amp;gt; 查看新增存储 fdisk -l 看到新增 20g 存储,不要格式化分区硬盘！！！
 Disk /dev/sdb: 20 GiB, 21474836480 bytes, 41943040 sectors Disk model: QEMU HARDDISK Units: sectors of 1 * 512 = 512 bytes Sector size (logical/physical): 512 bytes / 512 bytes I/O size (minimum/optimal): 512 bytes / 512 bytes ROOK 自动创建 Rook 是一个开源的cloud-native storage编排, 提供平台和框架；为各种存储解决方案提供平台、框架和支持，以便与云原生环境本地集成。 Rook 将存储软件转变为自我管理、自我扩展和自我修复的存储服务，它通过自动化部署、引导、配置、置备、扩展、升级、迁移、灾难恢复、监控和资源管理来实现此目的。 Rook 使用底层云本机容器管理、调度和编排平台提供的工具来实现它自身的功能。 Rook 目前支持Ceph、NFS、Minio Object Store和CockroachDB。 Rook 使用Kubernetes原语使Ceph存储系统能够在Kubernetes上运行。 下载 git clone https://github.</description>
@@ -663,10 +663,10 @@ Disk /dev/sdb: 20 GiB, 21474836480 bytes, 41943040 sectors Disk model: QEMU HARD
     
     <item>
       <title>Kubernetes — 探针和生命周期</title>
-      <link>https://www.jobcher.com/kubernetes-%E6%8E%A2%E9%92%88%E5%92%8C%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.html</link>
+      <link>https://test.jobcher.com/kubernetes-%E6%8E%A2%E9%92%88%E5%92%8C%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.html</link>
       <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-%E6%8E%A2%E9%92%88%E5%92%8C%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-%E6%8E%A2%E9%92%88%E5%92%8C%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.html</guid>
       <description>Kubernetes — 探针和生命周期 用于判断容器内应用程序是否已经启动。
 存活（Liveness）探针 用于探测容器是否运行，如果探测失败，kubelet 会根据配置的重启策略进行相应的处理，若没有配置探针该返回值默认为 success 就绪（Readiness）探针 用于探测容器内的程序是否健康，如果返回值为 success，那么代表这个容器已经完全启动，并且程序已经是可以接受流量的状态 启动（Startup）探针 用于探测容器是否启动，如果配置了 startup 就会先禁止其他探测，直到它成功，成功后将不在运行探测 Pod 检测方式 ExecAction：在容器执行一个命令，返回值为 0，则认为容器健康 TCPSocketAction：通过 TCP 连接检查容器是否联通，通的话，则认为容器正常 HTTPGetAction：通过应用程序暴露的 API 地址来检查程序是否正常的，如果状态码为 200-400 之间，则认为容器健康 gRPCAction：通过 gRPC 的检查机制，判断容器是不是正常 StartupProbe 启动探针 有时候，会有一些现有的应用在启动时需要较长的初始化时间。 要这种情况下，若要不影响对死锁作出快速响应的探测，设置存活探测参数是要技巧的。 技巧就是使用相同的命令来设置启动探测，针对 HTTP 或 TCP 检测，可以通过将 failureThreshold * periodSeconds 参数设置为足够长的时间来应对糟糕情况下的启动时间。
 ports: - name: liveness-port containerPort: 8080 hostPort: 8080 livenessProbe: httpGet: path: /healthz port: liveness-port failureThreshold: 1 periodSeconds: 10 startupProbe: httpGet: path: /healthz port: liveness-port failureThreshold: 30 periodSeconds: 10 幸亏有启动探测，应用程序将会有最多 5 分钟（30 * 10 = 300s）的时间来完成其启动过程。 一旦启动探测成功一次，存活探测任务就会接管对容器的探测，对容器死锁作出快速响应。 如果启动探测一直没有成功，容器会在 300 秒后被杀死，并且根据restartPolicy来执行进一步处置。</description>
@@ -674,10 +674,10 @@ ports: - name: liveness-port containerPort: 8080 hostPort: 8080 livenessProbe: h
     
     <item>
       <title>windows-exporter 监控</title>
-      <link>https://www.jobcher.com/windows-exporter-%E7%9B%91%E6%8E%A7.html</link>
+      <link>https://test.jobcher.com/windows-exporter-%E7%9B%91%E6%8E%A7.html</link>
       <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/windows-exporter-%E7%9B%91%E6%8E%A7.html</guid>
+      <guid>https://test.jobcher.com/windows-exporter-%E7%9B%91%E6%8E%A7.html</guid>
       <description>windows-exporter 监控安装 windows_exporter 下载安装 启动 下载 msi 版本，输入一下命令启动
 msiexec /i C:\Users\Administrator\Downloads\windows_exporter.msi ENABLED_COLLECTORS=&amp;#34;ad,iis,logon,memory,process,tcp,scheduled_task&amp;#34; TEXTFILE_DIR=&amp;#34;C:\custom_metrics\&amp;#34; 卸载
 msiexec /uninstall C:\Users\Administrator\Downloads\windows_exporter.msi 添加 prometheus 监控 prometheus.yaml
@@ -687,10 +687,10 @@ msiexec /uninstall C:\Users\Administrator\Downloads\windows_exporter.msi 添加 
     
     <item>
       <title>Kubernetes — 开放标准（OCI、CRI、CNI、CSI、SMI、CPI）概述</title>
-      <link>https://www.jobcher.com/kubernetes-%E5%BC%80%E6%94%BE%E6%A0%87%E5%87%86ocicricnicsismicpi%E6%A6%82%E8%BF%B0.html</link>
+      <link>https://test.jobcher.com/kubernetes-%E5%BC%80%E6%94%BE%E6%A0%87%E5%87%86ocicricnicsismicpi%E6%A6%82%E8%BF%B0.html</link>
       <pubDate>Fri, 07 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-%E5%BC%80%E6%94%BE%E6%A0%87%E5%87%86ocicricnicsismicpi%E6%A6%82%E8%BF%B0.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-%E5%BC%80%E6%94%BE%E6%A0%87%E5%87%86ocicricnicsismicpi%E6%A6%82%E8%BF%B0.html</guid>
       <description>Kubernetes — 开放标准（OCI、CRI、CNI、CSI、SMI、CPI）概述 什么是 Kubernetes 开放标准？— K8s 开放标准简介
 开放标准有助于和补充像 Kubernetes 这样的系统，Kubernetes 是用于编排容器的事实上的标准平台。开放标准定义了实施 Kubernetes 的最佳实践，并在支持此实施方面发挥着至关重要的作用。开放标准由开源 Kubernetes 社区而非某个特定供应商制定，以确保更高的效率、避免供应商锁定以及更轻松地将其他软件集成到技术堆栈中。
 OCI 容器开放接口规范，由多家公司共同组成于 2015 年 6 月成立的项目（Docker, Google, CoreOS 等公司），并由 Linux 基金会运行管理，旨在围绕容器格式和运行时制定一个开放的工业化标准，目前主要有两个标准文档：容器运行时标准 （runtime spec）和 容器镜像标准（image spec）
@@ -700,10 +700,10 @@ CRI CRI（Container Runtime Interface）：容器运行时接口，提供计算�
     
     <item>
       <title>kubernetes 部署插件 (Flannel、Web UI、CoreDNS、Ingress Controller)</title>
-      <link>https://www.jobcher.com/kubernetes-%E9%83%A8%E7%BD%B2%E6%8F%92%E4%BB%B6-flannelweb-uicorednsingress-controller.html</link>
+      <link>https://test.jobcher.com/kubernetes-%E9%83%A8%E7%BD%B2%E6%8F%92%E4%BB%B6-flannelweb-uicorednsingress-controller.html</link>
       <pubDate>Fri, 07 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-%E9%83%A8%E7%BD%B2%E6%8F%92%E4%BB%B6-flannelweb-uicorednsingress-controller.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-%E9%83%A8%E7%BD%B2%E6%8F%92%E4%BB%B6-flannelweb-uicorednsingress-controller.html</guid>
       <description>k8s 部署插件 Kubernetes 是高度可配置且可扩展的。因此，大多数情况下， 你不需要派生自己的 Kubernetes 副本或者向项目代码提交补丁，本文会介绍几种常用的 k8s 插件，如果大家喜欢的话，希望大家点赞支持。
 1. Flannel 网络插件 Flannel是由 go 语言开发，是一种基于 Overlay 网络的跨主机容器网络解决方案，也就是将TCP数据包封装在另一种网络包里面进行路由转发和通信，Flannel 是 CoreOS 开发，专门用于 docker 多主机互联的一个工具，简单来说，它的功能是让集群中的不同节点主机创建的容器都具有全局唯一的虚拟IP地址
 主要功能：
@@ -716,10 +716,10 @@ Ingress 可为 Service 提供外部可访问的 URL、负载均衡流量、终�
     
     <item>
       <title>Cloudflare Zero Trust 内网穿透</title>
-      <link>https://www.jobcher.com/cloudflare-zero-trust-%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</link>
+      <link>https://test.jobcher.com/cloudflare-zero-trust-%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</link>
       <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/cloudflare-zero-trust-%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</guid>
+      <guid>https://test.jobcher.com/cloudflare-zero-trust-%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</guid>
       <description>Cloudflare Zero Trust 内网穿透 最快的 Zero Trust 应用访问和互联网浏览平台
 增加可见性，消除复杂性，降低远程和办公室用户的风险。杜绝数据丢失、恶意软件和网络钓鱼，保护用户、应用程序和设备安全。
 使用 Tunnel 隧道来实现内网传统，实现内网访问各类应用
@@ -730,29 +730,29 @@ docker run -d --name cloudflared cloudflare/cloudflared:latest tunnel --no-autou
     
     <item>
       <title>苏州旅行</title>
-      <link>https://www.jobcher.com/%E8%8B%8F%E5%B7%9E%E6%97%85%E8%A1%8C.html</link>
+      <link>https://test.jobcher.com/%E8%8B%8F%E5%B7%9E%E6%97%85%E8%A1%8C.html</link>
       <pubDate>Tue, 27 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E8%8B%8F%E5%B7%9E%E6%97%85%E8%A1%8C.html</guid>
+      <guid>https://test.jobcher.com/%E8%8B%8F%E5%B7%9E%E6%97%85%E8%A1%8C.html</guid>
       <description>苏州旅行 苏州，古称吴，现简称苏，是中华人民共和国江苏省东南部的一个地级市，位于长江三角洲和太湖平原的中心地带，著名的鱼米之乡、状元之乡、院士之乡、经济重镇、历史文化名城，自古与杭州共享有“上有天堂、下有苏杭”美誉。
 苏州景点 day1 金鸡湖 苏州金鸡湖，是国家5A级景区，但却是免费开放的。湖东与湖西高楼林立，展现了苏州现代的一面。夜晚，灯光璀璨，如群星般夺目；霓虹闪烁，如银河般绚烂~ 金鸡湖十景 苏州中心 东方之门 音乐喷泉 金鸡湖大桥 文化艺术中心 月光码头 诚品书店 国金中心 望湖角 李公堤 day2 苏州博物馆 地址：姑苏区东北街204号 交通：乘坐游1、游2、游5、55、178、202、309、313、518、529路等到苏州博物馆 门票：免费(可在官网提前预约) 开放时间：每星期二至星期日- 9:00~17:00（16:00停止入馆） ◆建议用时：2-3小时 拙政园 拙政园和苏州博物馆紧临，两者之间步行不会超过3分钟，而平江路是在拙政园的南门沿着门前的东北街往东走，大约在150米处右转过桥就是了，因此可以把这三处安排在同一天，建议游览顺序是拙政园—苏州博物馆—平江路。 淡季（1、2、3、6、11、12月）：70元 旺季（4、5、7、8、9、10月）：90元 day3 虎丘 地址：姑苏区山塘街虎丘山门内8号 交通：南门入口：146、游1、游2路虎丘首末站；北门入口：32、快线3号虎丘北门站 门票：淡季：60.00元 旺季：80.00元 开放时间： 7:30-17:30/17：00 建议用时：2-3小时 苏州美食 饭店 苏帮菜——浓油赤酱里的姑苏风情 鲃肺汤是取生长于太湖一带的鲃鱼，将其肉与肝加入火腿、香菇、笋片等辅料，在鸡汤中共同熬煮，汤鲜味美，是一道不可多得的汤品。 酱方是采用上乘猪五花为原料，经 24 小时腌制后，加入卤汁炖煮 3 小时而成。肉的色泽鲜亮诱人，入口外皮 Q 弹、肉质紧实。 响油鳝糊是以将新鲜鳝鱼切成段，加酱油等佐料爆炒。因鳝糊上桌时油滋滋作响，而得名“响油鳝糊”。菜色深红，口味鲜甜，油而不腻。 樱桃肉因肉形状及色泽极似樱桃而得名，是将优质的五花肉切成小块，以文火炖煮七八小时而成。肥而不腻，满口精华。 松鼠鳜鱼是将鳜鱼在油锅内炸至金黄，再淋上由番茄酱等熬制的酱汁而成。因炸开的鱼肉形似松鼠而得名，入口酥脆酸甜。 碧螺虾仁是将新鲜虾仁配以碧螺春为佐料烹制而成，色泽清淡雅致，虾肉饱满 Q 弹，鲜甜中夹杂了茶叶的香味。 推荐餐厅： 珍珠饭店：蚌肉金花菜 吴门人家：吴门人家6:30-9:00供应早茶，提供糖粥、豆腐花、苏式面、馄饨等各类苏式点心，价格为20元/人 得月楼：松鼠桂鱼、响油鳝糊、清炒虾仁、油爆虾、蟹粉豆腐、狮子头等 松鹤楼：店内供应的菜品与得月楼也是大同小异 小吃 苏式汤面——老苏州的早餐 推荐餐厅： 同得兴：枫镇大肉面 孙盛兴奥灶面馆: 奥灶鸭和爆鱼的浇头 韦复兴: 阳春面 苏式点心——吴侬软语般的甜糯滋味 推荐餐厅： 随柳居:糖粥、泡泡小馄饨 新梅华·茶点餐厅：糖芋艿 老苏州大客堂·特色小吃：响油鳝糊、生煎、锅贴 生煎——一口爆汁的苏州人气美食 推荐餐厅： 哑巴生煎：泡泡小馄饨、牛肉粉丝汤 大阿二生煎：两面黄、生煎 馄饨——别具风味的平凡美食 推荐餐厅： 绿杨馄饨:鲜肉、三鲜、鸡丝、鸡汁虾肉、荠菜、香菇馄饨 熙盛源:无锡小笼、红汤馄饨、开洋馄饨、蟹粉小笼 烧饼豆浆——寻常美食中的苏州味道 推荐餐厅： 王氏林记烧饼(双塔菜场店)：大饼油条、豆浆 阊门姚记豆浆：24 小时通宵营业，咸豆浆、荷叶包美人 糕团——苏州风俗必备美食 推荐餐厅： 黄天源：定胜糕、猪油糕、薄荷糕 明月楼(糕团店)：桂花糕、炒肉团子 长发西饼：鲜肉月饼 胥城鲜肉月饼：鲜肉月饼 </description>
     </item>
     
     <item>
       <title>懒人烧排骨</title>
-      <link>https://www.jobcher.com/%E6%87%92%E4%BA%BA%E7%83%A7%E6%8E%92%E9%AA%A8.html</link>
+      <link>https://test.jobcher.com/%E6%87%92%E4%BA%BA%E7%83%A7%E6%8E%92%E9%AA%A8.html</link>
       <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%87%92%E4%BA%BA%E7%83%A7%E6%8E%92%E9%AA%A8.html</guid>
+      <guid>https://test.jobcher.com/%E6%87%92%E4%BA%BA%E7%83%A7%E6%8E%92%E9%AA%A8.html</guid>
       <description>【主料】 精排骨（500 克） 【辅料】 食用面碱（约 2 克） 柠檬（半个） 生姜（1 小块） 小葱（2 根） 八角（1 颗） 桂皮（1 小块） 香叶（半片） 冰糖（约 50 克） 可乐（1000 克） 【调味料】 食用盐（适量） 料酒（适量） 生抽酱油（20 克） </description>
     </item>
     
     <item>
       <title>k8s CNI 问题 连接认证失效</title>
-      <link>https://www.jobcher.com/k8s-cni-%E9%97%AE%E9%A2%98-%E8%BF%9E%E6%8E%A5%E8%AE%A4%E8%AF%81%E5%A4%B1%E6%95%88.html</link>
+      <link>https://test.jobcher.com/k8s-cni-%E9%97%AE%E9%A2%98-%E8%BF%9E%E6%8E%A5%E8%AE%A4%E8%AF%81%E5%A4%B1%E6%95%88.html</link>
       <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/k8s-cni-%E9%97%AE%E9%A2%98-%E8%BF%9E%E6%8E%A5%E8%AE%A4%E8%AF%81%E5%A4%B1%E6%95%88.html</guid>
+      <guid>https://test.jobcher.com/k8s-cni-%E9%97%AE%E9%A2%98-%E8%BF%9E%E6%8E%A5%E8%AE%A4%E8%AF%81%E5%A4%B1%E6%95%88.html</guid>
       <description>k8s CNI 问题 连接认证失效 删除 calico 换成 flannel 后，容器没有正常启动
 network: error getting ClusterInformation: connection is unauthorized: Unauthorized]
 解决问题 删除掉 /etc/cni/net.d/ 目录下的 calico 配置文件即可。
@@ -762,10 +762,10 @@ sudo rm -rf /etc/cni/net.d/*calico* 不要重复网络插件 </description>
     
     <item>
       <title>k8s.gcr.io国内无法连接解决方法</title>
-      <link>https://www.jobcher.com/k8s.gcr.io%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html</link>
+      <link>https://test.jobcher.com/k8s.gcr.io%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html</link>
       <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/k8s.gcr.io%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html</guid>
+      <guid>https://test.jobcher.com/k8s.gcr.io%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html</guid>
       <description>k8s.gcr.io 国内无法连接解决方法 Get https://k8s.gcr.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
 这个一看知道什么原因了，应该 GFW！那好吧，只能给 docker 加个代理了。
 解决问题 添加 mirror 站点
@@ -774,10 +774,10 @@ registry.cn-hangzhou.aliyuncs.com/google_containers </description>
     
     <item>
       <title>Golang 初识（安装、使用）</title>
-      <link>https://www.jobcher.com/golang-%E5%88%9D%E8%AF%86%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8.html</link>
+      <link>https://test.jobcher.com/golang-%E5%88%9D%E8%AF%86%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8.html</link>
       <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/golang-%E5%88%9D%E8%AF%86%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8.html</guid>
+      <guid>https://test.jobcher.com/golang-%E5%88%9D%E8%AF%86%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8.html</guid>
       <description>Golang 初识（安装、使用） Go 导学 go 语言由 google 公司推出。
 运行速度快，简单易学 适合区块链开发 拥有丰富指令 可以直接包含 C 语言 语言层面支持并发 Go 方向 网络编程 服务器编程 区块链开发 环境安装 安装环境 安装包下载
 https://golang.google.cn/dl/
@@ -787,10 +787,10 @@ windows 部署 wget https://golang.google.cn/dl/go1.19.1.windows-amd64.msi # 直
     
     <item>
       <title>headscale 部署使用</title>
-      <link>https://www.jobcher.com/headscale-%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8.html</link>
+      <link>https://test.jobcher.com/headscale-%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8.html</link>
       <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/headscale-%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8.html</guid>
+      <guid>https://test.jobcher.com/headscale-%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8.html</guid>
       <description>Headscale Tailscale 的控制服务器是不开源的，而且对免费用户有诸多限制，这是人家的摇钱树，可以理解。好在目前有一款开源的实现叫 Headscale，这也是唯一的一款，希望能发展壮大。
 Headscale 由欧洲航天局的 Juan Font 使用 Go 语言开发，在 BSD 许可下发布，实现了 Tailscale 控制服务器的所有主要功能，可以部署在企业内部，没有任何设备数量的限制，且所有的网络流量都由自己控制。
 Headscale 部署 我决定使用docker-compose进行部署
@@ -802,10 +802,10 @@ Headscale 使用 Linux 使用 wget https://pkgs.tailscale.com/stable/tailscale_1
     
     <item>
       <title>清理Docker容器日志</title>
-      <link>https://www.jobcher.com/%E6%B8%85%E7%90%86docker%E5%AE%B9%E5%99%A8%E6%97%A5%E5%BF%97.html</link>
+      <link>https://test.jobcher.com/%E6%B8%85%E7%90%86docker%E5%AE%B9%E5%99%A8%E6%97%A5%E5%BF%97.html</link>
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%B8%85%E7%90%86docker%E5%AE%B9%E5%99%A8%E6%97%A5%E5%BF%97.html</guid>
+      <guid>https://test.jobcher.com/%E6%B8%85%E7%90%86docker%E5%AE%B9%E5%99%A8%E6%97%A5%E5%BF%97.html</guid>
       <description>清理 Docker 容器日志 如果 docker 容器正在运行，那么使用rm -rf方式删除日志后，通过df -h会发现磁盘空间并没有释放。原因是在 Linux 或者 Unix 系统中，通过rm -rf或者文件管理器删除文件，将会从文件系统的目录结构上解除链接（unlink）。如果文件是被打开的（有一个进程正在使用），那么进程将仍然可以读取该文件，磁盘空间也一直被占用。正确姿势是cat /dev/null &amp;gt; *-json.log，当然你也可以通过rm -rf删除后重启 docker。
 日志清理脚本 clean_docker_log.sh #!/bin/sh echo &amp;#34;======== start clean docker containers logs ========&amp;#34; logs=$(find /var/lib/docker/containers/ -name *-json.log) for log in $logs do echo &amp;#34;clean logs : $log&amp;#34; cat /dev/null &amp;gt; $log done echo &amp;#34;======== end clean docker containers logs ========&amp;#34; chmod +x clean_docker_log.sh &amp;amp;&amp;amp; ./clean_docker_log.sh
 设置 Docker 容器日志大小 设置一个容器服务的日志大小上限
@@ -815,10 +815,10 @@ nginx: image: nginx:1.12.1 restart: always logging: driver: “json-file” opti
     
     <item>
       <title>羊了个羊小程序 破解通关</title>
-      <link>https://www.jobcher.com/%E7%BE%8A%E4%BA%86%E4%B8%AA%E7%BE%8A%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E7%A0%B4%E8%A7%A3%E9%80%9A%E5%85%B3.html</link>
+      <link>https://test.jobcher.com/%E7%BE%8A%E4%BA%86%E4%B8%AA%E7%BE%8A%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E7%A0%B4%E8%A7%A3%E9%80%9A%E5%85%B3.html</link>
       <pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E7%BE%8A%E4%BA%86%E4%B8%AA%E7%BE%8A%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E7%A0%B4%E8%A7%A3%E9%80%9A%E5%85%B3.html</guid>
+      <guid>https://test.jobcher.com/%E7%BE%8A%E4%BA%86%E4%B8%AA%E7%BE%8A%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E7%A0%B4%E8%A7%A3%E9%80%9A%E5%85%B3.html</guid>
       <description>注意此教程需要通过电脑端完成
 操作步骤 1、微信打开羊了个羊小程序，玩第一关 2、进入当前登录的微信数据文件夹 微信左下角 -&amp;gt; 设置 -&amp;gt; 文件管理 -&amp;gt; 打开文件夹
 打开后进入当前登录的微信数据文件夹
@@ -831,10 +831,10 @@ nginx: image: nginx:1.12.1 restart: always logging: driver: “json-file” opti
     
     <item>
       <title>K8S 问题排查：cgroup 内存泄露问题</title>
-      <link>https://www.jobcher.com/k8s-%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5cgroup-%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E9%97%AE%E9%A2%98.html</link>
+      <link>https://test.jobcher.com/k8s-%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5cgroup-%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E9%97%AE%E9%A2%98.html</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/k8s-%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5cgroup-%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E9%97%AE%E9%A2%98.html</guid>
+      <guid>https://test.jobcher.com/k8s-%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5cgroup-%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E9%97%AE%E9%A2%98.html</guid>
       <description>K8S 问题排查：cgroup 内存泄露问题 unable to ensure pod container exists: failed to create container for [kubepods besteffort pod5f26dae8-0421-4eab-a3f7-aa51c6848e2b] : mkdir /sys/fs/cgroup/memory/kubepods/besteffort/pod5f26dae8-0421-4eab-a3f7-aa51c6848e2b: cannot allocate memory 查看 linux 内核 cat /proc/version uname -a 可以发现 linux 版本是 3.0 版本
 原因 cgroup 的 kmem account 特性在 Linux 3.x 内核上有内存泄露问题，然后k8s用了这个特性，导致后面创建不出新的pod来了
 解决方法 # 修改/etc/default/grub 为 GRUB_CMDLINE_LINUX=&amp;#34;crashkernel=auto rd.lvm.lv=centos/root rd.lvm.lv=centos/swap rhgb quiet cgroup.memory=nokmem&amp;#34; #加上了 cgroup.memory=nokmem # 生成配置 /usr/sbin/grub2-mkconfig -o /boot/grub2/grub.cfg # 重启机器 reboot 验证 cat /sys/fs/cgroup/memory/kubepods/burstable/pod*/*/memory.kmem.slabinfo 输出信息
@@ -843,10 +843,10 @@ cat: /sys/fs/cgroup/memory/kubepods/burstable/pod0fe273ca-42e0-4223-9fe8-16d8dd1
     
     <item>
       <title>RocketMQ k8s部署 4主4从集群</title>
-      <link>https://www.jobcher.com/rocketmq-k8s%E9%83%A8%E7%BD%B2-4%E4%B8%BB4%E4%BB%8E%E9%9B%86%E7%BE%A4.html</link>
+      <link>https://test.jobcher.com/rocketmq-k8s%E9%83%A8%E7%BD%B2-4%E4%B8%BB4%E4%BB%8E%E9%9B%86%E7%BE%A4.html</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/rocketmq-k8s%E9%83%A8%E7%BD%B2-4%E4%B8%BB4%E4%BB%8E%E9%9B%86%E7%BE%A4.html</guid>
+      <guid>https://test.jobcher.com/rocketmq-k8s%E9%83%A8%E7%BD%B2-4%E4%B8%BB4%E4%BB%8E%E9%9B%86%E7%BE%A4.html</guid>
       <description>RocketMQ k8s 部署 4 主 4 从集群 使用 NFS 配置 StatefulSet 的动态持久化存储 安装 NFS 服务端 sudo apt update sudo apt install nfs-kernel-server nfs-common 安装 NFS 客户端 所有的节点都得执行
 sudo apt install nfs-common -y
 创建目录 mkdir -p /data/storage/k8s/rocketmq 使用 NFS 作为StatefulSet持久化存储的操作记录，分别需要创建nfs-provisioner的rbac、storageclass、nfs-client-provisioner和statefulset的pod
@@ -855,10 +855,10 @@ sudo apt install nfs-common -y
     
     <item>
       <title>contained 安装及使用</title>
-      <link>https://www.jobcher.com/contained-%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8.html</link>
+      <link>https://test.jobcher.com/contained-%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8.html</link>
       <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/contained-%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8.html</guid>
+      <guid>https://test.jobcher.com/contained-%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8.html</guid>
       <description>contained 安装及使用 containerd 是一个行业标准的容器运行时，强调简单性、健壮性和可移植性。它可作为 Linux 和 Windows 的守护进程使用，可以管理其主机系统的完整容器生命周期：图像传输和存储、容器执行和监督、低级存储和网络附件等。
 containerd is a member of CNCF with graduated status.
 早在 2016 年 3 月，Docker 1.11的Docker Engine里就包含了containerd，而现在则是把containerd从Docker Engine里彻底剥离出来，作为一个独立的开源项目独立发展，目标是提供一个更加开放、稳定的容器运行基础设施。和原先包含在 Docker Engine 里containerd相比，独立的containerd将具有更多的功能，可以涵盖整个容器运行时管理的所有需求。 containerd并不是直接面向最终用户的，而是主要用于集成到更上层的系统里，比如Swarm, Kubernetes, Mesos等容器编排系统。 containerd以Daemon的形式运行在系统上，通过暴露底层的gRPC API，上层系统可以通过这些API管理机器上的容器。 每个containerd只负责一台机器，Pull 镜像，对容器的操作（启动、停止等），网络，存储都是由 containerd 完成。具体运行容器由runC负责，实际上只要是符合OCI规范的容器都可以支持。 对于容器编排服务来说，运行时只需要使用containerd+runC，更加轻量，容易管理。 5.独立之后containerd的特性演进可以和Docker Engine分开，专注容器运行时管理，可以更稳定。 安装 centos
@@ -870,10 +870,10 @@ ctr version ctr 命令 命令 作用 plugins, plugin 提供有关容器插件的
     
     <item>
       <title>Planet 下载及安装</title>
-      <link>https://www.jobcher.com/planet-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85.html</link>
+      <link>https://test.jobcher.com/planet-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85.html</link>
       <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/planet-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85.html</guid>
+      <guid>https://test.jobcher.com/planet-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85.html</guid>
       <description>Planet 下载及安装 官网下载 Planet 是一款用于发布和关注 Web 内容的免费开源软件，它不需要集中式服务器或服务。它使用 IPFS 来实现点对点的内容分发。此外，您可以将您的内容链接到以太坊名称 (.eth)，以便其他人可以通过 Planet 以 .eth 名称关注您。由于 IPFS 和 ENS 都是去中心化的，因此您可以以去中心化的方式构建您的网站或关注其他网站。
 如何使用 标准是 EIP-1577，这个 Content Hash 字段可以接受一些可能的值。例如，IPFS——另一种去中心化的内容分发技术。而vitalik.eth 网站已经在 IPFS 上运行。
 通过 Planet 关注来自 vitalik.eth 的更新
@@ -885,10 +885,10 @@ k51qzi5uqu5dgv8kzl1anc0m74n6t9ffdjnypdh846ct5wgpljc7rulynxa74a 公开 ENS 然后
     
     <item>
       <title>关系数据库 索引操作</title>
-      <link>https://www.jobcher.com/%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%B4%A2%E5%BC%95%E6%93%8D%E4%BD%9C.html</link>
+      <link>https://test.jobcher.com/%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%B4%A2%E5%BC%95%E6%93%8D%E4%BD%9C.html</link>
       <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%B4%A2%E5%BC%95%E6%93%8D%E4%BD%9C.html</guid>
+      <guid>https://test.jobcher.com/%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93-%E7%B4%A2%E5%BC%95%E6%93%8D%E4%BD%9C.html</guid>
       <description>索引 在关系数据库中，如果有上万甚至上亿条记录，在查找记录的时候，想要获得非常快的速度，就需要使用索引。
 索引是关系数据库中对某一列或多个列的值进行预排序的数据结构。通过使用索引，可以让数据库系统不必扫描整个表，而是直接定位到符合条件的记录，这样就大大加快了查询速度。
 students表:
@@ -904,10 +904,10 @@ ALTER TABLE students ADD CONSTRAINT uni_name UNIQUE (name); 这种情况下，na
     
     <item>
       <title>RocketMQ docker-compose部署 4主4从集群</title>
-      <link>https://www.jobcher.com/rocketmq-docker-compose%E9%83%A8%E7%BD%B2-4%E4%B8%BB4%E4%BB%8E%E9%9B%86%E7%BE%A4.html</link>
+      <link>https://test.jobcher.com/rocketmq-docker-compose%E9%83%A8%E7%BD%B2-4%E4%B8%BB4%E4%BB%8E%E9%9B%86%E7%BE%A4.html</link>
       <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/rocketmq-docker-compose%E9%83%A8%E7%BD%B2-4%E4%B8%BB4%E4%BB%8E%E9%9B%86%E7%BE%A4.html</guid>
+      <guid>https://test.jobcher.com/rocketmq-docker-compose%E9%83%A8%E7%BD%B2-4%E4%B8%BB4%E4%BB%8E%E9%9B%86%E7%BE%A4.html</guid>
       <description>RocketMQ docker-compose 部署 4 主 4 从集群 V 4.8.0
 采用4主4从，同步模式。HA 实现上采用Master/Slave+Failover组件方式 每台主机运行三个容器，分别为NameServer、BrokerMaster、SlaveMaster，每个 Master 和 Slave 分别存放在不同的机器上
 架构 IP 角色 服务 193.0.40.172 NameServer - 193.0.40.172 BrokerMaster broker-a 193.0.40.172 SlaveMaster broker-d-s 193.0.40.172 BrokerMaster broker-b 193.0.40.172 SlaveMaster broker-a-s 193.0.40.172 BrokerMaster broker-c 193.0.40.172 SlaveMaster broker-b-s 193.0.40.172 BrokerMaster broker-d 193.0.40.172 SlaveMaster broker-c-s 部署 安装 docker-compose #!/bin/bash # 下载安装 v2.4.1 docker-compose curl -L https://get.daocloud.io/docker/compose/releases/download/v2.4.1/docker-compose-`uname -s`-`uname -m` &amp;gt; /usr/local/bin/docker-compose sudo chmod +x /usr/local/bin/docker-compose sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose docker-compose --version 执行 docker-compose --version 查看是否安装成功</description>
@@ -915,10 +915,10 @@ ALTER TABLE students ADD CONSTRAINT uni_name UNIQUE (name); 这种情况下，na
     
     <item>
       <title>Argo cd 安装和部署</title>
-      <link>https://www.jobcher.com/argo-cd-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</link>
+      <link>https://test.jobcher.com/argo-cd-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</link>
       <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/argo-cd-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</guid>
+      <guid>https://test.jobcher.com/argo-cd-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</guid>
       <description>Argo cd 安装和部署 Argo CD 是一个为 Kubernetes 而生的，遵循声明式 GitOps 理念的持续部署（CD）工具。Argo CD 可在 Git 存储库更改时自动同步和部署应用程序 安装 k8s 快速安装
 k3s kubectl create namespace argocd k3s kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml 安装 Argo CD CLI Argo CD CLI 是用于管理 Argo CD 的命令行工具,Mac 系统可以直接使用 brew install 进行安装
 brew install argocd 发布 Argo CD 服务 默认情况下， Argo CD 服务不对外暴露服务，可以通过 LoadBalancer 或者 NodePort 类型的 Service、Ingress、Kubectl 端口转发等方式将 Argo CD 服务发布到 Kubernetes 集群外部。
@@ -927,10 +927,10 @@ brew install argocd 发布 Argo CD 服务 默认情况下， Argo CD 服务不�
     
     <item>
       <title>skywalking APM 监控</title>
-      <link>https://www.jobcher.com/skywalking-apm-%E7%9B%91%E6%8E%A7.html</link>
+      <link>https://test.jobcher.com/skywalking-apm-%E7%9B%91%E6%8E%A7.html</link>
       <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/skywalking-apm-%E7%9B%91%E6%8E%A7.html</guid>
+      <guid>https://test.jobcher.com/skywalking-apm-%E7%9B%91%E6%8E%A7.html</guid>
       <description>skywalking 基于 OpenTracing 规范，专门为微服务架构以及云原生服务。
 APM 监控 一个基于微服务架构的电商系统
 APM (Application Performance Management) 即应用性能管理，属于 IT 运维管理（ITOM)范畴.
@@ -945,10 +945,10 @@ Metric是可以聚合的，例如为电商系统中每个 HTTP 接口添加一�
     
     <item>
       <title>systemd 守护命令</title>
-      <link>https://www.jobcher.com/systemd-%E5%AE%88%E6%8A%A4%E5%91%BD%E4%BB%A4.html</link>
+      <link>https://test.jobcher.com/systemd-%E5%AE%88%E6%8A%A4%E5%91%BD%E4%BB%A4.html</link>
       <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/systemd-%E5%AE%88%E6%8A%A4%E5%91%BD%E4%BB%A4.html</guid>
+      <guid>https://test.jobcher.com/systemd-%E5%AE%88%E6%8A%A4%E5%91%BD%E4%BB%A4.html</guid>
       <description>介绍 systemd 是 linux 中用来启动守护进程，Linux 最早一直采用 init 进程
 (systemd 架构图)
 systemd 命令 systemd 不是一个具体的命令，而是一组命令，用于系统管理的各个方面
@@ -959,10 +959,10 @@ systemd 命令 systemd 不是一个具体的命令，而是一组命令，用于
     
     <item>
       <title>docker 问题处理</title>
-      <link>https://www.jobcher.com/docker-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86.html</link>
+      <link>https://test.jobcher.com/docker-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86.html</link>
       <pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/docker-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86.html</guid>
+      <guid>https://test.jobcher.com/docker-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86.html</guid>
       <description>docker 无法启动 打开服务器输入docker ps,输出错误
 Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
 怀疑是不是docker.services 部署没成功，systemctl start docker 启动 docker，结果服务器还是报错
@@ -974,10 +974,10 @@ systemctl status docker.service 输出日志：
     
     <item>
       <title>kubernetes 存储</title>
-      <link>https://www.jobcher.com/kubernetes-%E5%AD%98%E5%82%A8.html</link>
+      <link>https://test.jobcher.com/kubernetes-%E5%AD%98%E5%82%A8.html</link>
       <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-%E5%AD%98%E5%82%A8.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-%E5%AD%98%E5%82%A8.html</guid>
       <description>kubernetes 存储 k8s 支持多种途径的多种类型的存储。例如 iSCSI,SMB,NFS，以及对象存储。都是不同类型的部署在云上或者自建数据中心的外部存储系统。k8s 上的所有存储都被称作卷
 CSI 容器存储接口 CSI 是 k8s 存储体系中一部分，是一个开源项目，定义了一套基于标准的接口，从而使容器能够以一种统一的方式被不同的容器编排的工具使用。可以将插件称为provisioner
 持久化 持久化卷 （pv） 持久化卷申请 （pvc） 存储类 （sv） PV 代表 k8s 的存储，pvc 代表的是许可证，赋予 pod 访问 pv 的权限。cs 使分配过程是动态的。
@@ -989,10 +989,10 @@ apiVersion: v1 kind: PersistentVolume metadata: name: iscsi-pv spec: capacity: s
     
     <item>
       <title>linux服务器 删除空间却未释放</title>
-      <link>https://www.jobcher.com/linux%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%88%A0%E9%99%A4%E7%A9%BA%E9%97%B4%E5%8D%B4%E6%9C%AA%E9%87%8A%E6%94%BE.html</link>
+      <link>https://test.jobcher.com/linux%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%88%A0%E9%99%A4%E7%A9%BA%E9%97%B4%E5%8D%B4%E6%9C%AA%E9%87%8A%E6%94%BE.html</link>
       <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/linux%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%88%A0%E9%99%A4%E7%A9%BA%E9%97%B4%E5%8D%B4%E6%9C%AA%E9%87%8A%E6%94%BE.html</guid>
+      <guid>https://test.jobcher.com/linux%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%88%A0%E9%99%A4%E7%A9%BA%E9%97%B4%E5%8D%B4%E6%9C%AA%E9%87%8A%E6%94%BE.html</guid>
       <description>linux 服务器 删除空间却未释放 在Linux或者Unix系统中，通过rm或者文件管理器删除文件将会从文件系统的目录结构上解除链接(unlink)，然而如果文件是被打开的（有一个进程正在使用），那么进程将仍然可以读取该文件，磁盘空间也一直被占用，这样就会导致我们明明删除了文件，但是磁盘空间却未被释放
 获取占用列表状态 lsof | grep deleted 可以看到哪些文件还被使用，未被释放空间。
 释放磁盘空间 一种方法是 kill 掉相应的进程，或者停掉使用这个文件的应用，让 os 自动回收磁盘空间，当 linux 打开一个文件的时候,Linux 内核会为每一个进程在/proc/, /proc/nnnn/fd/目录（nnnn 为 pid）建立一个以其 pid 为名的目录用来保存进程的相关信息，而其子目录 fd 保存的是该进程打开的所有文件的 fd（fd：file descriptor）；
@@ -1001,10 +1001,10 @@ kill进程是通过截断 proc 文件系统中的文件可以强制要求系统�
     
     <item>
       <title>logstash 多管道部署</title>
-      <link>https://www.jobcher.com/logstash-%E5%A4%9A%E7%AE%A1%E9%81%93%E9%83%A8%E7%BD%B2.html</link>
+      <link>https://test.jobcher.com/logstash-%E5%A4%9A%E7%AE%A1%E9%81%93%E9%83%A8%E7%BD%B2.html</link>
       <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/logstash-%E5%A4%9A%E7%AE%A1%E9%81%93%E9%83%A8%E7%BD%B2.html</guid>
+      <guid>https://test.jobcher.com/logstash-%E5%A4%9A%E7%AE%A1%E9%81%93%E9%83%A8%E7%BD%B2.html</guid>
       <description>logstash 多管道部署 找到 logstash 目录位置，一般来说在 /etc/logstash 路径下,修改 logstash.yml
 #增加 日志记录 path.logs: /var/log/logstash 增加管道 增加 conf.d目录下 test.conf
 input { beats { host =&amp;gt; &amp;#34;0.0.0.0&amp;#34; port =&amp;gt; 23000 # 修改端口IP } } filter { mutate{ add_field =&amp;gt; { &amp;#34;cluster&amp;#34; =&amp;gt; &amp;#34;test&amp;#34; # 修改标签 &amp;#34;job&amp;#34; =&amp;gt; &amp;#34;logstash&amp;#34; } } } output { file { path =&amp;gt; &amp;#34;/data/路径名称&amp;#34; # 路径名称 gzip =&amp;gt; false #匹配以空格开头的行 } } 修改 pipelines.yml
@@ -1013,10 +1013,10 @@ input { beats { host =&amp;gt; &amp;#34;0.0.0.0&amp;#34; port =&amp;gt; 23000 # 
     
     <item>
       <title>kubernetes 从1.23.x 升级到 1.24.x</title>
-      <link>https://www.jobcher.com/kubernetes-%E4%BB%8E1.23.x-%E5%8D%87%E7%BA%A7%E5%88%B0-1.24.x.html</link>
+      <link>https://test.jobcher.com/kubernetes-%E4%BB%8E1.23.x-%E5%8D%87%E7%BA%A7%E5%88%B0-1.24.x.html</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-%E4%BB%8E1.23.x-%E5%8D%87%E7%BA%A7%E5%88%B0-1.24.x.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-%E4%BB%8E1.23.x-%E5%8D%87%E7%BA%A7%E5%88%B0-1.24.x.html</guid>
       <description>kubernetes 从1.23.x 升级到 1.24.x k8s 在1.24.x之后的版本放弃了和 docker 的兼容，使用 containerd 作为底层的容器，直接参照官方文档的资料进行更新就会报错。因为你没有安装 containerd，所以要安装 containerd 并配置才能正确的升级 k8s
 我用的是CentOS7.9的版本，因此以下操作都是在CentOS下操作。
 Master 节点操作 1.升级 kubeadm yum install -y kubeadm-1.24.2-0 --disableexcludes=kubernetes kubeadm version kubeadm upgrade plan sudo kubeadm upgrade apply v1.24.2 2.安装 containerd yum install containerd.io -y containerd config default &amp;gt; /etc/containerd/config.toml vim /var/lib/kubelet/kubeadm-flags.env 修改 kubeadm-flags.env 变量：
@@ -1025,20 +1025,20 @@ KUBELET_KUBEADM_ARGS=&amp;#34;--pod-infra-container-image=k8s.gcr.io/pause:3.6 -
     
     <item>
       <title>编写 kubernetes 资源描述文件</title>
-      <link>https://www.jobcher.com/%E7%BC%96%E5%86%99-kubernetes-%E8%B5%84%E6%BA%90%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6.html</link>
+      <link>https://test.jobcher.com/%E7%BC%96%E5%86%99-kubernetes-%E8%B5%84%E6%BA%90%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6.html</link>
       <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E7%BC%96%E5%86%99-kubernetes-%E8%B5%84%E6%BA%90%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6.html</guid>
+      <guid>https://test.jobcher.com/%E7%BC%96%E5%86%99-kubernetes-%E8%B5%84%E6%BA%90%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6.html</guid>
       <description>编写 kubernetes 资源描述文件 1. 部署一个应用 apiVersion: apps/v1 #与k8s集群版本有关，使用 kubectl api-versions 即可查看当前集群支持的版本 kind: Deployment #该配置的类型，我们使用的是 Deployment metadata: #译名为元数据，即 Deployment 的一些基本属性和信息 name: nginx-deployment #Deployment 的名称 labels: #标签，可以灵活定位一个或多个资源，其中key和value均可自定义，可以定义多组，目前不需要理解 app: nginx #为该Deployment设置key为app，value为nginx的标签 spec: #这是关于该Deployment的描述，可以理解为你期待该Deployment在k8s中如何使用 replicas: 1 #使用该Deployment创建一个应用程序实例 selector: #标签选择器，与上面的标签共同作用，目前不需要理解 matchLabels: #选择包含标签app:nginx的资源 app: nginx template: #这是选择或创建的Pod的模板 metadata: #Pod的元数据 labels: #Pod的标签，上面的selector即选择包含标签app:nginx的Pod app: nginx spec: #期望Pod实现的功能（即在pod中部署） containers: #生成container，与docker中的container是同一种 - name: nginx #container的名称 image: nginx:1.7.9 #使用镜像nginx:1.7.9创建container，该container默认80端口可访问 kubectl apply -f xxx.yaml
 2、暴露应用 apiVersion: v1 kind: Service metadata: name: nginx-service #Service 的名称 labels: #Service 自己的标签 app: nginx #为该 Service 设置 key 为 app，value 为 nginx 的标签 spec: #这是关于该 Service 的定义，描述了 Service 如何选择 Pod，如何被访问 selector: #标签选择器 app: nginx #选择包含标签 app:nginx 的 Pod ports: - name: nginx-port #端口的名字 protocol: TCP #协议类型 TCP/UDP port: 80 #集群内的其他容器组可通过 80 端口访问 Service nodePort: 32600 #通过任意节点的 32600 端口访问 Service targetPort: 80 #将请求转发到匹配 Pod 的 80 端口 type: NodePort #Serive的类型，ClusterIP/NodePort/LoaderBalancer 3、扩缩容 修改 deployment.</description>
     </item>
     
     <item>
       <title>nginx ssh-key connection exception</title>
-      <link>https://www.jobcher.com/nginx-ssh-key-connection-exception.html</link>
+      <link>https://test.jobcher.com/nginx-ssh-key-connection-exception.html</link>
       <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/nginx-ssh-key-connection-exception.html</guid>
+      <guid>https://test.jobcher.com/nginx-ssh-key-connection-exception.html</guid>
       <description>nginx ssh-key connection exception Not long ago, I wanted to restart the company&amp;rsquo;s gitlab server.I couldn&amp;rsquo;t coonect to ssh when it restarted.emm……I try copy the ssh rsa.pub,but it didn&amp;rsquo;t work.
 error log:
 identity_sign: private key ~/.ssh/id_rsa contents do not match public what is happen？
@@ -1048,20 +1048,20 @@ create new ssh key ssh-keygen -t rsa -C &amp;#39;git@gitlab.com&amp;#39; -f ~/.s
     
     <item>
       <title>kubernetes manual expansion</title>
-      <link>https://www.jobcher.com/kubernetes-manual-expansion.html</link>
+      <link>https://test.jobcher.com/kubernetes-manual-expansion.html</link>
       <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-manual-expansion.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-manual-expansion.html</guid>
       <description>k8s manual expansion We find k8s-master node.Input the Command：
 expand kubectl scale --replicas=3 deploy my-test-deploy shrink kubectl scale --replicas=1 deploy my-test-deploy trouble cleaning get resource list kubectl get deployment kubectl get pods kubectl get nodes # exists in the namespace kubectl api-resources --namespaced=true # not exists in the namespace kubectl api-resources --namespaced=false show info kubectl describe pod my-test-pod kubectl describe deployment my-test-pod exec container kubectl exec -ti my-test-pod /bin/bash </description>
     </item>
     
     <item>
       <title>nginx exporter 安装配置</title>
-      <link>https://www.jobcher.com/nginx-exporter-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</link>
+      <link>https://test.jobcher.com/nginx-exporter-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</link>
       <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/nginx-exporter-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</guid>
+      <guid>https://test.jobcher.com/nginx-exporter-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</guid>
       <description>nginx exporter 安装配置 二进制安装 wget https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v0.10.0/nginx-prometheus-exporter_0.10.0_linux_amd64.tar.gz tar -zxvf nginx-prometheus-exporter_0.10.0_linux_amd64.tar.gz -C ./nginx-exporter 在 nginx 上配置 ./configure \ … \ --with-http_stub_status_module make sudo make install 在 nginx.config 上配置
 server { # 新增 location /nginx_status { stub_status on; access_log off; } } 重启 nginx 服务
 nginx -t nginx -s reload 启动 nginx exporter nginx-prometheus-exporter -nginx.scrape-uri http://&amp;lt;nginx&amp;gt;:8080/nginx_status 配置 prometheus 添加 prometheus.yml - job_name: &amp;#34;nginx-exporter&amp;#34; file_sd_configs: - files: - &amp;#34;./file_sd/nginx-exporter.yaml&amp;#34; 在 ./file_sd/新建 nginx-exporter.yaml
@@ -1070,20 +1070,20 @@ nginx -t nginx -s reload 启动 nginx exporter nginx-prometheus-exporter -nginx.
     
     <item>
       <title>go Struct 结构体</title>
-      <link>https://www.jobcher.com/go-struct-%E7%BB%93%E6%9E%84%E4%BD%93.html</link>
+      <link>https://test.jobcher.com/go-struct-%E7%BB%93%E6%9E%84%E4%BD%93.html</link>
       <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/go-struct-%E7%BB%93%E6%9E%84%E4%BD%93.html</guid>
+      <guid>https://test.jobcher.com/go-struct-%E7%BB%93%E6%9E%84%E4%BD%93.html</guid>
       <description>go Struct 结构体 结构体是将零个或多个任意类型的变量，组合在一起的聚合数据类型，也可以看做是数据的集合。
 声明结构体 //demo_11.go package main import ( &amp;#34;fmt&amp;#34; ) type Person struct { Name string Age int } func main() { var p1 Person p1.Name = &amp;#34;Tom&amp;#34; p1.Age = 30 fmt.Println(&amp;#34;p1 =&amp;#34;, p1) var p2 = Person{Name:&amp;#34;Burke&amp;#34;, Age:31} fmt.Println(&amp;#34;p2 =&amp;#34;, p2) p3 := Person{Name:&amp;#34;Aaron&amp;#34;, Age:32} fmt.Println(&amp;#34;p2 =&amp;#34;, p3) //匿名结构体 p4 := struct { Name string Age int } {Name:&amp;#34;匿名&amp;#34;, Age:33} fmt.Println(&amp;#34;p4 =&amp;#34;, p4) } 生成 JSON //demo_12.go package main import ( &amp;#34;encoding/json&amp;#34; &amp;#34;fmt&amp;#34; ) type Result struct { Code int `json:&amp;#34;code&amp;#34;` Message string `json:&amp;#34;msg&amp;#34;` } func main() { var res Result res.</description>
     </item>
     
     <item>
       <title>go Slice切片语法</title>
-      <link>https://www.jobcher.com/go-slice%E5%88%87%E7%89%87%E8%AF%AD%E6%B3%95.html</link>
+      <link>https://test.jobcher.com/go-slice%E5%88%87%E7%89%87%E8%AF%AD%E6%B3%95.html</link>
       <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/go-slice%E5%88%87%E7%89%87%E8%AF%AD%E6%B3%95.html</guid>
+      <guid>https://test.jobcher.com/go-slice%E5%88%87%E7%89%87%E8%AF%AD%E6%B3%95.html</guid>
       <description>go Slice 切片语法 切片是一种动态数组，比数组操作灵活，长度不是固定的，可以进行追加和删除。
 len() 和 cap() 返回结果可相同和不同。
 声明切片 //demo_7.go package main import ( &amp;#34;fmt&amp;#34; ) func main() { var sli_1 [] int //nil 切片 fmt.Printf(&amp;#34;len=%d cap=%d slice=%v\n&amp;#34;,len(sli_1),cap(sli_1),sli_1) var sli_2 = [] int {} //空切片 fmt.Printf(&amp;#34;len=%d cap=%d slice=%v\n&amp;#34;,len(sli_1),cap(sli_2),sli_2) var sli_3 = [] int {1, 2, 3, 4, 5} fmt.Printf(&amp;#34;len=%d cap=%d slice=%v\n&amp;#34;,len(sli_3),cap(sli_3),sli_3) sli_4 := [] int {1, 2, 3, 4, 5} fmt.Printf(&amp;#34;len=%d cap=%d slice=%v\n&amp;#34;,len(sli_4),cap(sli_4),sli_4) var sli_5 [] int = make([] int, 5, 8) fmt.</description>
@@ -1091,29 +1091,29 @@ len() 和 cap() 返回结果可相同和不同。
     
     <item>
       <title>go 基础知识</title>
-      <link>https://www.jobcher.com/go-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
+      <link>https://test.jobcher.com/go-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
       <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/go-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
+      <guid>https://test.jobcher.com/go-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
       <description>go 基础知识 目录结构 ├─ code -- 代码根目录 │ ├─ bin │ ├─ pkg │ ├─ src │ ├── hello │ ├── hello.go bin 存放编译后可执行的文件。 pkg 存放编译后的应用包。 src 存放应用源代码。 Hello World 代码
 //在 hello 目录下创建 hello.go package main import ( &amp;#34;fmt&amp;#34; ) func main() { fmt.Println(&amp;#34;Hello World!&amp;#34;) } 基础命令 go build hello #在src目录或hello目录下执行 go build hello，只在对应当前目录下生成文件。 go install hello #在src目录或hello目录下执行 go install hello，会把编译好的结果移动到 $GOPATH/bin。 go run hello #在src目录或hello目录下执行 go run hello，不生成任何文件只运行程序。 go fmt hello #在src目录或hello目录下执行 go run hello，格式化代码，将代码修改成标准格式。 数据类型 类型 表示 备注 字符串 string 只能用一对双引号（&amp;quot;&amp;quot;）或反引号（``）括起来定义，不能用单引号（&amp;rsquo;&amp;rsquo;）定义！ 布尔 bool 只有 true 和 false，默认为 false。 整型 int8 uint8 int16 uint16 int32 uint32 int64 uint64 int uint 具体长度取决于 CPU 位数。 浮点型 float32 float64 常量声明 常量，在程序编译阶段就确定下来的值，而程序在运行时无法改变该值。</description>
     </item>
     
     <item>
       <title>VSCode插件推荐=&gt; Code Runner</title>
-      <link>https://www.jobcher.com/vscode%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90-code-runner.html</link>
+      <link>https://test.jobcher.com/vscode%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90-code-runner.html</link>
       <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/vscode%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90-code-runner.html</guid>
+      <guid>https://test.jobcher.com/vscode%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90-code-runner.html</guid>
       <description>VSCode 插件推荐=&amp;gt; Code Runner Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Perl 6, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, F# (.NET Core), C# Script, C# (.NET Core), VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script, R, AppleScript, Elixir, Visual Basic .NET, Clojure, Haxe, Objective-C, Rust, Racket, Scheme, AutoHotkey, AutoIt, Kotlin, Dart, Free Pascal, Haskell, Nim, D, Lisp, Kit, V, SCSS, Sass, CUDA, Less, Fortran, Ring, and custom command</description>
     </item>
     
     <item>
       <title>ant build.xml 编写</title>
-      <link>https://www.jobcher.com/ant-build.xml-%E7%BC%96%E5%86%99.html</link>
+      <link>https://test.jobcher.com/ant-build.xml-%E7%BC%96%E5%86%99.html</link>
       <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/ant-build.xml-%E7%BC%96%E5%86%99.html</guid>
+      <guid>https://test.jobcher.com/ant-build.xml-%E7%BC%96%E5%86%99.html</guid>
       <description>ant build.xml 编写 生成 build.xml Eclipse 自动生成 Ant 的Build.xml 配置文件,生成的方法很隐蔽
 选择你要生成Build.xml文件的项目,右键. Export-&amp;gt; General -&amp;gt; Ant Buildfiles .
 点 Next,选择项目，再点Finish.
@@ -1122,10 +1122,10 @@ len() 和 cap() 返回结果可相同和不同。
     
     <item>
       <title>kubernetes 调度过程</title>
-      <link>https://www.jobcher.com/kubernetes-%E8%B0%83%E5%BA%A6%E8%BF%87%E7%A8%8B.html</link>
+      <link>https://test.jobcher.com/kubernetes-%E8%B0%83%E5%BA%A6%E8%BF%87%E7%A8%8B.html</link>
       <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-%E8%B0%83%E5%BA%A6%E8%BF%87%E7%A8%8B.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-%E8%B0%83%E5%BA%A6%E8%BF%87%E7%A8%8B.html</guid>
       <description>k8s 调度过程 执行滚动升级 修改 deployment.yml 文件，追加 rollingUpdate
 # 部署应用 apiVersion: apps/v1 kind: Deployment metadata: name: jobcher-blog-deployment labels: app: jobcher-blog spec: replicas: 3 selector: matchLabels: app: jobcher-blog minReadySeconds: 10 #准备10s strategy: type: RollingUpdate rollingUpdate: maxUnavailable: 1 #更新期间不少于3-1 maxSurge: 1 #更新期间不超过3+1 template: metadata: labels: app: jobcher-blog spec: containers: - name: jobcher-blog-pod image: hub.docker.com/blog/hugo:latest 执行命令
 kubectl rollout restart deployment jobcher-blog-deployment</description>
@@ -1133,19 +1133,19 @@ kubectl rollout restart deployment jobcher-blog-deployment</description>
     
     <item>
       <title>Golang go build 编译不同版本</title>
-      <link>https://www.jobcher.com/golang-go-build-%E7%BC%96%E8%AF%91%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%AC.html</link>
+      <link>https://test.jobcher.com/golang-go-build-%E7%BC%96%E8%AF%91%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%AC.html</link>
       <pubDate>Sun, 17 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/golang-go-build-%E7%BC%96%E8%AF%91%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%AC.html</guid>
+      <guid>https://test.jobcher.com/golang-go-build-%E7%BC%96%E8%AF%91%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%AC.html</guid>
       <description>Golang go build 编译不同系统下的可执行文件 Mac 系统编译 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build test.go CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build test.go Linux 系统编译 CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build test.go CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build test.go windows 系统编译 SET CGO_ENABLED=0 SET GOOS=darwin3 SET GOARCH=amd64 go build test.go SET CGO_ENABLED=0 SET GOOS=linux SET GOARCH=amd64 go build test.go GOOS：目标可执行程序运行操作系统，支持 darwin，freebsd，linux，windows GOARCH：目标可执行程序操作系统构架，包括 386，amd64，arm </description>
     </item>
     
     <item>
       <title>记录一次上门打散工</title>
-      <link>https://www.jobcher.com/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E4%B8%8A%E9%97%A8%E6%89%93%E6%95%A3%E5%B7%A5.html</link>
+      <link>https://test.jobcher.com/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E4%B8%8A%E9%97%A8%E6%89%93%E6%95%A3%E5%B7%A5.html</link>
       <pubDate>Sun, 17 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E4%B8%8A%E9%97%A8%E6%89%93%E6%95%A3%E5%B7%A5.html</guid>
+      <guid>https://test.jobcher.com/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E4%B8%8A%E9%97%A8%E6%89%93%E6%95%A3%E5%B7%A5.html</guid>
       <description>记录一次上门打散工 壬寅年头磨难多
 人间规则奈吾何
 吟诗为把瘟神送
@@ -1159,30 +1159,30 @@ kubectl rollout restart deployment jobcher-blog-deployment</description>
     
     <item>
       <title>ansible 命令</title>
-      <link>https://www.jobcher.com/ansible-%E5%91%BD%E4%BB%A4.html</link>
+      <link>https://test.jobcher.com/ansible-%E5%91%BD%E4%BB%A4.html</link>
       <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/ansible-%E5%91%BD%E4%BB%A4.html</guid>
+      <guid>https://test.jobcher.com/ansible-%E5%91%BD%E4%BB%A4.html</guid>
       <description>ansible 命令 Inventory：Ansible 管理的主机信息，包括 IP 地址、SSH 端口、账号、密码等 Modules：任务均有模块完成，也可以自定义模块，例如经常用的脚本。 Plugins：使用插件增加 Ansible 核心功能，自身提供了很多插件，也可以自定义插件。例如 connection 插件，用于连接目标主机。 Playbooks：“剧本”，模块化定义一系列任务，供外部统一调用。Ansible 核心功能。 编辑主机清单 [webservers] 192.168.0.20 ansible_ssh_user=root ansible_ssh_pass=’200271200’ 192.168.0.21 ansible_ssh_user=root ansible_ssh_pass=’200271200’ 192.168.0.22 ansible_ssh_user=root ansible_ssh_pass=’200271200’ [dbservers] 10.12.0.100 10.12.0.101 sed -i &amp;#34;s/#host_key_checking = .*/host_key_checking = False/g&amp;#34; /etc/ansible/ansible.cfg 命令行 ansible all -m ping ansible all -m shell -a &amp;#34;ls /root&amp;#34; -u root -k 常用模块 在目标主机执行 shell 命令。
 shell - name: 将命令结果输出到指定文件 shell: somescript.sh &amp;gt;&amp;gt; somelog.txt - name: 切换目录执行命令 shell: cmd: ls -l | grep log chdir: somedir/ - name: 编写脚本 shell: | if [ 0 -eq 0 ]; then echo yes &amp;gt; /tmp/result else echo no &amp;gt; /tmp/result fi args: executable: /bin/bash copy 将文件复制到远程主机。 - name: 拷贝文件 copy: src: /srv/myfiles/foo.</description>
     </item>
     
     <item>
       <title>Ant中如何添加第三方jar包依赖</title>
-      <link>https://www.jobcher.com/ant%E4%B8%AD%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%B8%89%E6%96%B9jar%E5%8C%85%E4%BE%9D%E8%B5%96.html</link>
+      <link>https://test.jobcher.com/ant%E4%B8%AD%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%B8%89%E6%96%B9jar%E5%8C%85%E4%BE%9D%E8%B5%96.html</link>
       <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/ant%E4%B8%AD%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%B8%89%E6%96%B9jar%E5%8C%85%E4%BE%9D%E8%B5%96.html</guid>
+      <guid>https://test.jobcher.com/ant%E4%B8%AD%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%B8%89%E6%96%B9jar%E5%8C%85%E4%BE%9D%E8%B5%96.html</guid>
       <description>Ant 中如何添加第三方 jar 包依赖 如果使用 ant 进行 java 项目的编译部署，那怎么添加第三方 jar 包的依赖呢？方法如下：
 在项目的根目录下创建 lib 目录，并把所有需要的第三方 jar 包放到此目录下。 在 build.xml 中依次添加：path、property，并在 javac 中添加 classpath，添加 unjar。完整配置如下： &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;project name=&amp;#34;MyTool&amp;#34; default=&amp;#34;build&amp;#34; basedir=&amp;#34;.&amp;#34;&amp;gt; &amp;lt;description&amp;gt;The ant project to build MyTool.&amp;lt;/description&amp;gt; &amp;lt;property name=&amp;#34;srcDir&amp;#34; location=&amp;#34;src&amp;#34; description=&amp;#34;源文件的存放目录&amp;#34; /&amp;gt; &amp;lt;property name=&amp;#34;libDir&amp;#34; location=&amp;#34;lib&amp;#34; description=&amp;#34;第三方jar包的存放目录&amp;#34; /&amp;gt; &amp;lt;property name=&amp;#34;antDir&amp;#34; location=&amp;#34;ant&amp;#34; description=&amp;#34;编译后所有文件存放的根目录&amp;#34; /&amp;gt; &amp;lt;property name=&amp;#34;binDir&amp;#34; location=&amp;#34;${antDir}/bin&amp;#34; description=&amp;#34;编译后class文件的存放目录&amp;#34; /&amp;gt; &amp;lt;property name=&amp;#34;jarDir&amp;#34; location=&amp;#34;${antDir}/jar&amp;#34; description=&amp;#34;打包后jar包的存放目录&amp;#34; /&amp;gt; &amp;lt;property name=&amp;#34;jarFile&amp;#34; location=&amp;#34;${jarDir}/MyTool.jar&amp;#34; description=&amp;#34;打包后jar包存放的完整路径&amp;#34; /&amp;gt; &amp;lt;property name=&amp;#34;package&amp;#34; value=&amp;#34;com.xiboliya.mytool&amp;#34; description=&amp;#34;包名&amp;#34; /&amp;gt; &amp;lt;property name=&amp;#34;mainClass&amp;#34; value=&amp;#34;MyTool&amp;#34; description=&amp;#34;主类名&amp;#34; /&amp;gt; &amp;lt;property name=&amp;#34;resFromDir&amp;#34; location=&amp;#34;res&amp;#34; description=&amp;#34;资源文件的源目录&amp;#34; /&amp;gt; &amp;lt;property name=&amp;#34;resToDir&amp;#34; location=&amp;#34;${binDir}/res&amp;#34; description=&amp;#34;资源文件的目标目录&amp;#34; /&amp;gt; &amp;lt;path id=&amp;#34;libPath&amp;#34; description=&amp;#34;编译时依赖的第三方jar包的存放路径&amp;#34;&amp;gt; &amp;lt;fileset dir=&amp;#34;${libDir}&amp;#34; erroronmissingdir=&amp;#34;false&amp;#34;&amp;gt; &amp;lt;include name=&amp;#34;*.</description>
     </item>
     
     <item>
       <title>k8s本地联调神器kt-connect</title>
-      <link>https://www.jobcher.com/k8s%E6%9C%AC%E5%9C%B0%E8%81%94%E8%B0%83%E7%A5%9E%E5%99%A8kt-connect.html</link>
+      <link>https://test.jobcher.com/k8s%E6%9C%AC%E5%9C%B0%E8%81%94%E8%B0%83%E7%A5%9E%E5%99%A8kt-connect.html</link>
       <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/k8s%E6%9C%AC%E5%9C%B0%E8%81%94%E8%B0%83%E7%A5%9E%E5%99%A8kt-connect.html</guid>
+      <guid>https://test.jobcher.com/k8s%E6%9C%AC%E5%9C%B0%E8%81%94%E8%B0%83%E7%A5%9E%E5%99%A8kt-connect.html</guid>
       <description>k8s 本地联调神器 kt-connect 转载自 Bboysoul&amp;rsquo;sBlog
 k8s 集群内部的服务网络怎么和我们本地网络打通。kt-connect 就是用来解决这个问题的
 使用方法 下载安装什么的都很简单，一个二进制而已
@@ -1193,38 +1193,38 @@ sudo ktctl --kubeconfig ~/.kube/local connect 执行完成之后，这个集群�
     
     <item>
       <title>OpenELB：让k8s私有环境对外暴露端口</title>
-      <link>https://www.jobcher.com/openelb%E8%AE%A9k8s%E7%A7%81%E6%9C%89%E7%8E%AF%E5%A2%83%E5%AF%B9%E5%A4%96%E6%9A%B4%E9%9C%B2%E7%AB%AF%E5%8F%A3.html</link>
+      <link>https://test.jobcher.com/openelb%E8%AE%A9k8s%E7%A7%81%E6%9C%89%E7%8E%AF%E5%A2%83%E5%AF%B9%E5%A4%96%E6%9A%B4%E9%9C%B2%E7%AB%AF%E5%8F%A3.html</link>
       <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/openelb%E8%AE%A9k8s%E7%A7%81%E6%9C%89%E7%8E%AF%E5%A2%83%E5%AF%B9%E5%A4%96%E6%9A%B4%E9%9C%B2%E7%AB%AF%E5%8F%A3.html</guid>
+      <guid>https://test.jobcher.com/openelb%E8%AE%A9k8s%E7%A7%81%E6%9C%89%E7%8E%AF%E5%A2%83%E5%AF%B9%E5%A4%96%E6%9A%B4%E9%9C%B2%E7%AB%AF%E5%8F%A3.html</guid>
       <description>OpenELB：云原生负载均衡器插件 OpenELB 是一个开源的云原生负载均衡器实现，可以在基于裸金属服务器、边缘以及虚拟化的 Kubernetes 环境中使用 LoadBalancer 类型的 Service 对外暴露服务。
 在 Kubernetes 中安装 OpenELB kubectl apply -f https://raw.githubusercontent.com/openelb/openelb/master/deploy/openelb.yaml 查看状态 kubectl get po -n openelb-system 使用 kubectl 删除 OpenELB kubectl delete -f https://raw.githubusercontent.com/openelb/openelb/master/deploy/openelb.yaml kubectl get ns 配置 OpenELB kubectl edit configmap kube-proxy -n kube-system # 修改 网卡 ipvs: strictARP: true 重启组件 kubectl rollout restart daemonset kube-proxy -n kube-system 为 master1 节点添加一个 annotation 来指定网卡： kubectl annotate nodes master1 layer2.openelb.kubesphere.io/v1alpha1=&amp;#34;192.168.0.2&amp;#34; 创建地址池 layer2-eip.yaml apiVersion: network.kubesphere.io/v1alpha2 kind: Eip metadata: name: layer2-eip spec: address: 192.</description>
     </item>
     
     <item>
       <title>kubernetes ansible自动化部署</title>
-      <link>https://www.jobcher.com/kubernetes-ansible%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2.html</link>
+      <link>https://test.jobcher.com/kubernetes-ansible%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2.html</link>
       <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-ansible%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-ansible%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2.html</guid>
       <description>kubernetes ansible 自动化部署 服务器规划 角色 IP 组件 k8s-master1 10.12.12.15 kube-apiserver kube-controller-manager kube-scheduler etcd k8s-master2 10.12.12.17 kube-apiserver kube-controller-manager kube-scheduler etcd k8s-02 10.12.12.22 kubelet kube-proxy docker etcd k8s-03 10.12.12.21 kubelet kube-proxy docker etcd load Balancer(master) 10.12.12.15 10.12.12.23(VIP) nginx keepalived load Balancer(backup) 10.12.12.17 nginx keepalived 系统初始化 关闭 selinux，firewalld 关闭 swap 时间同步 写 hosts ssh 免密（可选） etcd 集群部署 生成 etcd 证书 部署三个 ETC 集群 查看集群状态 部署 Masterß 生成 apiserver 证书 部署 apiserver、controller-manager 和 scheduler 组件 启动 TLS Bootstrapping 部署 Node 安装 Docker 部署 Kubelet 和 kube-proxy 在 Master 上运行为新 Node 颁发证书 授权 apiserver 访问 kubelet 部署插件（准备好镜像） Flannel Web UI CoreDNS Ingress Controller Master 高可用 增加 Master 节点（与 Master1 一致） 部署 nginx 负载均衡器 Nginx+Keepalived 高可用 修改 Node 连接 VIP </description>
     </item>
     
     <item>
       <title>Git 规则</title>
-      <link>https://www.jobcher.com/git-%E8%A7%84%E5%88%99.html</link>
+      <link>https://test.jobcher.com/git-%E8%A7%84%E5%88%99.html</link>
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/git-%E8%A7%84%E5%88%99.html</guid>
+      <guid>https://test.jobcher.com/git-%E8%A7%84%E5%88%99.html</guid>
       <description>Git 飞行规则(Flight Rules) 编辑提交(editting commits) 我刚才提交了什么? 我的提交信息(commit message)写错了 我提交(commit)里的用户名和邮箱不对 我想从一个提交(commit)里移除一个文件 我想删除我的的最后一次提交(commit) 删除任意提交(commit) 我尝试推一个修正后的提交(amended commit)到远程，但是报错： 我意外的做了一次硬重置(hard reset)，我想找回我的内容 暂存(Staging) 我需要把暂存的内容添加到上一次的提交(commit) 我想要暂存一个新文件的一部分，而不是这个文件的全部 我想把在一个文件里的变化(changes)加到两个提交(commit)里 我想把暂存的内容变成未暂存，把未暂存的内容暂存起来 未暂存(Unstaged)的内容 我想把未暂存的内容移动到一个新分支 我想把未暂存的内容移动到另一个已存在的分支 我想丢弃本地未提交的变化(uncommitted changes) 我想丢弃某些未暂存的内容 分支(Branches) 我从错误的分支拉取了内容，或把内容拉取到了错误的分支 我想扔掉本地的提交(commit)，以便我的分支与远程的保持一致 我需要提交到一个新分支，但错误的提交到了 main 我想保留来自另外一个 ref-ish 的整个文件 我把几个提交(commit)提交到了同一个分支，而这些提交应该分布在不同的分支里 我想删除上游(upstream)分支被删除了的本地分支 我不小心删除了我的分支 我想删除一个分支 我想从别人正在工作的远程分支签出(checkout)一个分支 Rebasing 和合并(Merging) 我想撤销 rebase/merge 我已经 rebase 过, 但是我不想强推(force push) 我需要组合(combine)几个提交(commit) 安全合并(merging)策略 我需要将一个分支合并成一个提交(commit) 我只想组合(combine)未推的提交(unpushed commit) 检查是否分支上的所有提交(commit)都合并(merge)过了 交互式 rebase(interactive rebase)可能出现的问题 这个 rebase 编辑屏幕出现&amp;rsquo;noop&amp;rsquo; 有冲突的情况 Stash 暂存所有改动 暂存指定文件 暂存时记录消息 使用某个指定暂存 暂存时保留未暂存的内容 杂项(Miscellaneous Objects) 克隆所有子模块 删除标签(tag) 恢复已删除标签(tag) 已删除补丁(patch) 跟踪文件(Tracking Files) 我只想改变一个文件名字的大小写，而不修改内容 我想从 Git 删除一个文件，但保留该文件 配置(Configuration) 我想给一些 Git 命令添加别名(alias) 我想缓存一个仓库(repository)的用户名和密码 我不知道我做错了些什么 其它资源(Other Resources) 书(Books) 教程(Tutorials) 脚本和工具(Scripts and Tools) GUI 客户端(GUI Clients) 编辑提交(editting commits) 我刚才提交了什么?</description>
     </item>
     
     <item>
       <title>shell 脚本（1）</title>
-      <link>https://www.jobcher.com/shell-%E8%84%9A%E6%9C%AC1.html</link>
+      <link>https://test.jobcher.com/shell-%E8%84%9A%E6%9C%AC1.html</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/shell-%E8%84%9A%E6%9C%AC1.html</guid>
+      <guid>https://test.jobcher.com/shell-%E8%84%9A%E6%9C%AC1.html</guid>
       <description>shell 脚本之变量 变量替换 语法 说明 ${变量名#匹配规则} 从变量开头进行规则匹配，将符合最短的数据删除 ${变量名##匹配规则} 从变量开头进行规则匹配，将符合最长的数据删除 ${变量名%匹配规则} 从变量尾部进行规则匹配，将符合最短的数据删除 ${变量名%%匹配规则} 从变量尾部进行规则匹配，将符合最长的数据删除 ${变量名/旧字符串/新字符串} 变量内容符合旧字符串则，则第一个旧字符串会被新字符串取代 ${变量名//旧字符串/新字符串} 变量内容符合旧字符串则，则全部的旧字符串会被新字符串取代 字符串处理 计算字符串长度 - 语法 说明 方法一 ${#string} 无 方法二 expr length &amp;ldquo;$string&amp;rdquo; string 有空格，则必须加双引号 获取子串在字符串中的索引位置
 语法： expr index $string $substring
 计算子串长度
@@ -1235,20 +1235,20 @@ ${string:position} ：从 string 中的 position 开始 ${string:position:length
     
     <item>
       <title>kubernetes 脚本快速安装</title>
-      <link>https://www.jobcher.com/kubernetes-%E8%84%9A%E6%9C%AC%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85.html</link>
+      <link>https://test.jobcher.com/kubernetes-%E8%84%9A%E6%9C%AC%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85.html</link>
       <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-%E8%84%9A%E6%9C%AC%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-%E8%84%9A%E6%9C%AC%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85.html</guid>
       <description>kubernetes 脚本快速安装 1、三台机器设置自己的 hostname（不能是 localhost） # 修改 hostname; k8s-01要变为自己的hostname hostnamectl set-hostname k8s-01 # 设置 hostname 解析 echo &amp;#34;127.0.0.1 $(hostname)&amp;#34; &amp;gt;&amp;gt; /etc/hosts 2、所有机器批量执行如下脚本
 #先在所有机器执行 vi k8s.sh # 进入编辑模式（输入i），把如下脚本复制 # 所有机器给脚本权限 chmod +x k8s.sh #执行脚本 ./k8s.sh #/bin/sh #######################开始设置环境##################################### \n printf &amp;#34;##################正在配置所有基础环境信息################## \n&amp;#34; printf &amp;#34;##################关闭selinux################## \n&amp;#34; sed -i &amp;#39;s/enforcing/disabled/&amp;#39; /etc/selinux/config setenforce 0 printf &amp;#34;##################关闭swap################## \n&amp;#34; swapoff -a sed -ri &amp;#39;s/.*swap.*/#&amp;amp;/&amp;#39; /etc/fstab printf &amp;#34;##################配置路由转发################## \n&amp;#34; cat &amp;lt;&amp;lt;EOF | sudo tee /etc/modules-load.d/k8s.conf br_netfilter EOF echo &amp;#39;net.</description>
     </item>
     
     <item>
       <title>Maven 安装编译</title>
-      <link>https://www.jobcher.com/maven-%E5%AE%89%E8%A3%85%E7%BC%96%E8%AF%91.html</link>
+      <link>https://test.jobcher.com/maven-%E5%AE%89%E8%A3%85%E7%BC%96%E8%AF%91.html</link>
       <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/maven-%E5%AE%89%E8%A3%85%E7%BC%96%E8%AF%91.html</guid>
+      <guid>https://test.jobcher.com/maven-%E5%AE%89%E8%A3%85%E7%BC%96%E8%AF%91.html</guid>
       <description>Maven 安装编译 Maven 就是专门为 Java 项目打造的管理和构建工具，它的主要功能有：
 提供了一套标准化的项目结构； 提供了一套标准化的构建流程（编译，测试，打包，发布……）； 提供了一套依赖管理机制。 默认结构：
 a-maven-project ├── pom.xml ├── src │ ├── main │ │ ├── java │ │ └── resources │ └── test │ ├── java │ └── resources └── target 项目的根目录a-maven-project是项目名，
@@ -1265,29 +1265,29 @@ pom.xml 文件:
     
     <item>
       <title>Nodejs 安装编译</title>
-      <link>https://www.jobcher.com/nodejs-%E5%AE%89%E8%A3%85%E7%BC%96%E8%AF%91.html</link>
+      <link>https://test.jobcher.com/nodejs-%E5%AE%89%E8%A3%85%E7%BC%96%E8%AF%91.html</link>
       <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/nodejs-%E5%AE%89%E8%A3%85%E7%BC%96%E8%AF%91.html</guid>
+      <guid>https://test.jobcher.com/nodejs-%E5%AE%89%E8%A3%85%E7%BC%96%E8%AF%91.html</guid>
       <description>Nodejs 安装编译 Node.js 平台是在后端运行 JavaScript 代码，必须首先在本机安装 Node 环境。
 安装 Node.js 安装 npm npm 其实是 Node.js 的包管理工具（package manager）。</description>
     </item>
     
     <item>
       <title>ruoyi-cloud docker部署</title>
-      <link>https://www.jobcher.com/ruoyi-cloud-docker%E9%83%A8%E7%BD%B2.html</link>
+      <link>https://test.jobcher.com/ruoyi-cloud-docker%E9%83%A8%E7%BD%B2.html</link>
       <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/ruoyi-cloud-docker%E9%83%A8%E7%BD%B2.html</guid>
+      <guid>https://test.jobcher.com/ruoyi-cloud-docker%E9%83%A8%E7%BD%B2.html</guid>
       <description>基础环境安装 # docker 脚本安装 curl -sSL https://get.daocloud.io/docker | sh #docker compose 脚本安装 curl -L https://get.daocloud.io/docker/compose/releases/download/v2.4.1/docker-compose-`uname -s`-`uname -m` &amp;gt; /usr/local/bin/docker-compose #可执行权限 sudo chmod +x /usr/local/bin/docker-compose #创建软链： sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose #测试是否安装成功 docker-compose --version 下载安装 git clone https://gitlab.sanjiang.com/it-group/ruoyi-cloud.git 编译 cd ruoyi-cloud mvn clean install -DskipTests 复制 jar 包 cd ./docker ./copy.sh 部署 docker ./deploy.sh base ./deploy.sh modules 检查 docker docker ps -a | grep ruoyi docker logs -f ruoyi-auth docker logs -f ruoyi-gateway docker logs -f ruoyi-modules-system </description>
     </item>
     
     <item>
       <title>git版本控制</title>
-      <link>https://www.jobcher.com/git%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6.html</link>
+      <link>https://test.jobcher.com/git%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6.html</link>
       <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/git%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6.html</guid>
+      <guid>https://test.jobcher.com/git%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6.html</guid>
       <description>git 版本控制 版本回退 1.查看 git 提交历史 #查看git提交历史 git log 如果嫌输出信息太多，看得眼花缭乱的，可以试试加上--pretty=oneline参数
 git log --pretty=oneline 2.回退到上一个版本 Git必须知道当前版本是哪个版本，在 Git 中，用HEAD表示当前版本，也就是最新的提交b534d741..（注意我的提交 ID 和你的肯定不一样），上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上 100 个版本写 100 个^比较容易数不过来，所以写成HEAD~100
 git reset --hard HEAD^ 最新的那个版本已经看不到了，可以顺着往上找，找到那个版本的 ID
@@ -1298,10 +1298,10 @@ git reset --hard c8275ca Git 在内部有个指向当前版本的HEAD指针,当�
     
     <item>
       <title>Linux crontab 命令</title>
-      <link>https://www.jobcher.com/linux-crontab-%E5%91%BD%E4%BB%A4.html</link>
+      <link>https://test.jobcher.com/linux-crontab-%E5%91%BD%E4%BB%A4.html</link>
       <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/linux-crontab-%E5%91%BD%E4%BB%A4.html</guid>
+      <guid>https://test.jobcher.com/linux-crontab-%E5%91%BD%E4%BB%A4.html</guid>
       <description>Linux crontab 命令 Linux crontab是用来定期执行程序的命令。
 系统执行的工作：系统周期性所要执行的工作，如备份系统数据、清理缓存 个人执行的工作：某个用户定期要做的工作，例如每隔10分钟检查邮件服务器是否有新信，这些工作可由每个用户自行设置 语法 crontab [ -u user ] file crontab [ -u user ] { -l | -r | -e } 说明：
 crontab 是用来让使用者在固定时间或固定间隔执行程序之用，换句话说，也就是类似使用者的时程表。
@@ -1316,20 +1316,20 @@ f1 f2 f3 f4 f5 program * * * * * - - - - - | | | | | | | | | +----- 星期中星
     
     <item>
       <title>linux 网络测速</title>
-      <link>https://www.jobcher.com/linux-%E7%BD%91%E7%BB%9C%E6%B5%8B%E9%80%9F.html</link>
+      <link>https://test.jobcher.com/linux-%E7%BD%91%E7%BB%9C%E6%B5%8B%E9%80%9F.html</link>
       <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/linux-%E7%BD%91%E7%BB%9C%E6%B5%8B%E9%80%9F.html</guid>
+      <guid>https://test.jobcher.com/linux-%E7%BD%91%E7%BB%9C%E6%B5%8B%E9%80%9F.html</guid>
       <description>linux 网络测速 一键测试脚本bench.sh 适用于各种 Linux 发行版的网络（下行）和 IO 测试：
 显示当前测试的各种系统信息 取自世界多处的知名数据中心的测试点，下载测试比较全面 支持 IPv6 下载测速 IO 测试三次，并显示平均值 wget -qO- bench.sh | bash #或者下面这命令下载执行 curl -Lso- bench.sh | bash 欢迎关注我的博客www.jobcher.com</description>
     </item>
     
     <item>
       <title>docker 命令(2)</title>
-      <link>https://www.jobcher.com/docker-%E5%91%BD%E4%BB%A42.html</link>
+      <link>https://test.jobcher.com/docker-%E5%91%BD%E4%BB%A42.html</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/docker-%E5%91%BD%E4%BB%A42.html</guid>
+      <guid>https://test.jobcher.com/docker-%E5%91%BD%E4%BB%A42.html</guid>
       <description>docker 命令(2) docker ps 命令 docker ps 能查看所有运行中的容器
 docker ps -a 能查看所有的容器
 docker rm -f $(docker ps -aq) 强制删除所有容器
@@ -1341,10 +1341,10 @@ docker run和docker create有什么区别 docker create命令能够基于镜像�
     
     <item>
       <title>CICD 概念</title>
-      <link>https://www.jobcher.com/cicd-%E6%A6%82%E5%BF%B5.html</link>
+      <link>https://test.jobcher.com/cicd-%E6%A6%82%E5%BF%B5.html</link>
       <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/cicd-%E6%A6%82%E5%BF%B5.html</guid>
+      <guid>https://test.jobcher.com/cicd-%E6%A6%82%E5%BF%B5.html</guid>
       <description>CICD 概念 DevOps Devlopment 和 Operation 的组合词
 规划-》代码-》构建-》测试-》发布-》部署-》运营-》监控-》再次规划
 devOps 看作开发（软件工程）、技术运营和质量保障（QA）三者的交集 突出重视软件开发人员和运维人员的沟通合作，通过自动化流程来使得软件构建、测试、发布更加快捷、频繁和可靠。 DevOps 希望做到的是软件产品交付过程中IT工具链的打通，使得各个团队减少时间损耗。更加高效的协同工作。良好的闭环可以大大增加整体的产出。 CICD 持续集成 持续部署
@@ -1354,19 +1354,19 @@ devOps 看作开发（软件工程）、技术运营和质量保障（QA）三�
     
     <item>
       <title>git使用方法</title>
-      <link>https://www.jobcher.com/git%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html</link>
+      <link>https://test.jobcher.com/git%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html</link>
       <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/git%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html</guid>
+      <guid>https://test.jobcher.com/git%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html</guid>
       <description>git 使用方法 一、git 安装配置 Debian/Ubuntu apt-get install libcurl4-gnutls-dev libexpat1-dev gettext \ libz-dev libssl-dev apt-get install git git --version git version 1.8.1.2 Centos/RedHat yum install curl-devel expat-devel gettext-devel \ openssl-devel zlib-devel yum -y install git-core git --version git version 1.7.1 二、git 拉取异常如何重新拉取 1.同一文件有修改，产生冲突。 先将本地修改存储起来 使用git stash命令，这样本地的所有修改就都被暂时存储起来 。其中stash@{0}就是刚才保存的标记。后续可以通过此标记访问。 再次拉取代码 git pull 还原暂存的内容 git stash pop stash@{0} 解决冲突 在存在冲突的文件中，Updated upstream 和=====之间的内容为拉取下来的代码，=====和stashed changes之间的内容就为本地修改的代码。解决完成之后，就可以正常的提交了。 5.删除stash 使用git stash drop stash@{0}命令，如果不加stash编号，默认的就是删除最新的，即编号为 0 的。或者git stash clear命令，清除所有stash。 2.想要让某一个文件放弃修改，同步服务器。 git checkout [本地变动文件的路径] 3.</description>
     </item>
     
     <item>
       <title>kubernetes面试题汇总</title>
-      <link>https://www.jobcher.com/kubernetes%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB.html</link>
+      <link>https://test.jobcher.com/kubernetes%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB.html</link>
       <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB.html</guid>
+      <guid>https://test.jobcher.com/kubernetes%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB.html</guid>
       <description>kubernetes 面试题汇总 1、 k8s 是什么？请说出你的了解？ 答：Kubenetes 是一个针对容器应用，进行自动部署，弹性伸缩和管理的开源系统。主要功能是生产环境中的容器编排。
 K8S 是 Google 公司推出的，它来源于由 Google 公司内部使用了 15 年的 Borg 系统，集结了 Borg 的精华。
 2、 K8s 架构的组成是什么？ 答：和大多数分布式系统一样，K8S 集群至少需要一个主节点（Master）和多个计算节点（Node）。
@@ -1380,28 +1380,28 @@ livenessProbe探针
     
     <item>
       <title>Kubernetes 安装</title>
-      <link>https://www.jobcher.com/kubernetes-%E5%AE%89%E8%A3%85.html</link>
+      <link>https://test.jobcher.com/kubernetes-%E5%AE%89%E8%A3%85.html</link>
       <pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-%E5%AE%89%E8%A3%85.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-%E5%AE%89%E8%A3%85.html</guid>
       <description>Kubernetes 安装 环境配置 关闭防火墙： 如果是云服务器，需要设置安全组策略放行端口 systemctl stop firewalld systemctl disable firewalld 修改 hostname hostnamectl set-hostname k8s-01 echo &amp;#34;127.0.0.1 $(hostname)&amp;#34; &amp;gt;&amp;gt; /etc/hosts reboot 关闭 selinux： sed -i &amp;#39;s/enforcing/disabled/&amp;#39; /etc/selinux/config setenforce 0 关闭 swap： swapoff -a sed -ri &amp;#39;s/.*swap.*/#&amp;amp;/&amp;#39; /etc/fstab 修改 /etc/sysctl.conf # 如果有配置，则修改 sed -i &amp;#34;s#^net.ipv4.ip_forward.*#net.ipv4.ip_forward=1#g&amp;#34; /etc/sysctl.conf sed -i &amp;#34;s#^net.bridge.bridge-nf-call-ip6tables.*#net.bridge.bridge-nf-call-ip6tables=1#g&amp;#34; /etc/sysctl.conf sed -i &amp;#34;s#^net.bridge.bridge-nf-call-iptables.*#net.bridge.bridge-nf-call-iptables=1#g&amp;#34; /etc/sysctl.conf sed -i &amp;#34;s#^net.ipv6.conf.all.disable_ipv6.*#net.ipv6.conf.all.disable_ipv6=1#g&amp;#34; /etc/sysctl.conf sed -i &amp;#34;s#^net.ipv6.conf.default.disable_ipv6.*#net.ipv6.conf.default.disable_ipv6=1#g&amp;#34; /etc/sysctl.conf sed -i &amp;#34;s#^net.ipv6.conf.lo.disable_ipv6.*#net.ipv6.conf.lo.disable_ipv6=1#g&amp;#34; /etc/sysctl.conf sed -i &amp;#34;s#^net.ipv6.conf.all.forwarding.*#net.ipv6.conf.all.forwarding=1#g&amp;#34; /etc/sysctl.conf # 可能没有，追加 echo &amp;#34;net.</description>
     </item>
     
     <item>
       <title>linux常用命令</title>
-      <link>https://www.jobcher.com/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</link>
+      <link>https://test.jobcher.com/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</link>
       <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</guid>
+      <guid>https://test.jobcher.com/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</guid>
       <description>linux 常用命令 软件操作命令 #软件包管理器 yum # 安装软件 yum install xxxx # 卸载软件 yum remove xxx # 搜索软件 yum search xxx # 清理缓存 yum clean packages # 列出已安装 yum list # 软件包信息 yum info 服务器硬件资源和磁盘操作 # 内存 free -h # 硬盘 df -h # 负载 w/top/htop # 查看cpu cat /proc/cpuinfo # 查看磁盘 fdisk -l 文件和文件夹操作命令 命令 解释 ls 查看目录下的文件 touch 新建文件 mkdir 新建目录 cd 进入目录 rm 删除文件和目录 cp 复制 mv 移动 pwd 显示路径 系统用户操作命令 防火墙相关设置 提权操作 sudo 和文件传输 </description>
     </item>
     
     <item>
       <title>linux基础知识</title>
-      <link>https://www.jobcher.com/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
+      <link>https://test.jobcher.com/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
       <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
+      <guid>https://test.jobcher.com/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
       <description>linux 基础知识 1、简述 Linux 权限划分原则。 给文件或目录分配权限时，先考虑所有者和所属组 遵循最小化权限，用啥权限给啥权限 修改目录和子文件归属权限，注意递归 文件权限分配是最常用的安全防护手段 2、当用户 user1，对/testdir 目录有写和执行权限时，该目录下的只读文件 file1 是否可修改和删除？ 对 file1 不能修改也不能删除。（如果对目录有写权限和执行权限，则对 file1 不能修改可以删除）
 3、如果一个系统没有任何的备份策略，请写出一个较为全面合理的备份方案！ 增量备份：将相较于前一天增加的内容备份，适合每天改变量较大的数据。
 差异备份：将相较于第一天改变的内容备份，适合原始数据量比较大，但是之后改变的比较小，即使中间哪一天的丢了也没事，只要最后一天，和第一天的在就行。
@@ -1410,10 +1410,10 @@ livenessProbe探针
     
     <item>
       <title>网心云挂机教程 | 轻松实现睡后收入~</title>
-      <link>https://www.jobcher.com/%E7%BD%91%E5%BF%83%E4%BA%91%E6%8C%82%E6%9C%BA%E6%95%99%E7%A8%8B-%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%9D%A1%E5%90%8E%E6%94%B6%E5%85%A5~.html</link>
+      <link>https://test.jobcher.com/%E7%BD%91%E5%BF%83%E4%BA%91%E6%8C%82%E6%9C%BA%E6%95%99%E7%A8%8B-%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%9D%A1%E5%90%8E%E6%94%B6%E5%85%A5~.html</link>
       <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E7%BD%91%E5%BF%83%E4%BA%91%E6%8C%82%E6%9C%BA%E6%95%99%E7%A8%8B-%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%9D%A1%E5%90%8E%E6%94%B6%E5%85%A5~.html</guid>
+      <guid>https://test.jobcher.com/%E7%BD%91%E5%BF%83%E4%BA%91%E6%8C%82%E6%9C%BA%E6%95%99%E7%A8%8B-%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E7%9D%A1%E5%90%8E%E6%94%B6%E5%85%A5~.html</guid>
       <description>网心云挂机教程 | 轻松实现睡后收入~ 首先，本文章只是分享，造成一切的后果，博主概不负责！都是成年人了……
 我采用 docker 容器魔方来挂载网心云
 docker 部署 /mnt/money/wxedge_storage这个路径改为自己的存储路径建议&amp;gt;200G
@@ -1422,10 +1422,10 @@ docker run \ --name=wxedge \ --restart=always \ --privileged \ --net=host \ --tm
     
     <item>
       <title>清理Docker的container，image与volume</title>
-      <link>https://www.jobcher.com/%E6%B8%85%E7%90%86docker%E7%9A%84containerimage%E4%B8%8Evolume.html</link>
+      <link>https://test.jobcher.com/%E6%B8%85%E7%90%86docker%E7%9A%84containerimage%E4%B8%8Evolume.html</link>
       <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%B8%85%E7%90%86docker%E7%9A%84containerimage%E4%B8%8Evolume.html</guid>
+      <guid>https://test.jobcher.com/%E6%B8%85%E7%90%86docker%E7%9A%84containerimage%E4%B8%8Evolume.html</guid>
       <description>清理 Docker 的 container，image 与 volume Docker 的镜像（image）、容器（container）、数据卷（volume）， 都是由 daemon 托管的。 因此，在需要清理时，也需要使用其自带的手段。
 清理技巧 清理所有停止运行的容器：
 docker container prune # or docker rm $(docker ps -aq) 清理所有悬挂（&amp;lt;none&amp;gt;）镜像：
@@ -1438,10 +1438,10 @@ Name shorthand Default Description –force,-f false Force the removal of a runn
     
     <item>
       <title>Jenkins 安装与使用</title>
-      <link>https://www.jobcher.com/jenkins-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.html</link>
+      <link>https://test.jobcher.com/jenkins-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.html</link>
       <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/jenkins-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.html</guid>
+      <guid>https://test.jobcher.com/jenkins-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.html</guid>
       <description>Jenkins 安装与使用 代码在本地修改&amp;mdash;-》提交到远程 gitlab&amp;mdash;-》触发 jenkins 整个自动化构建流程（打包，测试，发布，部署）
 安装 docker 安装 docker
 docker 安装 jenkins docker run \ -u root \ -d \ -p 8080:8080 \ -p 50000:50000 \ -v jenkins-data:/var/jenkins_home \ -v /etc/localtime:/etc/localtime:ro \ -v /var/run/docker.sock:/var/run/docker.sock \ --restart=always \ jenkinsci/blueocean 访问 http://localhost:8080
@@ -1452,10 +1452,10 @@ pipeline { /* 全部的CICD流程都在这里定义 */ //任意代理可用就�
     
     <item>
       <title>Navicat 查看导出连接的密码 | navicat查看密码方案</title>
-      <link>https://www.jobcher.com/navicat-%E6%9F%A5%E7%9C%8B%E5%AF%BC%E5%87%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%AF%86%E7%A0%81-navicat%E6%9F%A5%E7%9C%8B%E5%AF%86%E7%A0%81%E6%96%B9%E6%A1%88.html</link>
+      <link>https://test.jobcher.com/navicat-%E6%9F%A5%E7%9C%8B%E5%AF%BC%E5%87%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%AF%86%E7%A0%81-navicat%E6%9F%A5%E7%9C%8B%E5%AF%86%E7%A0%81%E6%96%B9%E6%A1%88.html</link>
       <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/navicat-%E6%9F%A5%E7%9C%8B%E5%AF%BC%E5%87%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%AF%86%E7%A0%81-navicat%E6%9F%A5%E7%9C%8B%E5%AF%86%E7%A0%81%E6%96%B9%E6%A1%88.html</guid>
+      <guid>https://test.jobcher.com/navicat-%E6%9F%A5%E7%9C%8B%E5%AF%BC%E5%87%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%AF%86%E7%A0%81-navicat%E6%9F%A5%E7%9C%8B%E5%AF%86%E7%A0%81%E6%96%B9%E6%A1%88.html</guid>
       <description>Navicat 查看密码方案 解决问题： 我们经常使用 navicat 连接数据库，有时候时间久了之后，会忘记之前的密码，那么现在我们有办法获得只要正常连接的数据库的密码
 步骤： 导出连接 connections.ncx，拿到保存到本地的 connections.ncx 文件中的 Password，粘贴到下面的代码中 登陆https://tool.lu/coderunner/，使用 PHP 在线运行工具，粘贴下面添加密码后的代码
 备用工具网址（https://zixuephp.net/tool-runcode.html） &amp;lt;?php class NavicatPassword { protected $version = 0; protected $aesKey = &amp;#39;libcckeylibcckey&amp;#39;; protected $aesIv = &amp;#39;libcciv libcciv &amp;#39;; protected $blowString = &amp;#39;3DC5CA39&amp;#39;; protected $blowKey = null; protected $blowIv = null; public function __construct($version = 12) { $this-&amp;gt;version = $version; $this-&amp;gt;blowKey = sha1(&amp;#39;3DC5CA39&amp;#39;, true); $this-&amp;gt;blowIv = hex2bin(&amp;#39;d9c7c3c8870d64bd&amp;#39;); } public function encrypt($string) { $result = FALSE; switch ($this-&amp;gt;version) { case 11: $result = $this-&amp;gt;encryptEleven($string); break; case 12: $result = $this-&amp;gt;encryptTwelve($string); break; default: break; } return $result; } protected function encryptEleven($string) { $round = intval(floor(strlen($string) / 8)); $leftLength = strlen($string) % 8; $result = &amp;#39;&amp;#39;; $currentVector = $this-&amp;gt;blowIv; for ($i = 0; $i &amp;lt; $round; $i++) { $temp = $this-&amp;gt;encryptBlock($this-&amp;gt;xorBytes(substr($string, 8 * $i, 8), $currentVector)); $currentVector = $this-&amp;gt;xorBytes($currentVector, $temp); $result .</description>
@@ -1463,19 +1463,19 @@ pipeline { /* 全部的CICD流程都在这里定义 */ //任意代理可用就�
     
     <item>
       <title>ProXmoX VE升级 apt-get update 报错</title>
-      <link>https://www.jobcher.com/proxmox-ve%E5%8D%87%E7%BA%A7-apt-get-update-%E6%8A%A5%E9%94%99.html</link>
+      <link>https://test.jobcher.com/proxmox-ve%E5%8D%87%E7%BA%A7-apt-get-update-%E6%8A%A5%E9%94%99.html</link>
       <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/proxmox-ve%E5%8D%87%E7%BA%A7-apt-get-update-%E6%8A%A5%E9%94%99.html</guid>
+      <guid>https://test.jobcher.com/proxmox-ve%E5%8D%87%E7%BA%A7-apt-get-update-%E6%8A%A5%E9%94%99.html</guid>
       <description>ProXmoX VE 升级 apt-get update 报错 解决方法 vim /etc/apt/sources.list.d/pve-enterprise.list #注释掉 #deb https://enterprise.proxmox.com/debian/pve stretch pve-enterprise 添加内容 echo &amp;#34;deb http://download.proxmox.com/debian/pve stretch pve-no-subscription&amp;#34; &amp;gt; /etc/apt/sources.list.d/pve-install-repo.list wget http://download.proxmox.com/debian/proxmox-ve-release-5.x.gpg -O /etc/apt/trusted.gpg.d/proxmox-ve-release-5.x.gpg 更新系统 apt update &amp;amp;&amp;amp; apt dist-upgrade 结尾 升级完成后，可以执行pveversion -v查看下最新的软件版本。然后执行reboot重启物理服务器</description>
     </item>
     
     <item>
       <title>mysql 笔记（2）</title>
-      <link>https://www.jobcher.com/mysql-%E7%AC%94%E8%AE%B02.html</link>
+      <link>https://test.jobcher.com/mysql-%E7%AC%94%E8%AE%B02.html</link>
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/mysql-%E7%AC%94%E8%AE%B02.html</guid>
+      <guid>https://test.jobcher.com/mysql-%E7%AC%94%E8%AE%B02.html</guid>
       <description>mysql 学习笔记（2） mysql 主从复制 MySQL 主从复制是指数据可以从一个MySQL数据库服务器主节点复制到一个或多个从节点。MySQL 默认采用异步复制方式，这样从节点不用一直访问主服务器来更新自己的数据，数据的更新可以在远程连接上进行，从节点可以复制主数据库中的所有数据库或者特定的数据库，或者特定的表。
 MySQL 主从复制的主要用途 读写分离 数据实时备份，当系统中某个节点发生故障时，可以方便的故障切换(主从切换) 高可用（HA） 架构扩展 MySQL 主从复制的原理 MySQL 主从复制涉及到三个线程，一个运行在主节点（log dump thread），其余两个(I/O thread, SQL thread)运行在从节点，如下图所示:
 主节点 log dump 线程
@@ -1489,19 +1489,19 @@ SQL 线程负责读取 relay-log 中的内容，解析成具体的操作并执�
     
     <item>
       <title>Proxmox VE 在线扩容磁盘分区</title>
-      <link>https://www.jobcher.com/proxmox-ve-%E5%9C%A8%E7%BA%BF%E6%89%A9%E5%AE%B9%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA.html</link>
+      <link>https://test.jobcher.com/proxmox-ve-%E5%9C%A8%E7%BA%BF%E6%89%A9%E5%AE%B9%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA.html</link>
       <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/proxmox-ve-%E5%9C%A8%E7%BA%BF%E6%89%A9%E5%AE%B9%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA.html</guid>
+      <guid>https://test.jobcher.com/proxmox-ve-%E5%9C%A8%E7%BA%BF%E6%89%A9%E5%AE%B9%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA.html</guid>
       <description>Proxmox VE 在线扩容磁盘分区 添加磁盘大小 在 VM 上做扩容操作 安装 growpart yum install -y epel-release yum install -y cloud-utils 查看系统盘 路径 fdisk -l df -h 扩容设备并重启 growpart /dev/sda 2 #2代表是第二块系统分区，不是sda2,中间有空格 reboot 重启执行命令 xfs_growfs /dev/sda2 #(xfs 文件系统) resize2fs /dev/sda2 #(ext4 文件系统) 更新完成 df -h </description>
     </item>
     
     <item>
       <title>Gitlab批量导出用户</title>
-      <link>https://www.jobcher.com/gitlab%E6%89%B9%E9%87%8F%E5%AF%BC%E5%87%BA%E7%94%A8%E6%88%B7.html</link>
+      <link>https://test.jobcher.com/gitlab%E6%89%B9%E9%87%8F%E5%AF%BC%E5%87%BA%E7%94%A8%E6%88%B7.html</link>
       <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/gitlab%E6%89%B9%E9%87%8F%E5%AF%BC%E5%87%BA%E7%94%A8%E6%88%B7.html</guid>
+      <guid>https://test.jobcher.com/gitlab%E6%89%B9%E9%87%8F%E5%AF%BC%E5%87%BA%E7%94%A8%E6%88%B7.html</guid>
       <description>Gitlab 批量导出用户 登陆 Gitlab 服务器进行数据库登陆、数据查询及信息导出操作。
 操作步骤 根据配置文件，定位数据库相关信息 cat /var/opt/gitlab/gitlab-rails/etc/database.yml 查看 Gitlab 对应的系统用户 cat /etc/passwd | grep gitlab 切换用户 gitlab-psql su - gitlab-psql 登陆数据库（-h 指定 host，-d 指定数据库） 使用第 1 步获取的信息 psql -h /var/opt/gitlab/postgresql -d gitlabhq_production (1) 查看帮助信息
 gitlabhq_production=# \h (2) 查看数据库
@@ -1514,10 +1514,10 @@ gitlabhq_production=# SELECT name FROM users; (7)登出数据库</description>
     
     <item>
       <title>Harbor 搭建</title>
-      <link>https://www.jobcher.com/harbor-%E6%90%AD%E5%BB%BA.html</link>
+      <link>https://test.jobcher.com/harbor-%E6%90%AD%E5%BB%BA.html</link>
       <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/harbor-%E6%90%AD%E5%BB%BA.html</guid>
+      <guid>https://test.jobcher.com/harbor-%E6%90%AD%E5%BB%BA.html</guid>
       <description>Harbor 搭建 Harbor 是一个开源可信的云原生注册表项目，用于存储、签名和扫描内容。用于存储 docker image
 要求 Linux 主机 docker 17.06.0-ce 以上 docker-compose 1.18.0 以上 链接跳转：docker 安装
 安装 下载程序 在线安装包
@@ -1528,10 +1528,10 @@ wget https://github.com/goharbor/harbor/releases/download/v1.10.10/harbor-offlin
     
     <item>
       <title>prometheus grafana alertmanager 安装配置</title>
-      <link>https://www.jobcher.com/prometheus-grafana-alertmanager-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</link>
+      <link>https://test.jobcher.com/prometheus-grafana-alertmanager-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</link>
       <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/prometheus-grafana-alertmanager-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</guid>
+      <guid>https://test.jobcher.com/prometheus-grafana-alertmanager-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</guid>
       <description>prometheus+grafana+alertmanager 安装配置 服务器监控告警系统搭建，通过 exporter 获取节点信息到 prometheus。prometheus 配置规则，使 garfana 和 alertmanager 能够接受到数据，分别展示数据和发送告警
 参数 VM :192.168.99.78
 端口 服务 9100 node_exporter 3000 grafana 9090 prometheus 9115 blackbox_exporter 安装 grafa 安装 docker 安装 docker run -d -p 3000:3000 \ --name=grafana \ -v grafana-storage:/var/lib/grafana \ grafana/grafana:8.3.3 prometheus 安装 下载 wget https://github.com/prometheus/prometheus/releases/download/v2.32.1/prometheus-2.32.1.linux-amd64.tar.gz tar -zxvf prometheus-2.32.1.linux-amd64.tar.gz cd prometheus-2.32.1.linux-amd64 mkdir -p file_sd mkdir -p rules 运行 prometheus killall prometheus nohup ./prometheus --config.file=prometheus.yml &amp;amp; # 查看运行状况 tail -f nohup.out node_exporter 安装 docker-compose 安装 version: &amp;#34;3&amp;#34; services: node-exporter: image: prom/node-exporter:v1.</description>
@@ -1539,40 +1539,40 @@ wget https://github.com/goharbor/harbor/releases/download/v1.10.10/harbor-offlin
     
     <item>
       <title>prometheus 配置</title>
-      <link>https://www.jobcher.com/prometheus-%E9%85%8D%E7%BD%AE.html</link>
+      <link>https://test.jobcher.com/prometheus-%E9%85%8D%E7%BD%AE.html</link>
       <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/prometheus-%E9%85%8D%E7%BD%AE.html</guid>
+      <guid>https://test.jobcher.com/prometheus-%E9%85%8D%E7%BD%AE.html</guid>
       <description>prometheus 配置 Prometheus 是由 SoundCloud 开源监控告警解决方案
 组件 Prometheus Server， 主要用于抓取数据和存储时序数据，另外还提供查询和 Alert Rule 配置管理。 client libraries，用于对接 Prometheus Server, 可以查询和上报数据。 push gateway ，用于批量，短期的监控数据的汇总节点，主要用于业务数据汇报等。 各种汇报数据的 exporters ，例如汇报机器数据的 node_exporter, 汇报 MongoDB 信息的 MongoDB exporter 等等。 用于告警通知管理的 alertmanager 。 运行逻辑 Prometheus server 定期从静态配置的 targets 或者服务发现的 targets 拉取数据。 当新拉取的数据大于配置内存缓存区的时候，Prometheus 会将数据持久化到磁盘（如果使用 remote storage 将持久化到云端）。 Prometheus 可以配置 rules，然后定时查询数据，当条件触发的时候，会将 alert 推送到配置的 Alertmanager。 Alertmanager 收到警告的时候，可以根据配置，聚合，去重，降噪，最后发送警告。 可以使用 API， Prometheus Console 或者 Grafana 查询和聚合数据。 安装 prometheus 使用预编译的二进制文件安装 wget https://github.com/prometheus/prometheus/releases/download/v2.32.1/prometheus-2.32.1.linux-amd64.tar.gz tar -zxvf prometheus-2.32.1.linux-amd64.tar.gz cd prometheus-2.</description>
     </item>
     
     <item>
       <title>centos7.9 网络配置</title>
-      <link>https://www.jobcher.com/centos7.9-%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE.html</link>
+      <link>https://test.jobcher.com/centos7.9-%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE.html</link>
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/centos7.9-%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE.html</guid>
+      <guid>https://test.jobcher.com/centos7.9-%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE.html</guid>
       <description>centos7.9 网络配置 解决 centos 新机器网络不通的问题，CentOS7 默认不启动网卡的。CentOS 安装成功后,进行一下 ping 的操作,验证网络是否联通.
 ping 1.1.1.1 ip addr # 查看ip网络名称 启用网卡 进入 /etc/sysconfig/network-scipts 文件夹下，找到 IP 网卡名称 cd /etc/sysconfig/network-scipts vim ifcfg-eth0 启用 ONBOOT #vim ifcfg-eth0 #修改 ONBOOT=YES # esc 并:wq退出保存 重启机器 shutdown -r now 结尾 centos 用的挺别扭，不考虑性能和性价比，我还是喜欢用 ubuntu……，简单的配置，初学者我建议还是先用 ubuntu，会少踩很多坑。当然了，用 x86 不然初学者用树莓派和 arm 设备，会碰到很多兼容性的问题。</description>
     </item>
     
     <item>
       <title>安装 docker 出现 ERROR: Unsupported distribution &#39;ol&#39; 问题</title>
-      <link>https://www.jobcher.com/%E5%AE%89%E8%A3%85-docker-%E5%87%BA%E7%8E%B0-error-unsupported-distribution-ol-%E9%97%AE%E9%A2%98.html</link>
+      <link>https://test.jobcher.com/%E5%AE%89%E8%A3%85-docker-%E5%87%BA%E7%8E%B0-error-unsupported-distribution-ol-%E9%97%AE%E9%A2%98.html</link>
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E5%AE%89%E8%A3%85-docker-%E5%87%BA%E7%8E%B0-error-unsupported-distribution-ol-%E9%97%AE%E9%A2%98.html</guid>
+      <guid>https://test.jobcher.com/%E5%AE%89%E8%A3%85-docker-%E5%87%BA%E7%8E%B0-error-unsupported-distribution-ol-%E9%97%AE%E9%A2%98.html</guid>
       <description>安装 docker 出现 ERROR: Unsupported distribution &amp;lsquo;ol&amp;rsquo; 问题 部署 docker 安装出现 ERROR: Unsupported distribution &amp;lsquo;ol&amp;rsquo;
 确认是不是 arm 架构 uname -r 确认使用的是不是 oracle 服务器系统,如果是请继续操作，安装依赖： dnf install -y dnf-utils zip unzip dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo 安装 docker dnf remove -y runc dnf install -y docker-ce --nobest 完成 docker 安装并检查 systemctl enable docker.service systemctl start docker.service #检查 systemctl status docker.service docker info docker version 结尾 该问题主要是 oracle 没有支持依赖导致的~oracle 还是很不错的~</description>
     </item>
     
     <item>
       <title>Kubernetes 实验手册（1）</title>
-      <link>https://www.jobcher.com/kubernetes-%E5%AE%9E%E9%AA%8C%E6%89%8B%E5%86%8C1.html</link>
+      <link>https://test.jobcher.com/kubernetes-%E5%AE%9E%E9%AA%8C%E6%89%8B%E5%86%8C1.html</link>
       <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-%E5%AE%9E%E9%AA%8C%E6%89%8B%E5%86%8C1.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-%E5%AE%9E%E9%AA%8C%E6%89%8B%E5%86%8C1.html</guid>
       <description>Kubernetes 实验手册（1） 通过在 pve 创建 5 台虚拟机：
 节点 IP 作用 node0 192.168.99.69 k8s-master01 node1 192.168.99.9 k8s-master02 node2 192.168.99.53 k8s-master03 node3 192.168.99.41 k8s-node01 node4 192.168.99.219 k8s-node02 node5 192.168.99.42 k8s-master-lb 配置信息 备注 系统版本 Ubuntu Docker 20.10.12 pod 网段 172.168.0.0/12 service 网段 10.96.0.0/12 VIP 不要和内网 IP 重复，VIP 需要和主机在同一个局域网内
 更新 ansible 连接 ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.99.155 ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.99.199 ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.99.87 #ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.99.41 #ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.99.219 vim /etc/hosts 192.</description>
@@ -1580,29 +1580,29 @@ ping 1.1.1.1 ip addr # 查看ip网络名称 启用网卡 进入 /etc/sysconfig/n
     
     <item>
       <title>RocketMQ 安装和启动</title>
-      <link>https://www.jobcher.com/rocketmq-%E5%AE%89%E8%A3%85%E5%92%8C%E5%90%AF%E5%8A%A8.html</link>
+      <link>https://test.jobcher.com/rocketmq-%E5%AE%89%E8%A3%85%E5%92%8C%E5%90%AF%E5%8A%A8.html</link>
       <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/rocketmq-%E5%AE%89%E8%A3%85%E5%92%8C%E5%90%AF%E5%8A%A8.html</guid>
+      <guid>https://test.jobcher.com/rocketmq-%E5%AE%89%E8%A3%85%E5%92%8C%E5%90%AF%E5%8A%A8.html</guid>
       <description>RocketMQ 安装和部署 部署 RocketMQ
 单机安装构建 安装 JDK 1.8.0 yum install java-1.8.0-openjdk* 安装 Maven wget http://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz tar -zxvf apache-maven-3.8.4-bin.tar.gz mv -f apache-maven-3.8.4 /usr/local/ vim /etc/profile # 末尾添加 export MAVEN_HOME=/usr/local/apache-maven-3.8.4 export PATH=${PATH}:${MAVEN_HOME}/bin # 保存 source /etc/profile # 查看maven是否正常 mvn -v 快速部署 #构建 DLedger git clone https://github.com/openmessaging/openmessaging-storage-dledger.git cd openmessaging-storage-dledger mvn clean install -DskipTests # 构建 RocketMQ git clone https://github.com/apache/rocketmq.git cd rocketmq git checkout -b store_with_dledger origin/store_with_dledger mvn -Prelease-all -DskipTests clean install -U # 部署 cd rocketmq/distribution/target/apache-rocketmq sh bin/dledger/fast-try.</description>
     </item>
     
     <item>
       <title>安装 minIO Azure S3网关</title>
-      <link>https://www.jobcher.com/%E5%AE%89%E8%A3%85-minio-azure-s3%E7%BD%91%E5%85%B3.html</link>
+      <link>https://test.jobcher.com/%E5%AE%89%E8%A3%85-minio-azure-s3%E7%BD%91%E5%85%B3.html</link>
       <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E5%AE%89%E8%A3%85-minio-azure-s3%E7%BD%91%E5%85%B3.html</guid>
+      <guid>https://test.jobcher.com/%E5%AE%89%E8%A3%85-minio-azure-s3%E7%BD%91%E5%85%B3.html</guid>
       <description>安装 minIO 通过 docker 安装 docker run -p 9000:9000 -p 41863:41863 -d --name azure-s3 \ -e &amp;#34;MINIO_ACCESS_KEY=azure存储账户&amp;#34; \ -e &amp;#34;MINIO_SECRET_KEY=azure存储密码&amp;#34; \ minio/minio gateway azure --console-address &amp;#34;:41863&amp;#34; 通过 docker-compose 安装 version: &amp;#34;3&amp;#34; services: minio: image: &amp;#34;minio/minio:RELEASE.2022-01-04T07-41-07Z.fips&amp;#34; container_name: &amp;#34;minio&amp;#34; restart: &amp;#34;always&amp;#34; volumes: - &amp;#34;/etc/localtime:/etc/localtime&amp;#34; ports: - &amp;#34;9000:9000&amp;#34; - &amp;#34;9001:9001&amp;#34; environment: - &amp;#34;MINIO_ROOT_USER=azure存储账户&amp;#34; - &amp;#34;MINIO_ROOT_PASSWORD=azure存储密码&amp;#34; command: - --console-address &amp;#34;:41863&amp;#34; </description>
     </item>
     
     <item>
       <title>Keepalived高可用</title>
-      <link>https://www.jobcher.com/keepalived%E9%AB%98%E5%8F%AF%E7%94%A8.html</link>
+      <link>https://test.jobcher.com/keepalived%E9%AB%98%E5%8F%AF%E7%94%A8.html</link>
       <pubDate>Wed, 05 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/keepalived%E9%AB%98%E5%8F%AF%E7%94%A8.html</guid>
+      <guid>https://test.jobcher.com/keepalived%E9%AB%98%E5%8F%AF%E7%94%A8.html</guid>
       <description>Keepalived 高可用 配置文件存放位置：/usr/share/doc/keepalived/samples
 VVRP 虚拟路由冗余协议
 组成 LB 集群：Load Balancing，负载均衡集群，平均分配给多个节点
@@ -1614,20 +1614,20 @@ HPC 集群：High Performance Computing，高性能集群
     
     <item>
       <title>ansible 安装和部署</title>
-      <link>https://www.jobcher.com/ansible-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</link>
+      <link>https://test.jobcher.com/ansible-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</link>
       <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/ansible-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</guid>
+      <guid>https://test.jobcher.com/ansible-%E5%AE%89%E8%A3%85%E5%92%8C%E9%83%A8%E7%BD%B2.html</guid>
       <description>ansible 安装和部署 Ansible 默认通过 SSH 协议管理机器.
 安装 ansible 下载安装 # ubuntu 安装 apt-get install software-properties-common apt-add-repository ppa:ansible/ansible apt-get update apt-get install ansible # centos 安装 yum install ansible 检查文件 #检查 ansible --version ansible 配置 添加主机 vim /etc/ansible/hosts #添加你需要添加的被控主机地址和IP 配置 SSH key 授权访问 # 控制主机生成ssh 密钥对（一路回车） ssh-keygen -t rsa # 复制公钥IP到被控主机 ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.0.2 ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.0.3 ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.0.4 # ssh-copy-id命令会自动将id_rsa.pub文件的内容追加到远程主机root用户下.ssh/authorized_keys文件中。 更改 ansible 配置 vim /etc/ansible/ansible.cfg #禁用每次执行ansbile命令检查ssh key host host_key_checking = False # 开启日志记录 log_path = /var/log/ansible.</description>
     </item>
     
     <item>
       <title>yaml 语法</title>
-      <link>https://www.jobcher.com/yaml-%E8%AF%AD%E6%B3%95.html</link>
+      <link>https://test.jobcher.com/yaml-%E8%AF%AD%E6%B3%95.html</link>
       <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/yaml-%E8%AF%AD%E6%B3%95.html</guid>
+      <guid>https://test.jobcher.com/yaml-%E8%AF%AD%E6%B3%95.html</guid>
       <description>yaml 语法 我们使用 YAML 是因为它像 XML 或 JSON 是一种利于人们读写的数据格式. 此外在大多数变成语言中有使用 YAML 的库.YAML 语法的基本概述, 它被用来描述一个 playbooks(我们的配置管理语言).
 基本的 YAML 对于 Ansible, 每一个 YAML 文件都是从一个列表开始. 列表中的每一项都是一个键值对, 通常它们被称为一个 “哈希” 或 “字典”. 所以, 我们需要知道如何在 YAML 中编写列表和字典.
 YAML 还有一个小的怪癖. 所有的 YAML 文件(无论和 Ansible 有没有关系)开始行都应该是 &amp;mdash;. 这是 YAML 格式的一部分, 表明一个文件的开始.
@@ -1636,10 +1636,10 @@ YAML 还有一个小的怪癖. 所有的 YAML 文件(无论和 Ansible 有没有
     
     <item>
       <title>logrotate 日志滚动的使用</title>
-      <link>https://www.jobcher.com/logrotate-%E6%97%A5%E5%BF%97%E6%BB%9A%E5%8A%A8%E7%9A%84%E4%BD%BF%E7%94%A8.html</link>
+      <link>https://test.jobcher.com/logrotate-%E6%97%A5%E5%BF%97%E6%BB%9A%E5%8A%A8%E7%9A%84%E4%BD%BF%E7%94%A8.html</link>
       <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/logrotate-%E6%97%A5%E5%BF%97%E6%BB%9A%E5%8A%A8%E7%9A%84%E4%BD%BF%E7%94%A8.html</guid>
+      <guid>https://test.jobcher.com/logrotate-%E6%97%A5%E5%BF%97%E6%BB%9A%E5%8A%A8%E7%9A%84%E4%BD%BF%E7%94%A8.html</guid>
       <description>logrotate 日志滚动的使用 logrotate 日志滚动切割工具，是 linux 默认安装的工具，配置文件位置：
 /etc/logrotate.conf /etc/logrotate.d/ 参数 以 nginx 配置为例
 /opt/log/nginx/*.log { daily missingok rotate 14 errors &amp;#34;nb@nbtyfood.com&amp;#34; compress delaycompress notifempty create 0640 www-data adm sharedscripts prerotate if [ -d /etc/logrotate.d/httpd-prerotate ]; then \ run-parts /etc/logrotate.d/httpd-prerotate; \ fi \ endscript postrotate invoke-rc.d nginx rotate &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 endscript } 参数 作用 compress 压缩日志文件的所有非当前版本 daily,weekly,monthly 按指定计划轮换日志文件 delaycompress 压缩所有版本，除了当前和下一个最近的 endscript 标记 prerotate 或 postrotate 脚本的结束 errors &amp;ldquo;emailid&amp;rdquo; 给指定邮箱发送错误通知 missingok 如果日志文件丢失，不要显示错误 notifempty 如果日志文件为空，则不轮换日志文件 olddir &amp;ldquo;dir&amp;rdquo; 指定日志文件的旧版本放在 “dir” 中 postrotate 引入一个在日志被轮换后执行的脚本 prerotate 引入一个在日志被轮换前执行的脚本 rotate &amp;rsquo;n&#39; 在轮换方案中包含日志的 n 个版本 sharedscripts 对于整个日志组只运行一次脚本 size=&amp;lsquo;logsize&amp;rsquo; 在日志大小大于 logsize（例如 100K，4M）时轮换 </description>
@@ -1647,10 +1647,10 @@ YAML 还有一个小的怪癖. 所有的 YAML 文件(无论和 Ansible 有没有
     
     <item>
       <title>docker 命令</title>
-      <link>https://www.jobcher.com/docker-%E5%91%BD%E4%BB%A4.html</link>
+      <link>https://test.jobcher.com/docker-%E5%91%BD%E4%BB%A4.html</link>
       <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/docker-%E5%91%BD%E4%BB%A4.html</guid>
+      <guid>https://test.jobcher.com/docker-%E5%91%BD%E4%BB%A4.html</guid>
       <description>安装 docker 通过 docker 脚本安装
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun curl -sSL https://get.daocloud.io/docker | sh docker-compose 安装 #下载安装 sudo curl -L &amp;#34;https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-$(uname -s)-$(uname -m)&amp;#34; -o /usr/local/bin/docker-compose #可执行权限 sudo chmod +x /usr/local/bin/docker-compose #创建软链： sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose #测试是否安装成功 docker-compose --version docker 命令 常用 docker 命令
 #查看容器 docker ps #查看镜像 docker images #停止当前所有容器 docker stop $(docker ps -aq) #删除当前停止的所有容器 docker rm $(docker ps -aq) #删除镜像 docker rmi nginx </description>
@@ -1658,19 +1658,19 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun curl -sSL htt
     
     <item>
       <title>gitlab与github同步项目</title>
-      <link>https://www.jobcher.com/gitlab%E4%B8%8Egithub%E5%90%8C%E6%AD%A5%E9%A1%B9%E7%9B%AE.html</link>
+      <link>https://test.jobcher.com/gitlab%E4%B8%8Egithub%E5%90%8C%E6%AD%A5%E9%A1%B9%E7%9B%AE.html</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/gitlab%E4%B8%8Egithub%E5%90%8C%E6%AD%A5%E9%A1%B9%E7%9B%AE.html</guid>
+      <guid>https://test.jobcher.com/gitlab%E4%B8%8Egithub%E5%90%8C%E6%AD%A5%E9%A1%B9%E7%9B%AE.html</guid>
       <description>gitlab 与 github 同步项目 本地同步项目 git clone 创建一个同名的项目,命令行终端中添加 remote 地址 git remote add githubOrigin git@github.com:sjtfreaks/blog.git 项目同步到 Github 上 git push -u githubOrigin main 分别同步 github 与 gitlab 即可 git push -u githubOrigin main git push -u origin main </description>
     </item>
     
     <item>
       <title>iptables 基础知识</title>
-      <link>https://www.jobcher.com/iptables-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
+      <link>https://test.jobcher.com/iptables-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/iptables-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
+      <guid>https://test.jobcher.com/iptables-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
       <description>iptables 基础知识 内核包过滤与 NAT 管理工具.是 linux 系统中在用户空间中运行的运来配置内核防火墙的工具。它可以设置，维护和检查 linux 内核中的 ipv4 包过滤规则和管理网络地址转换（NAT）。
 ipatbles 命令仅支持 ipv4，如果使用的 IP 协议是 ipv6 则需要使用专门的管理工具 ip6tables。
 常用参数 参数 作用 -t&amp;lt;表&amp;gt; 指定要操纵的表 -A 向规则链中追加条目 -D 从规则链中删除条目 -I 向规则链中插入条目 -R 替换规则链中的相应条目 -L 显示规则链中的已有条目 -F 清除规则链中的现有条目。不改变规则链的默认目标策略 -Z 清空规则链中的数据包计数器和字节计数器 -N 创建新的用户自定义规则链 -P 定义规则链中的默认目标（策略） -h 显示帮助信息 -p&amp;lt;协议&amp;gt; 指定要匹配的数据包的协议类型 -s&amp;lt;源地址&amp;gt; 指定要匹配的数据包的源 IP 地址 -j&amp;lt;目标&amp;gt; 指定要跳转的目标 -i&amp;lt;网络接口&amp;gt; 指定数据包进入本机的网络接口 -o&amp;lt;网络接口&amp;gt; 指定数据包离开本机做使用的网络接口 -c&amp;lt;包计数&amp;gt; 在执行插入、追加和替换操作时初始化包计数器和字节计数器 参考实例 显示内核当前的 filter 表：
@@ -1680,75 +1680,75 @@ iptables -L -t nat 禁止本机对 192.</description>
     
     <item>
       <title>k3s 升级版本</title>
-      <link>https://www.jobcher.com/k3s-%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC.html</link>
+      <link>https://test.jobcher.com/k3s-%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC.html</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/k3s-%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC.html</guid>
+      <guid>https://test.jobcher.com/k3s-%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC.html</guid>
       <description>k3s 升级版本 停止所有的 K3s 容器（慎用） 从 server 节点运行 killall 脚本
 /usr/local/bin/k3s-killall.sh 开始升级 使用安装脚本升级 K3s curl -sfL https://get.k3s.io | sh - #国内可用 curl -sfL http://rancher-mirror.cnrancher.com/k3s/k3s-install.sh | INSTALL_K3S_MIRROR=cn sh - 重启 k3s sudo systemctl restart k3s </description>
     </item>
     
     <item>
       <title>安装配置 Terraform</title>
-      <link>https://www.jobcher.com/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE-terraform.html</link>
+      <link>https://test.jobcher.com/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE-terraform.html</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE-terraform.html</guid>
+      <guid>https://test.jobcher.com/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE-terraform.html</guid>
       <description>安装配置 Terraform 安装 macOS 苹果系统安装 #安装 brew tap hashicorp/tap brew install hashicorp/tap/terraform # 更新 brew update brew upgrade hashicorp/tap/terraform #验证安装 terraform -help windows 系统安装 #安装 choco install terraform #直接到这个url里下载64位系统 https://www.terraform.io/downloads #验证安装 terraform -help Linux 安装 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add - sudo apt-add-repository &amp;#34;deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main&amp;#34; sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install terraform #验证安装 terraform -help wget -O- https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo | sudo tee /etc/yum.repos.d/hashicorp.repo sudo yum install terraform -y terrafrom 控制 proxmox 虚拟机 来源：https://github.</description>
     </item>
     
     <item>
       <title>孜然杏鲍菇-素食</title>
-      <link>https://www.jobcher.com/%E5%AD%9C%E7%84%B6%E6%9D%8F%E9%B2%8D%E8%8F%87-%E7%B4%A0%E9%A3%9F.html</link>
+      <link>https://test.jobcher.com/%E5%AD%9C%E7%84%B6%E6%9D%8F%E9%B2%8D%E8%8F%87-%E7%B4%A0%E9%A3%9F.html</link>
       <pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E5%AD%9C%E7%84%B6%E6%9D%8F%E9%B2%8D%E8%8F%87-%E7%B4%A0%E9%A3%9F.html</guid>
+      <guid>https://test.jobcher.com/%E5%AD%9C%E7%84%B6%E6%9D%8F%E9%B2%8D%E8%8F%87-%E7%B4%A0%E9%A3%9F.html</guid>
       <description>孜然杏鲍菇-素食 准备食材 杏鲍菇 蒜 糖 白芝麻 孜然粉 老抽 生抽 蚝油 步骤 杏鲍菇切片 蒜切成末 热油下蒜爆香 杏鲍菇下锅把水分炒干 加一勺生抽、半勺老抽，半勺蚝油，一勺孜然粉，一勺白芝麻，半勺糖炒匀 </description>
     </item>
     
     <item>
       <title>mysql数据库备份迁移</title>
-      <link>https://www.jobcher.com/mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%87%E4%BB%BD%E8%BF%81%E7%A7%BB.html</link>
+      <link>https://test.jobcher.com/mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%87%E4%BB%BD%E8%BF%81%E7%A7%BB.html</link>
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%87%E4%BB%BD%E8%BF%81%E7%A7%BB.html</guid>
+      <guid>https://test.jobcher.com/mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%87%E4%BB%BD%E8%BF%81%E7%A7%BB.html</guid>
       <description>mysql 数据库备份迁移 使用 mydumper 做数据备份迁移
 备份数据库 安装 # 安装 centos yum install https://github.com/mydumper/mydumper/releases/download/v0.11.5/mydumper-0.11.5-1.el7.x86_64.rpm yum install https://github.com/mydumper/mydumper/releases/download/v0.11.5/mydumper-0.11.5-1.el8.x86_64.rpm # 安装 ubuntu apt-get install libatomic1 wget https://github.com/mydumper/mydumper/releases/download/v0.11.5/mydumper_0.11.5-1.$(lsb_release -cs)_amd64.deb dpkg -i mydumper_0.11.5-1.$(lsb_release -cs)_amd64.deb 备份 nohup mydumper -h &amp;#39;备份数据库&amp;#39; \ -u &amp;#39;用户名&amp;#39; \ -p &amp;#39;密码&amp;#39; \ --threads=16 \ -B 备份数据库 \ -v 3 \ --outputdir=./backup --rows=100000 \ -L mydumper-logs.log &amp;amp; 迁移数据库 还原数据 nohup myloader -h &amp;#39;迁移数据库&amp;#39; \ -u &amp;#39;用户名&amp;#39; \ -p &amp;#39;密码&amp;#39; \ --directory=./backup \ -s 来源数据库 \ -B 还原数据库 \ -t 16 \ -v 3 \ -e 2&amp;gt;myloader-logs.</description>
     </item>
     
     <item>
       <title>nginx 编译参数详解</title>
-      <link>https://www.jobcher.com/nginx-%E7%BC%96%E8%AF%91%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3.html</link>
+      <link>https://test.jobcher.com/nginx-%E7%BC%96%E8%AF%91%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3.html</link>
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/nginx-%E7%BC%96%E8%AF%91%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3.html</guid>
+      <guid>https://test.jobcher.com/nginx-%E7%BC%96%E8%AF%91%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3.html</guid>
       <description>nginx 编译参数详解 nginx 编译参数 作用 –prefix= 指向安装目录 –sbin-path 指向（执行）程序文件（nginx） –conf-path= 指向配置文件（nginx.conf） –error-log-path= 指向错误日志目录 –pid-path= 指向 pid 文件（nginx.pid） –lock-path= 指向 lock 文件（nginx.lock）（安装文件锁定，防止安装文件被别人利用，或自己误操作。） –user= 指定程序运行时的非特权用户 –group= 指定程序运行时的非特权用户组 –builddir= 指向编译目录 –with-rtsig_module 启用 rtsig 模块支持（实时信号） –with-select_module 启用 select 模块支持（一种轮询模式,不推荐在高载环境下使用）禁用：–withoutselect_module –with-poll_module 启用 poll 模块支持（功能与 select 相同，与 select 特性相同，为一种轮询模式,不推荐在高载环境下使用） –with-file-aio 启用 file aio 支持（一种 APL 文件传输格式） –with-ipv6 启用 ipv6 支持 –with-http_ssl_module 启用 ngx_http_ssl_module 支持（使支持 https 请求，需已安装 openssl） –with-http_realip_module 启用 ngx_http_realip_module 支持（这个模块允许从请求标头更改客户端的 IP 地址值，默认为关） –with-http_addition_module 启用 ngx_http_addition_module 支持（作为一个输出过滤器，支持不完全缓冲，分部分响应请求） –with-http_xslt_module 启用 ngx_http_xslt_module 支持（过滤转换 XML 请求 –with-http_image_filter_module 启用 ngx_http_image_filter_module 支持（传输 JPEG/GIF/PNG 图片的一个过滤器）（默认为不启用。gd 库要用到） –with-http_geoip_module 启用 ngx_http_geoip_module 支持（该模块创建基于与 MaxMind GeoIP 二进制文件相配的客户端 IP 地址的 ngx_http_geoip_module 变量） –with-http_sub_module 启用 ngx_http_sub_module 支持（允许用一些其他文本替换 nginx 响应中的一些文本） –with-http_dav_module 启用 ngx_http_dav_module 支持（增加 PUT,DELETE,MKCOL：创建集合,COPY 和 MOVE 方法）默认情况下为关闭，需编译开启 –with-http_flv_module 启用 ngx_http_flv_module 支持（提供寻求内存使用基于时间的偏移量文件） –with-http_gzip_static_module 启用 ngx_http_gzip_static_module 支持（在线实时压缩输出数据流） –with-http_random_index_module 启用 ngx_http_random_index_module 支持（从目录中随机挑选一个目录索引） –with-http_secure_link_module 启用 ngx_http_secure_link_module 支持（计算和检查要求所需的安全链接网址） –with-http_degradation_module 启用 ngx_http_degradation_module 支持（允许在内存不足的情况下返回 204 或 444 码） –with-http_stub_status_module 启用 ngx_http_stub_status_module 支持（获取 nginx 自上次启动以来的工作状态） –without-http_charset_module 禁用 ngx_http_charset_module 支持（重新编码 web 页面，但只能是一个方向–服务器端到客户端，并且只有一个字节的编码可以被重新编码） –without-http_gzip_module 禁用 ngx_http_gzip_module 支持（该模块同-with-http_gzip_static_module 功能一样） –without-http_ssi_module 禁用 ngx_http_ssi_module 支持（该模块提供了一个在输入端处理处理服务器包含文件（SSI）的过滤器，目前支持 SSI 命令的列表是不完整的） –without-http_userid_module 禁用 ngx_http_userid_module 支持（该模块用来处理用来确定客户端后续请求的 cookies） –without-http_access_module 禁用 ngx_http_access_module 支持（该模块提供了一个简单的基于主机的访问控制。允许/拒绝基于 ip 地址） –without-http_auth_basic_module 禁用 ngx_http_auth_basic_module（该模块是可以使用用户名和密码基于 http 基本认证方法来保护你的站点或其部分内容） –without-http_autoindex_module 禁用 disable ngx_http_autoindex_module 支持（该模块用于自动生成目录列表，只在 ngx_http_index_module 模块未找到索引文件时发出请求。） –without-http_geo_module 禁用 ngx_http_geo_module 支持（创建一些变量，其值依赖于客户端的 IP 地址） –without-http_map_module 禁用 ngx_http_map_module 支持（使用任意的键/值对设置配置变量） –without-http_split_clients_module 禁用 ngx_http_split_clients_module 支持（该模块用来基于某些条件划分用户。条件如：ip 地址、报头、cookies 等等） –without-http_referer_module 禁用 disable ngx_http_referer_module 支持（该模块用来过滤请求，拒绝报 头中 Referer 值不正确的请求） –without-http_rewrite_module 禁用 ngx_http_rewrite_module 支持（该模块允许使用正则表达式改变 URI，并且根据变量来转向以及选择配置。如果在 server 级别设置该选项，那么他们将在 location 之前生效。如果在 location 还有更进一步的重写规则，location 部分的规则依然会被执行。如果这个 URI 重写是因为 location 部分的规则造成的，那么 location 部分会再次被执行作为新的 URI。 这个循环会执行 10 次，然后 Nginx 会返回一个 500 错误。） –without-http_proxy_module 禁用 ngx_http_proxy_module 支持（有关代理服务器） –without-http_fastcgi_module 禁用 ngx_http_fastcgi_module 支持（该模块允许 Nginx 与 FastCGI 进程交互，并通过传递参数来控制 FastCGI 进程工作。 ）FastCGI 一个常驻型的公共网关接口。 –without-http_uwsgi_module 禁用 ngx_http_uwsgi_module 支持（该模块用来医用 uwsgi 协议，uWSGI 服务器相关） –without-http_scgi_module 禁用 ngx_http_scgi_module 支持（该模块用来启用 SCGI 协议支持，SCGI 协议是 CGI 协议的替代。它是一种应用程序与 HTTP 服务接口标准。它有些像 FastCGI 但他的设计 更容易实现。） –without-http_memcached_module 禁用 ngx_http_memcached_module 支持（该模块用来提供简单的缓存，以提高系统效率） -without-http_limit_zone_module 禁用 ngx_http_limit_zone_module 支持（该模块可以针对条件，进行会话的并发连接数控制） –without-http_limit_req_module 禁用 ngx_http_limit_req_module 支持（该模块允许你对于一个地址进行请求数量的限制用一个给定的 session 或一个特定的事件） –without-http_empty_gif_module 禁用 ngx_http_empty_gif_module 支持（该模块在内存中常驻了一个 1*1 的透明 GIF 图像，可以被非常快速的调用） –without-http_browser_module 禁用 ngx_http_browser_module 支持（该模块用来创建依赖于请求报头的值。如果浏览器为 modern ，则$modern_browser 等于 modern_browser_value 指令分配的值；如 果浏览器为 old，则$ancient_browser 等于 ancient_browser_value 指令分配的值；如果浏览器为 MSIE 中的任意版本，则 $msie 等于 1） –without-http_upstream_ip_hash_module 禁用 ngx_http_upstream_ip_hash_module 支持（该模块用于简单的负载均衡） –with-http_perl_module 启用 ngx_http_perl_module 支持（该模块使 nginx 可以直接使用 perl 或通过 ssi 调用 perl） –with-perl_modules_path= 设定 perl 模块路径 –with-perl= 设定 perl 库文件路径 –http-log-path= 设定 access log 路径 –http-client-body-temp-path= 设定 http 客户端请求临时文件路径 –http-proxy-temp-path= 设定 http 代理临时文件路径 –http-fastcgi-temp-path= 设定 http fastcgi 临时文件路径 –http-uwsgi-temp-path= 设定 http uwsgi 临时文件路径 –http-scgi-temp-path= 设定 http scgi 临时文件路径 -without-http 禁用 http server 功能 –without-http-cache 禁用 http cache 功能 –with-mail 启用 POP3/IMAP4/SMTP 代理模块支持 –with-mail_ssl_module 启用 ngx_mail_ssl_module 支持 –without-mail_pop3_module 禁用 pop3 协议（POP3 即邮局协议的第 3 个版本,它是规定个人计算机如何连接到互联网上的邮件服务器进行收发邮件的协议。是因特网电子邮件的第一个离线协议标 准,POP3 协议允许用户从服务器上把邮件存储到本地主机上,同时根据客户端的操作删除或保存在邮件服务器上的邮件。POP3 协议是 TCP/IP 协议族中的一员，主要用于 支持使用客户端远程管理在服务器上的电子邮件） –without-mail_imap_module 禁用 imap 协议（一种邮件获取协议。它的主要作用是邮件客户端可以通过这种协议从邮件服务器上获取邮件的信息，下载邮件等。IMAP 协议运行在 TCP/IP 协议之上， 使用的端口是 143。它与 POP3 协议的主要区别是用户可以不用把所有的邮件全部下载，可以通过客户端直接对服务器上的邮件进行操作。） –without-mail_smtp_module 禁用 smtp 协议（SMTP 即简单邮件传输协议,它是一组用于由源地址到目的地址传送邮件的规则，由它来控制信件的中转方式。SMTP 协议属于 TCP/IP 协议族，它帮助每台计算机在发送或中转信件时找到下一个目的地。） –with-google_perftools_module 启用 ngx_google_perftools_module 支持（调试用，剖析程序性能瓶颈） –with-cpp_test_module 启用 ngx_cpp_test_module 支持 –add-module= 启用外部模块支持 –with-cc= 指向 C 编译器路径 –with-cpp= 指向 C 预处理路径 –with-cc-opt= 设置 C 编译器参数（PCRE 库，需要指定–with-cc-opt=”-I /usr/local/include”，如果使用 select()函数则需要同时增加文件描述符数量，可以通过–with-cc- opt=”-D FD_SETSIZE=2048”指定。） –with-ld-opt= 设置连接文件参数。（PCRE 库，需要指定–with-ld-opt=”-L /usr/local/lib”。） –with-cpu-opt= 指定编译的 CPU，可用的值为: pentium, pentiumpro, pentium3, pentium4, athlon,opteron, amd64, sparc32, sparc64, ppc64 –without-pcre 禁用 pcre 库 –with-pcre 启用 pcre 库 –with-pcre= 指向 pcre 库文件目录 –with-pcre-opt= 在编译时为 pcre 库设置附加参数 –with-md5= 指向 md5 库文件目录（消息摘要算法第五版，用以提供消息的完整性保护） –with-md5-opt= 在编译时为 md5 库设置附加参数 –with-md5-asm 使用 md5 汇编源 –with-sha1= 指向 sha1 库目录（数字签名算法，主要用于数字签名） –with-sha1-opt= 在编译时为 sha1 库设置附加参数 –with-sha1-asm 使用 sha1 汇编源 –with-zlib= 指向 zlib 库目录 –with-zlib-opt= 在编译时为 zlib 设置附加参数 –with-zlib-asm= 为指定的 CPU 使用 zlib 汇编源进行优化，CPU 类型为 pentium, pentiumpro –with-libatomic 为原子内存的更新操作的实现提供一个架构 –with-libatomic= 指向 libatomic_ops 安装目录 –with-openssl= 指向 openssl 安装目录 –with-openssl-opt 在编译时为 openssl 设置附加参数 –with-debug 启用 debug 日志 </description>
     </item>
     
     <item>
       <title>nginx 重写规则 rewrite模块</title>
-      <link>https://www.jobcher.com/nginx-%E9%87%8D%E5%86%99%E8%A7%84%E5%88%99-rewrite%E6%A8%A1%E5%9D%97.html</link>
+      <link>https://test.jobcher.com/nginx-%E9%87%8D%E5%86%99%E8%A7%84%E5%88%99-rewrite%E6%A8%A1%E5%9D%97.html</link>
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/nginx-%E9%87%8D%E5%86%99%E8%A7%84%E5%88%99-rewrite%E6%A8%A1%E5%9D%97.html</guid>
+      <guid>https://test.jobcher.com/nginx-%E9%87%8D%E5%86%99%E8%A7%84%E5%88%99-rewrite%E6%A8%A1%E5%9D%97.html</guid>
       <description>nginx 重写规则 rewrite 模块 语法 语法 默认值 使用字段 作用 break none server, location, if 完成当前设置的重写规则，停止执行其他的重写规则。 set variable value none server, location, if 为给定的变量设置一个特定值。 return code none server, location, if 停止处理并为客户端返回状态码。非标准的 444 状态码将关闭连接，不发送任何响应头。可以使用的状态码有：204，400，402-406，408，410, 411, 413, 416 与 500-504。如果状态码附带文字段落，该文本将被放置在响应主体。相反，如果状态码后面是一个 URL，该 URL 将成为 location 头补值。没有状态码的 URL 将被视为一个 302 状态码。 rewrite_log on rewrite_log off server, location, if 启用时将在 error log 中记录 notice 级别的重写日志。 rewrite regex replacement flag none server, location, if 按照相关的正则表达式与字符串修改 URI，指令按照在配置文件中出现的顺序执行。可以在重写指令后面添加标记。注意：如果替换的字符串以 http://开头，请求将被重定向，并且不再执行多余的 rewrite 指令。尾部的标记(flag)可以是以下的值：last – 停止处理重写模块指令，之后搜索 location 与更改后的 URI 匹配.</description>
     </item>
     
     <item>
       <title>nginx.conf 配置文件详解</title>
-      <link>https://www.jobcher.com/nginx.conf-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3.html</link>
+      <link>https://test.jobcher.com/nginx.conf-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3.html</link>
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/nginx.conf-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3.html</guid>
+      <guid>https://test.jobcher.com/nginx.conf-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3.html</guid>
       <description>nginx.conf 配置文件详解 # vim nginx.conf user nobody nobody; # 运行 nginx 的所属组和所有者 worker_processes 2; # 开启两个 nginx 工作进程,一般几个 CPU 核心就写几 error_log logs/error.log notice; # 错误日志路径 pid logs/nginx.pid; # pid 路径 events { worker_connections 1024; # 一个进程能同时处理 1024 个请求 } http { include mime.types; default_type application/octet-stream; log_format main ‘$remote_addr – $remote_user [$time_local] “$request” ‘ ‘$status $body_bytes_sent “$http_referer” ‘ ‘”$http_user_agent” “$http_x_forwarded_for”‘; access_log logs/access.log main; # 默认访问日志路径 sendfile on; keepalive_timeout 65; # keepalive 超市时间 # 开始配置一个域名,一个 server 配置段一般对应一个域名 server { listen 80; # # 在本机所有 ip 上监听 80,也可以写为 192.</description>
     </item>
     
     <item>
       <title>网络基础知识</title>
-      <link>https://www.jobcher.com/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
+      <link>https://test.jobcher.com/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
       <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
+      <guid>https://test.jobcher.com/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
       <description>网络基础知识 1、简述 ISO/OSI 七层模型的分层与作用 分层 作用 应用层 应用系统，提供用户服务 例如：HTTP、HTTPS、FTP、Telnet、SSH、SMTP、POP3 表示层 把数据转换为能与接收者的系统格式兼容并适合传输的格式，数据表示，加密，压缩 会话层 负责在数据传输中设置和维护计算机网络中两台计算机之间的通信连接。确定数据是否需要进行网络传递 分流网络传递还是本地保存 传输层 对数据分组，对报文进行分组(发送时)、组装(接收时)提供传输协议的选择：TCP (传输控制协议) :可靠的，面向连接的传输协议 (可靠，准确) (慢)UDP (用户数据报协议) :不可靠的，面向无连接的传输协议 (快) (不可靠)。端口封装，差错校验，滑动窗口，留空 网络层 网络层（Network Layer）决定数据的路径选择和转寄，将网络表头（NH）加至数据包，以形成分组。网络表头包含了网络资料。例如:互联网协议（IP）等。1.IP 地址编址 2.路由选择 3.静态路由 4.动态路由 数据链路层 数据链路层（Data Link Layer）负责网络寻址、错误侦测和改错。1.MAC 地址编址 2.MAC 地址寻址 3.差错校验 物理层 物理层（Physical Layer）在局域网上发送数据帧（Data Frame）1.数据实际传输 2.电气特性定义 2、TCP/IP 四层模型与作用？ 分层 协议 应用层 HTTP、HTTPS、FTP、Telnet、SSH、SMTP、DNS 传输层 TCP、UDP 网络层 ICMP、IGMP、IP、ARP、RARP 数据链路层、物理层 PPP、PPPOE 3、TCP 协议与 UDP 协议工作在哪一层，作用是什么？ 传输层，对报文进行分组(发送时)、组装(接收时)提供
 当进程需要传输可靠的数据时应使用 TCP，当进程需要高效传输数据，可以忽略可靠性时应使用 UDP 协议。
 4、简述 TCP 三次握手的过程。 第一次握手：Client 将标志位 SYN 置为 1，随机产生一个值 seq=J，并将该数据包发送给 Server，Client 进入 SYN_SENT 状态，等待 Server 确认。 第二次握手：Server 收到数据包后由标志位 SYN=1 知道 Client 请求建立连接，Server 将标志位 SYN 和 ACK 都置为 1，ack=J+1，随机产生一个值 seq=K，并将该数据包发送给 Client 以确认连接请求，Server 进入 SYN_RCVD 状态。 第三次握手：Client 收到确认后，检查 ack 是否为 J+1，ACK 是否为 1，如果正确则将标志位 ACK 置为 1，ack=K+1，并将该数据包发送给 Server，Server 检查 ack 是否为 K+1，ACK 是否为 1，如果正确则连接建立成功，Client 和 Server 进入 ESTABLISHED 状态，完成三次握手，随后 Client 与 Server 之间可以开始传输数据了。 5、简述 TCP 包头的内容。 源端口和目的端口：各占 2 个字节，分别写入源端口和目的端口。IP 地址 + 端口号就可以确定一个进程地址</description>
@@ -1756,28 +1756,28 @@ iptables -L -t nat 禁止本机对 192.</description>
     
     <item>
       <title>docker 安装kong 网关</title>
-      <link>https://www.jobcher.com/docker-%E5%AE%89%E8%A3%85kong-%E7%BD%91%E5%85%B3.html</link>
+      <link>https://test.jobcher.com/docker-%E5%AE%89%E8%A3%85kong-%E7%BD%91%E5%85%B3.html</link>
       <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/docker-%E5%AE%89%E8%A3%85kong-%E7%BD%91%E5%85%B3.html</guid>
+      <guid>https://test.jobcher.com/docker-%E5%AE%89%E8%A3%85kong-%E7%BD%91%E5%85%B3.html</guid>
       <description>docker 安装 kong 网关 建立数据库 创建网络 docker network create kong-net 建立数据库 docker run -d --name kong-database \ --network=kong-net \ -p 5432:5432 \ -e &amp;#34;POSTGRES_USER=kong&amp;#34; \ -e &amp;#34;POSTGRES_DB=kong&amp;#34; \ -e &amp;#34;POSTGRES_PASSWORD=kong123&amp;#34; \ postgres:9.6 创建 kong 数据 docker run --rm --network=kong-net \ -e &amp;#34;KONG_DATABASE=postgres&amp;#34; \ -e &amp;#34;KONG_PG_HOST=kong-database&amp;#34; \ -e &amp;#34;KONG_PG_PASSWORD=kong123&amp;#34; \ -e &amp;#34;KONG_PASSWORD=kong123&amp;#34; \ kong:latest kong migrations bootstrap 创建 kong 创建 kong gateway docker run -d --name kong \ --network=kong-net \ -e &amp;#34;KONG_DATABASE=postgres&amp;#34; \ -e &amp;#34;KONG_PG_HOST=kong-database&amp;#34; \ -e &amp;#34;KONG_PG_USER=kong&amp;#34; \ -e &amp;#34;KONG_PG_PASSWORD=kong123&amp;#34; \ -e &amp;#34;KONG_CASSANDRA_CONTACT_POINTS=kong-database&amp;#34; \ -e &amp;#34;KONG_PROXY_ACCESS_LOG=/dev/stdout&amp;#34; \ -e &amp;#34;KONG_ADMIN_ACCESS_LOG=/dev/stdout&amp;#34; \ -e &amp;#34;KONG_PROXY_ERROR_LOG=/dev/stderr&amp;#34; \ -e &amp;#34;KONG_ADMIN_ERROR_LOG=/dev/stderr&amp;#34; \ -e &amp;#34;KONG_ADMIN_LISTEN=0.</description>
     </item>
     
     <item>
       <title>搭建docker registry 镜像仓库</title>
-      <link>https://www.jobcher.com/%E6%90%AD%E5%BB%BAdocker-registry-%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93.html</link>
+      <link>https://test.jobcher.com/%E6%90%AD%E5%BB%BAdocker-registry-%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93.html</link>
       <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%90%AD%E5%BB%BAdocker-registry-%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93.html</guid>
+      <guid>https://test.jobcher.com/%E6%90%AD%E5%BB%BAdocker-registry-%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93.html</guid>
       <description>搭建 docker registry 镜像仓库 获取镜像 docker pull registry:2.7.1 docker pull hyper/docker-registry-web 容器运行 mkdir -p /opt/data/registry docker run -d -p 5000:5000 -v /opt/data/registry:/var/lib/registry --name registry registry:2.7.1 docker run -d -p 8080:8080 --name registry-web --link registry \ -e REGISTRY_URL=http://192.168.99.146:5000/v2 \ -e REGISTRY_TRUST_ANY_SSL=true \ -e REGISTRY_BASIC_AUTH=&amp;#34;GjhYGDGi2HhkJB&amp;#34; \ -e REGISTRY_NAME=192.168.99.146:5000 \ hyper/docker-registry-web 上传容器 vim /etc/docker/daemon.json { &amp;#34;insecure-registries&amp;#34;: [&amp;#34;192.168.99.146:5000&amp;#34;] } docker tag sjtfreaks/hogo-nginx:v1.1 192.168.99.146:5000/sjtfreaks/hogo-nginx:v1.1 docker push 192.168.99.146:5000/sjtfreaks/hogo-nginx:v1.1 </description>
     </item>
     
     <item>
       <title>rsync 文件同步</title>
-      <link>https://www.jobcher.com/rsync-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5.html</link>
+      <link>https://test.jobcher.com/rsync-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5.html</link>
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/rsync-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5.html</guid>
+      <guid>https://test.jobcher.com/rsync-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5.html</guid>
       <description>rsync 文件同步 rsync 是一个常用的 Linux 应用程序，用于文件同步
 安装 # Debian or Ubuntu $ sudo apt-get install rsync # Red Hat $ sudo yum install rsync # Arch Linux $ sudo pacman -S rsync 基本用法 使用 rsync 命令时，可以作为 cp 和 mv 命令的替代方法，将源目录同步到目标目录。
 -r 表示递归，即包含子目录。注意，-r 是必须的，否则 rsync 运行不会成功。source 目录表示源目录，destination 表示目标目录。
@@ -1788,28 +1788,28 @@ rsync -av &amp;lt;源地址&amp;gt;/ &amp;lt;用户名&amp;gt;@&amp;lt;ip地址&
     
     <item>
       <title>helm 安装</title>
-      <link>https://www.jobcher.com/helm-%E5%AE%89%E8%A3%85.html</link>
+      <link>https://test.jobcher.com/helm-%E5%AE%89%E8%A3%85.html</link>
       <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/helm-%E5%AE%89%E8%A3%85.html</guid>
+      <guid>https://test.jobcher.com/helm-%E5%AE%89%E8%A3%85.html</guid>
       <description>helm 安装 脚本安装 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 chmod 700 get_helm.sh ./get_helm.sh #或者可以使用这个命令 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash helm help 二进制安装 wget https://get.helm.sh/helm-v3.7.2-linux-amd64.tar.gz tar -zxvf helm-v3.7.2-linux-amd64.tar.gz cd helm-v3.7.2-linux-amd64 mv linux-amd64/helm /usr/local/bin/helm helm help </description>
     </item>
     
     <item>
       <title>k8s 部署loki日志</title>
-      <link>https://www.jobcher.com/k8s-%E9%83%A8%E7%BD%B2loki%E6%97%A5%E5%BF%97.html</link>
+      <link>https://test.jobcher.com/k8s-%E9%83%A8%E7%BD%B2loki%E6%97%A5%E5%BF%97.html</link>
       <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/k8s-%E9%83%A8%E7%BD%B2loki%E6%97%A5%E5%BF%97.html</guid>
+      <guid>https://test.jobcher.com/k8s-%E9%83%A8%E7%BD%B2loki%E6%97%A5%E5%BF%97.html</guid>
       <description>k8s 部署 loki 日志 helm 拉取 loki #加源 helm repo add grafana https://grafana.github.io/helm-charts helm repo update #拉取 helm fetch grafana/loki-stack --untar --untardir . cd loki-stack # 生成 k8s 配置 helm template loki . &amp;gt; loki.yaml # 部署（如果要修改默认配置必须要修改一下yaml） k3s kubectl apply -f loki.yaml </description>
     </item>
     
     <item>
       <title>获取用户浏览器默认语言设置，自动判断跳转不同网站</title>
-      <link>https://www.jobcher.com/%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E6%B5%8F%E8%A7%88%E5%99%A8%E9%BB%98%E8%AE%A4%E8%AF%AD%E8%A8%80%E8%AE%BE%E7%BD%AE%E8%87%AA%E5%8A%A8%E5%88%A4%E6%96%AD%E8%B7%B3%E8%BD%AC%E4%B8%8D%E5%90%8C%E7%BD%91%E7%AB%99.html</link>
+      <link>https://test.jobcher.com/%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E6%B5%8F%E8%A7%88%E5%99%A8%E9%BB%98%E8%AE%A4%E8%AF%AD%E8%A8%80%E8%AE%BE%E7%BD%AE%E8%87%AA%E5%8A%A8%E5%88%A4%E6%96%AD%E8%B7%B3%E8%BD%AC%E4%B8%8D%E5%90%8C%E7%BD%91%E7%AB%99.html</link>
       <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E6%B5%8F%E8%A7%88%E5%99%A8%E9%BB%98%E8%AE%A4%E8%AF%AD%E8%A8%80%E8%AE%BE%E7%BD%AE%E8%87%AA%E5%8A%A8%E5%88%A4%E6%96%AD%E8%B7%B3%E8%BD%AC%E4%B8%8D%E5%90%8C%E7%BD%91%E7%AB%99.html</guid>
+      <guid>https://test.jobcher.com/%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E6%B5%8F%E8%A7%88%E5%99%A8%E9%BB%98%E8%AE%A4%E8%AF%AD%E8%A8%80%E8%AE%BE%E7%BD%AE%E8%87%AA%E5%8A%A8%E5%88%A4%E6%96%AD%E8%B7%B3%E8%BD%AC%E4%B8%8D%E5%90%8C%E7%BD%91%E7%AB%99.html</guid>
       <description>自动判断跳转不同网站 根据用户目前的浏览器配置语言进行显示 供语言切换按钮，用户自定义选择不同的语言显示 根据识别用户的浏览器语言，自动判断并跳转到相应的语言网页，让你的网站更加灵动。
 以下需要将代码放在 HTML 的内即可，然后自行制作多语言页面。
 代码如下：
@@ -1820,28 +1820,28 @@ navigator.language 第二种解决方案 可以通过获取用户的 IP，然后
     
     <item>
       <title>linux服务基础知识</title>
-      <link>https://www.jobcher.com/linux%E6%9C%8D%E5%8A%A1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
+      <link>https://test.jobcher.com/linux%E6%9C%8D%E5%8A%A1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
       <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/linux%E6%9C%8D%E5%8A%A1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
+      <guid>https://test.jobcher.com/linux%E6%9C%8D%E5%8A%A1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
       <description>linux 服务基础知识 1、哪些设置能够提升 SSH 远程管理的安全等级 2、ssh 连接时认证时间过长如何解决？ 3、scp 和 rsync 进行远程文件复制有什么区别？ 4、请描述通过 DHCP 服务器获取 IP 地址的过程。 5、简单描述 FTP 的主动模式和被动模式的区别？ 6、集群环境中，如何保证所有服务器之间的时间误差较小。 7、请描述用户访问网站时 DNS 的解析过程。 8、解释权威 DNS 和递归 DNS 的含义，并描述智能 DNS 的实现原理。 9、公司里有一台服务器，需要在上面跑两个网站，并且其中一个网站需要更换新域名，请问如何处理？ 网站1：www.a.com 网站2：www.b.com（旧） www.d.com（新） 10、简述 Apache 的三种工作模式？ 11、请写出工作中常见的 Apache 优化策略。 12、有哪些技术可以提高网站的安全和效率？ 13、Apache 和 Nginx 各有什么优缺点，应该如何选择？ 14、为什么 Nginx 的并发能力强，资源消耗低？ 15、写出几个 Nginx 的常用模块，并描述其功能。 16、请解释 Nginx 是如何连接 PHP 进行页面解析的？ 17、请描述 Nginx 和 Tomcat 之间的数据传输过程？ 18、请写出几个常见的 HTTP 状态码，并解释出现原因。 </description>
     </item>
     
     <item>
       <title>mysql基础知识</title>
-      <link>https://www.jobcher.com/mysql%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
+      <link>https://test.jobcher.com/mysql%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
       <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/mysql%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
+      <guid>https://test.jobcher.com/mysql%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
       <description>mysql 基础知识 1、库表 student.report,有 3 个字段，姓名、学科、成绩，记录如下，根据要求完成 SQL 语句： Name Subject Result 李白 Math 95 张三 English 83 王五 Math 79 李六 Math 85 张二 English 74 查询姓李的同学的个数。 查询表中数学成绩大于 80 的前 2 名同学的名字，并按分数从大到小的顺序排列。 2、MYSQL 集群一主多从，主库宕机，如何合理切换到从库，其它从库如何处理？ 3、单台 MySQL 达到性能瓶颈时，如何击碎性能瓶颈？ 4、MySQL 什么时候创建索引？ 5、误操作 drop 语句导致数据库数据破坏，请给出恢复的实际大体步骤。 6、如何保证 Redis 能永久保存数据？ 7、如何利用 Redis 对 MySQL 进行性能优化？ </description>
     </item>
     
     <item>
       <title>shell基础知识</title>
-      <link>https://www.jobcher.com/shell%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
+      <link>https://test.jobcher.com/shell%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</link>
       <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/shell%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
+      <guid>https://test.jobcher.com/shell%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</guid>
       <description>shell 基础知识 1、有一个 b.txt 文本(内容如下)，要求将所有域名截取出来，并统计重复域名出现的次数： http://www.baidu.com/index.html
 https://www.atguigu.com/index.html
 http://www.sina.com.cn/1024.html
@@ -1855,10 +1855,10 @@ http://www.baidu.com</description>
     
     <item>
       <title>Kubernetes 创建nfs存储类</title>
-      <link>https://www.jobcher.com/kubernetes-%E5%88%9B%E5%BB%BAnfs%E5%AD%98%E5%82%A8%E7%B1%BB.html</link>
+      <link>https://test.jobcher.com/kubernetes-%E5%88%9B%E5%BB%BAnfs%E5%AD%98%E5%82%A8%E7%B1%BB.html</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-%E5%88%9B%E5%BB%BAnfs%E5%AD%98%E5%82%A8%E7%B1%BB.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-%E5%88%9B%E5%BB%BAnfs%E5%AD%98%E5%82%A8%E7%B1%BB.html</guid>
       <description>Kubernetes 创建 nfs 存储类 首先你需要在别的终端上创建 nfs 服务并能提供 nfs 访问
 Kubernetes 不包含内部 NFS 驱动。你需要使用外部驱动为 NFS 创建 StorageClass。
 https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner
@@ -1868,10 +1868,10 @@ https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner
     
     <item>
       <title>nginx 日志格式整理</title>
-      <link>https://www.jobcher.com/nginx-%E6%97%A5%E5%BF%97%E6%A0%BC%E5%BC%8F%E6%95%B4%E7%90%86.html</link>
+      <link>https://test.jobcher.com/nginx-%E6%97%A5%E5%BF%97%E6%A0%BC%E5%BC%8F%E6%95%B4%E7%90%86.html</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/nginx-%E6%97%A5%E5%BF%97%E6%A0%BC%E5%BC%8F%E6%95%B4%E7%90%86.html</guid>
+      <guid>https://test.jobcher.com/nginx-%E6%97%A5%E5%BF%97%E6%A0%BC%E5%BC%8F%E6%95%B4%E7%90%86.html</guid>
       <description>nginx 日志配置 语法 access_log path [format [buffer=size] [gzip[=level]] [flush=time] [if=condition]]; # 设置访问日志 access_log off; # 关闭访问日志 例子：
 access_log /var/logs/nginx-access.log access_log /var/logs/nginx-access.log buffer=32k gzip flush=1m 使用 log_format 自定义日志格式 Nginx 预定义了名为 combined 日志格式，如果没有明确指定日志格式默认使用该格式：
 log_format combined &amp;#39;$remote_addr - $remote_user [$time_local] &amp;#39; &amp;#39;&amp;#34;$request&amp;#34; $status $body_bytes_sent &amp;#39; &amp;#39;&amp;#34;$http_referer&amp;#34; &amp;#34;$http_user_agent&amp;#34;&amp;#39;; 如果不想使用 Nginx 预定义的格式，可以通过 log_format 指令来自定义。
@@ -1880,39 +1880,39 @@ log_format combined &amp;#39;$remote_addr - $remote_user [$time_local] &amp;#39;
     
     <item>
       <title>linux系统开启root权限</title>
-      <link>https://www.jobcher.com/linux%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%90%AFroot%E6%9D%83%E9%99%90.html</link>
+      <link>https://test.jobcher.com/linux%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%90%AFroot%E6%9D%83%E9%99%90.html</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/linux%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%90%AFroot%E6%9D%83%E9%99%90.html</guid>
+      <guid>https://test.jobcher.com/linux%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%90%AFroot%E6%9D%83%E9%99%90.html</guid>
       <description>linux 系统开启 root 权限 修改 ssh 服务配置文件 sudo su - sudo vim /etc/ssh/sshd_config 增加权限
 在# Authentication: 下输入 PermitRootLogin yes 更改 root 密码，重启服务 sudo passwd root service sshd restart </description>
     </item>
     
     <item>
       <title>mysql 笔记（1）</title>
-      <link>https://www.jobcher.com/mysql-%E7%AC%94%E8%AE%B01.html</link>
+      <link>https://test.jobcher.com/mysql-%E7%AC%94%E8%AE%B01.html</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/mysql-%E7%AC%94%E8%AE%B01.html</guid>
+      <guid>https://test.jobcher.com/mysql-%E7%AC%94%E8%AE%B01.html</guid>
       <description>mysql 学习笔记（1） 本文章不涉及到关于 mysql 开放上的问题，主要记录关于 mysql 出现的问题，以及如何去维护 mysql 数据的日常。
 mysql 各类信息的收集 收集变量信息 show global variables; 收集进程信息 show PROCESSLIST; 收集错误日志 show global variables like &amp;#39;log_error&amp;#39;; 收集慢日志信息 show global variables like &amp;#39;slow_querry_log_file&amp;#39;; 收集锁信息，高峰时期运行三次，每次间隔 10s SELECT locked_table, locked_index, locked_type, blocking_pid, T2.USER blocking_user, T2.HOST blocking_host, blocking_lock_mode, blocking_trx_rows_modified, waiting_pid, T3.USER waiting_user, T3.HOST waiting_host, waiting_lock_mode, waiting_trx_row_modified, wait_age_secs, waiting_query FROM sys.x$innodb_lock_waits T1 LEFT JOIN INFROMATION_SCHEMA.processlist T2 ON T1.blocking_pid=T2.ID LEFT JOIN INFROMATION_SCHEMA.processlist T3 ON T3.ID=T1.waiting_pid; 收集 mysql 状态信息 show global status; show engine innodb status; show engine innodb mutex; mysql 基础语法 连接数据库 mysql -u &amp;lt;用户名&amp;gt; -p 创建数据库 CREATE DATABASE &amp;lt;数据库名称&amp;gt;; 删除数据库 drop database &amp;lt;数据库名称&amp;gt;; 选择数据库 use &amp;lt;数据库名称&amp;gt;; 创建表 CREATE table &amp;lt;数据表名&amp;gt; ( &amp;lt;字段名1&amp;gt; &amp;lt;数据类型&amp;gt; [约束条件], &amp;lt;字段名2&amp;gt; &amp;lt;数据类型&amp;gt; [约束条件], &amp;lt;字段名3&amp;gt; &amp;lt;数据类型&amp;gt; [约束条件] ) #例如 CREATE TABLE IF NOT EXISTS `nbtyfood_tbl`( `nbtyfood_id` INT UNSIGNED AUTO_INCREMENT, `nbtyfood_title` VARCHAR(100) NOT NULL, `nbtyfood_author` VARCHAR(40) NOT NULL, `submission_date` DATE, PRIMARY KEY ( `nbtyfood_id` ) )ENGINE=InnoDB DEFAULT CHARSET=utf8; 删除表 DROP TABLE &amp;lt;数据表名&amp;gt;; 插入数据 INSERT INTO table_name ( field1, field2,.</description>
     </item>
     
     <item>
       <title>163企业邮箱设置教程</title>
-      <link>https://www.jobcher.com/163%E4%BC%81%E4%B8%9A%E9%82%AE%E7%AE%B1%E8%AE%BE%E7%BD%AE%E6%95%99%E7%A8%8B.html</link>
+      <link>https://test.jobcher.com/163%E4%BC%81%E4%B8%9A%E9%82%AE%E7%AE%B1%E8%AE%BE%E7%BD%AE%E6%95%99%E7%A8%8B.html</link>
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/163%E4%BC%81%E4%B8%9A%E9%82%AE%E7%AE%B1%E8%AE%BE%E7%BD%AE%E6%95%99%E7%A8%8B.html</guid>
+      <guid>https://test.jobcher.com/163%E4%BC%81%E4%B8%9A%E9%82%AE%E7%AE%B1%E8%AE%BE%E7%BD%AE%E6%95%99%E7%A8%8B.html</guid>
       <description>163 企业邮箱设置教程 请进入这个网站 https://qiye.163.com/help/l-11.html</description>
     </item>
     
     <item>
       <title>git技巧</title>
-      <link>https://www.jobcher.com/git%E6%8A%80%E5%B7%A7.html</link>
+      <link>https://test.jobcher.com/git%E6%8A%80%E5%B7%A7.html</link>
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/git%E6%8A%80%E5%B7%A7.html</guid>
+      <guid>https://test.jobcher.com/git%E6%8A%80%E5%B7%A7.html</guid>
       <description>git 技巧 Git 是一个 “分布式版本管理工具”，简单的理解版本管理工具：大家在写东西的时候都用过 “回撤” 这个功能，但是回撤只能回撤几步，假如想要找回我三天之前的修改，光用 “回撤” 是找不回来的。而 “版本管理工具” 能记录每次的修改，只要提交到版本仓库，你就可以找到之前任何时刻的状态（文本状态）。
 下面的内容就是列举了常用的 Git 命令和一些小技巧，可以通过 &amp;ldquo;页面内查找&amp;rdquo; 的方式进行快速查询：Ctrl/Command+f。
 开卷必读 如果之前未使用过 Git，可以学习 Git 小白教程入门
@@ -1921,20 +1921,20 @@ mysql 各类信息的收集 收集变量信息 show global variables; 收集进�
     
     <item>
       <title>docker image镜像上传</title>
-      <link>https://www.jobcher.com/docker-image%E9%95%9C%E5%83%8F%E4%B8%8A%E4%BC%A0.html</link>
+      <link>https://test.jobcher.com/docker-image%E9%95%9C%E5%83%8F%E4%B8%8A%E4%BC%A0.html</link>
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/docker-image%E9%95%9C%E5%83%8F%E4%B8%8A%E4%BC%A0.html</guid>
+      <guid>https://test.jobcher.com/docker-image%E9%95%9C%E5%83%8F%E4%B8%8A%E4%BC%A0.html</guid>
       <description>docker image 镜像上传 登入 docker hub，在https://hub.docker.com上注册你的账号。
 docker login username：#输入你的用户名 password：#输入你的密码 上传镜像 docker tag nginx:hugo sjtfreaks/hogo-nginx:v1 docker push sjtfreaks/hogo-nginx:v1 </description>
     </item>
     
     <item>
       <title>docker进阶使用</title>
-      <link>https://www.jobcher.com/docker%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8.html</link>
+      <link>https://test.jobcher.com/docker%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8.html</link>
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/docker%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8.html</guid>
+      <guid>https://test.jobcher.com/docker%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8.html</guid>
       <description>docker 进阶使用 dockerfile 和 docker compose 的配置
 Dockerfile 使用 Dockerfile 是一个用来构建镜像的文本文件，文本内容包含了一条条构建镜像所需的指令和说明。
 例子：
@@ -1947,10 +1947,10 @@ COPY hom* /mydir/ COPY hom?.txt /mydir/ FROM FROM：定制的镜像都是基于 
     
     <item>
       <title>Kubernetes k8s 组件</title>
-      <link>https://www.jobcher.com/kubernetes-k8s-%E7%BB%84%E4%BB%B6.html</link>
+      <link>https://test.jobcher.com/kubernetes-k8s-%E7%BB%84%E4%BB%B6.html</link>
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/kubernetes-k8s-%E7%BB%84%E4%BB%B6.html</guid>
+      <guid>https://test.jobcher.com/kubernetes-k8s-%E7%BB%84%E4%BB%B6.html</guid>
       <description>Kubernetes k8s 组件 控制平面组件（Control Plane Components） 控制平面的组件对集群做出全局决策(比如调度)，以及检测和响应集群事件（例如，当不满足部署的 replicas 字段时，启动新的 pod）。
 kube-apiserver API 服务器是 Kubernetes 控制面的组件， 该组件公开了 Kubernetes API。 API 服务器是 Kubernetes 控制面的前端。
 etcd etcd 是兼具一致性和高可用性的键值数据库，可以作为保存 Kubernetes 所有集群数据的后台数据库。
@@ -1966,10 +1966,10 @@ Kubernetes 支持多个容器运行环境: Docker、 containerd、CRI-O 以及�
     
     <item>
       <title>2021年第50周记</title>
-      <link>https://www.jobcher.com/2021%E5%B9%B4%E7%AC%AC50%E5%91%A8%E8%AE%B0.html</link>
+      <link>https://test.jobcher.com/2021%E5%B9%B4%E7%AC%AC50%E5%91%A8%E8%AE%B0.html</link>
       <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/2021%E5%B9%B4%E7%AC%AC50%E5%91%A8%E8%AE%B0.html</guid>
+      <guid>https://test.jobcher.com/2021%E5%B9%B4%E7%AC%AC50%E5%91%A8%E8%AE%B0.html</guid>
       <description>2021 年第 50 周周记 这周完成了以下任务
 搭建 hugo 博客 使用 docker 封装了 blog 搭建 k3s 环境 计划：
 学习 k8s 总结：没啥好总结，刚开始写周记，就随便写一点吧
@@ -1978,10 +1978,10 @@ Kubernetes 支持多个容器运行环境: Docker、 containerd、CRI-O 以及�
     
     <item>
       <title>nginx 汇总</title>
-      <link>https://www.jobcher.com/nginx-%E6%B1%87%E6%80%BB.html</link>
+      <link>https://test.jobcher.com/nginx-%E6%B1%87%E6%80%BB.html</link>
       <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/nginx-%E6%B1%87%E6%80%BB.html</guid>
+      <guid>https://test.jobcher.com/nginx-%E6%B1%87%E6%80%BB.html</guid>
       <description>nginx 汇总 各类 nginx 问题汇总
 安装 nginx #centos yum install nginx #ubuntu apt install nginx http 代理 正向代理 server { listen 80; server_name www.nbtyfood.com; location / { proxy_pass http://127.0.0.1:8080; } } 反向代理 负载均衡 upstream mysvr { server 192.168.10.121:3333; server 192.168.10.122:3333; } server { .... location ~*^.+$ { proxy_pass http://mysvr; #请求转向mysvr 定义的服务器列表 } } 热备
 如果你有 2 台服务器，当一台服务器发生事故时，才启用第二台服务器给提供服务。服务器处理请求的顺序：AAAAAA 突然 A 挂啦，BBBBBBBBBBBBBB&amp;hellip;.. upstream mysvr { server 127.0.0.1:7878; server 192.168.10.121:3333 backup; #热备 } 轮询</description>
@@ -1989,10 +1989,10 @@ Kubernetes 支持多个容器运行环境: Docker、 containerd、CRI-O 以及�
     
     <item>
       <title>TCP/IP详解</title>
-      <link>https://www.jobcher.com/tcp/ip%E8%AF%A6%E8%A7%A3.html</link>
+      <link>https://test.jobcher.com/tcp/ip%E8%AF%A6%E8%A7%A3.html</link>
       <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/tcp/ip%E8%AF%A6%E8%A7%A3.html</guid>
+      <guid>https://test.jobcher.com/tcp/ip%E8%AF%A6%E8%A7%A3.html</guid>
       <description>TCP/IP 协议 什么是 TCP/IP 协议 OSI 七层架构 TCP/IP 四层模型 协议 应用层 HTTP、SMTP、SNMP、FTP、Telnet、SIP、SSH、NFS 表示层 应用层 XDR、ASN.1、NCP、TLS、ASCII 会话层 sockets、SOCKS、PAP 传输层 传输层 TCP、UDP、RTP、SCTP 网络层 网络互连层 IP、ICMP、IPX、BGP、OSPF、RIP、IGRP、EIGRP 数据链路层 网络访问（链接）层 以太网、令牌环、HDLC、帧中继、ISDN、ATM、IEEE 802.11 物理层 调制解调器、无线电、光纤 报文结构 TCP 报文段首部格式
 源端口和目的端口：各占 2 个字节，分别写入源端口和目的端口。IP 地址 + 端口号就可以确定一个进程地址
 序号/序列号（Sequense Number，SN）：在一个 TCP 连接中传送的字节流中的每一个字节都按顺序编号。该字段表示本报文段所发送的数据的第一个字节的序号。初始序号称为 Init Sequense Number, ISN（序号/序列号这个字段很重要，大家留个印象，下文会详细讲解） 例如，一报文段的序号是 101，共有 100 字节的数据。这就表明：本报文段的数据的第一个字节的序号是 101，最后一个字节的序号是 200。显然，下一个报文段的数据序号应当从 201 开始，即下一个报文段的序号字段值应为 201。
@@ -2003,10 +2003,10 @@ Kubernetes 支持多个容器运行环境: Docker、 containerd、CRI-O 以及�
     
     <item>
       <title>自建服务器内网穿透</title>
-      <link>https://www.jobcher.com/%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</link>
+      <link>https://test.jobcher.com/%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</link>
       <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</guid>
+      <guid>https://test.jobcher.com/%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.html</guid>
       <description>内网穿透 文章中使用的内网穿透前提是必须具有公网 IP 的云服务器，不符合条件的同学可以跳过了。
 nps 内网穿透 nps 是一款轻量级、高性能、功能强大的内网穿透代理服务器。
 在公网服务器上安装 nps sever 端 wget https://github.com/ehang-io/nps/releases/download/v0.26.10/linux_amd64_server.tar.gz tar -zxvf linux_amd64_server.tar.gz sudo ./nps install sudo nps start 在控制端安装 npc client 端 wget https://github.com/ehang-io/nps/releases/download/v0.26.10/linux_amd64_client.tar.gz tar -zxvf linux_amd64_client.tar.gz sudo ./npc -server=ip:port -vkey=web界面中显示的密钥 sudo npc start npc 安装完成可以进入 web 页面穿透端口和域名
@@ -2019,10 +2019,10 @@ frps 相对于 nps 的优势是对于高流量的媒体服务能够提供更可�
     
     <item>
       <title>树莓派搭建k3s</title>
-      <link>https://www.jobcher.com/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BAk3s.html</link>
+      <link>https://test.jobcher.com/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BAk3s.html</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BAk3s.html</guid>
+      <guid>https://test.jobcher.com/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BAk3s.html</guid>
       <description>树莓派安装 k3s 1.安装 k3s 控制节点 curl -sfL https://get.k3s.io | sh - cat /var/lib/rancher/k3s/server/node-token 工作节点 curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh - 树莓派特别要注意一个坑，就是关于内存的问题这个之后再讲
 k3s kubectl get nodes #显示正确的节点表示完成 卸载 k3s #server 节点 /usr/local/bin/k3s-uninstall.sh #agent 节点 /usr/local/bin/k3s-agent-uninstall.sh 2.安装 dashboard k3s 面板 部署 Kubernetes 仪表盘 GITHUB_URL=https://github.com/kubernetes/dashboard/releases VERSION_KUBE_DASHBOARD=$(curl -w &amp;#39;%{url_effective}&amp;#39; -I -L -s -S ${GITHUB_URL}/latest -o /dev/null | sed -e &amp;#39;s|.*/||&amp;#39;) sudo k3s kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/${VERSION_KUBE_DASHBOARD}/aio/deploy/recommended.yaml 仪表盘 RBAC 配置 创建以下资源清单文件：
 dashboard.admin-user.yml
@@ -2031,20 +2031,20 @@ apiVersion: v1 kind: ServiceAccount metadata: name: admin-user namespace: kubern
     
     <item>
       <title>brew 安装配置</title>
-      <link>https://www.jobcher.com/brew-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</link>
+      <link>https://test.jobcher.com/brew-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</link>
       <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/brew-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</guid>
+      <guid>https://test.jobcher.com/brew-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</guid>
       <description>brew 安装配置 一.安装 1.在 ubuntu 上安装 brew /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34; 2.在 centos 上安装 brew /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34; 3.在 MacOS 上安装 brew /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34; 二、使用 1.安装 wget brew install wget Homebrew 会将软件包安装到独立目录，并将其文件软链接至 /usr/local
 $ cd /usr/local $ find Cellar Cellar/wget/1.16.1 Cellar/wget/1.16.1/bin/wget Cellar/wget/1.16.1/share/man/man1/wget.1 $ ls -l bin bin/wget -&amp;gt; ../Cellar/wget/1.16.1/bin/wget 2.创建你自己的 Homebrew 包 $ brew create https://foo.com/bar-1.0.tgz Created /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/bar.rb 3.撤销你的变更或与上游更新合并 $ brew edit wget # 使用 $EDITOR 编辑!</description>
     </item>
     
     <item>
       <title>gitlab CI/CD 的使用</title>
-      <link>https://www.jobcher.com/gitlab-ci/cd-%E7%9A%84%E4%BD%BF%E7%94%A8.html</link>
+      <link>https://test.jobcher.com/gitlab-ci/cd-%E7%9A%84%E4%BD%BF%E7%94%A8.html</link>
       <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/gitlab-ci/cd-%E7%9A%84%E4%BD%BF%E7%94%A8.html</guid>
+      <guid>https://test.jobcher.com/gitlab-ci/cd-%E7%9A%84%E4%BD%BF%E7%94%A8.html</guid>
       <description>gitlab CI/CD 的使用 我将使用 gitlab 的流水线自动实现 hugo blog 文章的自动发布。
 一、基础知识 二、安装过程 1.安装 gitlab runner 首先需要安装 gitlab runner 进入服务器 A
 安装方法：
@@ -2064,28 +2064,28 @@ chmod +x /usr/local/bin/gitlab-runner 新建 gitlab-runner 用户</description>
     
     <item>
       <title>Markdown教程</title>
-      <link>https://www.jobcher.com/markdown%E6%95%99%E7%A8%8B.html</link>
+      <link>https://test.jobcher.com/markdown%E6%95%99%E7%A8%8B.html</link>
       <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/markdown%E6%95%99%E7%A8%8B.html</guid>
+      <guid>https://test.jobcher.com/markdown%E6%95%99%E7%A8%8B.html</guid>
       <description>Markdown 教程 参考：https://www.runoob.com/markdown</description>
     </item>
     
     <item>
       <title>感谢打赏</title>
-      <link>https://www.jobcher.com/%E6%84%9F%E8%B0%A2%E6%89%93%E8%B5%8F.html</link>
+      <link>https://test.jobcher.com/%E6%84%9F%E8%B0%A2%E6%89%93%E8%B5%8F.html</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%84%9F%E8%B0%A2%E6%89%93%E8%B5%8F.html</guid>
+      <guid>https://test.jobcher.com/%E6%84%9F%E8%B0%A2%E6%89%93%E8%B5%8F.html</guid>
       <description>如果你觉得这个项目对你有帮助，并且情况允许的话，可以给我一点点支持，支持我维护下去 </description>
     </item>
     
     <item>
       <title>运维知识图谱</title>
-      <link>https://www.jobcher.com/%E8%BF%90%E7%BB%B4%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1.html</link>
+      <link>https://test.jobcher.com/%E8%BF%90%E7%BB%B4%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1.html</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E8%BF%90%E7%BB%B4%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1.html</guid>
+      <guid>https://test.jobcher.com/%E8%BF%90%E7%BB%B4%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1.html</guid>
       <description>运维图谱 云原生平台基础 Docker、Docker Compose：容器化技术 Kubernetes：大规模容器编排 Helm：云原生应用商店 Rancher： 易用的容器管理平台 KubeSphere：一站式容器云平台 OpenTracing：云原生链路追踪标准 Jaeger：云原生链路追踪实现产品 Istio：ServiceMesh下的服务流量治理 Jenkins、JenkinsX、Jenkins-BlueOcean：老牌的CI/CD平台 Gtilab/hub-CICD：Gitlab/hub自带的CICD Argo：kubernetes声明式持续集成 Nexus：Maven私库 Harbor：Docker私库 Prometheus+Granfana：监控与可视化平台 ElasticSearch+Fluentd+Kibana：日志与可视化方案 Serverless：无服务器上云方案（不用去管服务器，不是不需要服务器） SpringCloud Kubernetes：微服务上云方案 熟练掌握docker和k8s技术 devops掌握jenkins和gitlab
 应用12要素 在现代，软件通常作为服务交付：称为Web 应用程序或软件即服务。十二因素应用程序是一种构建软件即服务应用程序的方法，它：
 使用声明格式进行设置自动化，以最大限度地减少新开发人员加入项目的时间和成本； 与底层操作系统有一个干净的合同，在执行环境之间提供最大的可移植性； 适合部署在现代云平台上，无需服务器和系统管理； 最大限度地减少开发和生产之间的差异，实现持续部署以获得最大的敏捷性； 并且可以在不对工具、架构或开发实践进行重大更改的情况下进行扩展。 名称 英文 描述 基准代码 codebase 一份基准代码，多份部署 依赖 Dependencies 显示声明依赖关系 配置 config 在环境中存储配置 后端服务 backing services 把后端服务当做附加资源 构建，发布，运行 build，release，run 严格分离构建和运行 进程 Processes 以一个或多个无状态进程运行应用 端口绑定 port binding 通过端口绑定来提供服务 并发 concurrency 通过进程模型进行扩展 易处理 disposability 快速启动和优雅终止可最大化健壮性 开发环境和线上环境等价 Dev/prod parity 尽可能保持开发、预发布、线上环境 日志 log 把日志当做事件流 管理进程 admin processes 后台管理任务当做一次性进程处理 </description>
@@ -2093,10 +2093,10 @@ chmod +x /usr/local/bin/gitlab-runner 新建 gitlab-runner 用户</description>
     
     <item>
       <title>关于我</title>
-      <link>https://www.jobcher.com/%E5%85%B3%E4%BA%8E%E6%88%91.html</link>
+      <link>https://test.jobcher.com/%E5%85%B3%E4%BA%8E%E6%88%91.html</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E5%85%B3%E4%BA%8E%E6%88%91.html</guid>
+      <guid>https://test.jobcher.com/%E5%85%B3%E4%BA%8E%E6%88%91.html</guid>
       <description>关于 后台就是花式curd工程师 前端就是抠图工程师 大数据就是sql工程师 算法就是调参工程师 中间件就是客服热线接线员 只有运维才能拯救世界！ 兴趣爱好： 游泳，干饭
 最近看的书： 《荒野求生》
 破窑赋 天有不测风云，人有旦夕祸福。蜈蚣百足，行不及蛇；雄鸡两翼，飞不过鸦。马有千里之程，无骑不能自往；人有冲天之志，非运不能自通。

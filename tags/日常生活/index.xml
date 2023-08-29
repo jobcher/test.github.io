@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>日常生活 on 打工人日志</title>
-    <link>https://www.jobcher.com/tags/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB.html</link>
+    <link>https://test.jobcher.com/tags/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB.html</link>
     <description>Recent content in 日常生活 on 打工人日志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jobcher.com/tags/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://test.jobcher.com/tags/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>黑群晖最新安装教程</title>
-      <link>https://www.jobcher.com/%E9%BB%91%E7%BE%A4%E6%99%96%E6%9C%80%E6%96%B0%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html</link>
+      <link>https://test.jobcher.com/%E9%BB%91%E7%BE%A4%E6%99%96%E6%9C%80%E6%96%B0%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E9%BB%91%E7%BE%A4%E6%99%96%E6%9C%80%E6%96%B0%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html</guid>
+      <guid>https://test.jobcher.com/%E9%BB%91%E7%BE%A4%E6%99%96%E6%9C%80%E6%96%B0%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html</guid>
       <description>黑群晖最新安装教程 我这里拿蜗牛星际举例讲解，如何安装群晖最新引导文件，如何正常使用黑群晖。
 准备 黑群晖设备一台 电源线 hdmi 或者其他视频线 有线鼠标 有线键盘 显示器 8g 以上U盘 一块1T以上硬盘 开始安装 1. 制作U盘启动器 下载 大白菜U盘制作器 https://www.dabaicai.com/
 1、打开大白菜超级U盘装机工具，点击主界面的【U盘启动】模块，然后选择【默认模式】。
@@ -45,10 +45,10 @@ Synology Assistant: https://cndl.synology.cn/download/Utility/Assistant/7.0.4-50
     
     <item>
       <title>推荐一下 容器云资源</title>
-      <link>https://www.jobcher.com/%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%8B-%E5%AE%B9%E5%99%A8%E4%BA%91%E8%B5%84%E6%BA%90.html</link>
+      <link>https://test.jobcher.com/%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%8B-%E5%AE%B9%E5%99%A8%E4%BA%91%E8%B5%84%E6%BA%90.html</link>
       <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%8B-%E5%AE%B9%E5%99%A8%E4%BA%91%E8%B5%84%E6%BA%90.html</guid>
+      <guid>https://test.jobcher.com/%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%8B-%E5%AE%B9%E5%99%A8%E4%BA%91%E8%B5%84%E6%BA%90.html</guid>
       <description>背景 很多同学在开发软件和测试软件的早期，都会遇到一个问题：如何快速的搭建一个测试环境。这个问题在开发软件的早期是非常棘手的，因为开发软件的早期，往往是没有任何的资源的。这个时候，我们就需要借助一些云资源来帮助我们快速的搭建一个测试环境。接下我会推荐一些云资源，希望能够帮助到大家。
 推荐 1.vercel vercel是一个提供托管服务的网站，它可以帮助我们快速的部署一个静态网站。它的优点是：免费、快速、简单。它的缺点是：只能部署静态网站。如果你的项目是一个静态网站，那么我强烈推荐你使用vercel。
 2。zeabur zeabur是一个帮助开发者一键部署自己的服务的平台，免费方案限制1个项目数量，1vCPU,内存512M，存储1GB 适合做文档和个人博客
@@ -58,10 +58,10 @@ Synology Assistant: https://cndl.synology.cn/download/Utility/Assistant/7.0.4-50
     
     <item>
       <title>如何礼貌回绝不合理的需求</title>
-      <link>https://www.jobcher.com/%E5%A6%82%E4%BD%95%E7%A4%BC%E8%B2%8C%E5%9B%9E%E7%BB%9D%E4%B8%8D%E5%90%88%E7%90%86%E7%9A%84%E9%9C%80%E6%B1%82.html</link>
+      <link>https://test.jobcher.com/%E5%A6%82%E4%BD%95%E7%A4%BC%E8%B2%8C%E5%9B%9E%E7%BB%9D%E4%B8%8D%E5%90%88%E7%90%86%E7%9A%84%E9%9C%80%E6%B1%82.html</link>
       <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E5%A6%82%E4%BD%95%E7%A4%BC%E8%B2%8C%E5%9B%9E%E7%BB%9D%E4%B8%8D%E5%90%88%E7%90%86%E7%9A%84%E9%9C%80%E6%B1%82.html</guid>
+      <guid>https://test.jobcher.com/%E5%A6%82%E4%BD%95%E7%A4%BC%E8%B2%8C%E5%9B%9E%E7%BB%9D%E4%B8%8D%E5%90%88%E7%90%86%E7%9A%84%E9%9C%80%E6%B1%82.html</guid>
       <description>背景 最近在做一个项目，项目的需求是这样的： spring-cloud有一个服务A，服务A有一个接口，接口的功能是根据传入的参数，返回一个字符串。但是服务响应非常的慢，大概需要4秒左右。这个响应速度是不能忍受的！但是这个服务的开发强行说要上线。我们有几个选项：
 1.不上线，但是这个服务的开发无法按期交付 2.上线，但是这个服务的响应速度太慢了，运维背锅 3.劝说服务的开发，让他们优化接口的响应速度
 相信大家都会选择第3个选择，那我们站在运维的角度如何劝说服务的开发呢？ 劝说 故障级联（Cascading Failures）：连接超时的服务可能会导致其他服务出现故障级联效应。这是因为微服务系统中的服务通常会相互调用和依赖。当一个服务连接超时时，其他依赖该服务的服务可能无法及时获取所需的数据或执行必要的操作，从而导致它们自身出现故障。
@@ -73,10 +73,10 @@ Synology Assistant: https://cndl.synology.cn/download/Utility/Assistant/7.0.4-50
     
     <item>
       <title>linux服务器 删除空间却未释放</title>
-      <link>https://www.jobcher.com/linux%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%88%A0%E9%99%A4%E7%A9%BA%E9%97%B4%E5%8D%B4%E6%9C%AA%E9%87%8A%E6%94%BE.html</link>
+      <link>https://test.jobcher.com/linux%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%88%A0%E9%99%A4%E7%A9%BA%E9%97%B4%E5%8D%B4%E6%9C%AA%E9%87%8A%E6%94%BE.html</link>
       <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/linux%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%88%A0%E9%99%A4%E7%A9%BA%E9%97%B4%E5%8D%B4%E6%9C%AA%E9%87%8A%E6%94%BE.html</guid>
+      <guid>https://test.jobcher.com/linux%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%88%A0%E9%99%A4%E7%A9%BA%E9%97%B4%E5%8D%B4%E6%9C%AA%E9%87%8A%E6%94%BE.html</guid>
       <description>linux 服务器 删除空间却未释放 在Linux或者Unix系统中，通过rm或者文件管理器删除文件将会从文件系统的目录结构上解除链接(unlink)，然而如果文件是被打开的（有一个进程正在使用），那么进程将仍然可以读取该文件，磁盘空间也一直被占用，这样就会导致我们明明删除了文件，但是磁盘空间却未被释放
 获取占用列表状态 lsof | grep deleted 可以看到哪些文件还被使用，未被释放空间。
 释放磁盘空间 一种方法是 kill 掉相应的进程，或者停掉使用这个文件的应用，让 os 自动回收磁盘空间，当 linux 打开一个文件的时候,Linux 内核会为每一个进程在/proc/, /proc/nnnn/fd/目录（nnnn 为 pid）建立一个以其 pid 为名的目录用来保存进程的相关信息，而其子目录 fd 保存的是该进程打开的所有文件的 fd（fd：file descriptor）；
@@ -85,19 +85,19 @@ kill进程是通过截断 proc 文件系统中的文件可以强制要求系统�
     
     <item>
       <title>VSCode插件推荐=&gt; Code Runner</title>
-      <link>https://www.jobcher.com/vscode%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90-code-runner.html</link>
+      <link>https://test.jobcher.com/vscode%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90-code-runner.html</link>
       <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/vscode%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90-code-runner.html</guid>
+      <guid>https://test.jobcher.com/vscode%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90-code-runner.html</guid>
       <description>VSCode 插件推荐=&amp;gt; Code Runner Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Perl 6, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, F# (.NET Core), C# Script, C# (.NET Core), VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script, R, AppleScript, Elixir, Visual Basic .NET, Clojure, Haxe, Objective-C, Rust, Racket, Scheme, AutoHotkey, AutoIt, Kotlin, Dart, Free Pascal, Haskell, Nim, D, Lisp, Kit, V, SCSS, Sass, CUDA, Less, Fortran, Ring, and custom command</description>
     </item>
     
     <item>
       <title>记录一次上门打散工</title>
-      <link>https://www.jobcher.com/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E4%B8%8A%E9%97%A8%E6%89%93%E6%95%A3%E5%B7%A5.html</link>
+      <link>https://test.jobcher.com/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E4%B8%8A%E9%97%A8%E6%89%93%E6%95%A3%E5%B7%A5.html</link>
       <pubDate>Sun, 17 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jobcher.com/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E4%B8%8A%E9%97%A8%E6%89%93%E6%95%A3%E5%B7%A5.html</guid>
+      <guid>https://test.jobcher.com/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E4%B8%8A%E9%97%A8%E6%89%93%E6%95%A3%E5%B7%A5.html</guid>
       <description>记录一次上门打散工 壬寅年头磨难多
 人间规则奈吾何
 吟诗为把瘟神送
