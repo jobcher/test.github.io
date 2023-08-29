@@ -1,5 +1,6 @@
-
-
+html, body {
+    height: 100%;
+  }
 /* 背景壁纸 */
 body {
     display: flex;

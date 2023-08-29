@@ -8,6 +8,11 @@
     text-decoration: none;
 }
 
+.search-box .content {
+    color: #949494;
+    text-decoration: none;
+}
+
 .aa-input-container {
     display: inline-block;
     position: relative;
