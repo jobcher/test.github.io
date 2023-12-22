@@ -9,7 +9,7 @@
 
 
 
-    <link rel="manifest" href="https://www.jobcher.com/zh-hans/manifest.webmanifest" />
+    <link rel="manifest" href="https://test.jobcher.com/zh-hans/manifest.webmanifest" />
 
 <meta name="description" content="网络基础知识 1、简述 ISO/OSI 七层模型的分层与作用 分层 作用 应用层 应用系统，提供用户服务 例如：HTTP、HTTPS、FTP、Telnet、SSH、SMTP、POP3 表示层 把数据转换为能与接收者的系统格式兼容并适合传输的格式，数据表示，加密，压缩 会话层 负责在数据传输中设置和维护计算机网络中两台计" />
 
@@ -58,9 +58,9 @@
 当进程需要传输可靠的数据时应使用 TCP，当进程需要高效传输数据，可以忽略可靠性时应使用 UDP 协议。
 4、简述 TCP 三次握手的过程。 第一次握手：Client 将标志位 SYN 置为 1，随机产生一个值 seq=J，并将该数据包发送给 Server，Client 进入 SYN_SENT 状态，等待 Server 确认。 第二次握手：Server 收到数据包后由标志位 SYN=1 知道 Client 请求建立连接，Server 将标志位 SYN 和 ACK 都置为 1，ack=J&#43;1，随机产生一个值 seq=K，并将该数据包发送给 Client 以确认连接请求，Server 进入 SYN_RCVD 状态。 第三次握手：Client 收到确认后，检查 ack 是否为 J&#43;1，ACK 是否为 1，如果正确则将标志位 ACK 置为 1，ack=K&#43;1，并将该数据包发送给 Server，Server 检查 ack 是否为 K&#43;1，ACK 是否为 1，如果正确则连接建立成功，Client 和 Server 进入 ESTABLISHED 状态，完成三次握手，随后 Client 与 Server 之间可以开始传输数据了。 5、简述 TCP 包头的内容。 源端口和目的端口：各占 2 个字节，分别写入源端口和目的端口。IP 地址 &#43; 端口号就可以确定一个进程地址" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.jobcher.com/zh-hans/blog/2021/12/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://test.jobcher.com/zh-hans/blog/2021/12/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-12-23T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-12-22T17:10:02+08:00" />
+<meta property="article:modified_time" content="2023-12-22T17:15:35+08:00" />
 
 
 
@@ -68,7 +68,7 @@
 <meta itemprop="description" content="网络基础知识 1、简述 ISO/OSI 七层模型的分层与作用 分层 作用 应用层 应用系统，提供用户服务 例如：HTTP、HTTPS、FTP、Telnet、SSH、SMTP、POP3 表示层 把数据转换为能与接收者的系统格式兼容并适合传输的格式，数据表示，加密，压缩 会话层 负责在数据传输中设置和维护计算机网络中两台计算机之间的通信连接。确定数据是否需要进行网络传递 分流网络传递还是本地保存 传输层 对数据分组，对报文进行分组(发送时)、组装(接收时)提供传输协议的选择：TCP (传输控制协议) :可靠的，面向连接的传输协议 (可靠，准确) (慢)UDP (用户数据报协议) :不可靠的，面向无连接的传输协议 (快) (不可靠)。端口封装，差错校验，滑动窗口，留空 网络层 网络层（Network Layer）决定数据的路径选择和转寄，将网络表头（NH）加至数据包，以形成分组。网络表头包含了网络资料。例如:互联网协议（IP）等。1.IP 地址编址 2.路由选择 3.静态路由 4.动态路由 数据链路层 数据链路层（Data Link Layer）负责网络寻址、错误侦测和改错。1.MAC 地址编址 2.MAC 地址寻址 3.差错校验 物理层 物理层（Physical Layer）在局域网上发送数据帧（Data Frame）1.数据实际传输 2.电气特性定义 2、TCP/IP 四层模型与作用？ 分层 协议 应用层 HTTP、HTTPS、FTP、Telnet、SSH、SMTP、DNS 传输层 TCP、UDP 网络层 ICMP、IGMP、IP、ARP、RARP 数据链路层、物理层 PPP、PPPOE 3、TCP 协议与 UDP 协议工作在哪一层，作用是什么？ 传输层，对报文进行分组(发送时)、组装(接收时)提供
 当进程需要传输可靠的数据时应使用 TCP，当进程需要高效传输数据，可以忽略可靠性时应使用 UDP 协议。
 4、简述 TCP 三次握手的过程。 第一次握手：Client 将标志位 SYN 置为 1，随机产生一个值 seq=J，并将该数据包发送给 Server，Client 进入 SYN_SENT 状态，等待 Server 确认。 第二次握手：Server 收到数据包后由标志位 SYN=1 知道 Client 请求建立连接，Server 将标志位 SYN 和 ACK 都置为 1，ack=J&#43;1，随机产生一个值 seq=K，并将该数据包发送给 Client 以确认连接请求，Server 进入 SYN_RCVD 状态。 第三次握手：Client 收到确认后，检查 ack 是否为 J&#43;1，ACK 是否为 1，如果正确则将标志位 ACK 置为 1，ack=K&#43;1，并将该数据包发送给 Server，Server 检查 ack 是否为 K&#43;1，ACK 是否为 1，如果正确则连接建立成功，Client 和 Server 进入 ESTABLISHED 状态，完成三次握手，随后 Client 与 Server 之间可以开始传输数据了。 5、简述 TCP 包头的内容。 源端口和目的端口：各占 2 个字节，分别写入源端口和目的端口。IP 地址 &#43; 端口号就可以确定一个进程地址"><meta itemprop="datePublished" content="2021-12-23T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-12-22T17:10:02+08:00" />
+<meta itemprop="dateModified" content="2023-12-22T17:15:35+08:00" />
 <meta itemprop="wordCount" content="335">
 <meta itemprop="keywords" content="运维," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="网络基础知识"/>
 <meta name="twitter:description" content="网络基础知识 1、简述 ISO/OSI 七层模型的分层与作用 分层 作用 应用层 应用系统，提供用户服务 例如：HTTP、HTTPS、FTP、Telnet、SSH、SMTP、POP3 表示层 把数据转换为能与接收者的系统格式兼容并适合传输的格式，数据表示，加密，压缩 会话层 负责在数据传输中设置和维护计算机网络中两台计算机之间的通信连接。确定数据是否需要进行网络传递 分流网络传递还是本地保存 传输层 对数据分组，对报文进行分组(发送时)、组装(接收时)提供传输协议的选择：TCP (传输控制协议) :可靠的，面向连接的传输协议 (可靠，准确) (慢)UDP (用户数据报协议) :不可靠的，面向无连接的传输协议 (快) (不可靠)。端口封装，差错校验，滑动窗口，留空 网络层 网络层（Network Layer）决定数据的路径选择和转寄，将网络表头（NH）加至数据包，以形成分组。网络表头包含了网络资料。例如:互联网协议（IP）等。1.IP 地址编址 2.路由选择 3.静态路由 4.动态路由 数据链路层 数据链路层（Data Link Layer）负责网络寻址、错误侦测和改错。1.MAC 地址编址 2.MAC 地址寻址 3.差错校验 物理层 物理层（Physical Layer）在局域网上发送数据帧（Data Frame）1.数据实际传输 2.电气特性定义 2、TCP/IP 四层模型与作用？ 分层 协议 应用层 HTTP、HTTPS、FTP、Telnet、SSH、SMTP、DNS 传输层 TCP、UDP 网络层 ICMP、IGMP、IP、ARP、RARP 数据链路层、物理层 PPP、PPPOE 3、TCP 协议与 UDP 协议工作在哪一层，作用是什么？ 传输层，对报文进行分组(发送时)、组装(接收时)提供
@@ -137,7 +137,7 @@
     class="navbar-brand d-flex align-items-center"
     href="/zh-hans/">
   <img
-    src="https://www.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_0x64_resize_box_3.png"
+    src="https://test.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_0x64_resize_box_3.png"
     alt="Logo"
     width="64"
     height="64"
@@ -241,7 +241,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/series/"
+      href="https://test.jobcher.com/zh-hans/series/"
       
       >
         <div
@@ -261,7 +261,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/authors/"
+      href="https://test.jobcher.com/zh-hans/authors/"
       
       >
         <div
@@ -281,7 +281,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/categories/"
+      href="https://test.jobcher.com/zh-hans/categories/"
       
       >
         <div
@@ -301,7 +301,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/archives/"
+      href="https://test.jobcher.com/zh-hans/archives/"
       
       >
         <div
@@ -321,7 +321,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/tags/"
+      href="https://test.jobcher.com/zh-hans/tags/"
       
       >
         <div
@@ -405,13 +405,13 @@
         <li>
           <a
             class="language-picker-item dropdown-item active"
-            href="https://www.jobcher.com/zh-hans/"
+            href="https://test.jobcher.com/zh-hans/"
           >简体中文</a>
         </li>
         <li>
           <a
             class="language-picker-item dropdown-item"
-            href="https://www.jobcher.com/en/"
+            href="https://test.jobcher.com/en/"
           >English</a>
         </li>
     </ul>
@@ -695,7 +695,7 @@
     <picture>
   <img
     class="img-fluid"
-    src="https://www.jobcher.com/images/tcp1.2905a0036c9c1864123d48828a4c7635.gif"
+    src="https://test.jobcher.com/images/tcp1.2905a0036c9c1864123d48828a4c7635.gif"
     alt="三次握手"
     loading="lazy"
     height="768"
@@ -744,7 +744,7 @@
     <source srcset="/images/tcp_huc059fd56de9ca93a7dfafe3034521763_57984_732x298_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="img-fluid"
-    src="https://www.jobcher.com/images/tcp.9ad4c62966b5ee3d592cb01bc0feec4e.png"
+    src="https://test.jobcher.com/images/tcp.9ad4c62966b5ee3d592cb01bc0feec4e.png"
     alt="TCP报文段"
     loading="lazy"
     height="298"
@@ -844,7 +844,7 @@
     <picture>
   <img
     class="img-fluid"
-    src="https://www.jobcher.com/images/tcp2.3cfabca07e19799dc0c1757d9ed70c5d.gif"
+    src="https://test.jobcher.com/images/tcp2.3cfabca07e19799dc0c1757d9ed70c5d.gif"
     alt="四次挥手"
     loading="lazy"
     height="384"
@@ -949,11 +949,11 @@
         <li>
           <a
             class="dropdown-item"
-            href="https://github.com/hbstack/theme/commit/a57cb355366808ef99812b71cf9d4fb6594f01fc"
+            href="https://github.com/hbstack/theme/commit/8f4656e26e391d0ac9c1ecd94960c290c8e694d6"
             target="_blank"
             rel="noreferrer noopener"><svg aria-hidden="true" class="bi bi-gitbi bi-git hi-svg-inline me-2" fill="currentColor" height="1em" viewBox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
   <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"/>
-</svg>update</a>
+</svg>更新为test.jobcher.com</a>
         </li>
     </ul>
   </div>
@@ -1172,7 +1172,7 @@
     <source srcset="/images/elasticsearch_hu18415ec3836508404f1613f1254993e1_3637_435x116_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
+    src="https://test.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
     alt="使用 ElasticSearch Curator 7天定期删除日志"
     loading="lazy"
     height="116"
@@ -1236,7 +1236,7 @@
     <source srcset="/images/gnulinux-logo-gnu-linux-logo-png_hu6509814017c6e5a66ace382c6cd0c084_104488_820x502_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/gnulinux-logo-gnu-linux-logo-png.d674fefb01b38aa3a45ac85d963ba3dd.png"
+    src="https://test.jobcher.com/images/gnulinux-logo-gnu-linux-logo-png.d674fefb01b38aa3a45ac85d963ba3dd.png"
     alt="GNU/Linux 一键更换系统软件源脚本"
     loading="lazy"
     height="502"
@@ -1379,7 +1379,7 @@
     <source srcset="/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_95b129ec0c9ac480b7db044054d215d0.webp" type="image/webp" />
   <img
     class="hb-blog-sidebar-profile-img rounded-circle img-fluid mb-3"
-    src="https://www.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_100x0_resize_box_3.24b0c3ba128acac45603f551e9a391d0.png"
+    src="https://test.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_100x0_resize_box_3.24b0c3ba128acac45603f551e9a391d0.png"
     alt=""
     loading="lazy"
     height="100"
@@ -1573,7 +1573,7 @@
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-22.jpg.cfc48c06c03ddac16cb134d1ce37b4d6.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-22.jpg.cfc48c06c03ddac16cb134d1ce37b4d6.webp"
     alt="2023-12-22 打工人日报"
     loading="lazy"
     height="1080"
@@ -1636,7 +1636,7 @@
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-21.jpg.8ef3e3ee4aabd451b5d2103057c79602.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-21.jpg.8ef3e3ee4aabd451b5d2103057c79602.webp"
     alt="2023-12-21 打工人日报"
     loading="lazy"
     height="1080"
@@ -1699,7 +1699,7 @@
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-20.jpg.7e60526b209009ce8888c241d2eaa5b2.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-20.jpg.7e60526b209009ce8888c241d2eaa5b2.webp"
     alt="2023-12-20 打工人日报"
     loading="lazy"
     height="1080"
@@ -1762,7 +1762,7 @@
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-19.jpg.6429fed1c308a6d27c1960b41baec7de.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-19.jpg.6429fed1c308a6d27c1960b41baec7de.webp"
     alt="2023-12-19 打工人日报"
     loading="lazy"
     height="1080"
@@ -1825,7 +1825,7 @@
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-18.jpg.77e32e2fb94af3dc71848f44d924ef4e.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-18.jpg.77e32e2fb94af3dc71848f44d924ef4e.webp"
     alt="2023-12-18 打工人日报"
     loading="lazy"
     height="1080"
@@ -2242,7 +2242,7 @@
 
 
   
-<script src="/js/search.ccceb0d78b3839bfdb5488476f610c3fd73c82d70fff532385bf91f671ab3bf4.js" defer></script>
+<script src="/js/search.c1084f500132d924112d18948a246084f5ecbc6976cb7948e72b12ba153b4494.js" defer></script>
 
 
 

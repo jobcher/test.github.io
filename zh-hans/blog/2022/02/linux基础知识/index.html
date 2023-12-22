@@ -9,7 +9,7 @@
 
 
 
-    <link rel="manifest" href="https://www.jobcher.com/zh-hans/manifest.webmanifest" />
+    <link rel="manifest" href="https://test.jobcher.com/zh-hans/manifest.webmanifest" />
 
 <meta name="description" content="linux 基础知识 1、简述 Linux 权限划分原则。 给文件或目录分配权限时，先考虑所有者和所属组 遵循最小化权限，用啥权限给啥权限 修改目录和子文件归属权限，注意递归 文件权限分配是最常用的安全防护手段 2、当用户 user1，对/testdir 目录有写和执行权限时，该目录下的只读文件 file1 是否可修改" />
 
@@ -59,9 +59,9 @@
 差异备份：将相较于第一天改变的内容备份，适合原始数据量比较大，但是之后改变的比较小，即使中间哪一天的丢了也没事，只要最后一天，和第一天的在就行。
 4、网站服务器每天产生的日志数量较大，请问如何备份? 使用 logrotate 滚动日志 split 大文件切分处理 shell 脚本处理日志 5、简述 Raid 0、Raid 1、Raid 5 的特点与原理。 RAID 等级 最少硬盘 最大容错 可用容量 读取性能 写入性能 安全性 目的 应用产业 单一硬盘 (参考) 0 1 1 1 无 JBOD 1 0 n 1 1 无（同 RAID 0） 增加容量 个人（暂时） 存储备份 0 2 0 n n n 一个硬盘异常，全部硬盘都会异常 追求最大容量、速度 视频剪接缓存用途 1 2 n-1 1 n 1 高，一个正常即可 追求最大安全性 个人、企业备份 5 3 1 n-1 n-1 n-1 中下至中 追求最大容量、最小预算 个人、小型企业备份 6 4 2 n-2 n-2 n-2 中至中高,仅安全性较 RAID 5 高 同 RAID 5，但较安全 个人、企业备份 10 4 高 综合 RAID 0/1 优点，理论速度较快 大型数据库、服务器 50 6 高 提升资料安全 60 8 高 提升资料安全 6、简述 Raid6、Raid 10 的特点与原理。 与 RAID 5 相比，RAID 6增加第二个独立的奇偶校验信息块。两个独立的奇偶系统使用不同的算法，数据的可靠性非常高，任意两块磁盘同时失效时不会影响数据完整性。RAID 6 需要分配给奇偶校验信息更大的磁盘空间和额外的校验计算，相对于 RAID 5 有更大的 IO 操作量和计算量，其“写性能”强烈取决于具体的实现方案，因此RAID 6通常不会通过软件方式来实现，而更可能通过硬件方式实现。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.jobcher.com/zh-hans/blog/2022/02/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://test.jobcher.com/zh-hans/blog/2022/02/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2022-02-11T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-12-22T17:10:02+08:00" />
+<meta property="article:modified_time" content="2023-12-22T17:15:35+08:00" />
 
 
 
@@ -70,7 +70,7 @@
 3、如果一个系统没有任何的备份策略，请写出一个较为全面合理的备份方案！ 增量备份：将相较于前一天增加的内容备份，适合每天改变量较大的数据。
 差异备份：将相较于第一天改变的内容备份，适合原始数据量比较大，但是之后改变的比较小，即使中间哪一天的丢了也没事，只要最后一天，和第一天的在就行。
 4、网站服务器每天产生的日志数量较大，请问如何备份? 使用 logrotate 滚动日志 split 大文件切分处理 shell 脚本处理日志 5、简述 Raid 0、Raid 1、Raid 5 的特点与原理。 RAID 等级 最少硬盘 最大容错 可用容量 读取性能 写入性能 安全性 目的 应用产业 单一硬盘 (参考) 0 1 1 1 无 JBOD 1 0 n 1 1 无（同 RAID 0） 增加容量 个人（暂时） 存储备份 0 2 0 n n n 一个硬盘异常，全部硬盘都会异常 追求最大容量、速度 视频剪接缓存用途 1 2 n-1 1 n 1 高，一个正常即可 追求最大安全性 个人、企业备份 5 3 1 n-1 n-1 n-1 中下至中 追求最大容量、最小预算 个人、小型企业备份 6 4 2 n-2 n-2 n-2 中至中高,仅安全性较 RAID 5 高 同 RAID 5，但较安全 个人、企业备份 10 4 高 综合 RAID 0/1 优点，理论速度较快 大型数据库、服务器 50 6 高 提升资料安全 60 8 高 提升资料安全 6、简述 Raid6、Raid 10 的特点与原理。 与 RAID 5 相比，RAID 6增加第二个独立的奇偶校验信息块。两个独立的奇偶系统使用不同的算法，数据的可靠性非常高，任意两块磁盘同时失效时不会影响数据完整性。RAID 6 需要分配给奇偶校验信息更大的磁盘空间和额外的校验计算，相对于 RAID 5 有更大的 IO 操作量和计算量，其“写性能”强烈取决于具体的实现方案，因此RAID 6通常不会通过软件方式来实现，而更可能通过硬件方式实现。"><meta itemprop="datePublished" content="2022-02-11T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-12-22T17:10:02+08:00" />
+<meta itemprop="dateModified" content="2023-12-22T17:15:35+08:00" />
 <meta itemprop="wordCount" content="372">
 <meta itemprop="keywords" content="运维," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="linux基础知识"/>
 <meta name="twitter:description" content="linux 基础知识 1、简述 Linux 权限划分原则。 给文件或目录分配权限时，先考虑所有者和所属组 遵循最小化权限，用啥权限给啥权限 修改目录和子文件归属权限，注意递归 文件权限分配是最常用的安全防护手段 2、当用户 user1，对/testdir 目录有写和执行权限时，该目录下的只读文件 file1 是否可修改和删除？ 对 file1 不能修改也不能删除。（如果对目录有写权限和执行权限，则对 file1 不能修改可以删除）
@@ -140,7 +140,7 @@ linux基础知识 - 博客 - 打工人日志</title>
     class="navbar-brand d-flex align-items-center"
     href="/zh-hans/">
   <img
-    src="https://www.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_0x64_resize_box_3.png"
+    src="https://test.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_0x64_resize_box_3.png"
     alt="Logo"
     width="64"
     height="64"
@@ -244,7 +244,7 @@ linux基础知识 - 博客 - 打工人日志</title>
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/series/"
+      href="https://test.jobcher.com/zh-hans/series/"
       
       >
         <div
@@ -264,7 +264,7 @@ linux基础知识 - 博客 - 打工人日志</title>
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/authors/"
+      href="https://test.jobcher.com/zh-hans/authors/"
       
       >
         <div
@@ -284,7 +284,7 @@ linux基础知识 - 博客 - 打工人日志</title>
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/categories/"
+      href="https://test.jobcher.com/zh-hans/categories/"
       
       >
         <div
@@ -304,7 +304,7 @@ linux基础知识 - 博客 - 打工人日志</title>
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/archives/"
+      href="https://test.jobcher.com/zh-hans/archives/"
       
       >
         <div
@@ -324,7 +324,7 @@ linux基础知识 - 博客 - 打工人日志</title>
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/tags/"
+      href="https://test.jobcher.com/zh-hans/tags/"
       
       >
         <div
@@ -408,13 +408,13 @@ linux基础知识 - 博客 - 打工人日志</title>
         <li>
           <a
             class="language-picker-item dropdown-item active"
-            href="https://www.jobcher.com/zh-hans/"
+            href="https://test.jobcher.com/zh-hans/"
           >简体中文</a>
         </li>
         <li>
           <a
             class="language-picker-item dropdown-item"
-            href="https://www.jobcher.com/en/"
+            href="https://test.jobcher.com/en/"
           >English</a>
         </li>
     </ul>
@@ -965,11 +965,11 @@ linux基础知识 - 博客 - 打工人日志</title>
         <li>
           <a
             class="dropdown-item"
-            href="https://github.com/hbstack/theme/commit/a57cb355366808ef99812b71cf9d4fb6594f01fc"
+            href="https://github.com/hbstack/theme/commit/8f4656e26e391d0ac9c1ecd94960c290c8e694d6"
             target="_blank"
             rel="noreferrer noopener"><svg aria-hidden="true" class="bi bi-gitbi bi-git hi-svg-inline me-2" fill="currentColor" height="1em" viewBox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
   <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"/>
-</svg>update</a>
+</svg>更新为test.jobcher.com</a>
         </li>
     </ul>
   </div>
@@ -1113,7 +1113,7 @@ linux基础知识 - 博客 - 打工人日志</title>
     <source srcset="/images/elasticsearch_hu18415ec3836508404f1613f1254993e1_3637_435x116_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
+    src="https://test.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
     alt="使用 ElasticSearch Curator 7天定期删除日志"
     loading="lazy"
     height="116"
@@ -1177,7 +1177,7 @@ linux基础知识 - 博客 - 打工人日志</title>
     <source srcset="/images/gnulinux-logo-gnu-linux-logo-png_hu6509814017c6e5a66ace382c6cd0c084_104488_820x502_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/gnulinux-logo-gnu-linux-logo-png.d674fefb01b38aa3a45ac85d963ba3dd.png"
+    src="https://test.jobcher.com/images/gnulinux-logo-gnu-linux-logo-png.d674fefb01b38aa3a45ac85d963ba3dd.png"
     alt="GNU/Linux 一键更换系统软件源脚本"
     loading="lazy"
     height="502"
@@ -1395,7 +1395,7 @@ linux基础知识 - 博客 - 打工人日志</title>
     <source srcset="/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_95b129ec0c9ac480b7db044054d215d0.webp" type="image/webp" />
   <img
     class="hb-blog-sidebar-profile-img rounded-circle img-fluid mb-3"
-    src="https://www.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_100x0_resize_box_3.24b0c3ba128acac45603f551e9a391d0.png"
+    src="https://test.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_100x0_resize_box_3.24b0c3ba128acac45603f551e9a391d0.png"
     alt=""
     loading="lazy"
     height="100"
@@ -1589,7 +1589,7 @@ linux基础知识 - 博客 - 打工人日志</title>
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-22.jpg.cfc48c06c03ddac16cb134d1ce37b4d6.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-22.jpg.cfc48c06c03ddac16cb134d1ce37b4d6.webp"
     alt="2023-12-22 打工人日报"
     loading="lazy"
     height="1080"
@@ -1652,7 +1652,7 @@ linux基础知识 - 博客 - 打工人日志</title>
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-21.jpg.8ef3e3ee4aabd451b5d2103057c79602.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-21.jpg.8ef3e3ee4aabd451b5d2103057c79602.webp"
     alt="2023-12-21 打工人日报"
     loading="lazy"
     height="1080"
@@ -1715,7 +1715,7 @@ linux基础知识 - 博客 - 打工人日志</title>
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-20.jpg.7e60526b209009ce8888c241d2eaa5b2.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-20.jpg.7e60526b209009ce8888c241d2eaa5b2.webp"
     alt="2023-12-20 打工人日报"
     loading="lazy"
     height="1080"
@@ -1778,7 +1778,7 @@ linux基础知识 - 博客 - 打工人日志</title>
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-19.jpg.6429fed1c308a6d27c1960b41baec7de.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-19.jpg.6429fed1c308a6d27c1960b41baec7de.webp"
     alt="2023-12-19 打工人日报"
     loading="lazy"
     height="1080"
@@ -1841,7 +1841,7 @@ linux基础知识 - 博客 - 打工人日志</title>
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-18.jpg.77e32e2fb94af3dc71848f44d924ef4e.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-18.jpg.77e32e2fb94af3dc71848f44d924ef4e.webp"
     alt="2023-12-18 打工人日报"
     loading="lazy"
     height="1080"
@@ -2258,7 +2258,7 @@ linux基础知识 - 博客 - 打工人日志</title>
 
 
   
-<script src="/js/search.ccceb0d78b3839bfdb5488476f610c3fd73c82d70fff532385bf91f671ab3bf4.js" defer></script>
+<script src="/js/search.c1084f500132d924112d18948a246084f5ecbc6976cb7948e72b12ba153b4494.js" defer></script>
 
 
 

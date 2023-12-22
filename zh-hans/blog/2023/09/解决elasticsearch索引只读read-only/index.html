@@ -9,7 +9,7 @@
 
 
 
-    <link rel="manifest" href="https://www.jobcher.com/zh-hans/manifest.webmanifest" />
+    <link rel="manifest" href="https://test.jobcher.com/zh-hans/manifest.webmanifest" />
 
 <meta name="description" content="背景 这两天有开发向我反馈说elasticsearch有报错，嘿，我定睛一看，这不是进入只读状态了，看来是存储达到额度，我马上加个新的数据节点，平衡一下存储压力
 报错信息：
@@ -64,9 +64,9 @@
 修改配置vim elasticsearch.yml
 1# ======================== Elasticsearch Configuration ========================= 2 3cluster.name: cluster-prod-es # 集群名称 4 5node.name: node-x # 节点名称 6 7path.data: /var/lib/elasticsearch # 数据存储 8 9path.logs: /var/log/elasticsearch # 日志存储 10 11network.host: 192.168.0.170 # 主机IP地址 12 13http.port: 9200 # 端口号 14 15discovery." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.jobcher.com/zh-hans/blog/2023/09/%E8%A7%A3%E5%86%B3elasticsearch%E7%B4%A2%E5%BC%95%E5%8F%AA%E8%AF%BBread-only/" /><meta property="og:image" content="https://www.jobcher.com/images/elasticsearch.png" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://test.jobcher.com/zh-hans/blog/2023/09/%E8%A7%A3%E5%86%B3elasticsearch%E7%B4%A2%E5%BC%95%E5%8F%AA%E8%AF%BBread-only/" /><meta property="og:image" content="https://test.jobcher.com/images/elasticsearch.png" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2023-09-20T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-12-22T17:10:02+08:00" />
+<meta property="article:modified_time" content="2023-12-22T17:15:35+08:00" />
 
 
 
@@ -78,10 +78,10 @@
 1wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.7.2.rpm 1rpm --install elasticsearch-6.7.2.rpm 配置参数，进入/etc/elasticsearch目录
 修改配置vim elasticsearch.yml
 1# ======================== Elasticsearch Configuration ========================= 2 3cluster.name: cluster-prod-es # 集群名称 4 5node.name: node-x # 节点名称 6 7path.data: /var/lib/elasticsearch # 数据存储 8 9path.logs: /var/log/elasticsearch # 日志存储 10 11network.host: 192.168.0.170 # 主机IP地址 12 13http.port: 9200 # 端口号 14 15discovery."><meta itemprop="datePublished" content="2023-09-20T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-12-22T17:10:02+08:00" />
-<meta itemprop="wordCount" content="106"><meta itemprop="image" content="https://www.jobcher.com/images/elasticsearch.png" />
+<meta itemprop="dateModified" content="2023-12-22T17:15:35+08:00" />
+<meta itemprop="wordCount" content="106"><meta itemprop="image" content="https://test.jobcher.com/images/elasticsearch.png" />
 <meta itemprop="keywords" content="error," /><meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.jobcher.com/images/elasticsearch.png" /><meta name="twitter:title" content="解决Elasticsearch索引只读（read-only）"/>
+<meta name="twitter:image" content="https://test.jobcher.com/images/elasticsearch.png" /><meta name="twitter:title" content="解决Elasticsearch索引只读（read-only）"/>
 <meta name="twitter:description" content="背景 这两天有开发向我反馈说elasticsearch有报错，嘿，我定睛一看，这不是进入只读状态了，看来是存储达到额度，我马上加个新的数据节点，平衡一下存储压力
 报错信息：
 1Elasticsearch Error {type:cluster_block_exception,reason:”blocked by: [FORBIDDEN/12/index read-only / allow delete (api)];} 新建服务器，安装elasticsearch 为了和之前的服务器一样，我简单写一下我elasticsearch版本和服务器系统版本
@@ -152,7 +152,7 @@
     class="navbar-brand d-flex align-items-center"
     href="/zh-hans/">
   <img
-    src="https://www.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_0x64_resize_box_3.png"
+    src="https://test.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_0x64_resize_box_3.png"
     alt="Logo"
     width="64"
     height="64"
@@ -256,7 +256,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/series/"
+      href="https://test.jobcher.com/zh-hans/series/"
       
       >
         <div
@@ -276,7 +276,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/authors/"
+      href="https://test.jobcher.com/zh-hans/authors/"
       
       >
         <div
@@ -296,7 +296,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/categories/"
+      href="https://test.jobcher.com/zh-hans/categories/"
       
       >
         <div
@@ -316,7 +316,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/archives/"
+      href="https://test.jobcher.com/zh-hans/archives/"
       
       >
         <div
@@ -336,7 +336,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/tags/"
+      href="https://test.jobcher.com/zh-hans/tags/"
       
       >
         <div
@@ -420,13 +420,13 @@
         <li>
           <a
             class="language-picker-item dropdown-item active"
-            href="https://www.jobcher.com/zh-hans/"
+            href="https://test.jobcher.com/zh-hans/"
           >简体中文</a>
         </li>
         <li>
           <a
             class="language-picker-item dropdown-item"
-            href="https://www.jobcher.com/en/"
+            href="https://test.jobcher.com/en/"
           >English</a>
         </li>
     </ul>
@@ -635,13 +635,13 @@
     <source srcset="/images/elasticsearch_hu18415ec3836508404f1613f1254993e1_3637_435x116_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-featured-img img-fluid p-1 bg-body-secondary border w-100"
-    src="https://www.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
+    src="https://test.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
     alt="解决Elasticsearch索引只读（read-only）"
     
     height="116"
     width="435"
     
-    data-src="https://www.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
+    data-src="https://test.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
     data-width="435"
     data-height="116" />
 </picture>
@@ -750,7 +750,7 @@
     <source srcset="/images/head-es_hufa3ef641d0016cbda3b8faf763e2efcd_37063_358x523_resize_q75_h2_box.webp" type="image/webp" />
   <img
     class="img-fluid"
-    src="https://www.jobcher.com/images/head-es.9e9829b5b7923e097401eb1d99cc80f6.jpg"
+    src="https://test.jobcher.com/images/head-es.9e9829b5b7923e097401eb1d99cc80f6.jpg"
     alt="head-es"
     loading="lazy"
     height="523"
@@ -819,11 +819,11 @@
         <li>
           <a
             class="dropdown-item"
-            href="https://github.com/hbstack/theme/commit/a57cb355366808ef99812b71cf9d4fb6594f01fc"
+            href="https://github.com/hbstack/theme/commit/8f4656e26e391d0ac9c1ecd94960c290c8e694d6"
             target="_blank"
             rel="noreferrer noopener"><svg aria-hidden="true" class="bi bi-gitbi bi-git hi-svg-inline me-2" fill="currentColor" height="1em" viewBox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
   <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"/>
-</svg>update</a>
+</svg>更新为test.jobcher.com</a>
         </li>
     </ul>
   </div>
@@ -892,7 +892,7 @@
     <source srcset="/images/elasticsearch_hu18415ec3836508404f1613f1254993e1_3637_435x116_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
+    src="https://test.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
     alt="linux服务器进程打开文件过多导致服务异常"
     loading="lazy"
     height="116"
@@ -956,7 +956,7 @@
     <source srcset="/images/nginx_hufd7d1c8ca32609121b37473b72994664_8618_349x144_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/nginx.7010facf493acc8d655991aa75f5dc96.png"
+    src="https://test.jobcher.com/images/nginx.7010facf493acc8d655991aa75f5dc96.png"
     alt="Linux 系统收包流程以及内核参数优化"
     loading="lazy"
     height="144"
@@ -1020,7 +1020,7 @@
     <source srcset="/images/nginx_hufd7d1c8ca32609121b37473b72994664_8618_349x144_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/nginx.7010facf493acc8d655991aa75f5dc96.png"
+    src="https://test.jobcher.com/images/nginx.7010facf493acc8d655991aa75f5dc96.png"
     alt="Vue3 &#43; vite &#43; nginx项目部署后404问题"
     loading="lazy"
     height="144"
@@ -1288,7 +1288,7 @@
     <source srcset="/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_95b129ec0c9ac480b7db044054d215d0.webp" type="image/webp" />
   <img
     class="hb-blog-sidebar-profile-img rounded-circle img-fluid mb-3"
-    src="https://www.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_100x0_resize_box_3.24b0c3ba128acac45603f551e9a391d0.png"
+    src="https://test.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_100x0_resize_box_3.24b0c3ba128acac45603f551e9a391d0.png"
     alt=""
     loading="lazy"
     height="100"
@@ -1482,7 +1482,7 @@
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-22.jpg.cfc48c06c03ddac16cb134d1ce37b4d6.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-22.jpg.cfc48c06c03ddac16cb134d1ce37b4d6.webp"
     alt="2023-12-22 打工人日报"
     loading="lazy"
     height="1080"
@@ -1545,7 +1545,7 @@
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-21.jpg.8ef3e3ee4aabd451b5d2103057c79602.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-21.jpg.8ef3e3ee4aabd451b5d2103057c79602.webp"
     alt="2023-12-21 打工人日报"
     loading="lazy"
     height="1080"
@@ -1608,7 +1608,7 @@
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-20.jpg.7e60526b209009ce8888c241d2eaa5b2.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-20.jpg.7e60526b209009ce8888c241d2eaa5b2.webp"
     alt="2023-12-20 打工人日报"
     loading="lazy"
     height="1080"
@@ -1671,7 +1671,7 @@
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-19.jpg.6429fed1c308a6d27c1960b41baec7de.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-19.jpg.6429fed1c308a6d27c1960b41baec7de.webp"
     alt="2023-12-19 打工人日报"
     loading="lazy"
     height="1080"
@@ -1734,7 +1734,7 @@
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-18.jpg.77e32e2fb94af3dc71848f44d924ef4e.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-18.jpg.77e32e2fb94af3dc71848f44d924ef4e.webp"
     alt="2023-12-18 打工人日报"
     loading="lazy"
     height="1080"
@@ -2151,7 +2151,7 @@
 
 
   
-<script src="/js/search.ccceb0d78b3839bfdb5488476f610c3fd73c82d70fff532385bf91f671ab3bf4.js" defer></script>
+<script src="/js/search.c1084f500132d924112d18948a246084f5ecbc6976cb7948e72b12ba153b4494.js" defer></script>
 
 
 

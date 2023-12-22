@@ -9,7 +9,7 @@
 
 
 
-    <link rel="manifest" href="https://www.jobcher.com/zh-hans/manifest.webmanifest" />
+    <link rel="manifest" href="https://test.jobcher.com/zh-hans/manifest.webmanifest" />
 
 <meta name="description" content="简介 只需要一组照片或者一个视频，就能快速地生成一个3D模型。
 它使了用一种叫做“3D高斯函数”的数学工具来表示这个3D模型，并找到了一种更快的算法来渲染（即生成）3D模型。
@@ -64,9 +64,9 @@
 使用 硬件要求 具有计算能力 7.0&#43; 的 CUDA 就绪 GPU 24 GB VRAM（用于训练论文评估质量） 软件要求 Conda（推荐使用，以便于设置） 用于 PyTorch 扩展的 C&#43;&#43; 编译器（我们使用 Visual Studio 2019 for Windows） 用于 PyTorch 扩展的 CUDA SDK 11，在 Visual Studio 之后安装（我们使用 11.8，11.6 存在已知问题） C&#43;&#43;编译器和CUDA SDK必须兼容 设置 1SET DISTUTILS_USE_SDK=1 # Windows only 2conda env create --file environment.yml 3conda activate gaussian_splatting 请注意，此过程假设您安装了 CUDA SDK 11，而不是 12。有关修改，请参阅下文。
 1conda config --add pkgs_dirs &lt;Drive&gt;/&lt;pkg_path&gt; 2conda env create --file environment." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.jobcher.com/zh-hans/blog/2023/08/3d-gaussian-splatting3d%E6%A8%A1%E5%9E%8B%E6%B8%B2%E6%9F%93/" /><meta property="og:image" content="https://www.jobcher.com/images/graphdeco_logo.png" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://test.jobcher.com/zh-hans/blog/2023/08/3d-gaussian-splatting3d%E6%A8%A1%E5%9E%8B%E6%B8%B2%E6%9F%93/" /><meta property="og:image" content="https://test.jobcher.com/images/graphdeco_logo.png" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2023-08-30T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-12-22T17:10:02+08:00" />
+<meta property="article:modified_time" content="2023-12-22T17:15:35+08:00" />
 
 
 
@@ -78,10 +78,10 @@
 简而言之，这是一个能让你以全新、快速和高质量的方式探索照片和视频场景的工具。
 使用 硬件要求 具有计算能力 7.0&#43; 的 CUDA 就绪 GPU 24 GB VRAM（用于训练论文评估质量） 软件要求 Conda（推荐使用，以便于设置） 用于 PyTorch 扩展的 C&#43;&#43; 编译器（我们使用 Visual Studio 2019 for Windows） 用于 PyTorch 扩展的 CUDA SDK 11，在 Visual Studio 之后安装（我们使用 11.8，11.6 存在已知问题） C&#43;&#43;编译器和CUDA SDK必须兼容 设置 1SET DISTUTILS_USE_SDK=1 # Windows only 2conda env create --file environment.yml 3conda activate gaussian_splatting 请注意，此过程假设您安装了 CUDA SDK 11，而不是 12。有关修改，请参阅下文。
 1conda config --add pkgs_dirs &lt;Drive&gt;/&lt;pkg_path&gt; 2conda env create --file environment."><meta itemprop="datePublished" content="2023-08-30T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-12-22T17:10:02+08:00" />
-<meta itemprop="wordCount" content="134"><meta itemprop="image" content="https://www.jobcher.com/images/graphdeco_logo.png" />
+<meta itemprop="dateModified" content="2023-12-22T17:15:35+08:00" />
+<meta itemprop="wordCount" content="134"><meta itemprop="image" content="https://test.jobcher.com/images/graphdeco_logo.png" />
 <meta itemprop="keywords" content="daliy," /><meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.jobcher.com/images/graphdeco_logo.png" /><meta name="twitter:title" content="3D Gaussian Splatting：3D模型渲染"/>
+<meta name="twitter:image" content="https://test.jobcher.com/images/graphdeco_logo.png" /><meta name="twitter:title" content="3D Gaussian Splatting：3D模型渲染"/>
 <meta name="twitter:description" content="简介 只需要一组照片或者一个视频，就能快速地生成一个3D模型。
 它使了用一种叫做“3D高斯函数”的数学工具来表示这个3D模型，并找到了一种更快的算法来渲染（即生成）3D模型。
 介绍 想象一下，你有一堆照片或视频，你想从一个全新的角度看这些场景。3D Gaussian Splatting 就是一个能让你做到这一点的高级工具。它用一种特别快和高质量的方式来“重建”这些场景，让你能够从任何角度观看它们，就像你实际站在那里一样。
@@ -152,7 +152,7 @@
     class="navbar-brand d-flex align-items-center"
     href="/zh-hans/">
   <img
-    src="https://www.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_0x64_resize_box_3.png"
+    src="https://test.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_0x64_resize_box_3.png"
     alt="Logo"
     width="64"
     height="64"
@@ -256,7 +256,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/series/"
+      href="https://test.jobcher.com/zh-hans/series/"
       
       >
         <div
@@ -276,7 +276,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/authors/"
+      href="https://test.jobcher.com/zh-hans/authors/"
       
       >
         <div
@@ -296,7 +296,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/categories/"
+      href="https://test.jobcher.com/zh-hans/categories/"
       
       >
         <div
@@ -316,7 +316,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/archives/"
+      href="https://test.jobcher.com/zh-hans/archives/"
       
       >
         <div
@@ -336,7 +336,7 @@
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/tags/"
+      href="https://test.jobcher.com/zh-hans/tags/"
       
       >
         <div
@@ -420,13 +420,13 @@
         <li>
           <a
             class="language-picker-item dropdown-item active"
-            href="https://www.jobcher.com/zh-hans/"
+            href="https://test.jobcher.com/zh-hans/"
           >简体中文</a>
         </li>
         <li>
           <a
             class="language-picker-item dropdown-item"
-            href="https://www.jobcher.com/en/"
+            href="https://test.jobcher.com/en/"
           >English</a>
         </li>
     </ul>
@@ -637,13 +637,13 @@
     <source srcset="/images/graphdeco_logo_hu70b028f9f6652d2e33afe4486790eaa5_21402_342x100_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-featured-img img-fluid p-1 bg-body-secondary border w-100"
-    src="https://www.jobcher.com/images/graphdeco_logo.15b663e96d5ac137ee3b92c1ca16e160.png"
+    src="https://test.jobcher.com/images/graphdeco_logo.15b663e96d5ac137ee3b92c1ca16e160.png"
     alt="3D Gaussian Splatting：3D模型渲染"
     
     height="100"
     width="342"
     
-    data-src="https://www.jobcher.com/images/graphdeco_logo.15b663e96d5ac137ee3b92c1ca16e160.png"
+    data-src="https://test.jobcher.com/images/graphdeco_logo.15b663e96d5ac137ee3b92c1ca16e160.png"
     data-width="342"
     data-height="100" />
 </picture>
@@ -765,11 +765,11 @@ GitHub：<a
         <li>
           <a
             class="dropdown-item"
-            href="https://github.com/hbstack/theme/commit/a57cb355366808ef99812b71cf9d4fb6594f01fc"
+            href="https://github.com/hbstack/theme/commit/8f4656e26e391d0ac9c1ecd94960c290c8e694d6"
             target="_blank"
             rel="noreferrer noopener"><svg aria-hidden="true" class="bi bi-gitbi bi-git hi-svg-inline me-2" fill="currentColor" height="1em" viewBox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
   <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"/>
-</svg>update</a>
+</svg>更新为test.jobcher.com</a>
         </li>
     </ul>
   </div>
@@ -837,7 +837,7 @@ GitHub：<a
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/Appinn-feature-images-2023-09-25T152200.586-1536x669.c8696799b44becc70aa53f90bb0bb216.webp"
+    src="https://test.jobcher.com/images/Appinn-feature-images-2023-09-25T152200.586-1536x669.c8696799b44becc70aa53f90bb0bb216.webp"
     alt="iOS 17 「待机显示」适配普通 iPhone（非 Pro/Max），屏幕在充电时常亮"
     loading="lazy"
     height="669"
@@ -901,7 +901,7 @@ GitHub：<a
     <source srcset="/images/ad6b09618e657a8_hua6222746175266249e6fe00d002c956e_222118_960x1280_resize_q75_h2_box.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/ad6b09618e657a8.0df3ed1892922d84da3f9d209ad624a2.jpg"
+    src="https://test.jobcher.com/images/ad6b09618e657a8.0df3ed1892922d84da3f9d209ad624a2.jpg"
     alt="【福利】埃隆·马斯克传 [沃尔特·艾萨克森] 在线下载"
     loading="lazy"
     height="1280"
@@ -965,7 +965,7 @@ GitHub：<a
     <source srcset="/images/xiaopeng_hu1976588f419a0b9d7336dd70bd506143_53860_1000x761_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/xiaopeng.e2002e73ddf17da5d0e22494061bed00.png"
+    src="https://test.jobcher.com/images/xiaopeng.e2002e73ddf17da5d0e22494061bed00.png"
     alt="【破解】小鹏P5和小鹏G9开启adb和网络adb"
     loading="lazy"
     height="761"
@@ -1029,7 +1029,7 @@ GitHub：<a
     <source srcset="/images/LOL_hu64c557b5869c0f3f4c75bc4826f58d0d_72422_750x422_resize_q75_h2_box.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/LOL.3980ad1a8e20348a2c18490cc2de2963.jpeg"
+    src="https://test.jobcher.com/images/LOL.3980ad1a8e20348a2c18490cc2de2963.jpeg"
     alt="2023亚运会电竞门票民购买指南（报名&#43;抽签）"
     loading="lazy"
     height="422"
@@ -1093,7 +1093,7 @@ GitHub：<a
     <source srcset="/images/daimaiwang_hu9680c0efa32599d8b0afe16e4e571157_8491_322x156_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/daimaiwang.cfb59021e6f520e50b909b3424369952.png"
+    src="https://test.jobcher.com/images/daimaiwang.cfb59021e6f520e50b909b3424369952.png"
     alt="大麦抢票辅助软件(福利 TFBOYS十年之约演唱会 2023 全机位 视频)"
     loading="lazy"
     height="156"
@@ -1157,7 +1157,7 @@ GitHub：<a
     <source srcset="/images/p9CGZnI_hu1e03e760c139e5fcc197df46b25a3790_71056_600x1298_resize_q75_h2_box.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/p9CGZnI.9d24d5565ce0d8f16c639bfcab7b273d.jpg"
+    src="https://test.jobcher.com/images/p9CGZnI.9d24d5565ce0d8f16c639bfcab7b273d.jpg"
     alt="最好的微信朋友圈集赞神器-福利推荐"
     loading="lazy"
     height="1298"
@@ -1350,7 +1350,7 @@ GitHub：<a
     <source srcset="/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_95b129ec0c9ac480b7db044054d215d0.webp" type="image/webp" />
   <img
     class="hb-blog-sidebar-profile-img rounded-circle img-fluid mb-3"
-    src="https://www.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_100x0_resize_box_3.24b0c3ba128acac45603f551e9a391d0.png"
+    src="https://test.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_100x0_resize_box_3.24b0c3ba128acac45603f551e9a391d0.png"
     alt=""
     loading="lazy"
     height="100"
@@ -1544,7 +1544,7 @@ GitHub：<a
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-22.jpg.cfc48c06c03ddac16cb134d1ce37b4d6.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-22.jpg.cfc48c06c03ddac16cb134d1ce37b4d6.webp"
     alt="2023-12-22 打工人日报"
     loading="lazy"
     height="1080"
@@ -1607,7 +1607,7 @@ GitHub：<a
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-21.jpg.8ef3e3ee4aabd451b5d2103057c79602.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-21.jpg.8ef3e3ee4aabd451b5d2103057c79602.webp"
     alt="2023-12-21 打工人日报"
     loading="lazy"
     height="1080"
@@ -1670,7 +1670,7 @@ GitHub：<a
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-20.jpg.7e60526b209009ce8888c241d2eaa5b2.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-20.jpg.7e60526b209009ce8888c241d2eaa5b2.webp"
     alt="2023-12-20 打工人日报"
     loading="lazy"
     height="1080"
@@ -1733,7 +1733,7 @@ GitHub：<a
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-19.jpg.6429fed1c308a6d27c1960b41baec7de.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-19.jpg.6429fed1c308a6d27c1960b41baec7de.webp"
     alt="2023-12-19 打工人日报"
     loading="lazy"
     height="1080"
@@ -1796,7 +1796,7 @@ GitHub：<a
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-18.jpg.77e32e2fb94af3dc71848f44d924ef4e.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-18.jpg.77e32e2fb94af3dc71848f44d924ef4e.webp"
     alt="2023-12-18 打工人日报"
     loading="lazy"
     height="1080"
@@ -2213,7 +2213,7 @@ GitHub：<a
 
 
   
-<script src="/js/search.ccceb0d78b3839bfdb5488476f610c3fd73c82d70fff532385bf91f671ab3bf4.js" defer></script>
+<script src="/js/search.c1084f500132d924112d18948a246084f5ecbc6976cb7948e72b12ba153b4494.js" defer></script>
 
 
 

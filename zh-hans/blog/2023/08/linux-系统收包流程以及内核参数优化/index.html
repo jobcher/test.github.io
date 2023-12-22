@@ -9,7 +9,7 @@
 
 
 
-    <link rel="manifest" href="https://www.jobcher.com/zh-hans/manifest.webmanifest" />
+    <link rel="manifest" href="https://test.jobcher.com/zh-hans/manifest.webmanifest" />
 
 <meta name="description" content="简介 高并发的系统架构中，任何细微调整，稍有不注意便会引起连锁反应，只有系统地了解整个网络栈，在处理疑难杂症或者系统优化工作中，才能做到手中有粮心中不慌。在本节，我们概览一个 Linux 系统收包的流程，以便了解高并发系统所面临的性能瓶颈问题以及相关的优化策略。
 收包过程 网卡 eth0 收到数据包。 网卡通过 DMA" />
@@ -59,9 +59,9 @@
 收包过程 网卡 eth0 收到数据包。 网卡通过 DMA 将数据包拷贝到内存的环形缓冲区(Ring Buffer，在网卡中有 RX Ring 和 TX Ring 两种缓冲)。 数据从网卡拷贝到内存后, 网卡产生 IRQ（Interupt ReQuest，硬件中断）告知内核有新的数据包达到。 内核收到中断后, 调用相应中断处理函数，开始唤醒 ksoftirqd 内核线程处理软中断。 内核进行软中断处理，调用 NAPI poll 接口来获取内存环形缓冲区(ring buffer)的数据包，送至更上层处理。 内核中网络协议栈：L2 处理。 内核中网络协议栈：L3 处理。 内核中网络协议栈：L4 处理。 网络协议栈处理数据后，并将其发送到对应应用的 socket 接收缓冲区。 高并发瓶颈 用户进程调用系统调用陷入内核态的开销。 CPU 响应包的硬中断 CPU 开销 ksoftirqd 内核线程的软中断上下文开销。 RX/TX Ring 优化 处理一个数据包会有各类的中断、softirq 等处理，因为分配给 Ring Buffer 的空间是有限的，当收到的数据包速率大于单个 CPU 处理速度的时，Ring Buffer 可能被占满并导致新数据包被自动丢弃。一个 CPU 去处理 Ring Buffer 数据会很低效，这个时候就产生 RSS、RPS 等多核并发机制来提升内核网络包的处理能力。
 但是注意，开启多核并发特性，会挤压业务代码的执行时间，如果业务属于 CPU 密集型，会导致业务性能下降。是否开启多核处理，需要根据业务场景考虑，根据笔者的经验来看，例如此类负载均衡服务器、网关、集群核心转发节点等网络I/O 密集型场景可以尝试优化 RSS、RPS 等配置。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.jobcher.com/zh-hans/blog/2023/08/linux-%E7%B3%BB%E7%BB%9F%E6%94%B6%E5%8C%85%E6%B5%81%E7%A8%8B%E4%BB%A5%E5%8F%8A%E5%86%85%E6%A0%B8%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/" /><meta property="og:image" content="https://www.jobcher.com/images/nginx.png" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://test.jobcher.com/zh-hans/blog/2023/08/linux-%E7%B3%BB%E7%BB%9F%E6%94%B6%E5%8C%85%E6%B5%81%E7%A8%8B%E4%BB%A5%E5%8F%8A%E5%86%85%E6%A0%B8%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/" /><meta property="og:image" content="https://test.jobcher.com/images/nginx.png" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2023-08-30T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-12-22T17:10:02+08:00" />
+<meta property="article:modified_time" content="2023-12-22T17:15:35+08:00" />
 
 
 
@@ -69,10 +69,10 @@
 <meta itemprop="description" content="简介 高并发的系统架构中，任何细微调整，稍有不注意便会引起连锁反应，只有系统地了解整个网络栈，在处理疑难杂症或者系统优化工作中，才能做到手中有粮心中不慌。在本节，我们概览一个 Linux 系统收包的流程，以便了解高并发系统所面临的性能瓶颈问题以及相关的优化策略。
 收包过程 网卡 eth0 收到数据包。 网卡通过 DMA 将数据包拷贝到内存的环形缓冲区(Ring Buffer，在网卡中有 RX Ring 和 TX Ring 两种缓冲)。 数据从网卡拷贝到内存后, 网卡产生 IRQ（Interupt ReQuest，硬件中断）告知内核有新的数据包达到。 内核收到中断后, 调用相应中断处理函数，开始唤醒 ksoftirqd 内核线程处理软中断。 内核进行软中断处理，调用 NAPI poll 接口来获取内存环形缓冲区(ring buffer)的数据包，送至更上层处理。 内核中网络协议栈：L2 处理。 内核中网络协议栈：L3 处理。 内核中网络协议栈：L4 处理。 网络协议栈处理数据后，并将其发送到对应应用的 socket 接收缓冲区。 高并发瓶颈 用户进程调用系统调用陷入内核态的开销。 CPU 响应包的硬中断 CPU 开销 ksoftirqd 内核线程的软中断上下文开销。 RX/TX Ring 优化 处理一个数据包会有各类的中断、softirq 等处理，因为分配给 Ring Buffer 的空间是有限的，当收到的数据包速率大于单个 CPU 处理速度的时，Ring Buffer 可能被占满并导致新数据包被自动丢弃。一个 CPU 去处理 Ring Buffer 数据会很低效，这个时候就产生 RSS、RPS 等多核并发机制来提升内核网络包的处理能力。
 但是注意，开启多核并发特性，会挤压业务代码的执行时间，如果业务属于 CPU 密集型，会导致业务性能下降。是否开启多核处理，需要根据业务场景考虑，根据笔者的经验来看，例如此类负载均衡服务器、网关、集群核心转发节点等网络I/O 密集型场景可以尝试优化 RSS、RPS 等配置。"><meta itemprop="datePublished" content="2023-08-30T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-12-22T17:10:02+08:00" />
-<meta itemprop="wordCount" content="435"><meta itemprop="image" content="https://www.jobcher.com/images/nginx.png" />
+<meta itemprop="dateModified" content="2023-12-22T17:15:35+08:00" />
+<meta itemprop="wordCount" content="435"><meta itemprop="image" content="https://test.jobcher.com/images/nginx.png" />
 <meta itemprop="keywords" content="error," /><meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.jobcher.com/images/nginx.png" /><meta name="twitter:title" content="Linux 系统收包流程以及内核参数优化"/>
+<meta name="twitter:image" content="https://test.jobcher.com/images/nginx.png" /><meta name="twitter:title" content="Linux 系统收包流程以及内核参数优化"/>
 <meta name="twitter:description" content="简介 高并发的系统架构中，任何细微调整，稍有不注意便会引起连锁反应，只有系统地了解整个网络栈，在处理疑难杂症或者系统优化工作中，才能做到手中有粮心中不慌。在本节，我们概览一个 Linux 系统收包的流程，以便了解高并发系统所面临的性能瓶颈问题以及相关的优化策略。
 收包过程 网卡 eth0 收到数据包。 网卡通过 DMA 将数据包拷贝到内存的环形缓冲区(Ring Buffer，在网卡中有 RX Ring 和 TX Ring 两种缓冲)。 数据从网卡拷贝到内存后, 网卡产生 IRQ（Interupt ReQuest，硬件中断）告知内核有新的数据包达到。 内核收到中断后, 调用相应中断处理函数，开始唤醒 ksoftirqd 内核线程处理软中断。 内核进行软中断处理，调用 NAPI poll 接口来获取内存环形缓冲区(ring buffer)的数据包，送至更上层处理。 内核中网络协议栈：L2 处理。 内核中网络协议栈：L3 处理。 内核中网络协议栈：L4 处理。 网络协议栈处理数据后，并将其发送到对应应用的 socket 接收缓冲区。 高并发瓶颈 用户进程调用系统调用陷入内核态的开销。 CPU 响应包的硬中断 CPU 开销 ksoftirqd 内核线程的软中断上下文开销。 RX/TX Ring 优化 处理一个数据包会有各类的中断、softirq 等处理，因为分配给 Ring Buffer 的空间是有限的，当收到的数据包速率大于单个 CPU 处理速度的时，Ring Buffer 可能被占满并导致新数据包被自动丢弃。一个 CPU 去处理 Ring Buffer 数据会很低效，这个时候就产生 RSS、RPS 等多核并发机制来提升内核网络包的处理能力。
 但是注意，开启多核并发特性，会挤压业务代码的执行时间，如果业务属于 CPU 密集型，会导致业务性能下降。是否开启多核处理，需要根据业务场景考虑，根据笔者的经验来看，例如此类负载均衡服务器、网关、集群核心转发节点等网络I/O 密集型场景可以尝试优化 RSS、RPS 等配置。"/>
@@ -139,7 +139,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
     class="navbar-brand d-flex align-items-center"
     href="/zh-hans/">
   <img
-    src="https://www.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_0x64_resize_box_3.png"
+    src="https://test.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_0x64_resize_box_3.png"
     alt="Logo"
     width="64"
     height="64"
@@ -243,7 +243,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/series/"
+      href="https://test.jobcher.com/zh-hans/series/"
       
       >
         <div
@@ -263,7 +263,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/authors/"
+      href="https://test.jobcher.com/zh-hans/authors/"
       
       >
         <div
@@ -283,7 +283,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/categories/"
+      href="https://test.jobcher.com/zh-hans/categories/"
       
       >
         <div
@@ -303,7 +303,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/archives/"
+      href="https://test.jobcher.com/zh-hans/archives/"
       
       >
         <div
@@ -323,7 +323,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/tags/"
+      href="https://test.jobcher.com/zh-hans/tags/"
       
       >
         <div
@@ -407,13 +407,13 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
         <li>
           <a
             class="language-picker-item dropdown-item active"
-            href="https://www.jobcher.com/zh-hans/"
+            href="https://test.jobcher.com/zh-hans/"
           >简体中文</a>
         </li>
         <li>
           <a
             class="language-picker-item dropdown-item"
-            href="https://www.jobcher.com/en/"
+            href="https://test.jobcher.com/en/"
           >English</a>
         </li>
     </ul>
@@ -635,13 +635,13 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
     <source srcset="/images/nginx_hufd7d1c8ca32609121b37473b72994664_8618_349x144_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-featured-img img-fluid p-1 bg-body-secondary border w-100"
-    src="https://www.jobcher.com/images/nginx.7010facf493acc8d655991aa75f5dc96.png"
+    src="https://test.jobcher.com/images/nginx.7010facf493acc8d655991aa75f5dc96.png"
     alt="Linux 系统收包流程以及内核参数优化"
     
     height="144"
     width="349"
     
-    data-src="https://www.jobcher.com/images/nginx.7010facf493acc8d655991aa75f5dc96.png"
+    data-src="https://test.jobcher.com/images/nginx.7010facf493acc8d655991aa75f5dc96.png"
     data-width="349"
     data-height="144" />
 </picture>
@@ -865,11 +865,11 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
         <li>
           <a
             class="dropdown-item"
-            href="https://github.com/hbstack/theme/commit/a57cb355366808ef99812b71cf9d4fb6594f01fc"
+            href="https://github.com/hbstack/theme/commit/8f4656e26e391d0ac9c1ecd94960c290c8e694d6"
             target="_blank"
             rel="noreferrer noopener"><svg aria-hidden="true" class="bi bi-gitbi bi-git hi-svg-inline me-2" fill="currentColor" height="1em" viewBox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
   <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"/>
-</svg>update</a>
+</svg>更新为test.jobcher.com</a>
         </li>
     </ul>
   </div>
@@ -938,7 +938,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
     <source srcset="/images/elasticsearch_hu18415ec3836508404f1613f1254993e1_3637_435x116_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
+    src="https://test.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
     alt="linux服务器进程打开文件过多导致服务异常"
     loading="lazy"
     height="116"
@@ -1002,7 +1002,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
     <source srcset="/images/elasticsearch_hu18415ec3836508404f1613f1254993e1_3637_435x116_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
+    src="https://test.jobcher.com/images/elasticsearch.6e78ad53fcbbbcee8a35ff3bb6894613.png"
     alt="解决Elasticsearch索引只读（read-only）"
     loading="lazy"
     height="116"
@@ -1066,7 +1066,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
     <source srcset="/images/nginx_hufd7d1c8ca32609121b37473b72994664_8618_349x144_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/nginx.7010facf493acc8d655991aa75f5dc96.png"
+    src="https://test.jobcher.com/images/nginx.7010facf493acc8d655991aa75f5dc96.png"
     alt="Vue3 &#43; vite &#43; nginx项目部署后404问题"
     loading="lazy"
     height="144"
@@ -1334,7 +1334,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
     <source srcset="/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_95b129ec0c9ac480b7db044054d215d0.webp" type="image/webp" />
   <img
     class="hb-blog-sidebar-profile-img rounded-circle img-fluid mb-3"
-    src="https://www.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_100x0_resize_box_3.24b0c3ba128acac45603f551e9a391d0.png"
+    src="https://test.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_100x0_resize_box_3.24b0c3ba128acac45603f551e9a391d0.png"
     alt=""
     loading="lazy"
     height="100"
@@ -1528,7 +1528,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-22.jpg.cfc48c06c03ddac16cb134d1ce37b4d6.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-22.jpg.cfc48c06c03ddac16cb134d1ce37b4d6.webp"
     alt="2023-12-22 打工人日报"
     loading="lazy"
     height="1080"
@@ -1591,7 +1591,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-21.jpg.8ef3e3ee4aabd451b5d2103057c79602.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-21.jpg.8ef3e3ee4aabd451b5d2103057c79602.webp"
     alt="2023-12-21 打工人日报"
     loading="lazy"
     height="1080"
@@ -1654,7 +1654,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-20.jpg.7e60526b209009ce8888c241d2eaa5b2.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-20.jpg.7e60526b209009ce8888c241d2eaa5b2.webp"
     alt="2023-12-20 打工人日报"
     loading="lazy"
     height="1080"
@@ -1717,7 +1717,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-19.jpg.6429fed1c308a6d27c1960b41baec7de.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-19.jpg.6429fed1c308a6d27c1960b41baec7de.webp"
     alt="2023-12-19 打工人日报"
     loading="lazy"
     height="1080"
@@ -1780,7 +1780,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-18.jpg.77e32e2fb94af3dc71848f44d924ef4e.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-18.jpg.77e32e2fb94af3dc71848f44d924ef4e.webp"
     alt="2023-12-18 打工人日报"
     loading="lazy"
     height="1080"
@@ -2197,7 +2197,7 @@ Linux 系统收包流程以及内核参数优化 - 博客 - 打工人日志</tit
 
 
   
-<script src="/js/search.ccceb0d78b3839bfdb5488476f610c3fd73c82d70fff532385bf91f671ab3bf4.js" defer></script>
+<script src="/js/search.c1084f500132d924112d18948a246084f5ecbc6976cb7948e72b12ba153b4494.js" defer></script>
 
 
 

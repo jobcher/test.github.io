@@ -2,64 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.jobcher.com/en/authors/</loc>
+    <loc>https://test.jobcher.com/en/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hans"
-                href="https://www.jobcher.com/zh-hans/authors/"
+                href="https://test.jobcher.com/zh-hans/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.jobcher.com/en/authors/"
+                href="https://test.jobcher.com/en/authors/"
                 />
   </url><url>
-    <loc>https://www.jobcher.com/en/categories/</loc>
+    <loc>https://test.jobcher.com/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hans"
-                href="https://www.jobcher.com/zh-hans/categories/"
+                href="https://test.jobcher.com/zh-hans/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.jobcher.com/en/categories/"
+                href="https://test.jobcher.com/en/categories/"
                 />
   </url><url>
-    <loc>https://www.jobcher.com/en/</loc>
+    <loc>https://test.jobcher.com/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hans"
-                href="https://www.jobcher.com/zh-hans/"
+                href="https://test.jobcher.com/zh-hans/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.jobcher.com/en/"
+                href="https://test.jobcher.com/en/"
                 />
   </url><url>
-    <loc>https://www.jobcher.com/en/series/</loc>
+    <loc>https://test.jobcher.com/en/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hans"
-                href="https://www.jobcher.com/zh-hans/series/"
+                href="https://test.jobcher.com/zh-hans/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.jobcher.com/en/series/"
+                href="https://test.jobcher.com/en/series/"
                 />
   </url><url>
-    <loc>https://www.jobcher.com/en/tags/</loc>
+    <loc>https://test.jobcher.com/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hans"
-                href="https://www.jobcher.com/zh-hans/tags/"
+                href="https://test.jobcher.com/zh-hans/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.jobcher.com/en/tags/"
+                href="https://test.jobcher.com/en/tags/"
                 />
   </url>
 </urlset>

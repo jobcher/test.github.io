@@ -9,7 +9,7 @@
 
 
 
-    <link rel="manifest" href="https://www.jobcher.com/zh-hans/manifest.webmanifest" />
+    <link rel="manifest" href="https://test.jobcher.com/zh-hans/manifest.webmanifest" />
 
 <meta name="description" content="背景 什么是 CI/CD 可观察性，我们如何为更多可观察的管道铺平道路？可观察性不仅仅是观察错误或监控基本健康信号。相反，它会更深入，以便您可以了解系统内行为背后的“原因”。
 CI/CD 可观察性在其中发挥着关键作用。这是关于深入了解持续集成和部署系统的整个管道——查看每个代码签入、每个测试、每个构建和每个部署。当您组" />
@@ -64,9 +64,9 @@ Flakiness 片状 片状测试是 CI/CD 方程中不可预测的变量。当测�
 测试执行效率低下。某些测试可能会运行比必要的时间更长的时间，这可能是因为冗余操作、设置的等待时间太长或查询效率低下。这在集成和端到端测试中尤其明显。 代码和测试膨胀。当我们添加更多功能和测试而不解决技术债务或进行优化时，我们的构建时间可能会增加。有些测试从添加之日起可能会很慢。如果不解决这些问题，整个构建和测试过程可能会比需要的时间更长。 Misconfigurations 配置错误 即使是最深思熟虑的管道也可能因配置错误而失败。这可能导致：
 次优测试计划。 CI/CD 管道遵循一条关键路径，其中每个步骤都依赖于前一个步骤。如果步骤未设置为按正确的顺序执行或正在等待非依赖项，则可能会导致效率低下。 次优容量规划。未配置足够的资源或对所需工作负载规划不当可能会导致管道出现瓶颈。如果 CI/CD 流程在关键阶段没有必要的能力，则可能会减慢整个工作流程或导致中断和故障。 DORA 指标 Deployment frequency 部署频率 (DF)：组织成功发布到生产环境的频率 Mean Lead time for changes 变更平均前置时间 (MLT)：从代码提交到代码在生产中运行所需的时间 Mean time to recover 平均恢复时间 (MTTR)：发生服务事件或缺陷后恢复服务需要多长时间 Change failure rate 变更失败率 (CFR)：导致失败的变更百分比 优化 CI/CD 可观察性 目前GraCIe 是 Grafana 正在使用的应用程序插件，旨在为用户提供一种简单的方法来了解他们的 CI/CD 系统。它非常适合评估构建性能、识别测试结果中的不一致以及分析构建输出。该应用程序简化了这些流程，旨在轻松提供有关管道的见解。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.jobcher.com/zh-hans/blog/2023/12/ci/cd-%E5%8F%AF%E8%A7%82%E5%AF%9F%E6%80%A7-%E5%9F%BA%E4%BA%8Egrafana/" /><meta property="og:image" content="https://www.jobcher.com/images/grafana-logo.png" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://test.jobcher.com/zh-hans/blog/2023/12/ci/cd-%E5%8F%AF%E8%A7%82%E5%AF%9F%E6%80%A7-%E5%9F%BA%E4%BA%8Egrafana/" /><meta property="og:image" content="https://test.jobcher.com/images/grafana-logo.png" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2023-12-12T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-12-22T17:10:02+08:00" />
+<meta property="article:modified_time" content="2023-12-22T17:15:35+08:00" />
 
 
 
@@ -79,10 +79,10 @@ Flakiness 片状 片状测试是 CI/CD 方程中不可预测的变量。当测�
 外部依赖和环境问题。如果这些依赖项不能始终可用，则依赖于外部服务、数据库或特定环境设置的测试可能会产生不可预测的结果。如果环境设置不正确或意外拆除，也可能会发生这种情况。从本质上讲，先前测试的残留或外部服务的不可用可能会扭曲结果，使其不可靠。 比赛条件。当系统的行为依赖于不可控事件的顺序或时间时，就会出现这种情况。特别是在异步操作中，如果管理不当，事件序列的不可预测性可能会导致偶发故障。 Performance regression 性能回归 随着 CI/CD 流程的发展并变得更加复杂，系统性能可能会开始下降。这种回归可能不会立即显现出来，但长期的累积效应可能会阻碍 CI/CD 管道的效率。以下是常见的原因：
 测试执行效率低下。某些测试可能会运行比必要的时间更长的时间，这可能是因为冗余操作、设置的等待时间太长或查询效率低下。这在集成和端到端测试中尤其明显。 代码和测试膨胀。当我们添加更多功能和测试而不解决技术债务或进行优化时，我们的构建时间可能会增加。有些测试从添加之日起可能会很慢。如果不解决这些问题，整个构建和测试过程可能会比需要的时间更长。 Misconfigurations 配置错误 即使是最深思熟虑的管道也可能因配置错误而失败。这可能导致：
 次优测试计划。 CI/CD 管道遵循一条关键路径，其中每个步骤都依赖于前一个步骤。如果步骤未设置为按正确的顺序执行或正在等待非依赖项，则可能会导致效率低下。 次优容量规划。未配置足够的资源或对所需工作负载规划不当可能会导致管道出现瓶颈。如果 CI/CD 流程在关键阶段没有必要的能力，则可能会减慢整个工作流程或导致中断和故障。 DORA 指标 Deployment frequency 部署频率 (DF)：组织成功发布到生产环境的频率 Mean Lead time for changes 变更平均前置时间 (MLT)：从代码提交到代码在生产中运行所需的时间 Mean time to recover 平均恢复时间 (MTTR)：发生服务事件或缺陷后恢复服务需要多长时间 Change failure rate 变更失败率 (CFR)：导致失败的变更百分比 优化 CI/CD 可观察性 目前GraCIe 是 Grafana 正在使用的应用程序插件，旨在为用户提供一种简单的方法来了解他们的 CI/CD 系统。它非常适合评估构建性能、识别测试结果中的不一致以及分析构建输出。该应用程序简化了这些流程，旨在轻松提供有关管道的见解。"><meta itemprop="datePublished" content="2023-12-12T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-12-22T17:10:02+08:00" />
-<meta itemprop="wordCount" content="96"><meta itemprop="image" content="https://www.jobcher.com/images/grafana-logo.png" />
+<meta itemprop="dateModified" content="2023-12-22T17:15:35+08:00" />
+<meta itemprop="wordCount" content="96"><meta itemprop="image" content="https://test.jobcher.com/images/grafana-logo.png" />
 <meta itemprop="keywords" content="gitlab," /><meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.jobcher.com/images/grafana-logo.png" /><meta name="twitter:title" content="CI/CD 可观察性-基于grafana"/>
+<meta name="twitter:image" content="https://test.jobcher.com/images/grafana-logo.png" /><meta name="twitter:title" content="CI/CD 可观察性-基于grafana"/>
 <meta name="twitter:description" content="背景 什么是 CI/CD 可观察性，我们如何为更多可观察的管道铺平道路？可观察性不仅仅是观察错误或监控基本健康信号。相反，它会更深入，以便您可以了解系统内行为背后的“原因”。
 CI/CD 可观察性在其中发挥着关键作用。这是关于深入了解持续集成和部署系统的整个管道——查看每个代码签入、每个测试、每个构建和每个部署。当您组合所有这些数据时，您可以全面了解整个软件交付过程，揭示效率领域、瓶颈和潜在故障点。
 CI/CD 可观察性是可观察性的一个子集，专注于软件开发生命周期。它有助于以多种方式确保流程可靠、相关且易于理解：
@@ -154,7 +154,7 @@ CI/CD 可观察性-基于grafana - 博客 - 打工人日志</title>
     class="navbar-brand d-flex align-items-center"
     href="/zh-hans/">
   <img
-    src="https://www.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_0x64_resize_box_3.png"
+    src="https://test.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_0x64_resize_box_3.png"
     alt="Logo"
     width="64"
     height="64"
@@ -258,7 +258,7 @@ CI/CD 可观察性-基于grafana - 博客 - 打工人日志</title>
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/series/"
+      href="https://test.jobcher.com/zh-hans/series/"
       
       >
         <div
@@ -278,7 +278,7 @@ CI/CD 可观察性-基于grafana - 博客 - 打工人日志</title>
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/authors/"
+      href="https://test.jobcher.com/zh-hans/authors/"
       
       >
         <div
@@ -298,7 +298,7 @@ CI/CD 可观察性-基于grafana - 博客 - 打工人日志</title>
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/categories/"
+      href="https://test.jobcher.com/zh-hans/categories/"
       
       >
         <div
@@ -318,7 +318,7 @@ CI/CD 可观察性-基于grafana - 博客 - 打工人日志</title>
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/archives/"
+      href="https://test.jobcher.com/zh-hans/archives/"
       
       >
         <div
@@ -338,7 +338,7 @@ CI/CD 可观察性-基于grafana - 博客 - 打工人日志</title>
   >
     <a
       class="hb-header-submenu dropdown-item d-flex align-items-center"
-      href="https://www.jobcher.com/zh-hans/tags/"
+      href="https://test.jobcher.com/zh-hans/tags/"
       
       >
         <div
@@ -422,13 +422,13 @@ CI/CD 可观察性-基于grafana - 博客 - 打工人日志</title>
         <li>
           <a
             class="language-picker-item dropdown-item active"
-            href="https://www.jobcher.com/zh-hans/"
+            href="https://test.jobcher.com/zh-hans/"
           >简体中文</a>
         </li>
         <li>
           <a
             class="language-picker-item dropdown-item"
-            href="https://www.jobcher.com/en/"
+            href="https://test.jobcher.com/en/"
           >English</a>
         </li>
     </ul>
@@ -639,13 +639,13 @@ CI/CD 可观察性-基于grafana - 博客 - 打工人日志</title>
     <source srcset="/images/grafana-logo_hu253e2a3a00c9fa845e674533766b68b7_37185_1200x600_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-featured-img img-fluid p-1 bg-body-secondary border w-100"
-    src="https://www.jobcher.com/images/grafana-logo.d60e84e807b6441c756f9dac19f30a85.png"
+    src="https://test.jobcher.com/images/grafana-logo.d60e84e807b6441c756f9dac19f30a85.png"
     alt="CI/CD 可观察性-基于grafana"
     
     height="600"
     width="1200"
     
-    data-src="https://www.jobcher.com/images/grafana-logo.d60e84e807b6441c756f9dac19f30a85.png"
+    data-src="https://test.jobcher.com/images/grafana-logo.d60e84e807b6441c756f9dac19f30a85.png"
     data-width="1200"
     data-height="600" />
 </picture>
@@ -734,7 +734,7 @@ CI/CD 可观察性是可观察性的一个子集，专注于软件开发生命�
     <source srcset="/images/cicd-observability-2_hu3935b593c93318859850ca9286ce14e3_133423_1924x1244_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="img-fluid"
-    src="https://www.jobcher.com/images/cicd-observability-2.736f721da27e4144f22b11dccd036d04.png"
+    src="https://test.jobcher.com/images/cicd-observability-2.736f721da27e4144f22b11dccd036d04.png"
     alt="cicd-observability-2.png"
     loading="lazy"
     height="1244"
@@ -777,7 +777,7 @@ CI/CD 可观察性是可观察性的一个子集，专注于软件开发生命�
     <source srcset="/images/cicd-observability-3_hub12b91adf8d703118c753c3f248b8db5_58709_1918x1197_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="img-fluid"
-    src="https://www.jobcher.com/images/cicd-observability-3.bdd507dc3cac0721b7fd3e536b832aac.png"
+    src="https://test.jobcher.com/images/cicd-observability-3.bdd507dc3cac0721b7fd3e536b832aac.png"
     alt="cicd-observability-3.png"
     loading="lazy"
     height="1197"
@@ -849,11 +849,11 @@ CI/CD 可观察性是可观察性的一个子集，专注于软件开发生命�
         <li>
           <a
             class="dropdown-item"
-            href="https://github.com/hbstack/theme/commit/a57cb355366808ef99812b71cf9d4fb6594f01fc"
+            href="https://github.com/hbstack/theme/commit/8f4656e26e391d0ac9c1ecd94960c290c8e694d6"
             target="_blank"
             rel="noreferrer noopener"><svg aria-hidden="true" class="bi bi-gitbi bi-git hi-svg-inline me-2" fill="currentColor" height="1em" viewBox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
   <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"/>
-</svg>update</a>
+</svg>更新为test.jobcher.com</a>
         </li>
     </ul>
   </div>
@@ -922,7 +922,7 @@ CI/CD 可观察性是可观察性的一个子集，专注于软件开发生命�
     <source srcset="/images/sonarqube_hu66386967d9fd2808e3fd1c0f1c664146_158066_2356x1304_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/sonarqube.02e24464152d1f85d75355926d020898.png"
+    src="https://test.jobcher.com/images/sonarqube.02e24464152d1f85d75355926d020898.png"
     alt="sonarqube docker安装和配置"
     loading="lazy"
     height="1304"
@@ -986,7 +986,7 @@ CI/CD 可观察性是可观察性的一个子集，专注于软件开发生命�
     <source srcset="/images/github_hu0cdfb0dbcda506ff6e8aa3e0da48c745_2699_300x168_resize_q75_h2_box_3.webp" type="image/webp" />
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/github.4f176adc615ef8784b3f24e57589fc57.png"
+    src="https://test.jobcher.com/images/github.4f176adc615ef8784b3f24e57589fc57.png"
     alt="SSH 通过 443 端口连接 GitHub"
     loading="lazy"
     height="168"
@@ -1279,7 +1279,7 @@ CI/CD 可观察性是可观察性的一个子集，专注于软件开发生命�
     <source srcset="/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_95b129ec0c9ac480b7db044054d215d0.webp" type="image/webp" />
   <img
     class="hb-blog-sidebar-profile-img rounded-circle img-fluid mb-3"
-    src="https://www.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_100x0_resize_box_3.24b0c3ba128acac45603f551e9a391d0.png"
+    src="https://test.jobcher.com/images/logo_hu212c4235ec694c68a44045c031d18f63_184363_100x0_resize_box_3.24b0c3ba128acac45603f551e9a391d0.png"
     alt=""
     loading="lazy"
     height="100"
@@ -1473,7 +1473,7 @@ CI/CD 可观察性是可观察性的一个子集，专注于软件开发生命�
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-22.jpg.cfc48c06c03ddac16cb134d1ce37b4d6.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-22.jpg.cfc48c06c03ddac16cb134d1ce37b4d6.webp"
     alt="2023-12-22 打工人日报"
     loading="lazy"
     height="1080"
@@ -1536,7 +1536,7 @@ CI/CD 可观察性是可观察性的一个子集，专注于软件开发生命�
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-21.jpg.8ef3e3ee4aabd451b5d2103057c79602.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-21.jpg.8ef3e3ee4aabd451b5d2103057c79602.webp"
     alt="2023-12-21 打工人日报"
     loading="lazy"
     height="1080"
@@ -1599,7 +1599,7 @@ CI/CD 可观察性是可观察性的一个子集，专注于软件开发生命�
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-20.jpg.7e60526b209009ce8888c241d2eaa5b2.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-20.jpg.7e60526b209009ce8888c241d2eaa5b2.webp"
     alt="2023-12-20 打工人日报"
     loading="lazy"
     height="1080"
@@ -1662,7 +1662,7 @@ CI/CD 可观察性是可观察性的一个子集，专注于软件开发生命�
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-19.jpg.6429fed1c308a6d27c1960b41baec7de.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-19.jpg.6429fed1c308a6d27c1960b41baec7de.webp"
     alt="2023-12-19 打工人日报"
     loading="lazy"
     height="1080"
@@ -1725,7 +1725,7 @@ CI/CD 可观察性是可观察性的一个子集，专注于软件开发生命�
     <picture>
   <img
     class="hb-blog-post-card-img"
-    src="https://www.jobcher.com/images/wallpaper/2023-12-18.jpg.77e32e2fb94af3dc71848f44d924ef4e.webp"
+    src="https://test.jobcher.com/images/wallpaper/2023-12-18.jpg.77e32e2fb94af3dc71848f44d924ef4e.webp"
     alt="2023-12-18 打工人日报"
     loading="lazy"
     height="1080"
@@ -2142,7 +2142,7 @@ CI/CD 可观察性是可观察性的一个子集，专注于软件开发生命�
 
 
   
-<script src="/js/search.ccceb0d78b3839bfdb5488476f610c3fd73c82d70fff532385bf91f671ab3bf4.js" defer></script>
+<script src="/js/search.c1084f500132d924112d18948a246084f5ecbc6976cb7948e72b12ba153b4494.js" defer></script>
 
 
 
