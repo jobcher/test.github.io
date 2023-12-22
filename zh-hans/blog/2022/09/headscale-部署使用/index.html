@@ -63,7 +63,7 @@ Headscale 部署 我决定使用docker-compose进行部署
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://test.jobcher.com/zh-hans/blog/2022/09/headscale-%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2022-09-21T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-12-22T21:26:12+08:00" />
+<meta property="article:modified_time" content="2023-12-22T21:32:40+08:00" />
 
 
 
@@ -73,7 +73,7 @@ Headscale 由欧洲航天局的 Juan Font 使用 Go 语言开发，在 BSD 许�
 Headscale 部署 我决定使用docker-compose进行部署
 创建存储 1#!/bin/bash 2mkdir -p /opt/headscale 3mkdir -p ./config 4touch ./config/db.sqlite 5curl https://raw.githubusercontent.com/juanfont/headscale/main/config-example.yaml -o ./config/config.yaml 运行 docker-compose 文件 创建 docker-compose.yaml
 1version: &#34;3&#34; 2services: 3 headscale: 4 image: headscale/headscale:latest 5 volumes: 6 - ./config:/etc/headscale/ 7 - ./data:/var/lib/headscale 8 ports: 9 - 8080:8080 10 - 9090:9090 11 - 50443:50443 12 command: headscale serve 13 restart: unless-stopped 运行"><meta itemprop="datePublished" content="2022-09-21T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-12-22T21:26:12+08:00" />
+<meta itemprop="dateModified" content="2023-12-22T21:32:40+08:00" />
 <meta itemprop="wordCount" content="110">
 <meta itemprop="keywords" content="daliy," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="headscale 部署使用"/>
 <meta name="twitter:description" content="Headscale Tailscale 的控制服务器是不开源的，而且对免费用户有诸多限制，这是人家的摇钱树，可以理解。好在目前有一款开源的实现叫 Headscale，这也是唯一的一款，希望能发展壮大。
@@ -94,7 +94,7 @@ headscale 部署使用 - 博客 - 打工人日志</title>
   
 
 
-    <link href="/css/hb.6dc1334ca4f1dc40a11c5be383c9633d42c6e235b8f90a15be4a46162e950a61.css" rel="stylesheet" />
+    <link href="/css/hb.cf9e5bc8f0b2b287241c737c30a3454c9cd6a9c5e58b35a7cdd47073df98ad21.css" rel="stylesheet" />
 
 
 
@@ -529,7 +529,35 @@ headscale 部署使用 - 博客 - 打工人日志</title>
       href="/zh-hans/authors/jobcher/"
       title="jobcher">
       
-  <span class="hb-blog-author-img-none bg-body-secondary d-block rounded-circle"></span>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <picture>
+  <img
+    class="hb-blog-author-img rounded-circle"
+    src="https://avatars.githubusercontent.com/u/31278050?v=4"
+    alt="jobcher"
+    loading="lazy"
+    
+    
+    
+    
+    
+     />
+</picture>
+
     </a>
 
           <span class="hb-blog-post-date">2022年9月21日</span>
@@ -698,11 +726,11 @@ headscale 部署使用 - 博客 - 打工人日志</title>
         <li>
           <a
             class="dropdown-item"
-            href="https://github.com/hbstack/theme/commit/d3fe7d25609aa11192133d56aa544e97e4912199"
+            href="https://github.com/hbstack/theme/commit/bfab9d5f39be3df2ec6dfca2a2844c852b9ff5e3"
             target="_blank"
             rel="noreferrer noopener"><svg aria-hidden="true" class="bi bi-gitbi bi-git hi-svg-inline me-2" fill="currentColor" height="1em" viewBox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
   <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"/>
-</svg>Merge branch &#39;main&#39; of https://github.com/jobcher/new-blog</a>
+</svg>测试</a>
         </li>
     </ul>
   </div>
@@ -1913,7 +1941,7 @@ headscale 部署使用 - 博客 - 打工人日志</title>
 
 
   
-<script src="/js/search.f4c8d6393cd3df18d4bdde0afbfff09868d7b16b1ceab864c44d608c15b7de73.js" defer></script>
+<script src="/js/search.7e00d59ec9cec7d61d1edfd29946c9b6f259c53fb4c595c05aacd0d9f136741b.js" defer></script>
 
 
 
