@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/test.jobcher.com\/conda\/"
-        },"image": ["https:\/\/test.jobcher.com\/images\/image.gif"],"genre": "posts","keywords": "daliy","wordcount":  635 ,
+        },"image": ["https:\/\/test.jobcher.com\/images\/image.gif"],"genre": "posts","keywords": "daliy","wordcount":  1195 ,
         "url": "https:\/\/test.jobcher.com\/conda\/","datePublished": "2022-12-14T00:00:00+00:00","dateModified": "2022-12-14T00:00:00+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -117,8 +117,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">优雅的使用Conda管理python环境</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="../" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>jobcher</a></span>&nbsp;<span class="post-category">收录于 <a href="../categories/%E6%97%A5%E5%B8%B8/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>日常</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-14">2022-12-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 635 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;<span id="/conda/" class="leancloud_visitors" data-flag-title="优雅的使用Conda管理python环境">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-14">2022-12-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1195 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/conda/" class="leancloud_visitors" data-flag-title="优雅的使用Conda管理python环境">
                         <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
         </div><div class="featured-image"><img
@@ -136,7 +136,8 @@
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#背景">背景</a></li>
-    <li><a href="#安装-conda">安装 conda</a>
+    <li><a href="#linux-安装-conda">Linux 安装 conda</a></li>
+    <li><a href="#windows-安装-conda">windows 安装 conda</a>
       <ul>
         <li><a href="#更换-conda-的下载源">更换 conda 的下载源</a></li>
       </ul>
@@ -151,7 +152,62 @@
 <li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 如何更换 conda 的下载源;</li>
 <li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 如何使用 canda;</li>
 </ul>
-<h2 id="安装-conda">安装 conda</h2>
+<h2 id="linux-安装-conda">Linux 安装 conda</h2>
+<p>在 Ubuntu 上安装 Anaconda 的步骤如下：</p>
+<ol>
+<li>
+<p>首先，你需要下载 Anaconda 的安装包。你可以从 Anaconda 的官方网站上下载最新版本的 Anaconda for Linux。选择适合你的系统的版本（Python 3.x）。</p>
+<p>访问下载链接：<a href="https://www.anaconda.com/products/distribution#download-section" target="_blank" rel="noopener noreffer ">https://www.anaconda.com/products/distribution#download-section</a></p>
+</li>
+<li>
+<p>下载完成后，你可以在终端中导航到下载的文件所在的目录。你可以使用 <code>cd</code> 命令来改变目录。例如，如果你的下载文件在 Downloads 文件夹中，你可以输入以下命令：</p>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~/Downloads
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>然后，你需要运行 bash 命令来安装 Anaconda。假设你下载的 Anaconda 文件名为 &ldquo;Anaconda3-2020.02-Linux-x86_64.sh&rdquo;，你可以输入以下命令：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bash Anaconda3-2020.02-Linux-x86_64.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>请注意，你需要将上述命令中的 &ldquo;Anaconda3-2020.02-Linux-x86_64.sh&rdquo; 替换为你实际下载的文件名。<br>
+4. 接下来，你会看到 Anaconda 的许可协议。按 <code>Enter</code> 键滚动到底部，然后输入 &lsquo;yes&rsquo; 来接受许可协议。<br>
+5. 然后，你需要确认 Anaconda 的安装位置。你可以选择默认位置或输入新的位置。
+6. 安装完成后，你会看到一个提示，询问你是否希望 Anaconda3 添加到你的 PATH。你应该输入 &lsquo;yes&rsquo;。
+7. 最后，你需要激活安装。你可以通过关闭并重新打开终端或运行以下命令来完成此操作：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> ~/.bashrc
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="8">
+<li>验证安装。在终端中输入以下命令：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">conda list
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果安装成功，这个命令会显示一个已安装的包的列表。</p>
+<h2 id="windows-安装-conda">windows 安装 conda</h2>
 <p>在安装时这两个选项需要点上：<br>
 <img
         class="lazyload"
