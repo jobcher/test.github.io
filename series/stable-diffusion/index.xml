@@ -1,0 +1,160 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>stable diffusion - seris - 打工人日志 - jobcher</title>
+        <link>https://test.jobcher.com/series/stable-diffusion/</link>
+        <description>stable diffusion - seris - 打工人日志 - jobcher</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>nb@nbtyfood.com (jobcher)</managingEditor>
+            <webMaster>nb@nbtyfood.com (jobcher)</webMaster><lastBuildDate>Wed, 10 Jan 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://test.jobcher.com/series/stable-diffusion/" rel="self" type="application/rss+xml" /><item>
+    <title>ubuntu 安装 stable-diffusion-webui</title>
+    <link>https://test.jobcher.com/stable-diffusion-01/</link>
+    <pubDate>Wed, 10 Jan 2024 00:00:00 &#43;0000</pubDate>
+    <author>jobcher</author>
+    <guid>https://test.jobcher.com/stable-diffusion-01/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/sd-logo.jpeg" referrerpolicy="no-referrer">
+            </div><h2 id="背景">背景</h2>
+<p><code>Stable Diffusion</code> (稳定扩散) 是一个扩散模型，2022年8月由德国CompVis协同Stability AI和Runway发表论文，并推出相关程序。<br>
+<code>AUTOMATIC1111</code>开发了<code>图形化界面</code>：「Stable Diffusion WebUI」，这是能用AI技术生成图片的开源软件，只要给定一组描述文本，AI就会开始绘图(准确的说是「算图」或「生图」)；亦能模仿现有的图片，生成另一张图片。甚至给它一部分涂黑的图片，AI也能按照你的意愿将图片填上适当的内容。除此之外还支持自行训练模型加强生图效果。<br>
+本篇文章就是介绍如何安装 stable-diffusion-webui</p>
+<h2 id="安装conda">安装conda</h2>
+<p>在 Ubuntu 上安装 Anaconda 的步骤如下：</p>
+<ol>
+<li>
+<p>首先，你需要下载 Anaconda 的安装包。你可以从 Anaconda 的官方网站上下载最新版本的 Anaconda for Linux。选择适合你的系统的版本（Python 3.x）。</p>
+<p>访问下载链接：<a href="https://www.anaconda.com/products/distribution#download-section" target="_blank" rel="noopener noreffer ">https://www.anaconda.com/products/distribution#download-section</a></p>
+</li>
+<li>
+<p>下载完成后，你可以在终端中导航到下载的文件所在的目录。你可以使用 <code>cd</code> 命令来改变目录。例如，如果你的下载文件在 Downloads 文件夹中，你可以输入以下命令：</p>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~/Downloads
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>然后，你需要运行 bash 命令来安装 Anaconda。假设你下载的 Anaconda 文件名为 &ldquo;Anaconda3-2020.02-Linux-x86_64.sh&rdquo;，你可以输入以下命令：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bash Anaconda3-2020.02-Linux-x86_64.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>请注意，你需要将上述命令中的 &ldquo;Anaconda3-2020.02-Linux-x86_64.sh&rdquo; 替换为你实际下载的文件名。<br>
+4. 接下来，你会看到 Anaconda 的许可协议。按 <code>Enter</code> 键滚动到底部，然后输入 &lsquo;yes&rsquo; 来接受许可协议。<br>
+5. 然后，你需要确认 Anaconda 的安装位置。你可以选择默认位置或输入新的位置。
+6. 安装完成后，你会看到一个提示，询问你是否希望 Anaconda3 添加到你的 PATH。你应该输入 &lsquo;yes&rsquo;。
+7. 最后，你需要激活安装。你可以通过关闭并重新打开终端或运行以下命令来完成此操作：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> ~/.bashrc
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="8">
+<li>验证安装。在终端中输入以下命令：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">conda list
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果安装成功，这个命令会显示一个已安装的包的列表。</p>
+<h2 id="搭建环境">搭建环境</h2>
+<p>安装软件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">apt -y update -qq
+</span></span><span class="line"><span class="cl">apt -y install -qq aria2
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>创建python环境</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">conda create -n sd-web <span class="nv">python</span><span class="o">=</span>3.9
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>下载github代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">mkdir ~/sd-web
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/sd-web/
+</span></span><span class="line"><span class="cl">git clone https://github.jobcher.com/gh/https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>下载模型</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">aria2c --console-log-level<span class="o">=</span>error -c -x <span class="m">16</span> -s <span class="m">16</span> -k 1M https://huggingface.jobcher.com/https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors -d ~/sd-web/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o v1-5-pruned-emaonly.safetensors
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装依赖</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">cd</span> ~/cd-web/stable-diffusion-webui
+</span></span><span class="line"><span class="cl"><span class="c1"># 先安装requirements_versions.txt</span>
+</span></span><span class="line"><span class="cl">pip install -r requirements_versions.txt -i https://pypi.douban.com/simple --trusted-host<span class="o">=</span>pypi.douban.com --verbose basicsr --use-pep517
+</span></span><span class="line"><span class="cl">pip install -r requirements.txt -i https://pypi.douban.com/simple --trusted-host<span class="o">=</span>pypi.douban.com --verbose basicsr --use-pep517
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>开放外部访问</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">COMMANDLINE_ARGS</span><span class="o">=</span><span class="s2">&#34;--listen&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行软件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">cd</span> ~/cd-web/stable-diffusion-webui
+</span></span><span class="line"><span class="cl">bash ./webui.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>出现一下画面说明已安装成功<br>
+</p>
+<h2 id="正常使用软件">正常使用软件</h2>
+<p>进入你的地址例如 127.0.0.1:7860你会看到一下界面，开始正常训练模型吧 <br>
+</p>
+]]></description>
+</item>
+</channel>
+</rss>
