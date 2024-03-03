@@ -2,27 +2,28 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://test.jobcher.com/github_trending_2024-03-03/</loc><lastmod>2024-03-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://test.jobcher.com/categories/</loc><lastmod>2024-03-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://test.jobcher.com/posts/</loc><lastmod>2024-03-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://test.jobcher.com/series/</loc><lastmod>2024-03-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://test.jobcher.com/tags/</loc><lastmod>2024-03-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://test.jobcher.com/</loc><lastmod>2024-03-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://test.jobcher.com/tags/%E6%97%A5%E6%8A%A5/</loc><lastmod>2024-03-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://test.jobcher.com/series/%E6%97%A5%E6%8A%A5/</loc><lastmod>2024-03-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://test.jobcher.com/categories/%E6%97%A5%E6%8A%A5/</loc><lastmod>2024-03-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-03-02/</loc><lastmod>2024-03-02T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://test.jobcher.com/categories/</loc><lastmod>2024-03-02T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://test.jobcher.com/posts/</loc><lastmod>2024-03-02T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://test.jobcher.com/series/</loc><lastmod>2024-03-02T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://test.jobcher.com/tags/</loc><lastmod>2024-03-02T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://test.jobcher.com/</loc><lastmod>2024-03-02T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://test.jobcher.com/tags/%E6%97%A5%E6%8A%A5/</loc><lastmod>2024-03-02T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://test.jobcher.com/series/%E6%97%A5%E6%8A%A5/</loc><lastmod>2024-03-02T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://test.jobcher.com/categories/%E6%97%A5%E6%8A%A5/</loc><lastmod>2024-03-02T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-03-01/</loc><lastmod>2024-03-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-29/</loc><lastmod>2024-02-29T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-28/</loc><lastmod>2024-02-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-27/</loc><lastmod>2024-02-27T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-26/</loc><lastmod>2024-02-26T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://test.jobcher.com/github_trending_2024-02-25/</loc><lastmod>2024-02-25T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://test.jobcher.com/github_trending_2024-02-25/</loc><lastmod>2024-02-25T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-24/</loc><lastmod>2024-02-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-23/</loc><lastmod>2024-02-23T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-21/</loc><lastmod>2024-02-21T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-20/</loc><lastmod>2024-02-20T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-19/</loc><lastmod>2024-02-19T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://test.jobcher.com/github_trending_2024-02-18/</loc><lastmod>2024-02-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://test.jobcher.com/github_trending_2024-02-18/</loc><lastmod>2024-02-18T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-17/</loc><lastmod>2024-02-17T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-16/</loc><lastmod>2024-02-16T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-15/</loc><lastmod>2024-02-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
@@ -35,14 +36,14 @@
             <loc>https://test.jobcher.com/github_trending_2024-02-07/</loc><lastmod>2024-02-07T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-06/</loc><lastmod>2024-02-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-05/</loc><lastmod>2024-02-05T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://test.jobcher.com/github_trending_2024-02-04/</loc><lastmod>2024-02-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://test.jobcher.com/github_trending_2024-02-04/</loc><lastmod>2024-02-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-03/</loc><lastmod>2024-02-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-02/</loc><lastmod>2024-02-02T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-02-01/</loc><lastmod>2024-02-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-01-31/</loc><lastmod>2024-01-31T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-01-30/</loc><lastmod>2024-01-30T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-01-29/</loc><lastmod>2024-01-29T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-            <loc>https://test.jobcher.com/github_trending_2024-01-28/</loc><lastmod>2024-01-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://test.jobcher.com/github_trending_2024-01-28/</loc><lastmod>2024-01-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-01-27/</loc><lastmod>2024-01-27T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-01-26/</loc><lastmod>2024-01-26T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://test.jobcher.com/github_trending_2024-01-25/</loc><lastmod>2024-01-25T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
